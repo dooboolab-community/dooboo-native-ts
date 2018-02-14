@@ -17,6 +17,7 @@ import appStore from '@stores/appStore';
 import { ratio, bgColor } from '@utils/Styles';
 import { IC_MASK } from '@utils/Icons';
 
+import { strings } from '@STRINGS';
 import User from '@models/User';
 import Button from '@shared/Button';
 
@@ -57,7 +58,7 @@ class Page extends Component<any, IState> {
             textStyle={styles.txtLogin}
             imgLeftSrc={IC_MASK}
             imgLeftStyle={styles.imgBtn}
-          >Login</Button>
+          >{strings.LOGIN}</Button>
         </View>
       </View>
     );
