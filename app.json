@@ -1,0 +1,16 @@
+{
+  "name": "ReactNativeTypeScriptStarter",
+  "displayName": "ReactNativeTypeScriptStarter",
+  "entryPoint": "App.js",
+  "packagerOpts": {
+    "assetExts": [
+      "ttf",
+      "png"
+    ],
+    "sourceExts": [
+      "ts",
+      "tsx"
+    ],
+    "transformer": "node_modules/react-native-typescript-transformer/index.js"
+  }
+}
