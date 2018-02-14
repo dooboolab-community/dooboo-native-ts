@@ -29,9 +29,7 @@ exports[`Button component test renders as expected 1`] = `
           "fontSize": 29.166666666666664,
         }
       }
-    >
-      Login
-    </Text>
+    />
   </View>
 </TouchableOpacity>
 `;
@@ -65,9 +63,7 @@ exports[`Button component test renders as expected 2`] = `
           "fontSize": 29.166666666666664,
         }
       }
-    >
-      Login
-    </Text>
+    />
   </View>
 </TouchableOpacity>
 `;
@@ -102,9 +98,7 @@ exports[`Button component test simulate onPress 1`] = `
           "fontSize": 29.166666666666664,
         }
       }
-    >
-      Login
-    </Text>
+    />
   </View>
 </TouchableOpacity>
 `;
@@ -160,9 +154,7 @@ exports[`Button renders without crashing 1`] = `
           "fontSize": 29.166666666666664,
         }
       }
-    >
-      Login
-    </Text>
+    />
   </View>
 </View>
 `;

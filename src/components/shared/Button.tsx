@@ -24,6 +24,18 @@ const styles: any = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  btnDisabled: {
+    backgroundColor: 'rgb(243,243,243)',
+    alignSelf: 'center',
+    borderRadius: 4 * ratio,
+    borderWidth: 2 * ratio,
+    width: 320 * ratio,
+    height: 52 * ratio,
+    borderColor: '#333',
+
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   txt: {
     fontSize: 14 * ratio,
     color: 'white',
@@ -38,21 +50,27 @@ const styles: any = StyleSheet.create({
 
 interface ItemProps {
   isLoading?: boolean;
+  isDisabled?: boolean;
   onPress?: () => void;
-  btnStyle?: View.propTypes.style;
-  txtStyle?: Text.propTypes.style;
+  style?: View.propTypes.style;
+  disabledStyle?: View.propTypes.style;
+  textStyle?: Text.propTypes.style;
   imgLeftSrc?: Image.propTypes.source;
   imgLeftStyle?: Image.propTypes.style;
   indicatorColor?: string;
+  activeOpacity?: number;
 }
 
 class Button extends Component<ItemProps, any> {
   private static defaultProps: Partial<ItemProps> = {
     isLoading: false,
-    btnStyle: styles.btn,
-    txtStyle: styles.txt,
+    isDisabled: false,
+    style: styles.btn,
+    textStyle: styles.txt,
+    textStyle: styles.txt,
     imgLeftStyle: styles.imgLeft,
     indicatorColor: 'white',
+    activeOpacity: 0.5,
   };
 
   constructor(props) {
@@ -62,19 +80,26 @@ class Button extends Component<ItemProps, any> {
   }
 
   public render() {
+    if (this.props.isDisabled) {
+      return (
+        <View style={this.props.disabledStyle}>
+          <Text style={this.props.textStyle}>{this.props.children}</Text>
+        </View>
+      );
+    }
     if (this.props.isLoading) {
       return (
-        <View style={this.props.btnStyle}>
+        <View style={this.props.style}>
           <ActivityIndicator size='small' color={this.props.indicatorColor} />
         </View>
       );
     }
     return (
       <TouchableOpacity
-        activeOpacity={0.5}
+        activeOpacity={this.props.activeOpacity}
         onPress={this.props.onPress}
       >
-        <View style={this.props.btnStyle}>
+        <View style={this.props.style}>
           {
             this.props.imgLeftSrc
               ? <Image
@@ -83,7 +108,7 @@ class Button extends Component<ItemProps, any> {
               />
               : null
           }
-          <Text style={this.props.txtStyle}>Login</Text>
+          <Text style={this.props.textStyle}>{this.props.children}</Text>
         </View>
       </TouchableOpacity>
     );

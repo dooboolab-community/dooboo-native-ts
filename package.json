@@ -10,6 +10,7 @@
     "start:reset": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "ios:reset": "rm -rf ios/build/ModuleCache",
     "jest": "jest",
     "lint": "eslint -c .eslintrc.js './src/**/*.js'",
     "build:ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",

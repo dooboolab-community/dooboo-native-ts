@@ -39,11 +39,11 @@ class Page extends Component<any, IState> {
           <Button
             isLoading={this.state.isLoggingIn}
             onPress={this.onLogin}
-            btnStyle={styles.btnLogin}
-            txtStyle={styles.txtLogin}
+            style={styles.btnLogin}
+            textStyle={styles.txtLogin}
             imgLeftSrc={IC_MASK}
             imgLeftStyle={styles.imgBtn}
-          />
+          >Login</Button>
         </View>
       </View>
     );
