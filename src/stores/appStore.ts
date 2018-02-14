@@ -11,13 +11,17 @@ import 'moment/locale/ja';
 
 class ObservableListStore {
   @observable
-  private rootNavigator: any = null;
+  private rootNavigator: any;
   @observable
-  private rootNavigatorActionHorizontal: boolean = false;
-  @observable
-  private rootNavigatorParams: any = {};
-  @observable
-  private user: User = new User();
+  private rootNavigatorActionHorizontal: boolean;
+  @observable private rootNavigatorParams: object;
+  @observable private user: User;
+
+  constructor() {
+    this.rootNavigatorActionHorizontal = false;
+    this.rootNavigatorParams = {};
+    this.user = new User();
+  }
 
   public get $rootNavigator(): any  {
     return this.rootNavigator;

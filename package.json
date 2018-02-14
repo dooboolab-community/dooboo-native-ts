@@ -52,6 +52,9 @@
   },
   "jest": {
     "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(.*-)?react-(.*-)?native(-.*)?)"
+    ],
     "setupFiles": [
       "./test/shimSetup.js",
       "./test/jestSetup.ts"
@@ -88,7 +91,8 @@
       "^@STRINGS(.*)$": "<rootDir>/src/STRINGS$1",
       "^@assets(.*)$": "<rootDir>/src/assets$1",
       "^@shared(.*)$": "<rootDir>/src/shared$1",
-      "^@app(.*)$": "<rootDir>/src/app$1"
+      "^@app(.*)$": "<rootDir>/src/app$1",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/assetsTransformer.js", "\\.(css|less)$": "<rootDir>/test/assetsTransformer.js"
     },
     "snapshotSerializers": [
       "./node_modules/enzyme-to-json/serializer"
