@@ -38,7 +38,7 @@ class Page extends Component<any, IState> {
         <View style={styles.btnBottomWrapper}>
           <Button
             isLoading={this.state.isLoggingIn}
-            onClick={this.onLogin}
+            onPress={this.onLogin}
             btnStyle={styles.btnLogin}
             txtStyle={styles.txtLogin}
             imgLeftSrc={IC_MASK}
@@ -51,6 +51,7 @@ class Page extends Component<any, IState> {
 
   private onLogin = () => {
     console.log('onLogin');
+    this.setState({ isLoggingIn: true });
   }
 }
 
@@ -78,6 +79,9 @@ const styles: any = StyleSheet.create({
     width: 320 * ratio,
     height: 52 * ratio,
     borderColor: 'white',
+
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   txtLogin: {
     fontSize: 14 * ratio,

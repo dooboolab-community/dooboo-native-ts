@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {
+  ActivityIndicator,
   StyleSheet,
   TouchableOpacity,
   Image,
   Text,
   View,
 } from 'react-native';
-import NativeButton from 'apsl-react-native-button';
+// import NativeButton from 'apsl-react-native-button';
 
 import { ratio, bgColor } from '@utils/Styles';
 
@@ -19,6 +20,9 @@ const styles: any = StyleSheet.create({
     width: 320 * ratio,
     height: 52 * ratio,
     borderColor: 'white',
+
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   txt: {
     fontSize: 14 * ratio,
@@ -34,11 +38,12 @@ const styles: any = StyleSheet.create({
 
 interface ItemProps {
   isLoading?: boolean;
-  onClick?: () => void;
+  onPress?: () => void;
   btnStyle?: View.propTypes.style;
   txtStyle?: Text.propTypes.style;
   imgLeftSrc?: Image.propTypes.source;
   imgLeftStyle?: Image.propTypes.style;
+  indicatorColor?: string;
 }
 
 class Button extends Component<ItemProps, any> {
@@ -47,6 +52,7 @@ class Button extends Component<ItemProps, any> {
     btnStyle: styles.btn,
     txtStyle: styles.txt,
     imgLeftStyle: styles.imgLeft,
+    indicatorColor: 'white',
   };
 
   constructor(props) {
@@ -56,24 +62,30 @@ class Button extends Component<ItemProps, any> {
   }
 
   public render() {
+    if (this.props.isLoading) {
+      return (
+        <View style={this.props.btnStyle}>
+          <ActivityIndicator size='small' color={this.props.indicatorColor} />
+        </View>
+      );
+    }
     return (
-      <NativeButton
-        onPress={this.props.onClick}
-        isLoading={this.props.isLoading}
+      <TouchableOpacity
         activeOpacity={0.5}
-        style={this.props.btnStyle}
-        textStyle={ this.props.txtStyle }
+        onPress={this.props.onPress}
       >
-        {
-          this.props.imgLeftSrc
-            ? <Image
-              style={this.props.imgLeftStyle}
-              source={this.props.imgLeftSrc}
-            />
-            : null
-        }
-        Login
-      </NativeButton>
+        <View style={this.props.btnStyle}>
+          {
+            this.props.imgLeftSrc
+              ? <Image
+                style={this.props.imgLeftStyle}
+                source={this.props.imgLeftSrc}
+              />
+              : null
+          }
+          <Text style={this.props.txtStyle}>Login</Text>
+        </View>
+      </TouchableOpacity>
     );
   }
 }
