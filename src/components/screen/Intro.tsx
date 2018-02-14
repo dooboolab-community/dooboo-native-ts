@@ -17,6 +17,7 @@ import appStore from '@stores/appStore';
 import { ratio, bgColor } from '@utils/Styles';
 import { IC_MASK } from '@utils/Icons';
 
+import User from '@models/User';
 import Button from '@shared/Button';
 
 interface IState {
@@ -24,6 +25,8 @@ interface IState {
 }
 
 class Page extends Component<any, IState> {
+  private timer: () => void;
+
   constructor(props) {
     super(props);
     this.state = {
@@ -31,10 +34,21 @@ class Page extends Component<any, IState> {
     };
   }
 
+  public componentWillUnmount() {
+    if (this.timer) {
+      clearTimeout(this.timer);
+    }
+  }
+
   public render() {
     return (
       <View style={styles.container}>
         <Text style={styles.titleTxt}>DOOBOO NATIVE</Text>
+        <View style={styles.viewUser}>
+          <Text style={styles.txtUser}>{appStore.$user.displayName}</Text>
+          <Text style={styles.txtUser}>{appStore.$user.age}</Text>
+          <Text style={styles.txtUser}>{appStore.$user.job}</Text>
+        </View>
         <View style={styles.btnBottomWrapper}>
           <Button
             isLoading={this.state.isLoggingIn}
@@ -50,8 +64,15 @@ class Page extends Component<any, IState> {
   }
 
   private onLogin = () => {
-    console.log('onLogin');
-    this.setState({ isLoggingIn: true });
+    appStore.$user = new User();
+    this.setState({ isLoggingIn: true }, () => {
+      this.timer = setTimeout(() => {
+        appStore.$user.displayName = 'dooboolab';
+        appStore.$user.age = 30;
+        appStore.$user.job = 'developer';
+        this.setState({ isLoggingIn: false });
+      }, 1000);
+    });
   }
 }
 
@@ -92,6 +113,15 @@ const styles: any = StyleSheet.create({
     height: 24 * ratio,
     position: 'absolute',
     left: 16 * ratio,
+  },
+  viewUser: {
+    marginTop: 40 * ratio,
+    alignItems: 'center',
+  },
+  txtUser: {
+    fontSize: 16 * ratio,
+    color: '#eee',
+    lineHeight: 48,
   },
 });
 

@@ -1,3 +1,4 @@
+import User from '@models/User';
 import { observable } from 'mobx';
 
 import moment from 'moment';
@@ -15,6 +16,8 @@ class ObservableListStore {
   private rootNavigatorActionHorizontal: boolean = false;
   @observable
   private rootNavigatorParams: any = {};
+  @observable
+  private user: User = new User();
 
   public get $rootNavigator(): any  {
     return this.rootNavigator;
@@ -38,6 +41,14 @@ class ObservableListStore {
 
   public set $rootNavigatorParams(value: any ) {
     this.rootNavigatorParams = value;
+  }
+
+  public get $user(): User {
+    return this.user;
+  }
+
+  public set $user(value: User) {
+    this.user = value;
   }
 }
 
