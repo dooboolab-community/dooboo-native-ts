@@ -4,7 +4,8 @@
   "description": "boilerplate for react-native by dooboolab!",
   "author": "hyochan <dooboolab@gmail.com>",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "dev": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "dev",
     "test": "jest -u",
     "start:packager": "node_modules/react-native/packager/packager.sh",
     "start:reset": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
