@@ -20,6 +20,15 @@ import {
   IC_MASK,
 } from '@utils/Icons';
 
+const styles: any = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'transparent',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+});
+
 class Page extends Component<any, any> {
   constructor(props) {
     super(props);
@@ -35,14 +44,5 @@ class Page extends Component<any, any> {
     );
   }
 }
-
-const styles: any = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'transparent',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-});
 
 export default Page;
