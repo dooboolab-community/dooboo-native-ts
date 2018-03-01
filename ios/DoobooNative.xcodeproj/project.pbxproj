@@ -1272,7 +1272,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dooboolab.starter;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.dooboolab.starter;
 				PRODUCT_NAME = DoobooNative;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1294,7 +1294,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dooboolab.starter;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.dooboolab.starter;
 				PRODUCT_NAME = DoobooNative;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
