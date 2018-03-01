@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 
 import appStore from '@stores/appStore';
-import { ratio, bgColor } from '@utils/Styles';
+import { ratio, colors } from '@utils/Styles';
 import { IC_MASK } from '@utils/Icons';
 
 import { getString } from '@STRINGS';
@@ -24,7 +24,7 @@ import Button from '@shared/Button';
 const styles: any = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: bgColor,
+    backgroundColor: colors.background,
     flexDirection: 'column',
     alignItems: 'center',
   },

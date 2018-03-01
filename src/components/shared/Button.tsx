@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 // import NativeButton from 'apsl-react-native-button';
 
-import { ratio, bgColor } from '@utils/Styles';
+import { ratio, colors } from '@utils/Styles';
 
 const styles: any = StyleSheet.create({
   btn: {
