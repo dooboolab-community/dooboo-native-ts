@@ -1,6 +1,6 @@
 {
-  "name": "ReactNativeTypeScriptStarter",
-  "displayName": "ReactNativeTypeScriptStarter",
+  "name": "starter",
+  "displayName": "starter",
   "entryPoint": "index.js",
   "packagerOpts": {
     "assetExts": [

@@ -129,7 +129,7 @@ NativeModules.ReactLocalization = {
 16.2.0
 
 ## React Native version
-0.53
+0.53.3
 
 ## React navigation
-1.0.3
+1.2.1

@@ -1,4 +1,4 @@
-package com.reactnativetypescriptstarter;
+package com.dooboolab.starter;
 
 import android.app.Application;
 

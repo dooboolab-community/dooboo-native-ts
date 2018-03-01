@@ -1,4 +1,4 @@
-package com.reactnativetypescriptstarter;
+package com.dooboolab.starter;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "ReactNativeTypeScriptStarter";
+        return "dooboolab.starter";
     }
 }
