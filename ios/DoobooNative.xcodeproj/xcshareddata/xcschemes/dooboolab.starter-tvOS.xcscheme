@@ -31,7 +31,7 @@
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
                BuildableName = "dooboolab.starter-tvOS.app"
                BlueprintName = "dooboolab.starter-tvOS"
-               ReferencedContainer = "container:ReactNativeTypeScriptStarter.xcodeproj">
+               ReferencedContainer = "container:DoobooNative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
                BuildableName = "dooboolab.starter-tvOSTests.xctest"
                BlueprintName = "dooboolab.starter-tvOSTests"
-               ReferencedContainer = "container:ReactNativeTypeScriptStarter.xcodeproj">
+               ReferencedContainer = "container:DoobooNative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -64,7 +64,7 @@
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
                BuildableName = "dooboolab.starter-tvOSTests.xctest"
                BlueprintName = "dooboolab.starter-tvOSTests"
-               ReferencedContainer = "container:ReactNativeTypeScriptStarter.xcodeproj">
+               ReferencedContainer = "container:DoobooNative.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -74,7 +74,7 @@
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
             BuildableName = "dooboolab.starter-tvOS.app"
             BlueprintName = "dooboolab.starter-tvOS"
-            ReferencedContainer = "container:ReactNativeTypeScriptStarter.xcodeproj">
+            ReferencedContainer = "container:DoobooNative.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -98,7 +98,7 @@
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
             BuildableName = "dooboolab.starter-tvOS.app"
             BlueprintName = "dooboolab.starter-tvOS"
-            ReferencedContainer = "container:ReactNativeTypeScriptStarter.xcodeproj">
+            ReferencedContainer = "container:DoobooNative.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -117,7 +117,7 @@
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
             BuildableName = "dooboolab.starter-tvOS.app"
             BlueprintName = "dooboolab.starter-tvOS"
-            ReferencedContainer = "container:ReactNativeTypeScriptStarter.xcodeproj">
+            ReferencedContainer = "container:DoobooNative.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
