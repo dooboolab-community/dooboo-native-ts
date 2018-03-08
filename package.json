@@ -17,8 +17,8 @@
     "ios:reset": "rm -rf ios/build/ModuleCache",
     "jest": "jest",
     "lint": "eslint -c .eslintrc.js './src/**/*.js'",
-    "build:ios": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
-    "build:android": "react-native bundle --entry-file index.android.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest android"
+    "build:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
+    "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest android"
   },
   "dependencies": {
     "mobx": "^3.6.1",
