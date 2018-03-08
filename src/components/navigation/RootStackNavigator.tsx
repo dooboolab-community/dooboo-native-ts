@@ -49,7 +49,7 @@ class RootNavigator extends React.Component<any, IState> {
       gesturesEnabled: true,
       statusBarStyle: 'light-content',
       transitionConfig: () => ({ screenInterpolator:
-        appStore.$rootNavigatorActionHorizontal
+        appStore.rootNavigatorActionHorizontal
           ? CardStackStyleInterpolator.forHorizontal
           : CardStackStyleInterpolator.forVertical,
       }),

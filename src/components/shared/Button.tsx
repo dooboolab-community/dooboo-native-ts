@@ -52,11 +52,11 @@ interface ItemProps {
   isLoading?: boolean;
   isDisabled?: boolean;
   onPress?: () => void;
-  style?: View.propTypes.style;
-  disabledStyle?: View.propTypes.style;
-  textStyle?: Text.propTypes.style;
-  imgLeftSrc?: Image.propTypes.source;
-  imgLeftStyle?: Image.propTypes.style;
+  style?: any;
+  disabledStyle?: any;
+  textStyle?: any;
+  imgLeftSrc?: any;
+  imgLeftStyle?: any;
   indicatorColor?: string;
   activeOpacity?: number;
 }
@@ -66,7 +66,6 @@ class Button extends Component<ItemProps, any> {
     isLoading: false,
     isDisabled: false,
     style: styles.btn,
-    textStyle: styles.txt,
     textStyle: styles.txt,
     imgLeftStyle: styles.imgLeft,
     indicatorColor: 'white',

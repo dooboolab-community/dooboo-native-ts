@@ -75,7 +75,7 @@ interface IState {
 }
 
 class Page extends Component<any, IState> {
-  private timer: () => void;
+  private timer: any;
 
   constructor(props) {
     super(props);

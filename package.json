@@ -6,6 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "node node_modules/react-native/local-cli/cli.js start",
+    "tsc": "tsc",
+    "watch": "tsc -w",
     "start": "npm run dev",
     "upgrade": "react-native-git-upgrade && npm install --save react-native",
     "upgrade:major": "react-native upgrade",

@@ -1,10 +1,3 @@
-import {
-  date,
-  object,
-  identifier,
-  serializable,
-} from 'serializr';
-
 import { observable } from 'mobx';
 
 class User {

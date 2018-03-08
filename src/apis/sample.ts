@@ -1,11 +1,6 @@
-import {
-  serialize,
-  deserialize,
-} from 'serializr';
-
 const ROOT_URL = 'http://localhost:3000/api';
 
-export const sample = async (body: object, signal?: AbortController.signal) => {
+export const sample = async (body: object, signal?: AbortController['signal']) => {
   try {
     let res: any = await fetch(`${ROOT_URL}/sample`, {
       signal,

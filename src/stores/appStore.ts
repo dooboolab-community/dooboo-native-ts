@@ -1,7 +1,6 @@
 import User from '@models/User';
 import { observable } from 'mobx';
 
-import playerStore from '@stores/playerStore';
 import moment from 'moment';
 import 'moment/locale/ko';
 import 'moment/locale/ja';
