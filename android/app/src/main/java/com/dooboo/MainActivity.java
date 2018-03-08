@@ -1,4 +1,4 @@
-package com.dooboolab.starter;
+package com.dooboo;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "dooboolab.starter";
+        return "dooboo";
     }
 }

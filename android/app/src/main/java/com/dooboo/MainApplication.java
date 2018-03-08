@@ -1,4 +1,4 @@
-package com.dooboolab.starter;
+package com.dooboo;
 
 import android.app.Application;
 

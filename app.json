@@ -1,6 +1,6 @@
 {
-  "name": "starter",
-  "displayName": "starter",
+  "name": "dooboo",
+  "displayName": "dooboo",
   "entryPoint": "index.js",
   "packagerOpts": {
     "assetExts": [
