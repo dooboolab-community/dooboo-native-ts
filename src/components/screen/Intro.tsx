@@ -95,9 +95,9 @@ class Page extends Component<any, IState> {
       <View style={styles.container}>
         <Text style={styles.titleTxt}>DOOBOO NATIVE</Text>
         <View style={styles.viewUser}>
-          <Text style={styles.txtUser}>{appStore.$user.displayName}</Text>
-          <Text style={styles.txtUser}>{appStore.$user.age}</Text>
-          <Text style={styles.txtUser}>{appStore.$user.job}</Text>
+          <Text style={styles.txtUser}>{appStore.user.displayName}</Text>
+          <Text style={styles.txtUser}>{appStore.user.age}</Text>
+          <Text style={styles.txtUser}>{appStore.user.job}</Text>
         </View>
         <View style={styles.btnBottomWrapper}>
           <Button
@@ -114,12 +114,12 @@ class Page extends Component<any, IState> {
   }
 
   private onLogin = () => {
-    appStore.$user = new User();
+    appStore.user = new User();
     this.setState({ isLoggingIn: true }, () => {
       this.timer = setTimeout(() => {
-        appStore.$user.displayName = 'dooboolab';
-        appStore.$user.age = 30;
-        appStore.$user.job = 'developer';
+        appStore.user.displayName = 'dooboolab';
+        appStore.user.age = 30;
+        appStore.user.job = 'developer';
         this.setState({ isLoggingIn: false });
       }, 1000);
     });
