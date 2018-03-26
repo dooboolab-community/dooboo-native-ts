@@ -1,6 +1,8 @@
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 // import { observer } from 'mobx-react/native';
 import React from 'react';
+import { Provider } from 'mobx-react';
+import appStore from '@stores/appStore';
 import { Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
 import RootStackNavigator from '@navigation/RootStackNavigator';
 // import BaseStyles from '@BaseStyles';
@@ -9,13 +11,14 @@ import RootStackNavigator from '@navigation/RootStackNavigator';
 // import { ICONS } from '@utils/Icons';
 // import { setLocale } from '@utils/Localizations';
 
-// @observer
 class App extends React.Component {
   public render() {
     return (
-      <View style={styles.container}>
-        <RootStackNavigator />
-      </View>
+      <Provider store={ appStore }>
+        <View style={styles.container}>
+          <RootStackNavigator />
+        </View>
+      </Provider>
     );
   }
 }

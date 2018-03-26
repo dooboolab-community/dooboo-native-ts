@@ -5,14 +5,13 @@ import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/Car
 
 import Intro from '@screen/Intro';
 import NotFound from '@screen/NotFound';
-import { observer } from 'mobx-react/native';
-import appStore from '@stores/appStore';
+import { inject, observer } from 'mobx-react/native';
 
 interface IState {
   startPage: string;
 }
 
-@observer
+@inject('store') @observer
 class RootNavigator extends React.Component<any, IState> {
   constructor(props) {
     super(props);
@@ -49,7 +48,7 @@ class RootNavigator extends React.Component<any, IState> {
       gesturesEnabled: true,
       statusBarStyle: 'light-content',
       transitionConfig: () => ({ screenInterpolator:
-        appStore.rootNavigatorActionHorizontal
+        this.props.store.rootNavigatorActionHorizontal
           ? CardStackStyleInterpolator.forHorizontal
           : CardStackStyleInterpolator.forVertical,
       }),

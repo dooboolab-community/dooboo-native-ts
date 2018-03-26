@@ -13,13 +13,13 @@ import {
   InteractionManager,
 } from 'react-native';
 
-import appStore from '@stores/appStore';
 import { ratio, colors } from '@utils/Styles';
 import { IC_MASK } from '@utils/Icons';
 
 import { getString } from '@STRINGS';
 import User from '@models/User';
 import Button from '@shared/Button';
+import { inject } from 'mobx-react/native';
 
 const styles: any = StyleSheet.create({
   container: {
@@ -74,6 +74,7 @@ interface IState {
   isLoggingIn: boolean;
 }
 
+@inject('store')
 class Page extends Component<any, IState> {
   private timer: any;
 
@@ -95,9 +96,9 @@ class Page extends Component<any, IState> {
       <View style={styles.container}>
         <Text style={styles.titleTxt}>DOOBOO NATIVE</Text>
         <View style={styles.viewUser}>
-          <Text style={styles.txtUser}>{appStore.user.displayName}</Text>
-          <Text style={styles.txtUser}>{appStore.user.age}</Text>
-          <Text style={styles.txtUser}>{appStore.user.job}</Text>
+          <Text style={styles.txtUser}>{this.props.store.user.displayName}</Text>
+          <Text style={styles.txtUser}>{this.props.store.user.age}</Text>
+          <Text style={styles.txtUser}>{this.props.store.user.job}</Text>
         </View>
         <View style={styles.btnBottomWrapper}>
           <Button
@@ -114,12 +115,12 @@ class Page extends Component<any, IState> {
   }
 
   private onLogin = () => {
-    appStore.user = new User();
+    this.props.store.user = new User();
     this.setState({ isLoggingIn: true }, () => {
       this.timer = setTimeout(() => {
-        appStore.user.displayName = 'dooboolab';
-        appStore.user.age = 30;
-        appStore.user.job = 'developer';
+        this.props.store.user.displayName = 'dooboolab';
+        this.props.store.user.age = 30;
+        this.props.store.user.job = 'developer';
         this.setState({ isLoggingIn: false });
       }, 1000);
     });
