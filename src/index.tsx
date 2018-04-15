@@ -5,11 +5,8 @@ import { Provider } from 'mobx-react';
 import appStore from '@stores/appStore';
 import { Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
 import RootStackNavigator from '@navigation/RootStackNavigator';
-// import BaseStyles from '@BaseStyles';
-// import appStore from '@stores/appStore';
 // import { ratio } from '@utils/Styles';
 // import { ICONS } from '@utils/Icons';
-// import { setLocale } from '@utils/Localizations';
 
 class App extends React.Component {
   public render() {
