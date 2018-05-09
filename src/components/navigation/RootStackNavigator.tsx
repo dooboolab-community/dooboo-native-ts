@@ -1,7 +1,7 @@
 import React from 'react';
 import { AsyncStorage, View, Platform } from 'react-native';
-import { StackNavigator, NavigationActions } from 'react-navigation';
-import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator';
+import { createStackNavigator, NavigationActions } from 'react-navigation';
+import StackViewStyleInterpolator from 'react-navigation/src/views/StackView/StackViewStyleInterpolator';
 
 import Intro from '@screen/Intro';
 import NotFound from '@screen/NotFound';
@@ -49,13 +49,13 @@ class RootNavigator extends React.Component<any, IState> {
       statusBarStyle: 'light-content',
       transitionConfig: () => ({ screenInterpolator:
         this.props.store.rootNavigatorActionHorizontal
-          ? CardStackStyleInterpolator.forHorizontal
-          : CardStackStyleInterpolator.forVertical,
+          ? StackViewStyleInterpolator.forHorizontal
+          : StackViewStyleInterpolator.forVertical,
       }),
     };
 
     // FIXED: Current fix for navigating twice
-    const RootStackNavigator = StackNavigator(routeConfig, navigatorConfig);
+    const RootStackNavigator = createStackNavigator(routeConfig, navigatorConfig);
     // if (Platform.OS === 'ios') {
     //   const navigateOnce = (getStateForAction) => (action, state) => {
     //     const { type, routeName } = action;
