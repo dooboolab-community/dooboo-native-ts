@@ -23,7 +23,7 @@
         "@BaseStyles": "./src/BaseStyles",
         "@assets": "./assets",
         "@shared": "./src/components/shared",
-        "@app": "./src/app"
+        "@dev": "./src/dev"
       }
     }]
   ]
