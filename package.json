@@ -15,12 +15,23 @@
     "start:packager": "node_modules/react-native/packager/packager.sh",
     "start:reset": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "android:shake": "adb shell input keyevent 82",
+    "android:log": "adb logcat '*:S' ReactNative:V ReactNativeJS:V",
+    "android:apk": "android && ./gradlew assembleRelease",
+    "android:release": "node node_modules/react-native/local-cli/cli.js run-android --variant=release",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "ios:release": "node node_modules/react-native/local-cli/cli.js run-ios --configuration Release",
+    "ios:devices": "xcrun simctl list devices",
+    "ios:dooboolab": "node node_modules/react-native/local-cli/cli.js run-ios --device 'dooboolab'",
+    "ios:dooboolab-release": "node node_modules/react-native/local-cli/cli.js run-ios --configuration Release --device 'dooboolab'",
+    "ios:iphone5": "node node_modules/react-native/local-cli/cli.js run-ios  --simulator='iPhone 5s'",
+    "ios:iphone7": "node node_modules/react-native/local-cli/cli.js run-ios  --simulator='iPhone 7'",
     "ios:reset": "rm -rf ios/build/ModuleCache",
     "jest": "jest",
     "lint": "eslint -c .eslintrc.js './src/**/*.js'",
-    "build:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
-    "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest android"
+    "build:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ./ios",
+    "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android"
+ 
   },
   "dependencies": {
     "mobx": "^4.2.1",
