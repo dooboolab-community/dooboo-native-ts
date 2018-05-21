@@ -5,6 +5,7 @@ import StackViewStyleInterpolator from 'react-navigation/src/views/StackView/Sta
 
 import Intro from '@screen/Intro';
 import NotFound from '@screen/NotFound';
+import NavigationService from '@navigation/NavigationService';
 import { inject, observer } from 'mobx-react/native';
 
 interface IState {
@@ -69,7 +70,13 @@ class RootNavigator extends React.Component<any, IState> {
     // }
 
     return (
-      <RootStackNavigator />
+      <RootStackNavigator
+        ref={(v) => {
+          if (v) {
+            NavigationService.setTopLevelNavigator(v);
+          }
+        }}
+      />
     );
   }
 }
