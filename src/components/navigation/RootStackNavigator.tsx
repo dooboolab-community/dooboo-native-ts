@@ -1,7 +1,8 @@
 import React from 'react';
 import { AsyncStorage, View, Platform } from 'react-native';
-import { StackNavigator, NavigationActions } from 'react-navigation';
+import { createStackNavigator, StackActions, NavigationActions } from 'react-navigation';
 import StackViewStyleInterpolator from 'react-navigation/src/views/StackView/StackViewStyleInterpolator';
+import NavigationService from '@navigation/NavigationService';
 
 import Intro from '@screen/Intro';
 import NotFound from '@screen/NotFound';
@@ -56,7 +57,7 @@ class RootNavigator extends React.Component<any, IState> {
     };
 
     // FIXED: Current fix for navigating twice
-    const RootStackNavigator = StackNavigator(routeConfig, navigatorConfig);
+    const RootStackNavigator = createStackNavigator(routeConfig, navigatorConfig);
     // if (Platform.OS === 'ios') {
     //   const navigateOnce = (getStateForAction) => (action, state) => {
     //     const { type, routeName } = action;
@@ -70,7 +71,13 @@ class RootNavigator extends React.Component<any, IState> {
     // }
 
     return (
-      <RootStackNavigator />
+      <RootStackNavigator
+        ref={(v) => {
+          if (v) {
+            NavigationService.setTopLevelNavigator(v);
+          }
+        }}
+      />
     );
   }
 }

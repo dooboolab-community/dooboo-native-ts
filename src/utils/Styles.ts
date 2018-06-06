@@ -1,11 +1,29 @@
-import { Dimensions } from 'react-native';
+import { Dimensions, Platform } from 'react-native';
+import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 const { width , height } = Dimensions.get('window');
-const calRatio = (16 * (width / height));
+let calRatio = width <= height ? 16 * (width / height) : 16 * (height / width);
+console.log(`calRatio: ${calRatio}`);
+if (width <= height) {
+  if (calRatio < 9) {
+    calRatio = width / 9;
+  } else {
+    calRatio = height / 18;
+  }
+} else {
+  if (calRatio < 9) {
+    calRatio = height / 9;
+  } else {
+    calRatio = width / 18;
+  }
+}
+console.log(`calRatio: ${calRatio}`);
 
 export const screenWidth = width;
 export const screenHeight = height;
-export const ratio = (calRatio < 9 ? width / 9 : height / 18) / (360 / 9);
+export const ratio = calRatio / (360 / 9);
+console.log(`ratio: ${ratio}`);
+export const statusBarHeight = getStatusBarHeight(true);
 
 interface Icolors {
   background: string;

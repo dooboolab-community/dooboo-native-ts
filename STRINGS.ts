@@ -9,7 +9,7 @@ const strings = new LocalizedStrings({
     SIGNUP: 'SIGN UP',
     FORGOT_PW: 'Forgot password?',
   },
-  kr: {
+  ko: {
     HELLO: '안녕하세요',
     LOGIN: '로그인',
     EMAIL: '이메일',
