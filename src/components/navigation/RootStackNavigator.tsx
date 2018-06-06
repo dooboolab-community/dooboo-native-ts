@@ -1,17 +1,18 @@
 import React from 'react';
 import { AsyncStorage, View, Platform } from 'react-native';
 import { StackNavigator, NavigationActions } from 'react-navigation';
-import CardStackStyleInterpolator from 'react-navigation/src/views/CardStack/CardStackStyleInterpolator';
+import StackViewStyleInterpolator from 'react-navigation/src/views/StackView/StackViewStyleInterpolator';
 
 import Intro from '@screen/Intro';
 import NotFound from '@screen/NotFound';
-import { inject, observer } from 'mobx-react/native';
+import appStore from '@stores/appStore';
+import { observer } from 'mobx-react/native';
 
 interface IState {
   startPage: string;
 }
 
-@inject('store') @observer
+@observer
 class RootNavigator extends React.Component<any, IState> {
   constructor(props) {
     super(props);
@@ -48,9 +49,9 @@ class RootNavigator extends React.Component<any, IState> {
       gesturesEnabled: true,
       statusBarStyle: 'light-content',
       transitionConfig: () => ({ screenInterpolator:
-        this.props.store.rootNavigatorActionHorizontal
-          ? CardStackStyleInterpolator.forHorizontal
-          : CardStackStyleInterpolator.forVertical,
+        appStore.rootNavigatorActionHorizontal
+          ? StackViewStyleInterpolator.forHorizontal
+          : StackViewStyleInterpolator.forVertical,
       }),
     };
 
