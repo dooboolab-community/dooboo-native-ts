@@ -126,10 +126,10 @@ NativeModules.ReactLocalization = {
 ```
 
 ## React version
-16.3.0-alpha.1
+16.3.1
 
 ## React Native version
-0.54
+0.55.4
 
 ## React navigation
-1.5.0
+2.2.0
