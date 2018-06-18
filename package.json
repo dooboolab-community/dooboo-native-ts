@@ -73,10 +73,10 @@
       "node_modules/(?!(.*-)?react-(.*-)?native(-.*)?)"
     ],
     "setupFiles": [
-      "./test/shimSetup.js",
       "./test/jestSetup.ts"
     ],
     "globals": {
+      "window": {},
       "ts-jest": {
         "useBabelrc": true,
         "tsConfigFile": "tsconfig.json"
@@ -109,8 +109,7 @@
       "^@STRINGS(.*)$": "<rootDir>/src/STRINGS$1",
       "^@assets(.*)$": "<rootDir>/src/assets$1",
       "^@dev(.*)$": "<rootDir>/src/dev$1",
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/assetsTransformer.js",
-      "\\.(css|less)$": "<rootDir>/test/assetsTransformer.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/assetsTransformer.js"
     },
     "snapshotSerializers": [
       "./node_modules/enzyme-to-json/serializer"
