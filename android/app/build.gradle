@@ -99,8 +99,8 @@ android {
 
     defaultConfig {
         applicationId "com.dooboo"
-        minSdkVersion 16
-        targetSdkVersion 22
+        minSdkVersion 21
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         ndk {
@@ -149,3 +149,10 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+configurations.all {
+  resolutionStrategy {
+    force 'org.webkit:android-jsc:r224109'
+  }
+}
+
