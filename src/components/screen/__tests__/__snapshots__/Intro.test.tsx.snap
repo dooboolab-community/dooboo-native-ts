@@ -1,126 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Intro component test renders as expected 1`] = `
-<Component
-  style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "rgb(65, 77, 107)",
-      "flex": 1,
-      "flexDirection": "column",
+<Page
+  store={
+    ObservableListStore {
+      "_rootNavigatorActionHorizontal": false,
+      "_user": User {
+        "_age": undefined,
+        "_displayName": undefined,
+        "_job": undefined,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "User@2.keys",
+            "observers": Set {},
+          },
+          "name": "User@2",
+          "target": [Circular],
+          "values": Map {
+            "_displayName" => undefined,
+            "_age" => undefined,
+            "_job" => undefined,
+          },
+        },
+      },
+      Symbol(mobx did run lazy initializers): true,
+      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+        "defaultEnhancer": [Function],
+        "keysAtom": Atom$$1 {
+          "diffValue": 0,
+          "isBeingObserved": false,
+          "isPendingUnobservation": false,
+          "lastAccessedBy": 0,
+          "lowestObserverState": 2,
+          "name": "ObservableListStore@1.keys",
+          "observers": Set {},
+        },
+        "name": "ObservableListStore@1",
+        "target": [Circular],
+        "values": Map {
+          "_rootNavigatorActionHorizontal" => false,
+          "_user" => User {
+            "_age": undefined,
+            "_displayName": undefined,
+            "_job": undefined,
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "User@2.keys",
+                "observers": Set {},
+              },
+              "name": "User@2",
+              "target": [Circular],
+              "values": Map {
+                "_displayName" => undefined,
+                "_age" => undefined,
+                "_job" => undefined,
+              },
+            },
+          },
+        },
+      },
     }
   }
->
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 58.33333333333333,
-        "marginTop": 291.66666666666663,
-      }
-    }
-  >
-    DOOBOO NATIVE
-  </Text>
-  <Component
-    style={
-      Object {
-        "alignItems": "center",
-        "marginTop": 83.33333333333331,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#eee",
-          "fontSize": 33.33333333333333,
-          "lineHeight": 48,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#eee",
-          "fontSize": 33.33333333333333,
-          "lineHeight": 48,
-        }
-      }
-    />
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#eee",
-          "fontSize": 33.33333333333333,
-          "lineHeight": 48,
-        }
-      }
-    />
-  </Component>
-  <Component
-    style={
-      Object {
-        "bottom": 33.33333333333333,
-        "position": "absolute",
-      }
-    }
-  >
-    <Button
-      activeOpacity={0.5}
-      imgLeftSrc={
-        Object {
-          "process": [Function],
-        }
-      }
-      imgLeftStyle={
-        Object {
-          "height": 49.99999999999999,
-          "left": 33.33333333333333,
-          "position": "absolute",
-          "width": 49.99999999999999,
-        }
-      }
-      indicatorColor="white"
-      isDisabled={false}
-      isLoading={false}
-      onPress={[Function]}
-      style={
-        Object {
-          "alignItems": "center",
-          "alignSelf": "center",
-          "backgroundColor": "transparent",
-          "borderColor": "white",
-          "borderRadius": 8.333333333333332,
-          "borderWidth": 4.166666666666666,
-          "height": 108.33333333333331,
-          "justifyContent": "center",
-          "width": 666.6666666666665,
-        }
-      }
-      textStyle={
-        Object {
-          "color": "white",
-          "fontSize": 29.166666666666664,
-        }
-      }
-    >
-      Login
-    </Button>
-  </Component>
-</Component>
+/>
 `;
 
 exports[`Intro renders without crashing 1`] = `

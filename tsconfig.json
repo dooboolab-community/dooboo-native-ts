@@ -24,19 +24,7 @@
     "noImplicitAny": false,
     "strictNullChecks": false,
     "strict": true,
-    "target": "es2017",
-    "paths": {
-      "@apis/*": ["./src/apis/*"],
-      "@screen/*": ["./src/components/screen/*"],
-      "@navigation/*": ["./src/components/navigation/*"],
-      "@models/*": ["./src/models/*"],
-      "@stores/*": ["./src/stores/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@STRINGS": ["./STRINGS"],
-      "@assets/*": ["./assets/*"],
-      "@shared/*": ["./src/components/shared/*"],
-      "@app": ["./src/app"]
-    }
+    "target": "es2017"
   },
   "include": [
     "src/**/*.ts",

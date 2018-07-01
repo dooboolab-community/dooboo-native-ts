@@ -13,12 +13,11 @@ import {
   InteractionManager,
 } from 'react-native';
 import { inject } from 'mobx-react/native';
-import NativeButton from 'apsl-react-native-button';
 
-import { ratio } from '@utils/Styles';
+import { ratio } from '../../utils/Styles';
 import {
   IC_MASK,
-} from '@utils/Icons';
+} from '../../utils/Icons';
 
 const styles: any = StyleSheet.create({
   container: {

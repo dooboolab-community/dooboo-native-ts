@@ -6,7 +6,8 @@ import App from './src/';
  */
 YellowBox.ignoreWarnings([
   'Warning: componentWillMount is deprecated',
-  'Warning: componentWillReceiveProps is deprecated',
+  'Warning: componentWillReceiveProps is deprecated',,
+  'Module RCTImageLoader',
 ]);
 
 AppRegistry.registerComponent('dooboo', () => App);

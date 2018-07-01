@@ -2,18 +2,17 @@ import React from 'react';
 import { AsyncStorage, View, Platform } from 'react-native';
 import { createStackNavigator, StackActions, NavigationActions } from 'react-navigation';
 import StackViewStyleInterpolator from 'react-navigation/src/views/StackView/StackViewStyleInterpolator';
-import NavigationService from '@navigation/NavigationService';
+import NavigationService from './NavigationService';
 
-import Intro from '@screen/Intro';
-import NotFound from '@screen/NotFound';
-import appStore from '@stores/appStore';
-import { observer } from 'mobx-react/native';
+import Intro from '../screen/Intro';
+import NotFound from '../screen/NotFound';
+import { observer, inject } from 'mobx-react/native';
 
 interface IState {
   startPage: string;
 }
 
-@observer
+@inject('store') @observer
 class RootNavigator extends React.Component<any, IState> {
   constructor(props) {
     super(props);
@@ -50,7 +49,7 @@ class RootNavigator extends React.Component<any, IState> {
       gesturesEnabled: true,
       statusBarStyle: 'light-content',
       transitionConfig: () => ({ screenInterpolator:
-        appStore.rootNavigatorActionHorizontal
+        this.props.store.rootNavigatorActionHorizontal
           ? StackViewStyleInterpolator.forHorizontal
           : StackViewStyleInterpolator.forVertical,
       }),
