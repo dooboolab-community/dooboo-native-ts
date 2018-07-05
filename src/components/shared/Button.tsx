@@ -7,7 +7,6 @@ import {
   Text,
   View,
 } from 'react-native';
-// import NativeButton from 'apsl-react-native-button';
 
 import { ratio, colors } from '../../utils/Styles';
 
