@@ -28,7 +28,7 @@
     "ios:iphone7": "node node_modules/react-native/local-cli/cli.js run-ios  --simulator='iPhone 7'",
     "ios:reset": "rm -rf ios/build/ModuleCache",
     "jest": "jest -u --no-cache",
-    "lint": "eslint -c .eslintrc.js './src/**/*.js'",
+    "lint": "tslint -c tslint.json './src/**/*.tsx'",
     "build:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ./ios",
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android"
   },
