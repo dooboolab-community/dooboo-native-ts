@@ -80,7 +80,7 @@
       }
     },
     "transform": {
-      "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",

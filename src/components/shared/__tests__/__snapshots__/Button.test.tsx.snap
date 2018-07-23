@@ -4,7 +4,7 @@ exports[`Button component test renders as expected 1`] = `
 <TouchableOpacity
   activeOpacity={0.5}
 >
-  <Component
+  <View
     style={
       Object {
         "alignItems": "center",
@@ -20,9 +20,6 @@ exports[`Button component test renders as expected 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "white",
@@ -30,7 +27,7 @@ exports[`Button component test renders as expected 1`] = `
         }
       }
     />
-  </Component>
+  </View>
 </TouchableOpacity>
 `;
 
@@ -38,7 +35,7 @@ exports[`Button component test renders as expected 2`] = `
 <TouchableOpacity
   activeOpacity={0.5}
 >
-  <Component
+  <View
     style={
       Object {
         "alignItems": "center",
@@ -54,9 +51,6 @@ exports[`Button component test renders as expected 2`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "white",
@@ -64,7 +58,7 @@ exports[`Button component test renders as expected 2`] = `
         }
       }
     />
-  </Component>
+  </View>
 </TouchableOpacity>
 `;
 
@@ -73,7 +67,7 @@ exports[`Button component test simulate onPress 1`] = `
   activeOpacity={0.5}
   onPress={[Function]}
 >
-  <Component
+  <View
     style={
       Object {
         "alignItems": "center",
@@ -89,9 +83,6 @@ exports[`Button component test simulate onPress 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "white",
@@ -99,14 +90,22 @@ exports[`Button component test simulate onPress 1`] = `
         }
       }
     />
-  </Component>
+  </View>
 </TouchableOpacity>
 `;
 
 exports[`Button renders without crashing 1`] = `
 <View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
   accessible={true}
+  collapsable={undefined}
+  hasTVPreferredFocus={undefined}
+  hitSlop={undefined}
   isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -118,6 +117,8 @@ exports[`Button renders without crashing 1`] = `
       "opacity": 1,
     }
   }
+  testID={undefined}
+  tvParallaxProperties={undefined}
 >
   <View
     style={
