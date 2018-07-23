@@ -9,6 +9,69 @@ exports[`Intro component test renders as expected 1`] = `
         "_age": undefined,
         "_displayName": undefined,
         "_job": undefined,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "User@2.keys",
+            "observers": Set {},
+          },
+          "name": "User@2",
+          "target": [Circular],
+          "values": Map {
+            "_displayName" => undefined,
+            "_age" => undefined,
+            "_job" => undefined,
+          },
+        },
+      },
+      Symbol(mobx did run lazy initializers): true,
+      Symbol(mobx administration): ObservableObjectAdministration$$1 {
+        "defaultEnhancer": [Function],
+        "keysAtom": Atom$$1 {
+          "diffValue": 0,
+          "isBeingObserved": false,
+          "isPendingUnobservation": false,
+          "lastAccessedBy": 0,
+          "lowestObserverState": 2,
+          "name": "ObservableListStore@1.keys",
+          "observers": Set {},
+        },
+        "name": "ObservableListStore@1",
+        "target": [Circular],
+        "values": Map {
+          "_rootNavigatorActionHorizontal" => false,
+          "_user" => User {
+            "_age": undefined,
+            "_displayName": undefined,
+            "_job": undefined,
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "User@2.keys",
+                "observers": Set {},
+              },
+              "name": "User@2",
+              "target": [Circular],
+              "values": Map {
+                "_displayName" => undefined,
+                "_age" => undefined,
+                "_job" => undefined,
+              },
+            },
+          },
+        },
       },
     }
   }
@@ -27,9 +90,6 @@ exports[`Intro renders without crashing 1`] = `
   }
 >
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "white",
@@ -49,9 +109,6 @@ exports[`Intro renders without crashing 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#eee",
@@ -61,9 +118,6 @@ exports[`Intro renders without crashing 1`] = `
       }
     />
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#eee",
@@ -73,9 +127,6 @@ exports[`Intro renders without crashing 1`] = `
       }
     />
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#eee",
@@ -94,16 +145,8 @@ exports[`Intro renders without crashing 1`] = `
     }
   >
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -115,8 +158,6 @@ exports[`Intro renders without crashing 1`] = `
           "opacity": 1,
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <View
         style={
@@ -149,9 +190,6 @@ exports[`Intro renders without crashing 1`] = `
           }
         />
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Object {
               "color": "white",

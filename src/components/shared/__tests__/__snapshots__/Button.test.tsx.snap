@@ -4,7 +4,7 @@ exports[`Button component test renders as expected 1`] = `
 <TouchableOpacity
   activeOpacity={0.5}
 >
-  <View
+  <Component
     style={
       Object {
         "alignItems": "center",
@@ -19,7 +19,7 @@ exports[`Button component test renders as expected 1`] = `
       }
     }
   >
-    <Text
+    <Component
       style={
         Object {
           "color": "white",
@@ -27,7 +27,7 @@ exports[`Button component test renders as expected 1`] = `
         }
       }
     />
-  </View>
+  </Component>
 </TouchableOpacity>
 `;
 
@@ -35,7 +35,7 @@ exports[`Button component test renders as expected 2`] = `
 <TouchableOpacity
   activeOpacity={0.5}
 >
-  <View
+  <Component
     style={
       Object {
         "alignItems": "center",
@@ -50,7 +50,7 @@ exports[`Button component test renders as expected 2`] = `
       }
     }
   >
-    <Text
+    <Component
       style={
         Object {
           "color": "white",
@@ -58,7 +58,7 @@ exports[`Button component test renders as expected 2`] = `
         }
       }
     />
-  </View>
+  </Component>
 </TouchableOpacity>
 `;
 
@@ -67,7 +67,7 @@ exports[`Button component test simulate onPress 1`] = `
   activeOpacity={0.5}
   onPress={[Function]}
 >
-  <View
+  <Component
     style={
       Object {
         "alignItems": "center",
@@ -82,7 +82,7 @@ exports[`Button component test simulate onPress 1`] = `
       }
     }
   >
-    <Text
+    <Component
       style={
         Object {
           "color": "white",
@@ -90,22 +90,14 @@ exports[`Button component test simulate onPress 1`] = `
         }
       }
     />
-  </View>
+  </Component>
 </TouchableOpacity>
 `;
 
 exports[`Button renders without crashing 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  collapsable={undefined}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -117,8 +109,6 @@ exports[`Button renders without crashing 1`] = `
       "opacity": 1,
     }
   }
-  testID={undefined}
-  tvParallaxProperties={undefined}
 >
   <View
     style={
@@ -136,9 +126,6 @@ exports[`Button renders without crashing 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "white",
