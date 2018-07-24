@@ -5,7 +5,7 @@ import { Provider } from 'mobx-react';
 import { Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
 
 import appStore from './stores/appStore';
-import RootStackNavigator from './components/navigation/RootStackNavigator';
+import SwitchNavigator from './components/navigation/SwitchNavigator';
 import { ratio } from './utils/Styles';
 
 class App extends React.Component {
@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <Provider store={ appStore }>
         <View style={styles.container}>
-          <RootStackNavigator />
+          <SwitchNavigator />
         </View>
       </Provider>
     );
