@@ -19,12 +19,13 @@ import {
   IC_MASK,
 } from '../../utils/Icons';
 
-const styles: any = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'transparent',
-    flexDirection: 'column',
+    flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 

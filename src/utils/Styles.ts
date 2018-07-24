@@ -1,7 +1,7 @@
 import { Dimensions, Platform } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 
-const { width , height } = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 let calRatio = width <= height ? 16 * (width / height) : 16 * (height / width);
 console.log(`calRatio: ${calRatio}`);
 if (width <= height) {
@@ -34,7 +34,7 @@ interface Icolors {
 }
 
 export const colors: Icolors = {
-  background: 'rgb(65, 77, 107)',
+  background: '#e3e3e3',
   dodgerBlue: 'rgb(58,139,255)',
   dusk: 'rgb(65,77,107)',
   blueyGray: 'rgb(134,154,183)',
