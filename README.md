@@ -64,27 +64,6 @@ This runs the `start` script specified in our `package.json`, and will spawn off
 Typically the server runs at `http://localhost:8080`, but should be automatically opened for you.
 
 ## Troubleshoot
-* If android build failed, apply below in `build.gradle` for `react-native-localization` module.
-  ```gradl
-  apply plugin: 'com.android.library'
-
-  android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
-
-    defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-        ndk {
-            abiFilters "armeabi-v7a", "x86"
-        }
-    }
-  }
-
-  dependencies { compile 'com.facebook.react:react-native:+' }
-  ```
 * Facing `Can't find variable Symbol` error in `window` or `ubuntu`.
   ```
   npm install --save mobx@3.6.2
