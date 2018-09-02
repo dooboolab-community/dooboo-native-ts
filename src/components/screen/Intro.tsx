@@ -80,7 +80,7 @@ const styles: any = StyleSheet.create({
 });
 
 interface IProps {
-  navigation: any;
+  navigation?: any;
   store: any;
 }
 
