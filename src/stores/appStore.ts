@@ -2,20 +2,10 @@ import User from '../models/User';
 import { observable } from 'mobx';
 
 class ObservableListStore {
-  @observable private _rootNavigatorActionHorizontal: boolean = true;
   @observable private _user: User;
 
   constructor() {
-    this._rootNavigatorActionHorizontal = false;
     this._user = new User();
-  }
-
-  public get rootNavigatorActionHorizontal(): boolean {
-    return this._rootNavigatorActionHorizontal;
-  }
-
-  public set rootNavigatorActionHorizontal(value: boolean) {
-    this._rootNavigatorActionHorizontal = value;
   }
 
   public get user(): User {
