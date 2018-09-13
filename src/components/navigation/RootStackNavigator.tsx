@@ -35,7 +35,7 @@ const navigatorConfig = {
       borderBottomWidth: 0,
       elevation: 0,
     },
-    headerTitleStyle: {color: 'white'},
+    headerTitleStyle: { color: 'white' },
     headerTintColor: 'white',
   },
 };
