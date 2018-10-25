@@ -1,6 +1,8 @@
 module.exports = {
-  transformer: {
-    babelTransformerPath: require.resolve('react-native-typescript-transformer')
+  getTransformModulePath() {
+    return require.resolve('react-native-typescript-transformer');
   },
-  sourceExts: ['ts', 'tsx'],
-}
+  getSourceExts() {
+    return ['ts', 'tsx'];
+  },
+};

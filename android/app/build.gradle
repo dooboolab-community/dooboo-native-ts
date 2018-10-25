@@ -153,7 +153,7 @@ task copyDownloadableDepsToLibs(type: Copy) {
 // mobx fix
 configurations.all {
   resolutionStrategy {
-    force 'org.webkit:android-jsc:r224109'
+    force 'org.webkit:android-jsc:r225067'
   }
 }
 
