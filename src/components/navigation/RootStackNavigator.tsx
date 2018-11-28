@@ -1,5 +1,5 @@
 import React from 'react';
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 import { observer } from 'mobx-react/native';
 
 import { colors } from '../../utils/Styles';
@@ -51,11 +51,7 @@ class RootNavigator extends React.Component<IProps> {
   private static router = RootStackNavigator.router;
 
   public render() {
-    return (
-      <RootStackNavigator
-        navigation={this.props.navigation}
-      />
-    );
+    return <RootStackNavigator navigation={this.props.navigation}/>;
   }
 }
 

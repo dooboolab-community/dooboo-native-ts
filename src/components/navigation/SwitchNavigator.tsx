@@ -1,6 +1,6 @@
-import { createSwitchNavigator } from 'react-navigation';
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import RootNavigator from './RootStackNavigator';
-export default createSwitchNavigator(
+const SwitchNavigator = createSwitchNavigator(
   {
     RootNavigator,
   },
@@ -9,3 +9,6 @@ export default createSwitchNavigator(
     headerMode: 'none',
   },
 );
+
+const AppContainer = createAppContainer(SwitchNavigator);
+export default AppContainer;
