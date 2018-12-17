@@ -7,12 +7,6 @@ import renderer from 'react-test-renderer';
 import { shallow, render } from 'enzyme';
 
 describe('Button', () => {
-  it('renders without crashing', () => {
-    const rendered = renderer.create(<Button />).toJSON();
-    expect(rendered).toMatchSnapshot();
-    expect(rendered).toBeTruthy();
-  });
-
   describe('component test', () => {
     const wrapper = shallow(
       <Button />,

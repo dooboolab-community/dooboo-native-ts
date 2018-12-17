@@ -4,7 +4,6 @@ exports[`Intro component test renders as expected 1`] = `
 <Page
   store={
     ObservableListStore {
-      "_rootNavigatorActionHorizontal": false,
       "_user": User {
         "_age": undefined,
         "_displayName": undefined,
@@ -45,7 +44,6 @@ exports[`Intro component test renders as expected 1`] = `
         "name": "ObservableListStore@1",
         "target": [Circular],
         "values": Map {
-          "_rootNavigatorActionHorizontal" => false,
           "_user" => User {
             "_age": undefined,
             "_displayName": undefined,
@@ -76,131 +74,4 @@ exports[`Intro component test renders as expected 1`] = `
     }
   }
 />
-`;
-
-exports[`Intro renders without crashing 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "rgb(65, 77, 107)",
-      "flex": 1,
-      "flexDirection": "column",
-    }
-  }
->
-  <Text
-    style={
-      Object {
-        "color": "white",
-        "fontSize": 58.33333333333333,
-        "marginTop": 291.66666666666663,
-      }
-    }
-  >
-    DOOBOO NATIVE
-  </Text>
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "marginTop": 83.33333333333331,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#eee",
-          "fontSize": 33.33333333333333,
-          "lineHeight": 48,
-        }
-      }
-    />
-    <Text
-      style={
-        Object {
-          "color": "#eee",
-          "fontSize": 33.33333333333333,
-          "lineHeight": 48,
-        }
-      }
-    />
-    <Text
-      style={
-        Object {
-          "color": "#eee",
-          "fontSize": 33.33333333333333,
-          "lineHeight": 48,
-        }
-      }
-    />
-  </View>
-  <View
-    style={
-      Object {
-        "bottom": 33.33333333333333,
-        "position": "absolute",
-      }
-    }
-  >
-    <View
-      accessible={true}
-      isTVSelectable={true}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "white",
-            "borderRadius": 8.333333333333332,
-            "borderWidth": 4.166666666666666,
-            "height": 108.33333333333331,
-            "justifyContent": "center",
-            "width": 666.6666666666665,
-          }
-        }
-      >
-        <Image
-          source={
-            Object {
-              "process": [Function],
-            }
-          }
-          style={
-            Object {
-              "height": 49.99999999999999,
-              "left": 33.33333333333333,
-              "position": "absolute",
-              "width": 49.99999999999999,
-            }
-          }
-        />
-        <Text
-          style={
-            Object {
-              "color": "white",
-              "fontSize": 29.166666666666664,
-            }
-          }
-        >
-          Login
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
 `;
