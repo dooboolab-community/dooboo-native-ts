@@ -87,7 +87,7 @@
       "window": {},
       "ts-jest": {
         "babelConfig": false,
-        "tsConfigFile": "tsconfig.json"
+        "tsConfig": "tsconfig.json"
       }
     },
     "transform": {
