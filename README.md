@@ -48,7 +48,6 @@ app/
 ├─ index.js
 ├─ package.json
 ├─ README.md
-├─ rn-cli.config.js
 ├─ STRINGS.js
 ├─ tsconfig.json
 └─ tslint.json
