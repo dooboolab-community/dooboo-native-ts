@@ -3,32 +3,36 @@ import * as React from 'react';
 import Button from '../Button';
 
 // Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-import { shallow, render } from 'enzyme';
+import renderer, { ReactTestRenderer } from 'react-test-renderer';
 
 describe('Button', () => {
-  describe('component test', () => {
-    const wrapper = shallow(
-      <Button />,
-    );
+  let rendered: ReactTestRenderer;
 
-    it('renders as expected', () => {
-      expect(wrapper).toMatchSnapshot();
-      wrapper.setProps({ filled: false });
-      expect(wrapper).toMatchSnapshot();
+  it('renders without crashing', () => {
+    rendered = renderer.create(<Button />);
+    expect(rendered.toJSON()).toMatchSnapshot();
+    expect(rendered.toJSON()).toBeTruthy();
+  });
+
+  describe('component test', () => {
+    let cnt = 1;
+    let root: ReactTestRenderer['root'];
+    it('simulate onPress', () => {
+      rendered = renderer.create(<Button onPress={() => {
+        cnt++;
+      }}/>);
+      root = rendered.root;
+
+      root.props.onPress();
+      expect(cnt).toBe(2);
     });
 
-    it('simulate onPress', () => {
-      let cnt = 1;
-      const onPress = () => {
-        cnt++;
-      };
+    it('renders disabled', () => {
+      rendered = renderer.create(<Button isDisabled={true} />);
+      root = rendered.root;
 
-      wrapper.setProps({ onPress: () => onPress()});
-      expect(wrapper).toMatchSnapshot();
-
-      wrapper.first().props().onPress();
-      expect(cnt).toBe(2);
+      const texts = root.findAll((el) => el.type === 'Text');
+      expect(texts).toHaveLength(1);
     });
   });
 });

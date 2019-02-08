@@ -1,29 +1,55 @@
 import 'react-native';
 import * as React from 'react';
 import Intro from '../Intro';
+import Button from '../../shared/Button';
 import appStore from '../../../stores/appStore';
 
 // Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-import { shallow, render } from 'enzyme';
+import renderer, { ReactTestRenderer } from 'react-test-renderer';
 
-describe('Intro', () => {
-  // it('renders without crashing', () => {
-  //   const rendered = renderer.create(
-  //   <Intro
-  //     store={appStore}
-  //   />).toJSON();
-  //   expect(rendered).toMatchSnapshot();
-  //   expect(rendered).toBeTruthy();
-  // });
+const props = {
+  store: appStore,
+  navigation: {
+    navigate: jest.fn(),
+  },
+};
 
-  describe('component test', () => {
-    const wrapper = shallow(
-      <Intro store={appStore}/>,
-    );
+// test for the container page in dom
+describe('Intro page DOM rendering test', () => {
+  let tree;
+  const component = <Intro { ...props } />;
 
-    it('renders as expected', () => {
-      expect(wrapper).toMatchSnapshot();
-    });
+  it('component and snapshot matches', () => {
+    tree = renderer.create(component).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});
+
+describe('Interaction', () => {
+  let rendered: ReactTestRenderer;
+  // let root: ReactTestRenderer['root'];
+  let root: any;
+  const component = <Intro { ...props } />;
+
+  beforeAll(() => {
+    rendered = renderer.create(component);
+    root = rendered.root;
+  });
+
+  it('Simulate onClick', () => {
+    jest.useFakeTimers();
+    // const spy = jest.spyOn(instance.getInstance(), 'onLogin');
+    const buttons = root.findAllByType(Button);
+    buttons[0].props.onPress();
+    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(root.instance.state.isLoggingIn).toEqual(true);
+    jest.runAllTimers();
+    expect(root.instance.state.isLoggingIn).toEqual(false);
+    expect(props.store.user.displayName).toEqual('dooboolab');
+    expect(props.store.user.age).toEqual(30);
+    expect(props.store.user.job).toEqual('developer');
+    // expect(spy).toBeCalled();
+    buttons[1].props.onPress();
+    expect(props.navigation.navigate).toBeCalledWith('Temp');
   });
 });

@@ -1,11 +1,19 @@
+### ANNOUNCEMENT
+DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITORY IS USED IN `DOOBOO-CLI`.
+
+# React Native JS Boilerplate
+[![codecov](https://codecov.io/gh/dooboolab/dooboo-native-js/branch/master/graph/badge.svg)](https://codecov.io/gh/dooboolab/dooboo-native-ts)
+[![CircleCI](https://circleci.com/gh/dooboolab/dooboo-native-ts.svg?style=svg)](https://circleci.com/gh/dooboolab/dooboo-native-ts)
+
 # React Native Typescript Starter
 > Specification
 * typescript
 * react-navigation
-* test jest with typescript
+* ts-jest
 * localization
 * mobx
-* data models
+* model classes
+* test smaples
 
 # Gain points
 ```
@@ -38,14 +46,15 @@ app/
 │  └─ utils
 │  └─ index.tsx
 ├─ test/
-├─ .babelrc
 ├─ .buckconfig
 ├─ .flowconfig
 ├─ .gitattributes
 ├─ .gitignore
 ├─ .watchmanconfig
 ├─ app.json
+├─ babel.config.js
 ├─ index.js
+├─ jest.config.js
 ├─ package.json
 ├─ README.md
 ├─ STRINGS.js

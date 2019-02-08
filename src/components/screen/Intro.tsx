@@ -11,18 +11,33 @@ import {
   View,
   FlatList,
   InteractionManager,
+  ViewStyle,
+  TextStyle,
+  ImageStyle,
 } from 'react-native';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
 import { inject } from 'mobx-react/native';
 
-import { ratio, colors } from '../../utils/Styles';
+import { colors } from '../../utils/Styles';
 import { IC_MASK } from '../../utils/Icons';
 import User from '../../models/User';
 import { getString } from '../../../STRINGS';
 import Button from '../shared/Button';
 
-const styles: any = StyleSheet.create({
+interface IStyles {
+  container: ViewStyle;
+  titleTxt: TextStyle;
+  txtLogin: TextStyle;
+  imgBtn: ImageStyle;
+  viewUser: ViewStyle;
+  txtUser: TextStyle;
+  btnBottomWrapper: ViewStyle;
+  btnLogin: ViewStyle;
+  btnNavigate: ViewStyle;
+}
+
+const styles = StyleSheet.create<IStyles>({
   container: {
     flex: 1,
     backgroundColor: colors.background,
