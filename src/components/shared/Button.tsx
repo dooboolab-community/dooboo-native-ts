@@ -6,18 +6,28 @@ import {
   Image,
   Text,
   View,
+  ViewStyle,
+  TextStyle,
+  ImageStyle,
 } from 'react-native';
 
 import { ratio, colors } from '../../utils/Styles';
 
-const styles: any = StyleSheet.create({
+interface IStyle {
+  btn: ViewStyle;
+  btnDisabled: ViewStyle;
+  txt: TextStyle;
+  imgLeft: ImageStyle;
+}
+
+const styles = StyleSheet.create<IStyle>({
   btn: {
     backgroundColor: 'transparent',
     alignSelf: 'center',
-    borderRadius: 4 * ratio,
-    borderWidth: 2 * ratio,
-    width: 320 * ratio,
-    height: 52 * ratio,
+    borderRadius: 4,
+    borderWidth: 2,
+    width: 320,
+    height: 52,
     borderColor: 'white',
 
     alignItems: 'center',
@@ -26,24 +36,24 @@ const styles: any = StyleSheet.create({
   btnDisabled: {
     backgroundColor: 'rgb(243,243,243)',
     alignSelf: 'center',
-    borderRadius: 4 * ratio,
-    borderWidth: 2 * ratio,
-    width: 320 * ratio,
-    height: 52 * ratio,
+    borderRadius: 4,
+    borderWidth: 2,
+    width: 320,
+    height: 52,
     borderColor: '#333',
 
     alignItems: 'center',
     justifyContent: 'center',
   },
   txt: {
-    fontSize: 14 * ratio,
+    fontSize: 14,
     color: 'white',
   },
   imgLeft: {
-    width: 24 * ratio,
-    height: 24 * ratio,
+    width: 24,
+    height: 24,
     position: 'absolute',
-    left: 16 * ratio,
+    left: 16,
   },
 });
 
