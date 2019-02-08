@@ -6,7 +6,7 @@ import Button from '../Button';
 import renderer, { ReactTestRenderer } from 'react-test-renderer';
 
 describe('Button', () => {
-  let rendered: ReactTestRenderer;
+  let rendered: any;
 
   it('renders without crashing', () => {
     rendered = renderer.create(<Button />);

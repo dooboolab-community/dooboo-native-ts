@@ -4,7 +4,7 @@ import Temp from '../Temp';
 import appStore from '../../../stores/appStore';
 
 // Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+import * as renderer from 'react-test-renderer';
 
 describe('Temp', () => {
   it('renders without crashing', () => {

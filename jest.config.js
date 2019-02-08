@@ -10,12 +10,12 @@ module.exports = {
     "window": {},
     "ts-jest": {
       "babelConfig": false,
-      "tsConfig": "tsconfig.json"
+      "tsConfig": "tsconfig.jest.json"
     }
   },
   "transform": {
-    "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
-    "^.+\\.tsx?$": "ts-jest"
+    "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+    "\\.(ts|tsx)$": "ts-jest"
   },
   "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   "testPathIgnorePatterns": [

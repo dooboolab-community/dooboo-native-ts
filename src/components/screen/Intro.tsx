@@ -139,7 +139,7 @@ class Page extends Component<IProps, IState> {
             imgLeftStyle={styles.imgBtn}
           >{getString('LOGIN')}</Button>
           <Button
-            onPress={() => this.props.navigation.navigate('NotFound') }
+            onPress={() => this.props.navigation.navigate('Temp') }
             style={[
               styles.btnNavigate,
               {
