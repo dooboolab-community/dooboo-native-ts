@@ -45,10 +45,10 @@ jobs:
             npm run lint
 
       - run:
-          name: Flow Test
+          name: Typescript Test
           working_directory: .
           command: |
-            npm run flow
+            npm run tsc
 
       - run:
           name: Jest Test
