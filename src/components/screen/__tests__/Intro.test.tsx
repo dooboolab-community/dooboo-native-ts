@@ -30,24 +30,24 @@ describe('Interaction', () => {
   let root: ReactTestRenderer['root'] | any;
   const component = <Intro { ...props }/>;
 
-  beforeAll(() => {
+  beforeEach(() => {
     rendered = renderer.create(component);
     root = rendered.root;
   });
 
-  it('Simulate onClick', () => {
-    root.instance.state = {
-      isLoggingIn: false,
-    };
+  it('simulate click', () => {
+    // root.instance.state = {
+    //   isLoggingIn: false,
+    // };
 
     jest.useFakeTimers();
     // const spy = jest.spyOn(instance.getInstance(), 'onLogin');
     const buttons = root.findAllByType(Button);
     buttons[0].props.onPress();
     expect(setTimeout).toHaveBeenCalledTimes(1);
-    // expect(root.instance.state.isLoggingIn).toEqual(true);
+    // expect(rendered.getInstance().state.isLoggingIn).toEqual(true);
     jest.runAllTimers();
-    // expect(root.instance.state.isLoggingIn).toEqual(false);
+    // expect(rendered.getInstance().state.isLoggingIn).toEqual(false);
     expect(props.store.user.displayName).toEqual('dooboolab');
     expect(props.store.user.age).toEqual(30);
     expect(props.store.user.job).toEqual('developer');
@@ -55,4 +55,9 @@ describe('Interaction', () => {
     buttons[1].props.onPress();
     expect(props.navigation.navigate).toBeCalledWith('Temp');
   });
+
+  // it('clearTimeout on componentWillUnmount', async  () => {
+  //   await rendered.getInstance().componentWillUnmount();
+  //   expect(clearTimeout).toBeCalled();
+  // });
 });
