@@ -11,6 +11,7 @@ import {
   View,
   FlatList,
   InteractionManager,
+  ViewStyle,
 } from 'react-native';
 import { inject } from 'mobx-react/native';
 
@@ -19,7 +20,11 @@ import {
   IC_MASK,
 } from '../../utils/Icons';
 
-const styles = StyleSheet.create({
+interface IStyle {
+  container: ViewStyle;
+}
+
+const styles = StyleSheet.create<IStyle>({
   container: {
     flex: 1,
     backgroundColor: 'transparent',

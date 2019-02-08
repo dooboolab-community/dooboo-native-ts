@@ -5,7 +5,7 @@ import { observer } from 'mobx-react/native';
 import { colors } from '../../utils/Styles';
 import appStore from '../../stores/appStore';
 import IntroScreen from '../screen/Intro';
-import NotFoundScreen from '../screen/NotFound';
+import TempScreen from '../screen/Temp';
 
 const routeConfig = {
   Intro: {
@@ -15,9 +15,9 @@ const routeConfig = {
     },
     path: 'intro',
   },
-  NotFound: {
-    screen: NotFoundScreen,
-    path: 'NotFound',
+  Temp: {
+    screen: TempScreen,
+    path: 'Temp',
   },
 };
 

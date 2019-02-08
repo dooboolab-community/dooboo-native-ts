@@ -11,7 +11,7 @@
     "start": "npm run dev",
     "upgrade": "react-native-git-upgrade && npm install --save react-native",
     "upgrade:major": "react-native upgrade",
-    "test": "jest -u",
+    "test": "jest",
     "start:packager": "node_modules/react-native/packager/packager.sh",
     "start:reset": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
@@ -27,7 +27,6 @@
     "ios:iphone5": "node node_modules/react-native/local-cli/cli.js run-ios  --simulator='iPhone 5s'",
     "ios:iphone7": "node node_modules/react-native/local-cli/cli.js run-ios  --simulator='iPhone 7'",
     "ios:reset": "rm -rf ios/build/ModuleCache",
-    "jest": "jest -u --no-cache",
     "lint": "tslint -c tslint.json './src/**/*.tsx' && tslint -c tslint.json './src/**/*.ts'",
     "build:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ./ios",
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android"
@@ -37,11 +36,11 @@
     "mobx-react": "^5.4.3",
     "moment": "^2.24.0",
     "react": "16.6.3",
-    "react-native": "0.58.3",
+    "react-native": "0.58.4",
     "react-native-gesture-handler": "^1.0.15",
     "react-native-localization": "^2.0.3",
     "react-native-status-bar-height": "^2.2.0",
-    "react-navigation": "^3.1.4"
+    "react-navigation": "^3.1.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -51,17 +50,13 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
     "@babel/plugin-transform-runtime": "7.2.0",
     "@babel/preset-typescript": "^7.1.0",
-    "@types/enzyme": "^3.1.16",
     "@types/jest": "^24.0.0",
     "@types/react": "^16.8.1",
-    "@types/react-native": "^0.57.32",
-    "@types/react-test-renderer": "^16.0.3",
-    "babel-jest": "24.1.0",
+    "@types/react-native": "^0.57.34",
+    "@types/react-test-renderer": "^16.8.0",
+    "babel-jest": "24.0.0",
     "babel-preset-react-native": "^5.0.2",
-    "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.9.1",
-    "enzyme-to-json": "^3.3.5",
-    "jest": "^24.1.0",
+    "jest": "^24.0.0",
     "jsc-android": "^236355.1.1",
     "metro-react-native-babel-preset": "^0.51.1",
     "react-dom": "^16.6.3",
@@ -70,49 +65,6 @@
     "tslib": "^1.9.3",
     "tslint": "^5.12.1",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.3.1"
-  },
-  "jest": {
-    "preset": "react-native",
-    "transformIgnorePatterns": [
-      "node_modules/(?!(.*-)?react-(.*-)?native(-.*)?)"
-    ],
-    "setupFiles": [
-      "./test/jestSetup.ts"
-    ],
-    "globals": {
-      "window": {},
-      "ts-jest": {
-        "babelConfig": false,
-        "tsConfig": "tsconfig.json"
-      }
-    },
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "testPathIgnorePatterns": [
-      "\\.snap$",
-      "<rootDir>/node_modules/"
-    ],
-    "cacheDirectory": ".jest/cache",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "ios.ts",
-      "ios.tsx",
-      "android.ts",
-      "android.tsx"
-    ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/assetsTransformer.js"
-    },
-    "snapshotSerializers": [
-      "./node_modules/enzyme-to-json/serializer"
-    ]
+    "typescript": "^3.3.3"
   }
 }

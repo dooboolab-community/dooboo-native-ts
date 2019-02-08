@@ -1,8 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component test renders as expected 1`] = `
-<TouchableOpacity
-  activeOpacity={0.5}
+exports[`Button renders without crashing 1`] = `
+<View
+  accessible={true}
+  isTVSelectable={true}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
 >
   <View
     style={
@@ -28,68 +40,5 @@ exports[`Button component test renders as expected 1`] = `
       }
     />
   </View>
-</TouchableOpacity>
-`;
-
-exports[`Button component test renders as expected 2`] = `
-<TouchableOpacity
-  activeOpacity={0.5}
->
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "center",
-        "backgroundColor": "transparent",
-        "borderColor": "white",
-        "borderRadius": 8.333333333333332,
-        "borderWidth": 4.166666666666666,
-        "height": 108.33333333333331,
-        "justifyContent": "center",
-        "width": 666.6666666666665,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "white",
-          "fontSize": 29.166666666666664,
-        }
-      }
-    />
-  </View>
-</TouchableOpacity>
-`;
-
-exports[`Button component test simulate onPress 1`] = `
-<TouchableOpacity
-  activeOpacity={0.5}
-  onPress={[Function]}
->
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "alignSelf": "center",
-        "backgroundColor": "transparent",
-        "borderColor": "white",
-        "borderRadius": 8.333333333333332,
-        "borderWidth": 4.166666666666666,
-        "height": 108.33333333333331,
-        "justifyContent": "center",
-        "width": 666.6666666666665,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "white",
-          "fontSize": 29.166666666666664,
-        }
-      }
-    />
-  </View>
-</TouchableOpacity>
+</View>
 `;
