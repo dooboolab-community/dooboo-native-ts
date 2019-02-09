@@ -168,3 +168,22 @@ exports[`Intro page DOM rendering test component and snapshot matches 1`] = `
   </View>
 </View>
 `;
+
+exports[`Intro page DOM rendering test shallow renders match snapshot 1`] = `
+<Page
+  navigation={
+    Object {
+      "navigate": [MockFunction],
+    }
+  }
+  store={
+    ObservableListStore {
+      "_user": User {
+        "_age": undefined,
+        "_displayName": undefined,
+        "_job": undefined,
+      },
+    }
+  }
+/>
+`;

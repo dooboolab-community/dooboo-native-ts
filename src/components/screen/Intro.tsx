@@ -107,7 +107,7 @@ interface IState {
 class Page extends Component<IProps, IState> {
   private timer: any;
 
-  constructor(props) {
+  constructor(props: IProps) {
     super(props);
     this.state = {
       isLoggingIn: false,
