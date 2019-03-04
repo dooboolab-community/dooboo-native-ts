@@ -1,31 +1,36 @@
 ### ANNOUNCEMENT
 DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITORY IS USED IN `DOOBOO-CLI`.
 
-# React Native TS Boilerplate
+### React Native TS Boilerplate
 [![codecov](https://codecov.io/gh/dooboolab/dooboo-native-ts/branch/master/graph/badge.svg)](https://codecov.io/gh/dooboolab/dooboo-native-ts)
 [![CircleCI](https://circleci.com/gh/dooboolab/dooboo-native-ts.svg?style=svg)](https://circleci.com/gh/dooboolab/dooboo-native-ts)
 
-# React Native Typescript Boilerplate
+### React Native Typescript Boilerplate
 > Specification
-* typescript
-* react-navigation
-* localization
-* styled-components
-* ts-jest
+* [react-native](https://github.com/facebook/react-native)
+* [react-navigation](https://github.com/react-navigation/react-navigation)
+* [typescript](https://github.com/Microsoft/TypeScript)
+* [localization](https://github.com/stefalda/ReactNativeLocalization)
+* [styled-components](https://github.com/styled-components/styled-components)
+* [ts-jest](https://github.com/kulshekhar/ts-jest)
+* [react-native-testing-library](https://github.com/callstack/react-native-testing-library)
+* [react-hook](https://reactjs.org/docs/hooks-intro.html)
 
-# Gain points
+### Gain points
 ```
-1. Able to learn how to structure react app with typescript with `react-hook`.
-2. Use `context-api` with `react-hook`.
-3. Sample of test codes.
-4. Usage of [styled-compoents](https://www.styled-components.com/docs/).
-4. Localize your project.
+1. Sample of context-api with `react-hook` (`useContext`).
+2. Know how to structure react native app with typescript.
+3. Know how to navigate between screens with `react-navigation`.
+4. Know how to write test code with `react-native-testing-library`.
+5. Know how to `lint` your project with `tslint`.
+6. Know how to localize your project.
 ```
 
-# INSTALL
-```
-1. npm install
-2. npm start
+### INSTALL
+``
+npm install && npm start
+// or
+yarn && yarn start
 ```
 
 # Structures
@@ -62,7 +67,7 @@ app/
 └─ tslint.json
 ```
 
-# Running the project
+### Running the project
 Running the project is as simple as running
 ```sh
 npm run start
@@ -94,10 +99,10 @@ Time:        3.055s, estimated 6s
 Ran all test suites
 ```
 
-## Writing tests with Jest
+### Writing tests with Jest
 We've created test examples with jest-ts in `src/components/screen/__tests__` and `src/components/shared/__tests__`. Since react is component oriented, we've designed to focus on writing test in same level of directory with component. You can simply run `npm test` to test if it succeeds and look more closer opening the source.
 
-## Localization
+### Localization
 We've defined Localization strings in `STRINGS.js` which is in root dir.
 We used [react-native-localization](https://github.com/stefalda/ReactNativeLocalization) pacakage for this one.
 ```
@@ -133,11 +138,11 @@ NativeModules.ReactLocalization = {
 };
 ```
 
-## React version
+### React version
 16.8.1
 
-## React Native version
+### React Native version
 0.59
 
-## React navigation
+### React navigation
 3
