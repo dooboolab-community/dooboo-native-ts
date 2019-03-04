@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
+import styled from 'styled-components/native';
 import {
   ActivityIndicator,
-  StyleSheet,
   TouchableOpacity,
-  Image,
-  Text,
-  View,
   ViewStyle,
   TextStyle,
   ImageStyle,
@@ -13,114 +10,95 @@ import {
 
 import { ratio, colors } from '../../utils/Styles';
 
-interface IStyle {
-  btn: ViewStyle;
-  btnDisabled: ViewStyle;
-  txt: TextStyle;
-  imgLeft: ImageStyle;
-}
+const StyledButton = styled.View`
+  background-color: transparent;
+  align-self: center;
+  border-radius: 4;
+  border-width: 2;
+  width: 320;
+  height: 52;
+  border-color: white;
 
-const styles = StyleSheet.create<IStyle>({
-  btn: {
-    backgroundColor: 'transparent',
-    alignSelf: 'center',
-    borderRadius: 4,
-    borderWidth: 2,
-    width: 320,
-    height: 52,
-    borderColor: 'white',
+  align-items: center;
+  justify-content: center;
+`;
 
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  btnDisabled: {
-    backgroundColor: 'rgb(243,243,243)',
-    alignSelf: 'center',
-    borderRadius: 4,
-    borderWidth: 2,
-    width: 320,
-    height: 52,
-    borderColor: '#333',
+const StyledButtonDisabled = styled(StyledButton)`
+  background-color: rgb(224,224,224);
+  border-color: rgb(200,200,200);
+`;
 
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  txt: {
-    fontSize: 14,
-    color: 'white',
-  },
-  imgLeft: {
-    width: 24,
-    height: 24,
-    position: 'absolute',
-    left: 16,
-  },
-});
+const StyledText = styled.Text`
+  font-size: 14;
+  color: white;
+`;
 
-interface ItemProps {
+const StyledTextDisabled = styled(StyledText)`
+  color: #969696;
+`;
+
+const StyledImage = styled.Image`
+  width: 24;
+  height: 24;
+  position: absolute;
+  left: 16;
+`;
+
+interface IProps {
+  testID?: string;
   isLoading?: boolean;
   isDisabled?: boolean;
-  onPress?: () => void;
-  style?: any;
-  disabledStyle?: any;
-  textStyle?: any;
+  onClick?: () => void;
+  style?: ViewStyle;
+  disabledStyle?: ViewStyle;
+  textStyle?: TextStyle;
   imgLeftSrc?: any;
-  imgLeftStyle?: any;
+  imgLeftStyle?: ImageStyle;
   indicatorColor?: string;
   activeOpacity?: number;
+  text?: string;
 }
 
-class Button extends Component<ItemProps, any> {
-  private static defaultProps: Partial<ItemProps> = {
-    isLoading: false,
-    isDisabled: false,
-    style: styles.btn,
-    textStyle: styles.txt,
-    imgLeftStyle: styles.imgLeft,
-    indicatorColor: 'white',
-    activeOpacity: 0.5,
-  };
-
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-
-  public render() {
-    if (this.props.isDisabled) {
-      return (
-        <View style={this.props.disabledStyle}>
-          <Text style={this.props.textStyle}>{this.props.children}</Text>
-        </View>
-      );
-    }
-    if (this.props.isLoading) {
-      return (
-        <View style={this.props.style}>
-          <ActivityIndicator size='small' color={this.props.indicatorColor} />
-        </View>
-      );
-    }
+function Button(props: IProps) {
+  if (props.isDisabled) {
     return (
-      <TouchableOpacity
-        activeOpacity={this.props.activeOpacity}
-        onPress={this.props.onPress}
-      >
-        <View style={this.props.style}>
-          {
-            this.props.imgLeftSrc
-              ? <Image
-                style={this.props.imgLeftStyle}
-                source={this.props.imgLeftSrc}
-              />
-              : null
-          }
-          <Text style={this.props.textStyle}>{this.props.children}</Text>
-        </View>
-      </TouchableOpacity>
+      <StyledButtonDisabled style={props.disabledStyle}>
+        <StyledTextDisabled style={props.textStyle}>{props.text}</StyledTextDisabled>
+      </StyledButtonDisabled>
     );
   }
+  if (props.isLoading) {
+    return (
+      <StyledButton style={props.style}>
+        <ActivityIndicator size='small' color={props.indicatorColor} />
+      </StyledButton>
+    );
+  }
+  return (
+    <TouchableOpacity
+      activeOpacity={props.activeOpacity}
+      onPress={props.onClick}
+    >
+      <StyledButton style={props.style}>
+        {
+          props.imgLeftSrc
+            ? <StyledImage
+              style={props.imgLeftStyle}
+              source={props.imgLeftSrc}
+            />
+            : null
+        }
+        <StyledText style={props.textStyle}>{props.text}</StyledText>
+      </StyledButton>
+    </TouchableOpacity>
+  );
 }
+
+Button.defaultProps = {
+  isLoading: false,
+  isDisabled: false,
+  indicatorColor: 'white',
+  activeOpacity: 0.5,
+};
 
 export default Button;

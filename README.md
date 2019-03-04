@@ -11,17 +11,14 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 * react-navigation
 * ts-jest
 * localization
-* mobx
-* model classes
 * test smaples
 
 # Gain points
 ```
-1. Typescript support. No need to run tsc because webpack is doing it for you with ts-loader.
-2. Sample of mobx and data modeling.
-3. Able to learn how to structure react app with typescript and mobx.
-4. Test with jest-ts.
-5. Learn how to localize your project.
+1. Able to learn how to structure react app with typescript with `react-hook`.
+2. Use `context-api` with `react-hook`.
+3. Test with `ts-jest`.
+4. Localize your project.
 ```
 
 # INSTALL
@@ -41,10 +38,12 @@ app/
 ├─ src/
 │  └─ apis
 │  └─ components
-│  └─ models
-│  └─ stores
+│     └─ navigations
+│     └─ screen
+│     └─ shared
+│  └─ contexts
 │  └─ utils
-│  └─ index.tsx
+│  └─ App.tsx
 ├─ test/
 ├─ .buckconfig
 ├─ .flowconfig
@@ -70,13 +69,6 @@ npm run start
 
 This runs the `start` script specified in our `package.json`, and will spawn off a server which reloads the page as we save our files.
 Typically the server runs at `http://localhost:8080`, but should be automatically opened for you.
-
-## Troubleshoot
-* Facing `Can't find variable Symbol` error in `window` or `ubuntu`.
-  ```
-  npm install --save mobx@3.6.2
-  npm install --save mobx-react@4.4.3
-  ```
 
 ## Testing the project
 Testing is also just a command away:
@@ -141,7 +133,7 @@ NativeModules.ReactLocalization = {
 ```
 
 ## React version
-16.6.3
+16.8.1
 
 ## React Native version
 0.58

@@ -1,126 +1,92 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Intro page DOM rendering test component and snapshot matches 1`] = `
+exports[`[Intro] screen rendering test should render outer component and snapshot matches 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "backgroundColor": "#e3e3e3",
-      "flex": 1,
-      "flexDirection": "column",
-    }
-  }
->
-  <Text
-    style={
-      Object {
-        "color": "rgb(65,77,107)",
-        "fontSize": 24,
-        "marginTop": 100,
-      }
-    }
-  >
-    DOOBOO NATIVE
-  </Text>
-  <View
-    style={
+    Array [
       Object {
         "alignItems": "center",
-        "marginTop": 60,
-      }
+        "alignSelf": "stretch",
+        "backgroundColor": "rgb(65,77,107)",
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+        "overflow": "hidden",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+      ]
     }
   >
     <Text
       style={
-        Object {
-          "color": "rgb(65,77,107)",
-          "fontSize": 16,
-          "lineHeight": 48,
-        }
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          Object {
+            "marginTop": 100,
+          },
+        ]
       }
-    />
+    >
+      
+    </Text>
     <Text
       style={
-        Object {
-          "color": "rgb(65,77,107)",
-          "fontSize": 16,
-          "lineHeight": 48,
-        }
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+        ]
       }
-    />
+    >
+      
+    </Text>
     <Text
       style={
-        Object {
-          "color": "rgb(65,77,107)",
-          "fontSize": 16,
-          "lineHeight": 48,
-        }
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+        ]
       }
-    />
+    >
+      
+    </Text>
   </View>
   <View
     style={
-      Object {
-        "bottom": 40,
-        "position": "absolute",
-      }
+      Array [
+        Object {
+          "alignSelf": "center",
+          "bottom": 40,
+          "flexDirection": "column",
+          "position": "absolute",
+          "width": "85%",
+        },
+      ]
     }
   >
-    <View
-      accessible={true}
-      isTVSelectable={true}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "opacity": 1,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "backgroundColor": "rgb(58,139,255)",
-            "borderRadius": 4,
-            "height": 52,
-            "justifyContent": "center",
-            "width": 320,
-          }
-        }
-      >
-        <Image
-          source={
-            Object {
-              "testUri": "../../../assets/icons/mask.png",
-            }
-          }
-          style={
-            Object {
-              "height": 24,
-              "left": 16,
-              "position": "absolute",
-              "width": 24,
-            }
-          }
-        />
-        <Text
-          style={
-            Object {
-              "color": "white",
-              "fontSize": 14,
-            }
-          }
-        >
-          Login
-        </Text>
-      </View>
-    </View>
     <View
       accessible={true}
       isTVSelectable={true}
@@ -142,23 +108,95 @@ exports[`Intro page DOM rendering test component and snapshot matches 1`] = `
             Object {
               "alignItems": "center",
               "alignSelf": "center",
-              "backgroundColor": "white",
+              "backgroundColor": "transparent",
+              "borderColor": "white",
               "borderRadius": 4,
+              "borderWidth": 2,
               "height": 52,
               "justifyContent": "center",
               "width": 320,
             },
+          ]
+        }
+      >
+        <Image
+          source={
             Object {
-              "marginTop": 15,
+              "testUri": "../../../assets/icons/mask.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 24,
+                "left": 16,
+                "position": "absolute",
+                "width": 24,
+              },
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Login
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    />
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "white",
+              "borderRadius": 4,
+              "borderWidth": 2,
+              "height": 52,
+              "justifyContent": "center",
+              "width": 320,
             },
           ]
         }
       >
         <Text
           style={
-            Object {
-              "color": "rgb(58,139,255)",
-            }
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 14,
+              },
+            ]
           }
         >
           Navigate
@@ -169,21 +207,209 @@ exports[`Intro page DOM rendering test component and snapshot matches 1`] = `
 </View>
 `;
 
-exports[`Intro page DOM rendering test shallow renders match snapshot 1`] = `
-<Page
-  navigation={
-    Object {
-      "navigate": [MockFunction],
-    }
-  }
-  store={
-    ObservableListStore {
-      "_user": User {
-        "_age": undefined,
-        "_displayName": undefined,
-        "_job": undefined,
+exports[`[Intro] screen rendering test should render outer component and snapshot matches 2`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "rgb(65,77,107)",
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+        "overflow": "hidden",
       },
-    }
+    ]
   }
-/>
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "column",
+          "height": "100%",
+          "justifyContent": "flex-start",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          Object {
+            "marginTop": 100,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "bottom": 40,
+          "flexDirection": "column",
+          "position": "absolute",
+          "width": "85%",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "white",
+              "borderRadius": 4,
+              "borderWidth": 2,
+              "height": 52,
+              "justifyContent": "center",
+              "width": 320,
+            },
+          ]
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../assets/icons/mask.png",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "height": 24,
+                "left": 16,
+                "position": "absolute",
+                "width": 24,
+              },
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Login
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    />
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "white",
+              "borderRadius": 4,
+              "borderWidth": 2,
+              "height": 52,
+              "justifyContent": "center",
+              "width": 320,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Navigate
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
 `;
