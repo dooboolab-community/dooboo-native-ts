@@ -1,11 +1,10 @@
 ### ANNOUNCEMENT
 DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITORY IS USED IN `DOOBOO-CLI`.
 
-### React Native TS Boilerplate
+# React Native TS Boilerplate
 [![codecov](https://codecov.io/gh/dooboolab/dooboo-native-ts/branch/master/graph/badge.svg)](https://codecov.io/gh/dooboolab/dooboo-native-ts)
 [![CircleCI](https://circleci.com/gh/dooboolab/dooboo-native-ts.svg?style=svg)](https://circleci.com/gh/dooboolab/dooboo-native-ts)
 
-### React Native Typescript Boilerplate
 > Specification
 * [react-native](https://github.com/facebook/react-native)
 * [react-navigation](https://github.com/react-navigation/react-navigation)
