@@ -27,13 +27,13 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 ```
 
 ### INSTALL
-``
+```
 npm install && npm start
 // or
 yarn && yarn start
 ```
 
-# Structures
+### Structures
 ```text
 app/
 ├─ .doobooo // necessary if using dooboo-cli
