@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react';
 import {
   Platform,
@@ -11,44 +12,41 @@ import {
   View,
   FlatList,
   InteractionManager,
-  ViewStyle,
 } from 'react-native';
-import { inject } from 'mobx-react/native';
 
+import styled from 'styled-components/native';
+
+import Button from '../shared/Button';
 import { ratio } from '../../utils/Styles';
 import {
   IC_MASK,
 } from '../../utils/Icons';
 
-interface IStyle {
-  container: ViewStyle;
+const Container = styled.View`
+  flex: 1;
+  background-color: transparent;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+interface IProps {
+  navigation: any;
 }
 
-const styles = StyleSheet.create<IStyle>({
-  container: {
-    flex: 1,
-    backgroundColor: 'transparent',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-@inject('store')
-class Page extends Component<any, any> {
-  constructor(props) {
-    super(props);
-    this.state = {
-    };
-  }
-
-  public render() {
-    return (
-      <View style={styles.container}>
-        <Text>Not Found</Text>
-      </View>
-    );
-  }
+function Page(props: IProps) {
+  return (
+    <Container>
+      <Button
+        testID='btn'
+        onClick={() => props.navigation.goBack()}
+        text='Go Back'
+        style={{
+          backgroundColor: '#333333',
+        }}
+      />
+    </Container>
+  );
 }
 
 export default Page;

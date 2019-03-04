@@ -8,6 +8,7 @@ const strings = new LocalizedStrings({
     PASSWORD: 'Password',
     SIGNUP: 'SIGN UP',
     FORGOT_PW: 'Forgot password?',
+    NAVIGATE: 'Navigate',
   },
   ko: {
     HELLO: '안녕하세요',
@@ -16,6 +17,7 @@ const strings = new LocalizedStrings({
     PASSWORD: '패스워드',
     SIGNUP: '회원가입',
     FORGOT_PW: '비밀번호를 잊어버리셨나요?',
+    NAVIGATE: '이동하기',
   },
 });
 

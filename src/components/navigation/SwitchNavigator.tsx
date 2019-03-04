@@ -6,7 +6,6 @@ const SwitchNavigator = createSwitchNavigator(
   },
   {
     initialRouteName: 'RootNavigator',
-    headerMode: 'none',
   },
 );
 

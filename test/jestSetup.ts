@@ -1,11 +1,5 @@
 import { NativeModules } from 'react-native';
 
-console.error = (message) => {
-  if (!/(React.createElement: type should not be null)/.test(message)) {
-    throw new Error(message);
-  }
-};
-
 /**
  * monkey patching the locale to avoid the error:
  * Something went wrong initializing the native ReactLocalization module

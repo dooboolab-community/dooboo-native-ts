@@ -1,9 +1,8 @@
 import React from 'react';
-import { createStackNavigator, createAppContainer } from 'react-navigation';
-import { observer } from 'mobx-react/native';
+import { Text } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 
 import { colors } from '../../utils/Styles';
-import appStore from '../../stores/appStore';
 import IntroScreen from '../screen/Intro';
 import TempScreen from '../screen/Temp';
 
@@ -17,7 +16,12 @@ const routeConfig = {
   },
   Temp: {
     screen: TempScreen,
-    path: 'Temp',
+    navigationOptions: {
+      headerTitle: <Text style={{
+        fontSize: 18,
+      }}>Temp</Text>,
+    },
+    path: 'temp',
   },
 };
 
@@ -43,15 +47,18 @@ const navigatorConfig = {
 const RootStackNavigator = createStackNavigator(routeConfig, navigatorConfig);
 
 interface IProps {
-  navigation: any;
+  navigation?: any;
 }
 
-@observer
 class RootNavigator extends React.Component<IProps> {
   private static router = RootStackNavigator.router;
 
   public render() {
-    return <RootStackNavigator navigation={this.props.navigation}/>;
+    return (
+      <RootStackNavigator
+        navigation={this.props.navigation}
+      />
+    );
   }
 }
 
