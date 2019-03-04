@@ -9,15 +9,16 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 > Specification
 * typescript
 * react-navigation
-* ts-jest
 * localization
-* test smaples
+* styled-components
+* ts-jest
 
 # Gain points
 ```
 1. Able to learn how to structure react app with typescript with `react-hook`.
 2. Use `context-api` with `react-hook`.
-3. Test with `ts-jest`.
+3. Sample of test codes.
+4. Usage of [styled-compoents](https://www.styled-components.com/docs/).
 4. Localize your project.
 ```
 
@@ -136,7 +137,7 @@ NativeModules.ReactLocalization = {
 16.8.1
 
 ## React Native version
-0.58
+0.59
 
 ## React navigation
 3
