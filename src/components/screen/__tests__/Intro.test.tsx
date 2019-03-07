@@ -17,24 +17,13 @@ const createTestProps = (obj: object) => ({
 
 const props: any = createTestProps({});
 
-const component = (
-  <AppProvider>
-    <Intro {...props} />
-  </AppProvider>
-);
-
-// beforeEach(() => {
-//   container = document.createElement('div');
-//   document.body.appendChild(container);
-// });
-
-// afterEach(() => {
-//   document.body.removeChild(container);
-//   container = null;
-// });
-
 // test for the container page in dom
 describe('[Intro] screen rendering test', () => {
+  const component = (
+    <AppProvider>
+      <Intro {...props} />
+    </AppProvider>
+  );
   let json: renderer.ReactTestRendererJSON;
 
   it('should render outer component and snapshot matches', () => {
@@ -43,16 +32,13 @@ describe('[Intro] screen rendering test', () => {
   });
 });
 
-describe('[Intro] screen rendering test', () => {
-  let json;
-
-  it('should render outer component and snapshot matches', () => {
-    json = renderer.create(component).toJSON();
-    expect(json).toMatchSnapshot();
-  });
-});
-
 describe('[Intro] Interaction', () => {
+  const component = (
+    <AppProvider>
+      <Intro {...props} />
+    </AppProvider>
+  );
+
   let rendered: renderer.ReactTestRenderer;
   let root: renderer.ReactTestInstance;
   let testingLib: any;
@@ -79,8 +65,9 @@ describe('[Intro] Interaction', () => {
     rendered = renderer.create(component);
     root = rendered.root;
 
-    const buttons = root.findAllByType(Button);
-    buttons[1].props.onClick();
+    // const buttons = root.findAllByType(Button);
+    // buttons[1].props.onClick();
+    fireEvent(testingLib.getByTestId('btn2'), 'click');
     expect(props.navigation.navigate).toBeCalledWith('Temp');
   });
 });
