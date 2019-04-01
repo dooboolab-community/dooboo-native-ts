@@ -34,7 +34,7 @@
   "dependencies": {
     "moment": "^2.24.0",
     "react": "16.8.6",
-    "react-native": "0.59.2",
+    "react-native": "0.59.3",
     "react-native-gesture-handler": "^1.1.0",
     "react-native-localization": "^2.1.0",
     "react-native-status-bar-height": "^2.2.0",
