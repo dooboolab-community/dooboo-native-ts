@@ -2,8 +2,12 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "dist",
-    "allowJs": true,
+    "strictNullChecks": false,
+    "module": "es2015",
+    "target": "es2017",
+    "noImplicitAny": true,
     "sourceMap": true,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
@@ -17,15 +21,11 @@
     ],
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "module": "es2015",
     "moduleResolution": "node",
     "noEmitHelpers": true,
     "noImplicitReturns": true,
     "noUnusedLocals": false,
-    "noImplicitAny": false,
-    "strictNullChecks": false,
-    "strict": true,
-    "target": "es2017"
+    "strict": true
   },
   "include": [
     "src/**/*.ts",

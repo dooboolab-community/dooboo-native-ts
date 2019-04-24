@@ -1,6 +1,6 @@
 import LocalizedStrings from 'react-native-localization';
 
-const strings = new LocalizedStrings({
+const strings: any = new LocalizedStrings({
   en: {
     HELLO: 'Hello',
     LOGIN: 'Login',
