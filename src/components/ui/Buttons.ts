@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import { View } from 'react-native';
 
 export const TransparentButton = styled.View`

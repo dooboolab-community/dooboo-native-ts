@@ -33,7 +33,6 @@ const navigatorConfig = {
   statusBarStyle: 'light-content',
   navigationOptions: {
     headerStyle: {
-      headerBackTitle: null,
       backgroundColor: colors.dodgerBlue,
       borderBottomColor: 'transparent',
       borderBottomWidth: 0,
