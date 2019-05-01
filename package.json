@@ -69,7 +69,7 @@
     "eslint-plugin-typescript": "^0.14.0",
     "jest": "^24.7.1",
     "jsc-android": "^236355.1.1",
-    "metro-react-native-babel-preset": "^0.53.1",
+    "metro-react-native-babel-preset": "^0.54.0",
     "react-dom": "^16.8.6",
     "react-native-testing-library": "^1.7.0",
     "react-test-renderer": "^16.8.6",
