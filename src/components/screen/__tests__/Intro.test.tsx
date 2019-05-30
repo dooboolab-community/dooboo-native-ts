@@ -1,12 +1,15 @@
 import 'react-native';
 import * as React from 'react';
+
+// Note: test renderer must be required after react-native.
+import { ThemeProvider } from 'styled-components/native';
+import renderer from 'react-test-renderer';
+import { render, fireEvent } from 'react-native-testing-library';
+
 import { AppProvider } from '../../../providers';
 import Intro from '../Intro';
 import Button from '../../shared/Button';
-
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-import { render, fireEvent } from 'react-native-testing-library';
+import { createTheme, ThemeType } from '../../../theme';
 
 const createTestProps = (obj: object) => ({
   navigation: {
@@ -21,7 +24,9 @@ const props: any = createTestProps({});
 describe('[Intro] screen rendering test', () => {
   const component = (
     <AppProvider>
-      <Intro {...props} />
+      <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
+        <Intro {...props} />
+      </ThemeProvider>
     </AppProvider>
   );
   let json: renderer.ReactTestRendererJSON;
@@ -35,7 +40,9 @@ describe('[Intro] screen rendering test', () => {
 describe('[Intro] Interaction', () => {
   const component = (
     <AppProvider>
-      <Intro {...props} />
+      <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
+        <Intro {...props} />
+      </ThemeProvider>
     </AppProvider>
   );
 

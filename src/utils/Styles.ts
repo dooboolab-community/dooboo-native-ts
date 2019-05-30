@@ -24,19 +24,3 @@ export const screenHeight = height;
 export const ratio = calRatio / (360 / 9);
 console.log(`ratio: ${ratio}`);
 export const statusBarHeight = getStatusBarHeight(true);
-
-interface IColors {
-  background: string;
-  dodgerBlue: string;
-  dusk: string;
-  blueyGray: string;
-  cloudyBlue: string;
-}
-
-export const colors: IColors = {
-  background: '#e3e3e3',
-  dodgerBlue: 'rgb(58,139,255)',
-  dusk: 'rgb(65,77,107)',
-  blueyGray: 'rgb(134,154,183)',
-  cloudyBlue: 'rgb(175,194,219)',
-};

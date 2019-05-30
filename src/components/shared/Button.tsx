@@ -8,33 +8,31 @@ import {
   ImageStyle,
 } from 'react-native';
 
-import { ratio, colors } from '../../utils/Styles';
-
 const StyledButton = styled.View`
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.btnPrimary};
   align-self: center;
   border-radius: 4;
   border-width: 2;
   width: 320;
   height: 52;
-  border-color: white;
+  border-color: ${({ theme }) => theme.btnPrimary};
 
   align-items: center;
   justify-content: center;
 `;
 
 const StyledButtonDisabled = styled(StyledButton)`
-  background-color: rgb(224,224,224);
+  background-color: ${({ theme }) => theme.btnDisabled};
   border-color: rgb(200,200,200);
 `;
 
 const StyledText = styled.Text`
   font-size: 14;
-  color: white;
+  color: ${({ theme }) => theme.btnPrimaryFont};
 `;
 
 const StyledTextDisabled = styled(StyledText)`
-  color: #969696;
+  color: ${({ theme }) => theme.textDisabled};
 `;
 
 const StyledImage = styled.Image`
