@@ -1,9 +1,12 @@
 import 'react-native';
 import * as React from 'react';
-import Temp from '../Temp';
 
 import renderer from 'react-test-renderer';
+import { ThemeProvider } from 'styled-components/native';
 import { render, fireEvent } from 'react-native-testing-library';
+
+import { createTheme, ThemeType } from '../../../theme';
+import Temp from '../Temp';
 
 const props = {
   navigation: {
@@ -11,16 +14,21 @@ const props = {
   },
 };
 
+const component = (
+  <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
+    <Temp {...props} />
+  </ThemeProvider>
+);
+
 describe('[Temp] render', () => {
   it('renders without crashing', () => {
-    const rendered = renderer.create(<Temp {...props}/>).toJSON();
+    const rendered = renderer.create(component).toJSON();
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
 });
 
 describe('[Temp] Interaction', () => {
-  const component = <Temp {...props} />;
   let renderResult: any;
 
   beforeEach(() => {

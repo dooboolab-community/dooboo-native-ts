@@ -5,7 +5,7 @@ import { IUser } from '../types';
 const AppConsumer = AppContext.Consumer;
 
 interface IAction {
-  type: 'reset-user' | 'set-user';
+  type: 'reset-user' | 'set-user' | 'change-theme-mode';
   payload: any;
 }
 
@@ -32,6 +32,10 @@ const reducer = (state: IState, action: IAction) => {
       return { ...state, user: initialState.user };
     case 'set-user':
       return { ...state, user: action.payload };
+    case 'change-theme-mode':
+      return { ...state, theme: action.payload.theme };
+    default:
+      return null;
   }
 };
 

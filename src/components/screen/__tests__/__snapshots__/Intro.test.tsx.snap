@@ -7,7 +7,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       Object {
         "alignItems": "center",
         "alignSelf": "stretch",
-        "backgroundColor": "rgb(65,77,107)",
+        "backgroundColor": "white",
         "flexBasis": 0,
         "flexDirection": "column",
         "flexGrow": 1,
@@ -35,7 +35,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       style={
         Array [
           Object {
-            "color": "white",
+            "color": "black",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -51,7 +51,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       style={
         Array [
           Object {
-            "color": "white",
+            "color": "black",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -64,7 +64,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       style={
         Array [
           Object {
-            "color": "white",
+            "color": "black",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -108,8 +108,8 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             Object {
               "alignItems": "center",
               "alignSelf": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "white",
+              "backgroundColor": "#069ccd",
+              "borderColor": "#069ccd",
               "borderRadius": 4,
               "borderWidth": 2,
               "height": 52,
@@ -178,8 +178,8 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             Object {
               "alignItems": "center",
               "alignSelf": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "white",
+              "backgroundColor": "#069ccd",
+              "borderColor": "#069ccd",
               "borderRadius": 4,
               "borderWidth": 2,
               "height": 52,
@@ -200,6 +200,59 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
           }
         >
           Navigate
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    />
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": "#069ccd",
+              "borderColor": "#069ccd",
+              "borderRadius": 4,
+              "borderWidth": 2,
+              "height": 52,
+              "justifyContent": "center",
+              "width": 320,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 14,
+              },
+            ]
+          }
+        >
+          Change theme
         </Text>
       </View>
     </View>
