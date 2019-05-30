@@ -1,4 +1,4 @@
-import 'react-native';
+import { Text } from 'react-native';
 import * as React from 'react';
 import Button from '../Button';
 
@@ -31,7 +31,7 @@ describe('[Button]', () => {
       rendered = renderer.create(<Button isDisabled={true}/>);
       root = rendered.root;
 
-      const texts = root.findAll((el) => el.type === 'Text');
+      const texts = root.findAllByType(Text);
       expect(texts).toHaveLength(1);
     });
   });
