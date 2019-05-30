@@ -21,7 +21,7 @@ import { AppProvider as Provider, AppConsumer, AppContext } from '../../provider
 
 import styled from 'styled-components/native';
 
-import { ratio, colors } from '../../utils/Styles';
+import { ThemeType } from '../../theme';
 import { IC_MASK } from '../../utils/Icons';
 import { getString } from '../../../STRINGS';
 import Button from '../shared/Button';
@@ -30,7 +30,7 @@ const Container = styled.View`
   flex: 1;
   align-self: stretch;
   overflow: scroll;
-  background-color: ${colors.dusk};
+  background-color: ${({ theme }) => theme.background};
 
   flex-direction: column;
   justify-content: flex-start;
@@ -57,7 +57,7 @@ const ButtonWrapper = styled.View`
 const StyledText = styled.Text`
   font-size: 18;
   line-height: 27;
-  color: white;
+  color: ${({ theme }) => theme.fontColor};
 `;
 
 interface IProps {
@@ -85,6 +85,23 @@ function Intro(props: IProps) {
     }, 1000);
   };
 
+  const changeTheme = () => {
+    let payload: object;
+    if (state.theme === ThemeType.LIGHT) {
+      payload = {
+        theme: ThemeType.DARK,
+      };
+    } else {
+      payload = {
+        theme: ThemeType.LIGHT,
+      };
+    }
+    dispatch({
+      type: 'change-theme-mode',
+      payload,
+    });
+  };
+
   return (
     <Container>
       <ContentWrapper>
@@ -110,6 +127,13 @@ function Intro(props: IProps) {
           onClick={() => props.navigation.navigate('Temp') }
           text={getString('NAVIGATE')}
         />
+        <View style={{ marginTop: 8 }}/>
+        <Button
+          testID='btn3'
+          onClick={() => changeTheme() }
+          text={getString('CHANGE_THEME')}
+        />
+
       </ButtonWrapper>
     </Container>
   );

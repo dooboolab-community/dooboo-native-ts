@@ -16,14 +16,13 @@ import {
 import styled from 'styled-components/native';
 
 import Button from '../shared/Button';
-import { ratio } from '../../utils/Styles';
 import {
   IC_MASK,
 } from '../../utils/Icons';
 
 const Container = styled.View`
   flex: 1;
-  background-color: transparent;
+  background-color: ${(props) => props.theme.background};
   flex-direction: row;
   align-items: center;
   justify-content: center;

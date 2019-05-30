@@ -9,6 +9,7 @@ const strings: any = new LocalizedStrings({
     SIGNUP: 'SIGN UP',
     FORGOT_PW: 'Forgot password?',
     NAVIGATE: 'Navigate',
+    CHANGE_THEME: 'Change theme',
   },
   ko: {
     HELLO: '안녕하세요',
@@ -18,6 +19,7 @@ const strings: any = new LocalizedStrings({
     SIGNUP: '회원가입',
     FORGOT_PW: '비밀번호를 잊어버리셨나요?',
     NAVIGATE: '이동하기',
+    CHANGE_THEME: '테마 변경',
   },
 });
 
