@@ -18,6 +18,11 @@ module.exports =  {
     "arrow-parens": ["error", "always"],
     "space-before-function-paren": ["error", "never"],
     "no-new-object": "error",
-    "no-array-constructor": "error"
+    "no-array-constructor": "error",
+    "space-before-function-paren": ["error", {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+    }],
   },
 };

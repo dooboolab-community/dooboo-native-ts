@@ -27,7 +27,7 @@
     "ios:iphone5": "node node_modules/react-native/local-cli/cli.js run-ios  --simulator='iPhone 5s'",
     "ios:iphone7": "node node_modules/react-native/local-cli/cli.js run-ios  --simulator='iPhone 7'",
     "ios:reset": "rm -rf ios/build/ModuleCache",
-    "lint": "eslint **/*.ts && eslint **/*.tsx",
+    "lint": "eslint src/**/**/*.ts && eslint src/**/**/*.tsx",
     "build:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ./ios",
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android"
   },
