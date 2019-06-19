@@ -23,8 +23,8 @@ export default () => {
   return (
     <ThemeProvider theme={createTheme(theme)}>
       <AppContainer
-        screenProps={{ theme: createTheme(theme)}}
+        screenProps={{ theme: createTheme(theme) }}
       />
     </ThemeProvider>
-  )
+  );
 };
