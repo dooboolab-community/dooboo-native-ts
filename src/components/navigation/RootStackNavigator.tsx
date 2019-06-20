@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { createStackNavigator } from 'react-navigation';
+import { createStackNavigator, NavigationRouteConfig, StackNavigatorConfig } from 'react-navigation';
 
 import IntroScreen from '../screen/Intro';
 import TempScreen from '../screen/Temp';
 
-const routeConfig = {
+const routeConfig: NavigationRouteConfig = {
   Intro: {
     screen: IntroScreen,
     navigationOptions: {
@@ -24,12 +24,9 @@ const routeConfig = {
   },
 };
 
-const navigatorConfig = {
+const navigatorConfig: StackNavigatorConfig = {
   initialRouteName: 'Intro',
-  // header: null,
   // headerMode: 'none',
-  gesturesEnabled: true,
-  statusBarStyle: 'light-content',
   navigationOptions: ({ navigation, screenProps } : { navigation: any, screenProps: any}) => {
     const { theme } = screenProps;
     return ({
