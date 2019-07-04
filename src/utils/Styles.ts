@@ -1,5 +1,4 @@
 import { Dimensions, Platform } from 'react-native';
-import { getStatusBarHeight } from 'react-native-status-bar-height';
 
 const { width, height } = Dimensions.get('window');
 let calRatio = width <= height ? 16 * (width / height) : 16 * (height / width);
@@ -23,4 +22,3 @@ export const screenWidth = width;
 export const screenHeight = height;
 export const ratio = calRatio / (360 / 9);
 console.log(`ratio: ${ratio}`);
-export const statusBarHeight = getStatusBarHeight(true);

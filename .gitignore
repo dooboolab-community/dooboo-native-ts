@@ -59,3 +59,5 @@ buck-out/
 
 coverage/
 package-lock.json
+
+ios/Pods/
