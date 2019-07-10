@@ -10,10 +10,11 @@ module.exports = {
     './test/jestSetup.ts',
   ],
   'globals': {
-    'window': {},
     'ts-jest': {
-      'babelConfig': false,
-      'tsConfig': 'tsconfig.jest.json',
+      'tsConfig': {
+        'jsx': 'react',
+      },
+      'diagnostics': false,
     },
   },
   'transform': {

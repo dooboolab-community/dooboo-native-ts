@@ -4,7 +4,7 @@ import * as React from 'react';
 // Note: test renderer must be required after react-native.
 import { ThemeProvider } from 'styled-components/native';
 import renderer from 'react-test-renderer';
-import { render, fireEvent } from 'react-native-testing-library';
+import { render, fireEvent, act, RenderResult } from '@testing-library/react-native';
 
 import { AppProvider } from '../../../providers';
 import Intro from '../Intro';
@@ -48,7 +48,7 @@ describe('[Intro] Interaction', () => {
 
   let rendered: renderer.ReactTestRenderer;
   let root: renderer.ReactTestInstance;
-  let testingLib: any;
+  let testingLib: RenderResult;
 
   it('should simulate [onLogin] click', () => {
     rendered = renderer.create(component);
@@ -57,13 +57,14 @@ describe('[Intro] Interaction', () => {
 
     jest.useFakeTimers();
     const buttons = root.findAllByType(Button);
-    fireEvent(testingLib.getByTestId('btn1'), 'click');
+    act(() => {
+      fireEvent.press(testingLib.queryByTestId('btn1'));
+      expect(setTimeout).toHaveBeenCalledTimes(1);
+      // expect(context.dispatch).toHaveBeenCalledWith({ type: 'reset-user' });
+      // expect(context.dispatch).toHaveBeenCalledWith({ type: 'set-user' }, expect.any(Object));
+      jest.runAllTimers();
+    });
 
-    expect(setTimeout).toHaveBeenCalledTimes(1);
-    // expect(context.dispatch).toHaveBeenCalledWith({ type: 'reset-user' });
-    // expect(context.dispatch).toHaveBeenCalledWith({ type: 'set-user' }, expect.any(Object));
-
-    jest.runAllTimers();
     expect(clearTimeout).toHaveBeenCalledTimes(1);
     expect(buttons[0].props.isLoading).toEqual(false); // TODO: test with useState
   });
@@ -74,7 +75,9 @@ describe('[Intro] Interaction', () => {
 
     // const buttons = root.findAllByType(Button);
     // buttons[1].props.onClick();
-    fireEvent(testingLib.getByTestId('btn2'), 'click');
+    act(() => {
+      fireEvent.press(testingLib.getByTestId('btn2'), 'click');
+    });
     expect(props.navigation.navigate).toBeCalledWith('Temp');
   });
 });

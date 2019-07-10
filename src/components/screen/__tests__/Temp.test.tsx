@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import { render, fireEvent } from 'react-native-testing-library';
+import { render, fireEvent, act, RenderResult } from '@testing-library/react-native';
 
 import { createTheme, ThemeType } from '../../../theme';
 import Temp from '../Temp';
@@ -29,15 +29,17 @@ describe('[Temp] render', () => {
 });
 
 describe('[Temp] Interaction', () => {
-  let renderResult: any;
+  let renderResult: RenderResult;
 
   beforeEach(() => {
     renderResult = render(component);
   });
 
   it('should simulate [onClick] when [btn] has been clicked', () => {
-    const btnInstance: renderer.ReactTestInstance = renderResult.getByTestId('btn');
-    fireEvent(btnInstance, 'click');
+    const btnInstance = renderResult.getByTestId('btn');
+    act(() => {
+      fireEvent.press(btnInstance);
+    });
     expect(props.navigation.goBack).toHaveBeenCalled();
   });
 });
