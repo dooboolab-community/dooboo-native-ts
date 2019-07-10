@@ -32,6 +32,7 @@ exports[`[Temp] render renders without crashing 1`] = `
         "opacity": 1,
       }
     }
+    testID="btn"
   >
     <View
       style={
