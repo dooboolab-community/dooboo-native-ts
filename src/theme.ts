@@ -31,7 +31,7 @@ const theme = {
     textDisabled: '#969696',
     btnDisabled: 'rgb(224,224,224)',
     fontColor: 'black',
-    tintColor: '#a3a3a3',
+    tintColor: '#333333',
   },
   dark: {
     background: colors.darkBackground,
@@ -42,7 +42,7 @@ const theme = {
     textDisabled: '#969696',
     btnDisabled: 'rgb(224,224,224)',
     fontColor: 'white',
-    tintColor: '#333333',
+    tintColor: '#a3a3a3',
   },
 };
 
