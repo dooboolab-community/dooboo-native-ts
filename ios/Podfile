@@ -28,9 +28,7 @@ target 'dooboo' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'ReactNativeLocalization', :path => '../node_modules/react-native-localization'
 
-  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
   target 'doobooTests' do
     inherit! :search_paths
