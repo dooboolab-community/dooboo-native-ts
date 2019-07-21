@@ -2,7 +2,12 @@ import 'react-native';
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components/native';
 
-import { render, fireEvent, act, RenderResult } from '@testing-library/react-native';
+import {
+  render,
+  fireEvent,
+  act,
+  RenderResult,
+} from '@testing-library/react-native';
 
 import Button from '../Button';
 import { createTheme, ThemeType } from '../../../theme';

@@ -1,23 +1,11 @@
-import React, { Component } from 'react';
-import {
-  Platform,
-  StatusBar,
-  StyleSheet,
-  TouchableHighlight,
-  TouchableOpacity,
-  Image,
-  ScrollView,
-  Text,
-  View,
-  FlatList,
-  InteractionManager,
-} from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
 
 import {
-  IUser,
+  User,
 } from '../../types';
-import { AppProvider as Provider, AppConsumer, AppContext } from '../../providers';
+import { AppContext } from '../../providers';
 
 import styled from 'styled-components/native';
 
@@ -60,12 +48,12 @@ const StyledText = styled.Text`
   color: ${({ theme }) => theme.fontColor};
 `;
 
-interface IProps {
+interface Props {
   store?: any;
   navigation: NavigationScreenProp<NavigationStateRoute<any>>;
 }
 
-function Intro(props: IProps) {
+function Intro(props: Props) {
   let timer: any;
   const { state, dispatch } = React.useContext(AppContext);
   const [isLoggingIn, setIsLoggingIn] = React.useState(false);
@@ -74,7 +62,7 @@ function Intro(props: IProps) {
     dispatch({ type: 'reset-user' });
     setIsLoggingIn(true);
     timer = setTimeout(() => {
-      const user: IUser = {
+      const user: User = {
         displayName: 'dooboolab',
         age: 30,
         job: 'developer',

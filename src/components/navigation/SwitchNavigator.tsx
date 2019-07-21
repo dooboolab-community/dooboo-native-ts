@@ -16,7 +16,7 @@ const SwitchNavigator = createSwitchNavigator(
 
 const AppContainer = createAppContainer(SwitchNavigator);
 
-export default () => {
+export default function Navigator() {
   const { state } = useContext(AppContext);
   const { theme } = state;
 

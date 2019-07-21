@@ -5,12 +5,6 @@ import { AppProvider } from '../AppProvider';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-let props = {
-  navigation: {
-    navigate: jest.fn(),
-  },
-};
-
 describe('[AppProvider] rendering test', () => {
   let json: renderer.ReactTestRendererJSON;
   const component = <AppProvider />;
@@ -22,15 +16,16 @@ describe('[AppProvider] rendering test', () => {
 });
 
 describe('[AppProvider] interactions', () => {
+  let props;
   let rendered: renderer.ReactTestRenderer;
-  let root: renderer.ReactTestInstance;
+  // let root: renderer.ReactTestInstance;
   const component = <AppProvider />;
 
-  const user = {
-    displayName: 'dooboolab',
-    age: 30,
-    job: '',
-  };
+  // const user = {
+  //   displayName: 'dooboolab',
+  //   age: 30,
+  //   job: '',
+  // };
 
   beforeEach(() => {
     props = {
@@ -39,7 +34,7 @@ describe('[AppProvider] interactions', () => {
       },
     };
     rendered = renderer.create(component);
-    root = rendered.root;
+    // root = rendered.root;
   });
 
   // it('should trigger [resetUser] action', () => {
