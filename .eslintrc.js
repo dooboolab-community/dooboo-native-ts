@@ -5,6 +5,13 @@ module.exports =  {
   ],
   parser:  '@typescript-eslint/parser',
   plugins: ["@typescript-eslint"],
+  settings: {
+    react: {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect",
+    },
+  },
   env: {
     'browser': true,
     'jest': true
@@ -17,6 +24,7 @@ module.exports =  {
     'no-unused-vars': 0,
     // '@typescript-eslint/no-unused-vars': 'warn',
     '@typescript-eslint/interface-name-prefix': 'warn',
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
     'no-console': 'error',
     "react/jsx-uses-vars": [2],
     'max-len': ['error', { code: 80 }],
