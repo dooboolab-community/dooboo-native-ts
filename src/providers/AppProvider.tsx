@@ -1,26 +1,26 @@
 import React, { useReducer } from 'react';
 import { AppContext } from '../contexts';
-import { IUser } from '../types';
+import { User } from '../types';
 import { ThemeType } from '../theme';
 
 const AppConsumer = AppContext.Consumer;
 
-interface IAction {
+interface Action {
   type: 'reset-user' | 'set-user' | 'change-theme-mode';
   payload: any;
 }
 
-interface IProps {
+interface Props {
   navigation?: any;
   children?: any;
 }
 
-export interface IState {
-  user: IUser;
+export interface State {
+  user: User;
   theme: ThemeType;
 }
 
-const initialState: IState = {
+const initialState: State = {
   theme: ThemeType.LIGHT,
   user: {
     displayName: '',
@@ -29,7 +29,7 @@ const initialState: IState = {
   },
 };
 
-const reducer = (state: IState, action: IAction) => {
+const reducer = (state: State, action: Action) => {
   switch (action.type) {
     case 'change-theme-mode':
       return { ...state, theme: action.payload.theme };
@@ -40,7 +40,7 @@ const reducer = (state: IState, action: IAction) => {
   }
 };
 
-function AppProvider(props: IProps) {
+function AppProvider(props: Props) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const value = { state, dispatch };
 

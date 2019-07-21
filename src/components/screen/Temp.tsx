@@ -1,24 +1,7 @@
-import React, { Component } from 'react';
-import {
-  Platform,
-  StatusBar,
-  StyleSheet,
-  TouchableHighlight,
-  TouchableOpacity,
-  Image,
-  ScrollView,
-  Text,
-  View,
-  FlatList,
-  InteractionManager,
-} from 'react-native';
-
+import React from 'react';
 import styled from 'styled-components/native';
 
 import Button from '../shared/Button';
-import {
-  IC_MASK,
-} from '../../utils/Icons';
 
 const Container = styled.View`
   flex: 1;
@@ -28,11 +11,11 @@ const Container = styled.View`
   justify-content: center;
 `;
 
-interface IProps {
+interface Props {
   navigation: any;
 }
 
-function Page(props: IProps) {
+function Page(props: Props) {
   return (
     <Container>
       <Button

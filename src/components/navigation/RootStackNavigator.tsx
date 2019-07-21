@@ -1,6 +1,10 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { createStackNavigator, NavigationRouteConfig, StackNavigatorConfig } from 'react-navigation';
+import {
+  createStackNavigator,
+  StackNavigatorConfig,
+  NavigationRouteConfig,
+} from 'react-navigation';
 
 import Intro from '../screen/Intro';
 import Temp from '../screen/Temp';
@@ -8,7 +12,8 @@ import Temp from '../screen/Temp';
 const routeConfig: NavigationRouteConfig = {
   Intro: {
     screen: Intro,
-    navigationOptions: ({ navigation, screenProps } : { navigation: any, screenProps: any }) => {
+    navigationOptions: ({ navigation, screenProps }
+      : { navigation: any, screenProps: any }) => {
       const { theme } = screenProps;
       return ({
         title: navigation.state.routeName,
@@ -23,7 +28,8 @@ const routeConfig: NavigationRouteConfig = {
   },
   Temp: {
     screen: Temp,
-    navigationOptions: ({ navigation, screenProps } : { navigation: any, screenProps: any }) => {
+    navigationOptions: ({ navigation, screenProps }:
+      { navigation: any, screenProps: any }) => {
       const { theme } = screenProps;
       return ({
         headerTitle: <Text style={{
@@ -49,12 +55,12 @@ const navigatorConfig: StackNavigatorConfig = {
 
 const RootStackNavigator = createStackNavigator(routeConfig, navigatorConfig);
 
-// interface IProps {
+// interface Props {
 //   navigation?: any;
 //   theme?: object;
 // }
 
-// class RootNavigator extends React.Component<IProps> {
+// class RootNavigator extends React.Component<Props> {
 //   private static router = RootStackNavigator.router;
 
 //   public render() {

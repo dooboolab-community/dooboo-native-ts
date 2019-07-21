@@ -4,7 +4,12 @@ import * as React from 'react';
 // Note: test renderer must be required after react-native.
 import { ThemeProvider } from 'styled-components/native';
 import renderer from 'react-test-renderer';
-import { render, fireEvent, act, RenderResult } from '@testing-library/react-native';
+import {
+  render,
+  fireEvent,
+  act,
+  RenderResult,
+} from '@testing-library/react-native';
 
 import { AppProvider } from '../../../providers';
 import Intro from '../Intro';
@@ -60,13 +65,11 @@ describe('[Intro] Interaction', () => {
     act(() => {
       fireEvent.press(testingLib.queryByTestId('btn1'));
       expect(setTimeout).toHaveBeenCalledTimes(1);
-      // expect(context.dispatch).toHaveBeenCalledWith({ type: 'reset-user' });
-      // expect(context.dispatch).toHaveBeenCalledWith({ type: 'set-user' }, expect.any(Object));
       jest.runAllTimers();
     });
 
     expect(clearTimeout).toHaveBeenCalledTimes(1);
-    expect(buttons[0].props.isLoading).toEqual(false); // TODO: test with useState
+    expect(buttons[0].props.isLoading).toEqual(false);
   });
 
   it('should simulate [navigate] click', () => {

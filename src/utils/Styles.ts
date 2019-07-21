@@ -1,8 +1,7 @@
-import { Dimensions, Platform } from 'react-native';
+import { Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 let calRatio = width <= height ? 16 * (width / height) : 16 * (height / width);
-console.log(`calRatio: ${calRatio}`);
 if (width <= height) {
   if (calRatio < 9) {
     calRatio = width / 9;
@@ -16,9 +15,7 @@ if (width <= height) {
     calRatio = width / 18;
   }
 }
-console.log(`calRatio: ${calRatio}`);
 
 export const screenWidth = width;
 export const screenHeight = height;
 export const ratio = calRatio / (360 / 9);
-console.log(`ratio: ${ratio}`);

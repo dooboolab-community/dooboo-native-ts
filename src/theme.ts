@@ -1,7 +1,3 @@
-interface ITheme {
-  colors: object
-};
-
 export enum ThemeType {
   LIGHT = 'LIGHT',
   DARK = 'DARK',

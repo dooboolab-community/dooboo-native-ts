@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components/native';
 import {
   ActivityIndicator,
@@ -42,7 +42,7 @@ const StyledImage = styled.Image`
   left: 16;
 `;
 
-interface IProps {
+interface Props {
   testID?: string;
   isLoading?: boolean;
   isDisabled?: boolean;
@@ -57,11 +57,13 @@ interface IProps {
   text?: string;
 }
 
-function Button(props: IProps) {
+function Button(props: Props) {
   if (props.isDisabled) {
     return (
       <StyledButtonDisabled style={props.disabledStyle}>
-        <StyledTextDisabled style={props.textStyle}>{props.text}</StyledTextDisabled>
+        <StyledTextDisabled
+          style={props.textStyle}
+        >{props.text}</StyledTextDisabled>
       </StyledButtonDisabled>
     );
   }

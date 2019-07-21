@@ -3,7 +3,12 @@ import * as React from 'react';
 
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components/native';
-import { render, fireEvent, act, RenderResult } from '@testing-library/react-native';
+import {
+  render,
+  fireEvent,
+  act,
+  RenderResult,
+} from '@testing-library/react-native';
 
 import { createTheme, ThemeType } from '../../../theme';
 import Temp from '../Temp';
