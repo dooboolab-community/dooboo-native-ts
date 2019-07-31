@@ -2,32 +2,29 @@ const { defaults: tsJestConfig } = require('ts-jest/presets');
 
 module.exports = {
   ...tsJestConfig,
-  'preset': 'react-native',
-  'transformIgnorePatterns': [
+  preset: 'react-native',
+  transformIgnorePatterns: [
     'node_modules/(?!(.*-)?react-(.*-)?native(-.*)?)',
   ],
-  'setupFiles': [
-    './test/jestSetup.ts',
-  ],
-  'globals': {
+  globals: {
     'ts-jest': {
-      'tsConfig': {
-        'jsx': 'react',
+      tsConfig: {
+        jsx: 'react',
       },
-      'diagnostics': false,
+      diagnostics: false,
     },
   },
-  'transform': {
+  transform: {
     '^.+\\.(js|jsx)$': 'babel-jest',
     '\\.(ts|tsx)$': 'ts-jest',
   },
   // 'testRegex': '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
-  'testPathIgnorePatterns': [
+  testPathIgnorePatterns: [
     '\\.snap$',
     '<rootDir>/node_modules/',
   ],
-  'cacheDirectory': '.jest/cache',
-  'moduleFileExtensions': [
+  cacheDirectory: '.jest/cache',
+  moduleFileExtensions: [
     'ts',
     'tsx',
     'js',
@@ -39,6 +36,7 @@ module.exports = {
     'android.tsx',
   ],
   // 'moduleNameMapper': {
-  //   '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/test/assetsTransformer.js'
+  //   '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|
+  // woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':'<rootDir>/test/assetsTransformer.js'
   // },
 };
