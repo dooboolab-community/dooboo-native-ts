@@ -1719,10 +1719,10 @@
   resolved "https://registry.yarnpkg.com/@types/jest-diff/-/jest-diff-20.0.1.tgz#35cc15b9c4f30a18ef21852e255fdb02f6d59b89"
   integrity sha512-yALhelO3i0hqZwhjtcr6dYyaLoCHbAMshwtj6cGxTvHZAKXHsYGdff6E8EPw3xLKY0ELUTQ69Q1rQiJENnccMA==
 
-"@types/jest@^24.0.15":
-  version "24.0.15"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.15.tgz#6c42d5af7fe3b44ffff7cc65de7bf741e8fa427f"
-  integrity sha512-MU1HIvWUme74stAoc3mgAi+aMlgKOudgEvQDIm1v4RkrDudBh1T+NFp5sftpBAdXdx1J0PbdpJ+M2EsSOi1djA==
+"@types/jest@^24.0.16":
+  version "24.0.16"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.16.tgz#8d3e406ec0f0dc1688d6711af3062ff9bd428066"
+  integrity sha512-JrAiyV+PPGKZzw6uxbI761cHZ0G7QMOHXPhtSpcl08rZH6CswXaaejckn3goFKmF7M3nzEoJ0lwYCbqLMmjziQ==
   dependencies:
     "@types/jest-diff" "*"
 
@@ -1760,10 +1760,10 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
-"@types/react-test-renderer@^16.8.2":
-  version "16.8.2"
-  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-16.8.2.tgz#ad544b5571ebfc5f182c320376f1431a2b725c5e"
-  integrity sha512-cm42QR9S9V3aOxLh7Fh7PUqQ8oSfSdnSni30T7TiTmlKvE6aUlo+LhQAzjnZBPriD9vYmgG8MXI8UDK4Nfb7gg==
+"@types/react-test-renderer@^16.8.3":
+  version "16.8.3"
+  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-16.8.3.tgz#b6ca14d5fe4c742fd6d68ef42d45e3b5c6dd470a"
+  integrity sha512-vEEYh6gFk3jkPHqRe7N5CxWA+yb92hCZxNyhq/1Wj3mClqVWLJYakJDMp3iFmntCgEq96m68N9Oad3wOHm+pdQ==
   dependencies:
     "@types/react" "*"
 
@@ -6365,10 +6365,10 @@ react-localization@^1.0.14:
     invariant "^2.2.2"
     prop-types "^15.5.10"
 
-react-native-localization@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/react-native-localization/-/react-native-localization-2.1.4.tgz#c124a457b8d08dbfea19a035286bc6bfb873add6"
-  integrity sha512-y9ogTrfw0gzrq8irq/dcCmKINHnQyaOUkvANpGzGzlvdh1gl6Ebkclbsn2265dBpGKzk+Lmy/0mfE4fO17b77Q==
+react-native-localization@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/react-native-localization/-/react-native-localization-2.1.5.tgz#0bde1252bdbb0b21f80a6e2a96a195116626eb8f"
+  integrity sha512-hDtLMEwHtHNm9xUXllWBklL887wPsR/TNNNnq9xeKBMrWtf9E+uS99NL34I/uMhWIvcVqQiFnCQ36bQy+swKOQ==
   dependencies:
     react-localization "^1.0.14"
 
