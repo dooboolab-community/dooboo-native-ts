@@ -3,6 +3,9 @@ const { defaults: tsJestConfig } = require('ts-jest/presets');
 module.exports = {
   ...tsJestConfig,
   preset: 'react-native',
+  setupFiles: [
+    './test/jestSetup.ts',
+  ],
   transformIgnorePatterns: [
     'node_modules/(?!(.*-)?react-(.*-)?native(-.*)?)',
   ],
