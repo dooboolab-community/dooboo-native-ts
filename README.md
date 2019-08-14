@@ -1,21 +1,25 @@
 ### ANNOUNCEMENT
+
 DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITORY IS USED IN `DOOBOO-CLI`.
 
 # React Native TS Boilerplate
+
 [![codecov](https://codecov.io/gh/dooboolab/dooboo-native-ts/branch/master/graph/badge.svg)](https://codecov.io/gh/dooboolab/dooboo-native-ts)
 [![CircleCI](https://circleci.com/gh/dooboolab/dooboo-native-ts.svg?style=svg)](https://circleci.com/gh/dooboolab/dooboo-native-ts) [![Greenkeeper badge](https://badges.greenkeeper.io/dooboolab/dooboo-native-ts.svg)](https://greenkeeper.io/)
 
 > Specification
-* [react-native](https://github.com/facebook/react-native)
-* [react-navigation](https://github.com/react-navigation/react-navigation)
-* [typescript](https://github.com/Microsoft/TypeScript)
-* [localization](https://github.com/stefalda/ReactNativeLocalization)
-* [styled-components](https://github.com/styled-components/styled-components)
-* [ts-jest](https://github.com/kulshekhar/ts-jest)
-* [react-native-testing-library](https://github.com/callstack/react-native-testing-library)
-* [react-hook](https://reactjs.org/docs/hooks-intro.html)
+
+- [react-native](https://github.com/facebook/react-native)
+- [react-navigation](https://github.com/react-navigation/react-navigation)
+- [typescript](https://github.com/Microsoft/TypeScript)
+- [localization](https://github.com/stefalda/ReactNativeLocalization)
+- [styled-components](https://github.com/styled-components/styled-components)
+- [ts-jest](https://github.com/kulshekhar/ts-jest)
+- [react-native-testing-library](https://github.com/callstack/react-native-testing-library)
+- [react-hook](https://reactjs.org/docs/hooks-intro.html)
 
 ### Gain points
+
 ```
 1. Sample of context-api with `react-hook` (`useContext`).
 2. Know how to structure react native app with typescript.
@@ -26,6 +30,7 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 ```
 
 ### INSTALL
+
 ```
 npm install && npm start
 // or
@@ -33,6 +38,7 @@ yarn && yarn start
 ```
 
 ### Structures
+
 ```text
 app/
 ├─ .doobooo // necessary if using dooboo-cli
@@ -63,11 +69,13 @@ app/
 ├─ README.md
 ├─ STRINGS.js
 ├─ tsconfig.json
-└─ tslint.json
+└─ eslint.json
 ```
 
 ### Running the project
+
 Running the project is as simple as running
+
 ```sh
 npm run start
 ```
@@ -76,11 +84,15 @@ This runs the `start` script specified in our `package.json`, and will spawn off
 Typically the server runs at `http://localhost:8080`, but should be automatically opened for you.
 
 ## Testing the project
+
 Testing is also just a command away:
+
 ```sh
 npm test
 ```
+
 > Result
+
 ```
 > jest -u
 
@@ -99,11 +111,14 @@ Ran all test suites
 ```
 
 ### Writing tests with Jest
+
 We've created test examples with jest-ts in `src/components/screen/__tests__` and `src/components/shared/__tests__`. Since react is component oriented, we've designed to focus on writing test in same level of directory with component. You can simply run `npm test` to test if it succeeds and look more closer opening the source.
 
 ### Localization
+
 We've defined Localization strings in `STRINGS.js` which is in root dir.
 We used [react-native-localization](https://github.com/stefalda/ReactNativeLocalization) pacakage for this one.
+
 ```
 import LocalizedStrings from 'react-native-localization';
 
@@ -138,10 +153,13 @@ NativeModules.ReactLocalization = {
 ```
 
 ### React version
+
 16.8.1
 
 ### React Native version
+
 0.59
 
 ### React navigation
+
 3
