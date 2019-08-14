@@ -35,7 +35,7 @@
     "moment": "^2.24.0",
     "react": "16.8.6",
     "react-native": "0.60.5",
-    "react-native-gesture-handler": "git://github.com/hyochan/react-native-gesture-handler.git#package-names-test",
+    "react-native-gesture-handler": "git://github.com/hyochan/react-native-gesture-handler.git#package-names",
     "react-native-localization": "^2.1.5",
     "react-navigation": "^3.11.1",
     "styled-components": "^4.3.2"
