@@ -57,7 +57,7 @@
     "@types/react-test-renderer": "^16.8.3",
     "@types/styled-components": "^4.1.18",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
-    "@typescript-eslint/parser": "^1.13.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "babel-jest": "24.8.0",
     "babel-preset-react-native": "^5.0.2",
     "codecov": "^3.5.0",
