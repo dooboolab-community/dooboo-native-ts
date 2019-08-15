@@ -17,6 +17,7 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 - [ts-jest](https://github.com/kulshekhar/ts-jest)
 - [react-native-testing-library](https://github.com/callstack/react-native-testing-library)
 - [react-hook](https://reactjs.org/docs/hooks-intro.html)
+- [prettier](https://prettier.io)
 
 ### Gain points
 

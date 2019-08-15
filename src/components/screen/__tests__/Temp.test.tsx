@@ -1,17 +1,18 @@
 import 'react-native';
+
 import * as React from 'react';
 
-import renderer from 'react-test-renderer';
-import { ThemeProvider } from 'styled-components/native';
 import {
-  render,
-  fireEvent,
-  act,
   RenderResult,
+  act,
+  fireEvent,
+  render,
 } from '@testing-library/react-native';
+import { ThemeType, createTheme } from '../../../theme';
 
-import { createTheme, ThemeType } from '../../../theme';
 import Temp from '../Temp';
+import { ThemeProvider } from 'styled-components/native';
+import renderer from 'react-test-renderer';
 
 const props = {
   navigation: {

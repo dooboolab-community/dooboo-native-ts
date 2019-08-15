@@ -1,7 +1,7 @@
 const ROOT_URL = 'http://localhost:3000/api';
 
 export const sample = async (
-  body: object,
+  body: object
   // signal?: AbortController['signal']
 ) => {
   try {

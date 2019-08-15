@@ -1,7 +1,8 @@
 import React, { useReducer } from 'react';
+
 import { AppContext } from '../contexts';
-import { User } from '../types';
 import { ThemeType } from '../theme';
+import { User } from '../types';
 
 const AppConsumer = AppContext.Consumer;
 
@@ -45,9 +46,7 @@ function AppProvider(props: Props) {
   const value = { state, dispatch };
 
   return (
-    <AppContext.Provider value={value}>
-      {props.children}
-    </AppContext.Provider>
+    <AppContext.Provider value={value}>{props.children}</AppContext.Provider>
   );
 }
 
