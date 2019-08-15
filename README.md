@@ -115,6 +115,36 @@ Ran all test suites
 
 We've created test examples with jest-ts in `src/components/screen/__tests__` and `src/components/shared/__tests__`. Since react is component oriented, we've designed to focus on writing test in same level of directory with component. You can simply run `npm test` to test if it succeeds and look more closer opening the source.
 
+### Vscode prettier and eslint setup
+
+```
+"eslint.enable": true,
+"eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+],
+// prettier extension setting
+"editor.formatOnSave": true,
+"[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"prettier.singleQuote": true,
+"prettier.trailingComma": "all",
+"prettier.arrowParens": "always",
+"prettier.jsxSingleQuote": true
+```
+
 ### Localization
 
 We've defined Localization strings in `STRINGS.js` which is in root dir.
@@ -155,11 +185,11 @@ NativeModules.ReactLocalization = {
 
 ### React version
 
-16.8.1
+16.8.3
 
 ### React Native version
 
-0.59
+0.60
 
 ### React navigation
 
