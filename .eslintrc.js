@@ -25,7 +25,16 @@ module.exports = {
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     'no-console': 'error',
     'react/jsx-uses-vars': [2],
-    'max-len': ['error', { code: 100 }],
+    'max-len': [
+      2,
+      100,
+      4,
+      {
+        ignoreComments: true,
+        ignoreUrls: true,
+        ignoreRegExpLiterals: true,
+      },
+    ],
     'comma-dangle': ['error', 'always-multiline'],
     semi: [2, 'always'],
     'arrow-parens': ['error', 'always'],
