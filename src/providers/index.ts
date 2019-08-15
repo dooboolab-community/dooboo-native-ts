@@ -1,7 +1,3 @@
-import { AppProvider, AppConsumer, AppContext } from './AppProvider';
+import { AppConsumer, AppContext, AppProvider } from './AppProvider';
 
-export {
-  AppProvider,
-  AppConsumer,
-  AppContext,
-};
+export { AppProvider, AppConsumer, AppContext };

@@ -1,46 +1,65 @@
-import React from 'react';
-import { Text } from 'react-native';
 import {
-  createStackNavigator,
-  StackNavigatorConfig,
+  NavigationComponent,
   NavigationRouteConfig,
+  NavigationScreenOptions,
+  ScreenProps,
+  StackNavigatorConfig,
+  createStackNavigator,
 } from 'react-navigation';
 
 import Intro from '../screen/Intro';
+import React from 'react';
 import Temp from '../screen/Temp';
+import { Text } from 'react-native';
 
 const routeConfig: NavigationRouteConfig = {
   Intro: {
     screen: Intro,
-    navigationOptions: ({ navigation, screenProps }
-      : { navigation: any, screenProps: any }) => {
+    navigationOptions: ({
+      navigation,
+      screenProps,
+    }: {
+      navigation: NavigationComponent;
+      screenProps: ScreenProps;
+    }): NavigationScreenOptions => {
       const { theme } = screenProps;
-      return ({
+      return {
         title: navigation.state.routeName,
         headerStyle: {
           backgroundColor: theme.background,
         },
         headerTitleStyle: { color: theme.fontColor },
         headerTintColor: theme.tintColor,
-      });
+      };
     },
     path: 'intro',
   },
   Temp: {
     screen: Temp,
-    navigationOptions: ({ navigation, screenProps }:
-      { navigation: any, screenProps: any }) => {
+    navigationOptions: ({
+      navigation,
+      screenProps,
+    }: {
+      navigation: NavigationComponent;
+      screenProps: ScreenProps;
+    }): NavigationScreenOptions => {
       const { theme } = screenProps;
-      return ({
-        headerTitle: <Text style={{
-          fontSize: 18,
-        }}>{navigation.state.routeName}</Text>,
+      return {
+        headerTitle: (
+          <Text
+            style={{
+              fontSize: 18,
+            }}
+          >
+            {navigation.state.routeName}
+          </Text>
+        ),
         headerStyle: {
           backgroundColor: theme.background,
         },
         headerTitleStyle: { color: theme.fontColor },
         headerTintColor: theme.tintColor,
-      });
+      };
     },
     path: 'temp',
   },

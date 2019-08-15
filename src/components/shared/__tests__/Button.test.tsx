@@ -1,17 +1,17 @@
 import 'react-native';
+
 import * as React from 'react';
-import { ThemeProvider } from 'styled-components/native';
 
 import {
-  render,
-  fireEvent,
-  act,
   RenderResult,
+  act,
+  fireEvent,
+  render,
 } from '@testing-library/react-native';
+import { ThemeType, createTheme } from '../../../theme';
 
 import Button from '../Button';
-import { createTheme, ThemeType } from '../../../theme';
-
+import { ThemeProvider } from 'styled-components/native';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
@@ -29,7 +29,7 @@ describe('[Button]', () => {
     };
     component = (
       <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
-        <Button { ...props } />
+        <Button {...props} />
       </ThemeProvider>
     );
   });

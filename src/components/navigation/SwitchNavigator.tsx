@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+
 import { AppContext } from '../../contexts';
-import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import RootNavigator from './RootStackNavigator';
 import { ThemeProvider } from 'styled-components';
 import { createTheme } from '../../theme';
@@ -22,9 +23,7 @@ export default function Navigator() {
 
   return (
     <ThemeProvider theme={createTheme(theme)}>
-      <AppContainer
-        screenProps={{ theme: createTheme(theme) }}
-      />
+      <AppContainer screenProps={{ theme: createTheme(theme) }} />
     </ThemeProvider>
   );
-};
+}

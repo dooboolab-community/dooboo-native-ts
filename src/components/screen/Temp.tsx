@@ -1,7 +1,6 @@
+import Button from '../shared/Button';
 import React from 'react';
 import styled from 'styled-components/native';
-
-import Button from '../shared/Button';
 
 const Container = styled.View`
   flex: 1;

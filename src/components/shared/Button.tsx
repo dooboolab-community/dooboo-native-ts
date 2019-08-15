@@ -1,12 +1,13 @@
-import React from 'react';
-import styled from 'styled-components/native';
 import {
   ActivityIndicator,
+  ImageStyle,
+  TextStyle,
   TouchableOpacity,
   ViewStyle,
-  TextStyle,
-  ImageStyle,
 } from 'react-native';
+
+import React from 'react';
+import styled from 'styled-components/native';
 
 const StyledButton = styled.View`
   background-color: ${({ theme }) => theme.btnPrimary};
@@ -23,7 +24,7 @@ const StyledButton = styled.View`
 
 const StyledButtonDisabled = styled(StyledButton)`
   background-color: ${({ theme }) => theme.btnDisabled};
-  border-color: rgb(200,200,200);
+  border-color: rgb(200, 200, 200);
 `;
 
 const StyledText = styled.Text`
@@ -61,9 +62,9 @@ function Button(props: Props) {
   if (props.isDisabled) {
     return (
       <StyledButtonDisabled style={props.disabledStyle}>
-        <StyledTextDisabled
-          style={props.textStyle}
-        >{props.text}</StyledTextDisabled>
+        <StyledTextDisabled style={props.textStyle}>
+          {props.text}
+        </StyledTextDisabled>
       </StyledButtonDisabled>
     );
   }
@@ -81,14 +82,9 @@ function Button(props: Props) {
       onPress={props.onClick}
     >
       <StyledButton style={props.style}>
-        {
-          props.imgLeftSrc
-            ? <StyledImage
-              style={props.imgLeftStyle}
-              source={props.imgLeftSrc}
-            />
-            : null
-        }
+        {props.imgLeftSrc ? (
+          <StyledImage style={props.imgLeftStyle} source={props.imgLeftSrc} />
+        ) : null}
         <StyledText style={props.textStyle}>{props.text}</StyledText>
       </StyledButton>
     </TouchableOpacity>

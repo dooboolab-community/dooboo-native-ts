@@ -1,7 +1,7 @@
 export enum ThemeType {
   LIGHT = 'LIGHT',
   DARK = 'DARK',
-};
+}
 
 const colors = {
   skyBlue: '#069ccd',

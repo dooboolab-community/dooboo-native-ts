@@ -3,13 +3,7 @@
   "displayName": "dooboo",
   "entryPoint": "index.js",
   "packagerOpts": {
-    "assetExts": [
-      "ttf",
-      "png"
-    ],
-    "sourceExts": [
-      "ts",
-      "tsx"
-    ]
+    "assetExts": ["ttf", "png"],
+    "sourceExts": ["ts", "tsx"]
   }
 }

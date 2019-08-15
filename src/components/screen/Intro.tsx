@@ -1,18 +1,14 @@
-import React from 'react';
-import { View } from 'react-native';
 import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
 
-import {
-  User,
-} from '../../types';
 import { AppContext } from '../../providers';
-
-import styled from 'styled-components/native';
-
-import { ThemeType } from '../../theme';
-import { IC_MASK } from '../../utils/Icons';
-import { getString } from '../../../STRINGS';
 import Button from '../shared/Button';
+import { IC_MASK } from '../../utils/Icons';
+import React from 'react';
+import { ThemeType } from '../../theme';
+import { User } from '../../types';
+import { View } from 'react-native';
+import { getString } from '../../../STRINGS';
+import styled from 'styled-components/native';
 
 const Container = styled.View`
   flex: 1;
@@ -97,7 +93,9 @@ function Intro(props: Props) {
           style={{
             marginTop: 100,
           }}
-        >{state.user.displayName}</StyledText>
+        >
+          {state.user.displayName}
+        </StyledText>
         <StyledText>{state.user.age ? state.user.age : ''}</StyledText>
         <StyledText>{state.user.job}</StyledText>
       </ContentWrapper>
@@ -109,19 +107,18 @@ function Intro(props: Props) {
           onClick={() => onLogin()}
           text={getString('LOGIN')}
         />
-        <View style={{ marginTop: 8 }}/>
+        <View style={{ marginTop: 8 }} />
         <Button
           testID='btn2'
-          onClick={() => props.navigation.navigate('Temp') }
+          onClick={() => props.navigation.navigate('Temp')}
           text={getString('NAVIGATE')}
         />
-        <View style={{ marginTop: 8 }}/>
+        <View style={{ marginTop: 8 }} />
         <Button
           testID='btn3'
-          onClick={() => changeTheme() }
+          onClick={() => changeTheme()}
           text={getString('CHANGE_THEME')}
         />
-
       </ButtonWrapper>
     </Container>
   );
