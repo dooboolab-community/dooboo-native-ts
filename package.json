@@ -38,7 +38,8 @@
     "react-native-gesture-handler": "git://github.com/hyochan/react-native-gesture-handler.git#package-names",
     "react-native-localization": "^2.1.6",
     "react-native-reanimated": "^1.2.0",
-    "react-navigation": "^4.0.0",
+    "react-navigation": "^4.0.2",
+    "react-navigation-stack": "^1.5.4",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
@@ -53,12 +54,12 @@
     "@testing-library/react-native": "^4.0.9",
     "@types/jest": "^24.0.18",
     "@types/react": "^16.8.25",
-    "@types/react-native": "^0.60.12",
+    "@types/react-native": "^0.60.13",
     "@types/react-navigation": "^3.0.8",
     "@types/react-test-renderer": "^16.8.6",
-    "@types/styled-components": "^4.1.18",
-    "@typescript-eslint/eslint-plugin": "^2.1.0",
-    "@typescript-eslint/parser": "^2.1.0",
+    "@types/styled-components": "^4.1.19",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
     "babel-jest": "24.9.0",
     "babel-preset-react-native": "^5.0.2",
     "codecov": "^3.5.0",
@@ -78,6 +79,6 @@
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.6.2"
+    "typescript": "^3.6.3"
   }
 }
