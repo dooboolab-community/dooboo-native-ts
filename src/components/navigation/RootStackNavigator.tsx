@@ -2,6 +2,7 @@ import { NavigationComponent, NavigationRouteConfig } from 'react-navigation';
 
 import Intro from '../screen/Intro';
 import React from 'react';
+import { ScreenProps } from './SwitchNavigator';
 import Temp from '../screen/Temp';
 import { Text } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -15,7 +16,7 @@ const routeConfig: NavigationRouteConfig = {
     }: {
       navigation: NavigationComponent;
       screenProps: ScreenProps;
-    }): NavigationScreenOptions => {
+    }) => {
       const { theme } = screenProps;
       return {
         title: navigation.state.routeName,
@@ -36,7 +37,7 @@ const routeConfig: NavigationRouteConfig = {
     }: {
       navigation: NavigationComponent;
       screenProps: ScreenProps;
-    }): NavigationScreenOptions => {
+    }) => {
       const { theme } = screenProps;
       return {
         headerTitle: (

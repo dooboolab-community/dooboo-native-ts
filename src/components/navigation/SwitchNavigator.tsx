@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
+import { Theme, createTheme } from '../../theme';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 import { AppContext } from '../../contexts';
 import RootNavigator from './RootStackNavigator';
 import { ThemeProvider } from 'styled-components';
-import { createTheme } from '../../theme';
 
 const SwitchNavigator = createSwitchNavigator(
   {
@@ -16,6 +16,10 @@ const SwitchNavigator = createSwitchNavigator(
 );
 
 const AppContainer = createAppContainer(SwitchNavigator);
+
+export interface ScreenProps {
+  theme: Theme;
+}
 
 export default function Navigator() {
   const { state } = useContext(AppContext);
