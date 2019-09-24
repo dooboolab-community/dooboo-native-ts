@@ -24,7 +24,8 @@ const createTestProps = (obj: object): object => ({
   ...obj,
 });
 
-const props: any = createTestProps({});
+// `any` here is necessary for test, so turn off eslint rule for this line
+const props: any = createTestProps({}); // eslint-disable-line @typescript-eslint/no-explicit-any
 
 // test for the container page in dom
 describe('[Intro] screen rendering test', () => {

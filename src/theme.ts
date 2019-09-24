@@ -54,7 +54,7 @@ const theme = {
   },
 };
 
-export const createTheme = (type = ThemeType.LIGHT) => {
+export const createTheme = (type = ThemeType.LIGHT): Theme => {
   switch (type) {
     case ThemeType.LIGHT:
       return theme.light;
