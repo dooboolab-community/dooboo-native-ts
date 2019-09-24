@@ -1,11 +1,11 @@
 const ROOT_URL = 'http://localhost:3000/api';
 
 export const sample = async (
-  body: object
+  body: object,
   // signal?: AbortController['signal']
-) => {
+): Promise<Response | null> => {
   try {
-    let res: any = await fetch(`${ROOT_URL}/sample`, {
+    let res = await fetch(`${ROOT_URL}/sample`, {
       // signal,
       method: 'POST',
       headers: new Headers({

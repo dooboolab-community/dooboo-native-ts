@@ -1,3 +1,8 @@
+import {
+  NavigationParams,
+  NavigationScreenProp,
+  NavigationState,
+} from 'react-navigation';
 import React, { useReducer } from 'react';
 
 import { AppContext } from '../contexts';
@@ -8,12 +13,12 @@ const AppConsumer = AppContext.Consumer;
 
 interface Action {
   type: 'reset-user' | 'set-user' | 'change-theme-mode';
-  payload: any;
+  payload: object;
 }
 
 interface Props {
-  navigation?: any;
-  children?: any;
+  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  children?: React.ReactChildren;
 }
 
 export interface State {
@@ -30,7 +35,7 @@ const initialState: State = {
   },
 };
 
-const reducer = (state: State, action: Action) => {
+const reducer = (state: State, action: Action): State => {
   switch (action.type) {
     case 'change-theme-mode':
       return { ...state, theme: action.payload.theme };
@@ -41,7 +46,7 @@ const reducer = (state: State, action: Action) => {
   }
 };
 
-function AppProvider(props: Props) {
+function AppProvider(props: Props): React.ReactElement {
   const [state, dispatch] = useReducer(reducer, initialState);
   const value = { state, dispatch };
 

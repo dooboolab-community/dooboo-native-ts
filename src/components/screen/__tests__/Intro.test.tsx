@@ -17,7 +17,7 @@ import Intro from '../Intro';
 import { ThemeProvider } from 'styled-components/native';
 import renderer from 'react-test-renderer';
 
-const createTestProps = (obj: object) => ({
+const createTestProps = (obj: object): object => ({
   navigation: {
     navigate: jest.fn(),
   },

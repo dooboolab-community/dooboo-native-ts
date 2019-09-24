@@ -21,7 +21,7 @@ export interface ScreenProps {
   theme: Theme;
 }
 
-export default function Navigator() {
+export default function Navigator(): React.ReactElement {
   const { state } = useContext(AppContext);
   const { theme } = state;
 

@@ -1,4 +1,8 @@
-import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
+import {
+  NavigationParams,
+  NavigationScreenProp,
+  NavigationState,
+} from 'react-navigation';
 
 import { AppContext } from '../../providers';
 import Button from '../shared/Button';
@@ -14,7 +18,7 @@ const Container = styled.View`
   flex: 1;
   align-self: stretch;
   overflow: scroll;
-  background-color: ${({ theme }) => theme.background};
+  background-color: ${({ theme }): string => theme.background};
 
   flex-direction: column;
   justify-content: flex-start;
@@ -41,20 +45,19 @@ const ButtonWrapper = styled.View`
 const StyledText = styled.Text`
   font-size: 18;
   line-height: 27;
-  color: ${({ theme }) => theme.fontColor};
+  color: ${({ theme }): string => theme.fontColor};
 `;
 
 interface Props {
-  store?: any;
-  navigation: NavigationScreenProp<NavigationStateRoute<any>>;
+  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
 
-function Intro(props: Props) {
-  let timer: any;
+function Intro(props: Props): React.ReactElement {
+  let timer;
   const { state, dispatch } = React.useContext(AppContext);
-  const [isLoggingIn, setIsLoggingIn] = React.useState(false);
+  const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
-  const onLogin = () => {
+  const onLogin = (): void => {
     dispatch({ type: 'reset-user' });
     setIsLoggingIn(true);
     timer = setTimeout(() => {
@@ -69,7 +72,7 @@ function Intro(props: Props) {
     }, 1000);
   };
 
-  const changeTheme = () => {
+  const changeTheme = (): void => {
     let payload: object;
     if (state.theme === ThemeType.LIGHT) {
       payload = {
@@ -104,19 +107,19 @@ function Intro(props: Props) {
           testID='btn1'
           imgLeftSrc={IC_MASK}
           isLoading={isLoggingIn}
-          onClick={() => onLogin()}
+          onClick={(): void => onLogin()}
           text={getString('LOGIN')}
         />
         <View style={{ marginTop: 8 }} />
         <Button
           testID='btn2'
-          onClick={() => props.navigation.navigate('Temp')}
+          onClick={(): void => props.navigation.navigate('Temp')}
           text={getString('NAVIGATE')}
         />
         <View style={{ marginTop: 8 }} />
         <Button
           testID='btn3'
-          onClick={() => changeTheme()}
+          onClick={(): void => changeTheme()}
           text={getString('CHANGE_THEME')}
         />
       </ButtonWrapper>

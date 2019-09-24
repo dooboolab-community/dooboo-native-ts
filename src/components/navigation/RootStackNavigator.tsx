@@ -16,7 +16,7 @@ const routeConfig: NavigationRouteConfig = {
     }: {
       navigation: NavigationComponent;
       screenProps: ScreenProps;
-    }) => {
+    }): void => {
       const { theme } = screenProps;
       return {
         title: navigation.state.routeName,
@@ -37,7 +37,7 @@ const routeConfig: NavigationRouteConfig = {
     }: {
       navigation: NavigationComponent;
       screenProps: ScreenProps;
-    }) => {
+    }): void => {
       const { theme } = screenProps;
       return {
         headerTitle: (
