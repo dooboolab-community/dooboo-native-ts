@@ -1,8 +1,3 @@
-import {
-  NavigationParams,
-  NavigationScreenProp,
-  NavigationState,
-} from 'react-navigation';
 import React, { useReducer } from 'react';
 
 import { AppContext } from '../contexts';
@@ -13,12 +8,18 @@ const AppConsumer = AppContext.Consumer;
 
 interface Action {
   type: 'reset-user' | 'set-user' | 'change-theme-mode';
-  payload: object;
+  payload: {
+    theme: any;
+    user: {
+      displayName: string;
+      age: number;
+      job: string;
+    };
+  };
 }
 
 interface Props {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
-  children?: React.ReactChildren;
+  children?: React.ReactElement;
 }
 
 export interface State {
@@ -42,7 +43,7 @@ const reducer = (state: State, action: Action): State => {
     case 'reset-user':
       return { ...state, user: initialState.user };
     case 'set-user':
-      return { ...state, user: action.payload };
+      return { ...state, user: action.payload.user };
   }
 };
 
