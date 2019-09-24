@@ -53,7 +53,7 @@ interface Props {
 }
 
 function Intro(props: Props): React.ReactElement {
-  let timer;
+  let timer: number;
   const { state, dispatch } = React.useContext(AppContext);
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
@@ -113,7 +113,7 @@ function Intro(props: Props): React.ReactElement {
         <View style={{ marginTop: 8 }} />
         <Button
           testID='btn2'
-          onClick={(): void => props.navigation.navigate('Temp')}
+          onClick={(): boolean => props.navigation.navigate('Temp')}
           text={getString('NAVIGATE')}
         />
         <View style={{ marginTop: 8 }} />

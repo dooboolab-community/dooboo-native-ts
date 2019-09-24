@@ -1,5 +1,6 @@
 import {
   ActivityIndicator,
+  ImageSourcePropType,
   ImageStyle,
   TextStyle,
   TouchableOpacity,
