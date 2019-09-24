@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
-import { Theme, ThemeType } from '../theme';
 
 import { AppContext } from '../contexts';
+import { ThemeType } from '../theme';
 import { User } from '../types';
 
 const AppConsumer = AppContext.Consumer;
@@ -9,7 +9,7 @@ const AppConsumer = AppContext.Consumer;
 interface Action {
   type: 'reset-user' | 'set-user' | 'change-theme-mode';
   payload: {
-    theme: Theme;
+    theme: ThemeType;
     user: {
       displayName: string;
       age: number;
