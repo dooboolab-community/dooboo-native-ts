@@ -58,7 +58,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
         ]
       }
     >
-      
+      0
     </Text>
     <Text
       style={

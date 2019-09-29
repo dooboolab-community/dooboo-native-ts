@@ -97,10 +97,10 @@ function Intro(props: Props): React.ReactElement {
             marginTop: 100,
           }}
         >
-          {state.user.displayName}
+          {state.user ? state.user.displayName : ''}
         </StyledText>
-        <StyledText>{state.user.age ? state.user.age : ''}</StyledText>
-        <StyledText>{state.user.job}</StyledText>
+        <StyledText>{state.user ? state.user.age : ''}</StyledText>
+        <StyledText>{state.user ? state.user.job : ''}</StyledText>
       </ContentWrapper>
       <ButtonWrapper>
         <Button
