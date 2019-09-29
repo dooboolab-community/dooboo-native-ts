@@ -58,7 +58,6 @@ function Intro(props: Props): React.ReactElement {
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
   const onLogin = (): void => {
-    dispatch({ type: 'reset-user' });
     setIsLoggingIn(true);
     timer = setTimeout(() => {
       const user: User = {
@@ -66,7 +65,7 @@ function Intro(props: Props): React.ReactElement {
         age: 30,
         job: 'developer',
       };
-      dispatch({ type: 'set-user', payload: user });
+      dispatch({ type: 'set-user', payload: { user: user } });
       setIsLoggingIn(false);
       clearTimeout(timer);
     }, 1000);

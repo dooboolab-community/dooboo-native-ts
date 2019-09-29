@@ -37,6 +37,7 @@ const initialState: State = {
 };
 
 const reducer = (state: State, action: Action): State => {
+  // prettier-ignore
   switch (action.type) {
   case 'change-theme-mode':
     return { ...state, theme: action.payload.theme };
