@@ -29,6 +29,7 @@ const routeConfig = {
           <Text
             style={{
               fontSize: 18,
+              color: theme.fontColor,
             }}
           >
             {navigation.state.routeName}
