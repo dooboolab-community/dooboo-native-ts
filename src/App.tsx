@@ -1,12 +1,15 @@
-import { AppProvider as Provider } from './providers';
+import { AppProvider } from './providers';
 import React from 'react';
 import SwitchNavigator from './components/navigation/SwitchNavigator';
+import { ThemeProvider } from 'providers/ThemeProvider';
 
 function App(): React.ReactElement {
   return (
-    <Provider>
-      <SwitchNavigator />
-    </Provider>
+    <AppProvider>
+      <ThemeProvider>
+        <SwitchNavigator />
+      </ThemeProvider>
+    </AppProvider>
   );
 }
 
