@@ -1,5 +1,3 @@
-import 'react-native';
-
 import * as React from 'react';
 
 import {
@@ -7,15 +5,18 @@ import {
   act,
   fireEvent,
   render,
+  toJSON,
 } from '@testing-library/react-native';
-import { ThemeType, createTheme } from '../../../theme';
+import { Text, View } from 'react-native';
 
-import { AppProvider } from '../../../providers';
+import { AppProvider } from '../../../providers/AppProvider';
 import Button from '../../shared/Button';
 import Intro from '../Intro';
-// Note: test renderer must be required after react-native.
-import { ThemeProvider } from 'styled-components/native';
+import { ThemeProvider } from '../../../providers/ThemeProvider';
+import { ThemeType } from '../../../theme';
 import renderer from 'react-test-renderer';
+
+// Note: test renderer must be required after react-native.
 
 const createTestProps = (obj: object): object => ({
   navigation: {
@@ -27,45 +28,40 @@ const createTestProps = (obj: object): object => ({
 // `any` here is necessary for test, so turn off eslint rule for this line
 const props: any = createTestProps({}); // eslint-disable-line @typescript-eslint/no-explicit-any
 
-// test for the container page in dom
-describe('[Intro] screen rendering test', () => {
-  const component = (
+const component = (props) => {
+  return (
     <AppProvider>
-      <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
+      <ThemeProvider initialThemeType={ThemeType.LIGHT}>
         <Intro {...props} />
       </ThemeProvider>
     </AppProvider>
   );
-  let json: renderer.ReactTestRendererJSON;
+};
 
+describe('[Intro] screen rendering test', () => {
   it('should render outer component and snapshot matches', () => {
-    json = renderer.create(component).toJSON();
+    const json = renderer.create(component(props)).toJSON();
     expect(json).toMatchSnapshot();
+    expect(json).toBeTruthy();
   });
 });
 
 describe('[Intro] Interaction', () => {
-  const component = (
-    <AppProvider>
-      <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
-        <Intro {...props} />
-      </ThemeProvider>
-    </AppProvider>
-  );
-
+  let testingLib: RenderResult;
   let rendered: renderer.ReactTestRenderer;
   let root: renderer.ReactTestInstance;
-  let testingLib: RenderResult;
 
   it('should simulate [onLogin] click', () => {
-    rendered = renderer.create(component);
+    testingLib = render(component(props));
+    rendered = renderer.create(component(props));
     root = rendered.root;
-    testingLib = render(component);
 
     jest.useFakeTimers();
     const buttons = root.findAllByType(Button);
+
+    const button = testingLib.getByTestId('btn1');
     act(() => {
-      fireEvent.press(testingLib.queryByTestId('btn1'));
+      fireEvent.press(button);
       expect(setTimeout).toHaveBeenCalledTimes(1);
       jest.runAllTimers();
     });
@@ -75,11 +71,8 @@ describe('[Intro] Interaction', () => {
   });
 
   it('should simulate [navigate] click', () => {
-    rendered = renderer.create(component);
-    root = rendered.root;
+    testingLib = render(component(props));
 
-    // const buttons = root.findAllByType(Button);
-    // buttons[1].props.onClick();
     act(() => {
       fireEvent.press(testingLib.getByTestId('btn2'), 'click');
     });

@@ -1,4 +1,4 @@
-import { AppProvider } from './providers';
+import { AppProvider } from './providers/AppProvider';
 import React from 'react';
 import SwitchNavigator from './components/navigation/SwitchNavigator';
 import { ThemeProvider } from 'providers/ThemeProvider';

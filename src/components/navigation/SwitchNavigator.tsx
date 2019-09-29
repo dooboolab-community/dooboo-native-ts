@@ -3,7 +3,7 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import React from 'react';
 import RootNavigator from './RootStackNavigator';
 import { Theme } from '../../theme';
-import { useThemeProvicer } from 'providers/ThemeProvider';
+import { useThemeProvider } from 'providers/ThemeProvider';
 
 const SwitchNavigator = createSwitchNavigator(
   {
@@ -21,6 +21,6 @@ export interface ScreenProps {
 }
 
 export default function Navigator(): React.ReactElement {
-  const { theme } = useThemeProvicer();
+  const { theme } = useThemeProvider();
   return <AppContainer screenProps={{ theme }} />;
 }
