@@ -35,27 +35,28 @@ interface Props {
 
 type Reducer = (state: State, action: Action) => State;
 
-const setUser = (dispatch: React.Dispatch<Action>) => (user: User) => {
+const setUser = (dispatch: React.Dispatch<Action>) => (user: User): void => {
   dispatch({
     type: 'set-user',
     payload: { user },
   });
 };
 
-const resetUser = (dispatch: React.Dispatch<Action>) => () => {
+const resetUser = (dispatch: React.Dispatch<Action>) => (): void => {
   dispatch({
     type: 'reset-user',
     payload: initialState,
   });
 };
 
+// prettier-ignore
 const reducer: Reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'reset-user':
-    case 'set-user':
-      return { ...state, user: action.payload.user };
-    default:
-      return state;
+  case 'reset-user':
+  case 'set-user':
+    return { ...state, user: action.payload.user };
+  default:
+    return state;
   }
 };
 
