@@ -38,12 +38,12 @@ const initialState: State = {
 
 const reducer = (state: State, action: Action): State => {
   switch (action.type) {
-    case 'change-theme-mode':
-      return { ...state, theme: action.payload.theme };
-    case 'reset-user':
-      return { ...state, user: initialState.user };
-    case 'set-user':
-      return { ...state, user: action.payload.user };
+  case 'change-theme-mode':
+    return { ...state, theme: action.payload.theme };
+  case 'reset-user':
+    return { ...state, user: initialState.user };
+  case 'set-user':
+    return { ...state, user: action.payload.user };
   }
 };
 
