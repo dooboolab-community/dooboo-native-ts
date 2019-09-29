@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 
 import { User } from '../types';
-import createCtx from 'utils/createCtx';
+import createCtx from '../utils/createCtx';
 
 interface Context {
   state: State;
