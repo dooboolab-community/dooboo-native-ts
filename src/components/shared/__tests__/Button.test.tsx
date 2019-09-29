@@ -15,7 +15,7 @@ import { ThemeProvider } from 'styled-components/native';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-let props: any;
+let props: object;
 let component: React.ReactElement;
 let testingLib: RenderResult;
 
@@ -24,7 +24,7 @@ describe('[Button]', () => {
 
   beforeEach(() => {
     props = {
-      onClick: () => cnt++,
+      onClick: (): number => cnt++,
       testID: 'btn',
     };
     component = (

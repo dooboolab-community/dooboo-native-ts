@@ -1,4 +1,8 @@
-import { NavigationScreenProp, NavigationStateRoute } from 'react-navigation';
+import {
+  NavigationParams,
+  NavigationScreenProp,
+  NavigationState,
+} from 'react-navigation';
 
 import { AppContext } from '../../providers';
 import Button from '../shared/Button';
@@ -14,7 +18,7 @@ const Container = styled.View`
   flex: 1;
   align-self: stretch;
   overflow: scroll;
-  background-color: ${({ theme }) => theme.background};
+  background-color: ${({ theme }): string => theme.background};
 
   flex-direction: column;
   justify-content: flex-start;
@@ -41,21 +45,19 @@ const ButtonWrapper = styled.View`
 const StyledText = styled.Text`
   font-size: 18;
   line-height: 27;
-  color: ${({ theme }) => theme.fontColor};
+  color: ${({ theme }): string => theme.fontColor};
 `;
 
 interface Props {
-  store?: any;
-  navigation: NavigationScreenProp<NavigationStateRoute<any>>;
+  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
 }
 
-function Intro(props: Props) {
-  let timer: any;
+function Intro(props: Props): React.ReactElement {
+  let timer: number;
   const { state, dispatch } = React.useContext(AppContext);
-  const [isLoggingIn, setIsLoggingIn] = React.useState(false);
+  const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
-  const onLogin = () => {
-    dispatch({ type: 'reset-user' });
+  const onLogin = (): void => {
     setIsLoggingIn(true);
     timer = setTimeout(() => {
       const user: User = {
@@ -63,13 +65,13 @@ function Intro(props: Props) {
         age: 30,
         job: 'developer',
       };
-      dispatch({ type: 'set-user', payload: user });
+      dispatch({ type: 'set-user', payload: { user: user } });
       setIsLoggingIn(false);
       clearTimeout(timer);
     }, 1000);
   };
 
-  const changeTheme = () => {
+  const changeTheme = (): void => {
     let payload: object;
     if (state.theme === ThemeType.LIGHT) {
       payload = {
@@ -94,29 +96,29 @@ function Intro(props: Props) {
             marginTop: 100,
           }}
         >
-          {state.user.displayName}
+          {state.user ? state.user.displayName : ''}
         </StyledText>
-        <StyledText>{state.user.age ? state.user.age : ''}</StyledText>
-        <StyledText>{state.user.job}</StyledText>
+        <StyledText>{state.user ? state.user.age : ''}</StyledText>
+        <StyledText>{state.user ? state.user.job : ''}</StyledText>
       </ContentWrapper>
       <ButtonWrapper>
         <Button
           testID='btn1'
           imgLeftSrc={IC_MASK}
           isLoading={isLoggingIn}
-          onClick={() => onLogin()}
+          onClick={(): void => onLogin()}
           text={getString('LOGIN')}
         />
         <View style={{ marginTop: 8 }} />
         <Button
           testID='btn2'
-          onClick={() => props.navigation.navigate('Temp')}
+          onClick={(): boolean => props.navigation.navigate('Temp')}
           text={getString('NAVIGATE')}
         />
         <View style={{ marginTop: 8 }} />
         <Button
           testID='btn3'
-          onClick={() => changeTheme()}
+          onClick={(): void => changeTheme()}
           text={getString('CHANGE_THEME')}
         />
       </ButtonWrapper>

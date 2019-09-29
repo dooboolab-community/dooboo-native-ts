@@ -8,12 +8,18 @@ const AppConsumer = AppContext.Consumer;
 
 interface Action {
   type: 'reset-user' | 'set-user' | 'change-theme-mode';
-  payload: any;
+  payload: {
+    theme: ThemeType;
+    user: {
+      displayName: string;
+      age: number;
+      job: string;
+    };
+  };
 }
 
 interface Props {
-  navigation?: any;
-  children?: any;
+  children?: React.ReactElement;
 }
 
 export interface State {
@@ -30,18 +36,19 @@ const initialState: State = {
   },
 };
 
-const reducer = (state: State, action: Action) => {
+const reducer = (state: State, action: Action): State => {
+  // prettier-ignore
   switch (action.type) {
-    case 'change-theme-mode':
-      return { ...state, theme: action.payload.theme };
-    case 'reset-user':
-      return { ...state, user: initialState.user };
-    case 'set-user':
-      return { ...state, user: action.payload };
+  case 'change-theme-mode':
+    return { ...state, theme: action.payload.theme };
+  case 'reset-user':
+    return { ...state, user: initialState.user };
+  case 'set-user':
+    return { ...state, user: action.payload.user };
   }
 };
 
-function AppProvider(props: Props) {
+function AppProvider(props: Props): React.ReactElement {
   const [state, dispatch] = useReducer(reducer, initialState);
   const value = { state, dispatch };
 
