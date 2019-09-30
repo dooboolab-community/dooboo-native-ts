@@ -5,15 +5,11 @@ import {
   act,
   fireEvent,
   render,
-  toJSON,
 } from '@testing-library/react-native';
-import { Text, View } from 'react-native';
 
-import { AppProvider } from '../../../providers/AppProvider';
+import AllProviders from '../../../providers';
 import Button from '../../shared/Button';
 import Intro from '../Intro';
-import { ThemeProvider } from '../../../providers/ThemeProvider';
-import { ThemeType } from '../../../theme';
 import renderer from 'react-test-renderer';
 
 // Note: test renderer must be required after react-native.
@@ -28,13 +24,11 @@ const createTestProps = (obj: object): object => ({
 // `any` here is necessary for test, so turn off eslint rule for this line
 const props: any = createTestProps({}); // eslint-disable-line @typescript-eslint/no-explicit-any
 
-const component = (props) => {
+const component = (props): React.ReactElement => {
   return (
-    <AppProvider>
-      <ThemeProvider initialThemeType={ThemeType.LIGHT}>
-        <Intro {...props} />
-      </ThemeProvider>
-    </AppProvider>
+    <AllProviders isTest>
+      <Intro {...props} />
+    </AllProviders>
   );
 };
 
