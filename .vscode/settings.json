@@ -28,5 +28,11 @@
   "prettier.jsxSingleQuote": true,
   // relative path is preferred
   "javascript.preferences.importModuleSpecifier": "relative",
-  "typescript.preferences.importModuleSpecifier": "relative"
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  }
 }

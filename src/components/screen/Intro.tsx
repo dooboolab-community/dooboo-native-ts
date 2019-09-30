@@ -12,7 +12,7 @@ import { View } from 'react-native';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
 import { useAppContext } from '../../providers/AppProvider';
-import { useThemeProvider } from '../../providers/ThemeProvider';
+import { useThemeContext } from '../../providers/ThemeProvider';
 
 const Container = styled.View`
   flex: 1;
@@ -55,7 +55,7 @@ interface Props {
 function Intro(props: Props): React.ReactElement {
   let timer: number;
   const { state, setUser } = useAppContext();
-  const { changeThemeType } = useThemeProvider();
+  const { changeThemeType } = useThemeContext();
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
   const onLogin = (): void => {

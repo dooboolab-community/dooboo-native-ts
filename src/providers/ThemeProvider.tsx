@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Theme, ThemeType, createTheme } from '../theme';
 
 import { ThemeProvider as OriginalThemeProvider } from 'styled-components/native';
@@ -11,7 +11,7 @@ interface Context {
 }
 const [useCtx, Provider] = createCtx<Context>();
 
-const defaultThemeType: ThemeType = ThemeType.LIGHT;
+export const defaultThemeType: ThemeType = ThemeType.LIGHT;
 
 interface Props {
   children?: React.ReactElement;
@@ -25,7 +25,9 @@ function ThemeProvider({
 }: Props): React.ReactElement {
   const [themeType, setThemeType] = useState(initialThemeType);
   const changeThemeType = (): void => {
-    setThemeType(ThemeType.LIGHT ? ThemeType.DARK : ThemeType.LIGHT);
+    const newThemeType =
+      themeType === ThemeType.LIGHT ? ThemeType.DARK : ThemeType.LIGHT;
+    setThemeType(newThemeType);
   };
   const theme = createTheme(themeType);
 
@@ -42,4 +44,4 @@ function ThemeProvider({
   );
 }
 
-export { useCtx as useThemeProvider, ThemeProvider };
+export { useCtx as useThemeContext, ThemeProvider };
