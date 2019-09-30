@@ -4,15 +4,15 @@ import {
   NavigationState,
 } from 'react-navigation';
 
-import { AppContext } from '../../providers';
 import Button from '../shared/Button';
 import { IC_MASK } from '../../utils/Icons';
 import React from 'react';
-import { ThemeType } from '../../theme';
 import { User } from '../../types';
 import { View } from 'react-native';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
+import { useAppContext } from '../../providers/AppProvider';
+import { useThemeContext } from '../../providers/ThemeProvider';
 
 const Container = styled.View`
   flex: 1;
@@ -54,7 +54,8 @@ interface Props {
 
 function Intro(props: Props): React.ReactElement {
   let timer: number;
-  const { state, dispatch } = React.useContext(AppContext);
+  const { state, setUser } = useAppContext();
+  const { changeThemeType } = useThemeContext();
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
   const onLogin = (): void => {
@@ -65,27 +66,11 @@ function Intro(props: Props): React.ReactElement {
         age: 30,
         job: 'developer',
       };
-      dispatch({ type: 'set-user', payload: { user: user } });
+      // dispatch({ type: 'set-user', payload: { user: user } });
+      setUser(user);
       setIsLoggingIn(false);
       clearTimeout(timer);
     }, 1000);
-  };
-
-  const changeTheme = (): void => {
-    let payload: object;
-    if (state.theme === ThemeType.LIGHT) {
-      payload = {
-        theme: ThemeType.DARK,
-      };
-    } else {
-      payload = {
-        theme: ThemeType.LIGHT,
-      };
-    }
-    dispatch({
-      type: 'change-theme-mode',
-      payload,
-    });
   };
 
   return (
@@ -118,7 +103,7 @@ function Intro(props: Props): React.ReactElement {
         <View style={{ marginTop: 8 }} />
         <Button
           testID='btn3'
-          onClick={(): void => changeTheme()}
+          onClick={(): void => changeThemeType()}
           text={getString('CHANGE_THEME')}
         />
       </ButtonWrapper>

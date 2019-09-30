@@ -1,54 +1,42 @@
-import 'react-native';
-
 import * as React from 'react';
 
-import { AppProvider } from '../AppProvider';
+import { AppProvider, useAppContext } from '../AppProvider';
+import { Button, Text, View } from 'react-native';
+import { act, fireEvent, render } from '@testing-library/react-native';
+
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
+const FakeChild = () => {
+  const { state, setUser, resetUser } = useAppContext();
+
+  return (
+    <View>
+      <Text testID='TEXT'>{JSON.stringify(state, null, 2)}</Text>
+      <Button
+        testID='BUTTON'
+        onPress={() => {
+          resetUser();
+        }}
+        title='Button'
+      />
+    </View>
+  );
+};
+
 describe('[AppProvider] rendering test', () => {
   let json: renderer.ReactTestRendererJSON;
-  const component = <AppProvider />;
+  const component = (
+    <AppProvider>
+      <FakeChild />
+    </AppProvider>
+  );
 
   it('component and snapshot matches', () => {
     json = renderer.create(component).toJSON();
     expect(json).toMatchSnapshot();
+    expect(json).toBeTruthy();
   });
 });
 
-describe('[AppProvider] interactions', () => {
-  let props;
-  let rendered: renderer.ReactTestRenderer;
-  // let root: renderer.ReactTestInstance;
-  const component = <AppProvider />;
-
-  // const user = {
-  //   displayName: 'dooboolab',
-  //   age: 30,
-  //   job: '',
-  // };
-
-  beforeEach(() => {
-    props = {
-      navigation: {
-        navigate: jest.fn(),
-      },
-    };
-    rendered = renderer.create(component);
-    // root = rendered.root;
-  });
-
-  // it('should trigger [resetUser] action', () => {
-  //   let instance = root.instance;
-  //   instance.actions.resetUser();
-  // });
-
-  // it('should check trigger actions when method called', () => {
-  //   let instance = root.instance;
-  //   instance.actions.setUser({
-  //     displayName: '',
-  //     age: 0,
-  //     job: '',
-  //   });
-  // });
-});
+// TODO: add more interaction test, refer to ThemeProvider test

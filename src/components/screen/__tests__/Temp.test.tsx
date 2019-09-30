@@ -8,10 +8,9 @@ import {
   fireEvent,
   render,
 } from '@testing-library/react-native';
-import { ThemeType, createTheme } from '../../../theme';
 
+import AllProviders from '../../../providers';
 import Temp from '../Temp';
-import { ThemeProvider } from 'styled-components/native';
 import renderer from 'react-test-renderer';
 
 const props = {
@@ -21,9 +20,9 @@ const props = {
 };
 
 const component = (
-  <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
-    <Temp {...props} />
-  </ThemeProvider>
+  <AllProviders isTest>
+    <Temp {...(props as any)} />
+  </AllProviders>
 );
 
 describe('[Temp] render', () => {

@@ -53,7 +53,7 @@ app/
 │     └─ navigations
 │     └─ screen
 │     └─ shared
-│  └─ contexts
+│  └─ providers
 │  └─ utils
 │  └─ App.tsx
 ├─ test/
@@ -144,6 +144,44 @@ We've created test examples with jest-ts in `src/components/screen/__tests__` an
 "prettier.arrowParens": "always",
 "prettier.jsxSingleQuote": true
 ```
+### Using Context Api
+Whenever you add your own Context provider you can add it to `providers/` and use it inside of `providers/index.tsx`
+- [Splitting provider is preferred](https://github.com/facebook/react/issues/15156#issuecomment-474590693)
+```tsx
+// Add providers here
+const AllProviders = ({ isTest, children }: Props): React.ReactElement => {
+  return (
+    <AppProvider>
+      <ThemeProvider initialThemeType={isTest ? ThemeType.LIGHT : undefined}>
+        {children}
+      </ThemeProvider>
+    </AppProvider>
+  );
+};
+```
+The `AllProviders` is being used at `App.tsx` and test files easily
+```tsx
+// App.tsx
+function App(): React.ReactElement {
+  return (
+    <AllProviders>
+      <SwitchNavigator />
+    </AllProviders>
+  );
+}
+```
+```tsx
+// test files
+const component = (props): React.ReactElement => {
+  return (
+    <AllProviders isTest>
+      <Intro {...props} />
+    </AllProviders>
+  );
+};
+```
+> using consistent theme(ThemeType.LIGHT as default) explicitly is encouraged in testing for avoiding unexpected snapshot test errors
+
 
 ### Localization
 

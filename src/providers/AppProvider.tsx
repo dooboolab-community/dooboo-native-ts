@@ -1,34 +1,22 @@
 import React, { useReducer } from 'react';
 
-import { AppContext } from '../contexts';
-import { ThemeType } from '../theme';
 import { User } from '../types';
+import createCtx from '../utils/createCtx';
 
-const AppConsumer = AppContext.Consumer;
-
-interface Action {
-  type: 'reset-user' | 'set-user' | 'change-theme-mode';
-  payload: {
-    theme: ThemeType;
-    user: {
-      displayName: string;
-      age: number;
-      job: string;
-    };
-  };
+interface Context {
+  state: State;
+  setUser: (user: User) => void;
+  resetUser: () => void;
 }
+const [useCtx, Provider] = createCtx<Context>();
 
-interface Props {
-  children?: React.ReactElement;
-}
+type dispatchType = 'reset-user' | 'set-user';
 
 export interface State {
   user: User;
-  theme: ThemeType;
 }
 
 const initialState: State = {
-  theme: ThemeType.LIGHT,
   user: {
     displayName: '',
     age: 0,
@@ -36,25 +24,51 @@ const initialState: State = {
   },
 };
 
-const reducer = (state: State, action: Action): State => {
-  // prettier-ignore
+interface Action {
+  type: dispatchType;
+  payload: State;
+}
+
+interface Props {
+  children?: React.ReactElement;
+}
+
+type Reducer = (state: State, action: Action) => State;
+
+const setUser = (dispatch: React.Dispatch<Action>) => (user: User): void => {
+  dispatch({
+    type: 'set-user',
+    payload: { user },
+  });
+};
+
+const resetUser = (dispatch: React.Dispatch<Action>) => (): void => {
+  dispatch({
+    type: 'reset-user',
+    payload: initialState,
+  });
+};
+
+// prettier-ignore
+const reducer: Reducer = (state = initialState, action) => {
   switch (action.type) {
-  case 'change-theme-mode':
-    return { ...state, theme: action.payload.theme };
   case 'reset-user':
-    return { ...state, user: initialState.user };
   case 'set-user':
     return { ...state, user: action.payload.user };
+  default:
+    return state;
   }
 };
 
 function AppProvider(props: Props): React.ReactElement {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  const value = { state, dispatch };
+  const [state, dispatch] = useReducer<Reducer>(reducer, initialState);
 
-  return (
-    <AppContext.Provider value={value}>{props.children}</AppContext.Provider>
-  );
+  const actions = {
+    setUser: setUser(dispatch),
+    resetUser: resetUser(dispatch),
+  };
+
+  return <Provider value={{ state, ...actions }}>{props.children}</Provider>;
 }
 
-export { AppConsumer, AppProvider, AppContext };
+export { useCtx as useAppContext, AppProvider };

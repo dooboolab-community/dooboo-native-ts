@@ -1,17 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[AppProvider] rendering test component and snapshot matches 1`] = `
+exports[`[ThemeProvider] rendering test component and snapshot matches 1`] = `
 <View>
   <Text
     testID="TEXT"
   >
-    {
-  "user": {
-    "displayName": "",
-    "age": 0,
-    "job": ""
-  }
-}
+    "LIGHT"
   </Text>
   <View
     accessibilityRole="button"
