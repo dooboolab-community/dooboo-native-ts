@@ -18,7 +18,7 @@ const Container = styled.View`
   flex: 1;
   align-self: stretch;
   overflow: scroll;
-  /* background-color: ${({ theme }): string => theme.background}; */
+  background-color: ${({ theme }): string => theme.background};
 
   flex-direction: column;
   justify-content: flex-start;
@@ -45,7 +45,7 @@ const ButtonWrapper = styled.View`
 const StyledText = styled.Text`
   font-size: 18;
   line-height: 27;
-  /* color: ${({ theme }): string => theme.fontColor}; */
+  color: ${({ theme }): string => theme.fontColor};
 `;
 
 interface Props {

@@ -153,34 +153,6 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
         </Text>
       </View>
     </View>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "black",
-            "fontSize": 18,
-            "lineHeight": 27,
-          },
-        ]
-      }
-    >
-      With Container!
-    </Text>
-    <Text
-      isLoading={false}
-      style={
-        Array [
-          Object {
-            "color": "black",
-            "fontSize": 18,
-            "lineHeight": 27,
-          },
-        ]
-      }
-      testID="ww"
-    >
-      No Container!
-    </Text>
     <View
       style={
         Object {
