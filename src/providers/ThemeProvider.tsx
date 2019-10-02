@@ -1,12 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Theme, createTheme } from '../theme';
 
+import { DefaultTheme } from 'styled-components';
 import { ThemeProvider as OriginalThemeProvider } from 'styled-components/native';
 import { ThemeType } from '../types';
 import createCtx from '../utils/createCtx';
+import { createTheme } from '../theme';
 
 interface Context {
-  theme: Theme;
+  theme: DefaultTheme;
   themeType: ThemeType;
   changeThemeType: () => void;
 }

@@ -1,8 +1,8 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
+import { DefaultTheme } from 'styled-components';
 import React from 'react';
 import RootNavigator from './RootStackNavigator';
-import { Theme } from '../../theme';
 import { useThemeContext } from '../../providers/ThemeProvider';
 
 const SwitchNavigator = createSwitchNavigator(
@@ -17,7 +17,7 @@ const SwitchNavigator = createSwitchNavigator(
 const AppContainer = createAppContainer(SwitchNavigator);
 
 export interface ScreenProps {
-  theme: Theme;
+  theme: DefaultTheme;
   changeThemeType: Function;
 }
 

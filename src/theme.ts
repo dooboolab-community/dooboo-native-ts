@@ -15,18 +15,6 @@ const colors = {
   darkBackgroundLight: '#393241',
 };
 
-export interface Theme {
-  background: string;
-  btnPrimary: string;
-  btnPrimaryFont: string;
-  btnPrimaryLight: string;
-  btnPrimaryLightFont: string;
-  textDisabled: string;
-  btnDisabled: string;
-  fontColor: string;
-  tintColor: string;
-}
-
 const theme = {
   light: {
     background: colors.lightBackground,
