@@ -18,9 +18,10 @@ const AppContainer = createAppContainer(SwitchNavigator);
 
 export interface ScreenProps {
   theme: Theme;
+  changeThemeType: Function;
 }
 
 export default function Navigator(): React.ReactElement {
-  const { theme } = useThemeContext();
-  return <AppContainer screenProps={{ theme }} />;
+  const { theme, changeThemeType } = useThemeContext();
+  return <AppContainer screenProps={{ theme, changeThemeType }} />;
 }

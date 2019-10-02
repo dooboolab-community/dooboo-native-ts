@@ -8,7 +8,7 @@ import {
 } from '../ThemeProvider';
 import { act, fireEvent, render } from '@testing-library/react-native';
 
-import { ThemeType } from '../../theme';
+import { ThemeType } from '../../types';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 

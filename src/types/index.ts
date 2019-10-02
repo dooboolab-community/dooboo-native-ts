@@ -7,6 +7,12 @@ export interface User {
   age: number;
   job: string;
 }
+
+export enum ThemeType {
+  LIGHT = 'LIGHT',
+  DARK = 'DARK',
+}
+
 interface IconProps {
   style?: StyleProp<TextStyle>;
   width?: number | string;

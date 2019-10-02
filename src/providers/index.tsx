@@ -1,7 +1,7 @@
 import { AppProvider } from './AppProvider';
 import React from 'react';
 import { ThemeProvider } from './ThemeProvider';
-import { ThemeType } from '../theme';
+import { ThemeType } from '../types';
 
 interface Props {
   isTest?: boolean;

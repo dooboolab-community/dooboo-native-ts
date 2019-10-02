@@ -8,7 +8,7 @@ const routeConfig = {
   Intro: {
     screen: Intro,
     navigationOptions: ({ navigation, screenProps }): object => {
-      const { theme } = screenProps;
+      const { theme, changeThemeType } = screenProps;
       return {
         title: navigation.state.routeName,
         headerStyle: {
@@ -23,7 +23,7 @@ const routeConfig = {
   Temp: {
     screen: Temp,
     navigationOptions: ({ navigation, screenProps }): object => {
-      const { theme } = screenProps;
+      const { theme, changeThemeType } = screenProps;
       return {
         headerTitle: (
           <Text

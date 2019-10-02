@@ -1,9 +1,5 @@
 import { DefaultTheme } from 'styled-components';
-
-export enum ThemeType {
-  LIGHT = 'LIGHT',
-  DARK = 'DARK',
-}
+import { ThemeType } from './types';
 
 const colors = {
   skyBlue: '#069ccd',

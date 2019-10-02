@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Theme, ThemeType, createTheme } from '../theme';
+import { Theme, createTheme } from '../theme';
 
 import { ThemeProvider as OriginalThemeProvider } from 'styled-components/native';
+import { ThemeType } from '../types';
 import createCtx from '../utils/createCtx';
 
 interface Context {
