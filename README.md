@@ -15,7 +15,8 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 - [localization](https://github.com/stefalda/ReactNativeLocalization)
 - [styled-components](https://github.com/styled-components/styled-components)
 - [ts-jest](https://github.com/kulshekhar/ts-jest)
-- [react-native-testing-library](https://github.com/callstack/react-native-testing-library)
+- [@testing-library/react-native](https://github.com/testing-library/native-testing-library)
+- [@testing-library/react-hooks](https://github.com/testing-library/react-hooks-testing-library)
 - [react-hook](https://reactjs.org/docs/hooks-intro.html)
 - [prettier](https://prettier.io)
 
@@ -144,9 +145,13 @@ We've created test examples with jest-ts in `src/components/screen/__tests__` an
 "prettier.arrowParens": "always",
 "prettier.jsxSingleQuote": true
 ```
+
 ### Using Context Api
+
 Whenever you add your own Context provider you can add it to `providers/` and use it inside of `providers/index.tsx`
+
 - [Splitting provider is preferred](https://github.com/facebook/react/issues/15156#issuecomment-474590693)
+
 ```tsx
 // Add providers here
 const AllProviders = ({ isTest, children }: Props): React.ReactElement => {
@@ -159,7 +164,9 @@ const AllProviders = ({ isTest, children }: Props): React.ReactElement => {
   );
 };
 ```
+
 The `AllProviders` is being used at `App.tsx` and test files easily
+
 ```tsx
 // App.tsx
 function App(): React.ReactElement {
@@ -170,6 +177,7 @@ function App(): React.ReactElement {
   );
 }
 ```
+
 ```tsx
 // test files
 const component = (props): React.ReactElement => {
@@ -180,8 +188,8 @@ const component = (props): React.ReactElement => {
   );
 };
 ```
-> using consistent theme(ThemeType.LIGHT as default) explicitly is encouraged in testing for avoiding unexpected snapshot test errors
 
+> using consistent theme(ThemeType.LIGHT as default) explicitly is encouraged in testing for avoiding unexpected snapshot test errors
 
 ### Localization
 
