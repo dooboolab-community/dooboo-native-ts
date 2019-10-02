@@ -1,3 +1,5 @@
+import { DefaultTheme } from 'styled-components';
+
 export enum ThemeType {
   LIGHT = 'LIGHT',
   DARK = 'DARK',
@@ -54,8 +56,8 @@ const theme = {
   },
 };
 
-export const createTheme = (type = ThemeType.LIGHT): Theme => {
-  // prettier-ignore
+// prettier-ignore
+export const createTheme = (type = ThemeType.LIGHT): DefaultTheme => {
   switch (type) {
   case ThemeType.LIGHT:
     return theme.light;
