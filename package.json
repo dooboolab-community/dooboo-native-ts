@@ -9,6 +9,7 @@
     "tsc": "tsc",
     "watch": "tsc -w",
     "start": "npm run dev",
+    "codecov": "codecov",
     "upgrade": "react-native-git-upgrade && npm install --save react-native",
     "upgrade:major": "react-native upgrade",
     "test": "jest",
