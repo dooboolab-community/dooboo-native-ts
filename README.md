@@ -26,8 +26,8 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 1. Sample of context-api with `react-hook` (`useContext`).
 2. Know how to structure react native app with typescript.
 3. Know how to navigate between screens with `react-navigation`.
-4. Know how to write test code with `react-native-testing-library`.
-5. Know how to `lint` your project with `tslint`.
+4. Know how to write test code with `testing-library`.
+5. Know how to `lint` your project with `eslint` for both `ts` and maybe some `js`.
 6. Know how to localize your project.
 ```
 
@@ -231,11 +231,11 @@ NativeModules.ReactLocalization = {
 
 ### React version
 
-16.8.3
+16.9
 
 ### React Native version
 
-0.60
+0.61
 
 ### React navigation
 
