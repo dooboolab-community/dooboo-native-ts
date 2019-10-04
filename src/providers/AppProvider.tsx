@@ -10,7 +10,7 @@ interface Context {
 }
 const [useCtx, Provider] = createCtx<Context>();
 
-enum ActionType {
+export enum ActionType {
   ResetUser = 'reset-user',
   SetUser = 'set-user',
 }
@@ -27,10 +27,16 @@ const initialState: State = {
   },
 };
 
-interface Action {
-  type: ActionType;
-  payload: State;
+interface SetUserAction {
+  type: ActionType.SetUser;
+  payload: User;
 }
+
+interface ResetUserAction {
+  type: ActionType.ResetUser;
+}
+
+type Action = SetUserAction | ResetUserAction;
 
 interface Props {
   children?: React.ReactElement;
@@ -38,17 +44,18 @@ interface Props {
 
 type Reducer = (state: State, action: Action) => State;
 
-const setUser = (dispatch: React.Dispatch<Action>) => (user: User): void => {
+const setUser = (dispatch: React.Dispatch<SetUserAction>) => (
+  user: User,
+): void => {
   dispatch({
     type: ActionType.SetUser,
-    payload: { user },
+    payload: user,
   });
 };
 
-const resetUser = (dispatch: React.Dispatch<Action>) => (): void => {
+const resetUser = (dispatch: React.Dispatch<ResetUserAction>) => (): void => {
   dispatch({
     type: ActionType.ResetUser,
-    payload: initialState,
   });
 };
 
@@ -56,8 +63,9 @@ const resetUser = (dispatch: React.Dispatch<Action>) => (): void => {
 const reducer: Reducer = (state = initialState, action) => {
   switch (action.type) {
   case 'reset-user':
+    return initialState;
   case 'set-user':
-    return { ...state, user: action.payload.user };
+    return { ...state, user: action.payload };
   default:
     return state;
   }

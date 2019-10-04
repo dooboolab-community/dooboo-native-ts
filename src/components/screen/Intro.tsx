@@ -66,7 +66,6 @@ function Intro(props: Props): React.ReactElement {
         age: 30,
         job: 'developer',
       };
-      // dispatch({ type: 'set-user', payload: { user: user } });
       setUser(user);
       setIsLoggingIn(false);
       clearTimeout(timer);
