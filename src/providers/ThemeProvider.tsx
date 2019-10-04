@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useState } from 'react';
 
 import { DefaultTheme } from 'styled-components';
 import { ThemeProvider as OriginalThemeProvider } from 'styled-components/native';

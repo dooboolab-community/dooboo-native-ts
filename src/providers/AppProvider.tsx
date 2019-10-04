@@ -10,7 +10,10 @@ interface Context {
 }
 const [useCtx, Provider] = createCtx<Context>();
 
-type dispatchType = 'reset-user' | 'set-user';
+enum ActionType {
+  ResetUser = 'reset-user',
+  SetUser = 'set-user',
+}
 
 export interface State {
   user: User;
@@ -25,7 +28,7 @@ const initialState: State = {
 };
 
 interface Action {
-  type: dispatchType;
+  type: ActionType;
   payload: State;
 }
 
@@ -37,14 +40,14 @@ type Reducer = (state: State, action: Action) => State;
 
 const setUser = (dispatch: React.Dispatch<Action>) => (user: User): void => {
   dispatch({
-    type: 'set-user',
+    type: ActionType.SetUser,
     payload: { user },
   });
 };
 
 const resetUser = (dispatch: React.Dispatch<Action>) => (): void => {
   dispatch({
-    type: 'reset-user',
+    type: ActionType.ResetUser,
     payload: initialState,
   });
 };
