@@ -87,7 +87,7 @@ function Intro(props: Props): React.ReactElement {
       </ContentWrapper>
       <ButtonWrapper>
         <Button
-          testID='btn1'
+          testID="btn1"
           imgLeftSrc={IC_MASK}
           isLoading={isLoggingIn}
           onClick={(): void => onLogin()}
@@ -95,13 +95,13 @@ function Intro(props: Props): React.ReactElement {
         />
         <View style={{ marginTop: 8 }} />
         <Button
-          testID='btn2'
+          testID="btn2"
           onClick={(): boolean => props.navigation.navigate('Temp')}
           text={getString('NAVIGATE')}
         />
         <View style={{ marginTop: 8 }} />
         <Button
-          testID='btn3'
+          testID="btn3"
           onClick={(): void => changeThemeType()}
           text={getString('CHANGE_THEME')}
         />

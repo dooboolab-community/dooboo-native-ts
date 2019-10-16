@@ -62,12 +62,12 @@ const resetUser = (dispatch: React.Dispatch<ResetUserAction>) => (): void => {
 // prettier-ignore
 const reducer: Reducer = (state = initialState, action) => {
   switch (action.type) {
-  case 'reset-user':
-    return initialState;
-  case 'set-user':
-    return { ...state, user: action.payload };
-  default:
-    return state;
+    case 'reset-user':
+      return initialState;
+    case 'set-user':
+      return { ...state, user: action.payload };
+    default:
+      return state;
   }
 };
 

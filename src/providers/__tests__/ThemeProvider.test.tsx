@@ -12,18 +12,18 @@ import { ThemeType } from '../../types';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-const FakeChild = () => {
+const FakeChild = (): React.ReactElement => {
   const { themeType, changeThemeType } = useThemeContext();
 
   return (
     <View>
-      <Text testID='TEXT'>{JSON.stringify(themeType, null, 2)}</Text>
+      <Text testID="TEXT">{JSON.stringify(themeType, null, 2)}</Text>
       <Button
-        testID='BUTTON'
-        onPress={() => {
+        testID="BUTTON"
+        onPress={(): void => {
           changeThemeType();
         }}
-        title='Button'
+        title="Button"
       />
     </View>
   );

@@ -25,7 +25,7 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
   "prettier.arrowParens": "always",
-  "prettier.jsxSingleQuote": true,
+  "prettier.jsxSingleQuote": false,
   // relative path is preferred
   "javascript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifier": "relative",

@@ -24,9 +24,9 @@ function Page(props: Props): React.ReactElement {
   return (
     <Container>
       <Button
-        testID='btn'
+        testID="btn"
         onClick={(): boolean => props.navigation.goBack()}
-        text='Go Back'
+        text="Go Back"
         style={{
           backgroundColor: '#333333',
         }}
