@@ -1,15 +1,9 @@
 import 'styled-components';
+import { Theme } from './theme';
 
 declare module 'styled-components' {
-  export interface DefaultTheme {
+  export interface DefaultTheme extends Theme {
+    // hyochan - no empty extends
     background: string;
-    btnPrimary: string;
-    btnPrimaryFont: string;
-    btnPrimaryLight: string;
-    btnPrimaryLightFont: string;
-    textDisabled: string;
-    btnDisabled: string;
-    fontColor: string;
-    tintColor: string;
   }
 }

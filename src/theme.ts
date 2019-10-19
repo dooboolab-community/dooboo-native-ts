@@ -15,32 +15,37 @@ const colors = {
   darkBackgroundLight: '#393241',
 };
 
-const theme = {
-  light: {
-    background: colors.lightBackground,
-    btnPrimary: colors.skyBlue,
-    btnPrimaryFont: 'white',
-    btnPrimaryLight: colors.whiteGray,
-    btnPrimaryLightFont: 'black',
-    textDisabled: '#969696',
-    btnDisabled: 'rgb(224,224,224)',
-    fontColor: 'black',
-    tintColor: '#333333',
-  },
-  dark: {
-    background: colors.darkBackground,
-    btnPrimary: colors.skyBlue,
-    btnPrimaryFont: 'white',
-    btnPrimaryLight: colors.whiteGray,
-    btnPrimaryLightFont: 'black',
-    textDisabled: '#969696',
-    btnDisabled: 'rgb(224,224,224)',
-    fontColor: 'white',
-    tintColor: '#a3a3a3',
-  },
+const light = {
+  background: colors.lightBackground,
+  btnPrimary: colors.skyBlue,
+  btnPrimaryFont: 'white',
+  btnPrimaryLight: colors.whiteGray,
+  btnPrimaryLightFont: 'black',
+  textDisabled: '#969696',
+  btnDisabled: 'rgb(224,224,224)',
+  fontColor: 'black',
+  tintColor: '#333333',
 };
 
-// prettier-ignore
+export type Theme = typeof light;
+
+const dark: Theme = {
+  background: colors.darkBackground,
+  btnPrimary: colors.skyBlue,
+  btnPrimaryFont: 'white',
+  btnPrimaryLight: colors.whiteGray,
+  btnPrimaryLightFont: 'black',
+  textDisabled: '#969696',
+  btnDisabled: 'rgb(224,224,224)',
+  fontColor: 'white',
+  tintColor: '#a3a3a3',
+};
+
+const theme = {
+  light,
+  dark,
+};
+
 export const createTheme = (type = ThemeType.LIGHT): DefaultTheme => {
   switch (type) {
     case ThemeType.LIGHT:
