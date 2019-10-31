@@ -1,40 +1,36 @@
-import * as React from 'react';
-
+import React, { ReactElement } from 'react';
 import {
   RenderResult,
   act,
   fireEvent,
   render,
 } from '@testing-library/react-native';
+import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
 import Button from '../../shared/Button';
 import Intro from '../Intro';
-import RootProviders from '../../../providers';
+import { ThemeType } from '../../../types';
 import renderer from 'react-test-renderer';
 
-// Note: test renderer must be required after react-native.
-
-const createTestProps = (obj: object): object => ({
-  navigation: {
-    navigate: jest.fn(),
-  },
-  ...obj,
-});
-
-// `any` here is necessary for test, so turn off eslint rule for this line
-const props: any = createTestProps({}); // eslint-disable-line @typescript-eslint/no-explicit-any
-
-const component = (props): React.ReactElement => {
-  return (
-    <RootProviders isTest>
-      <Intro {...props} />
-    </RootProviders>
-  );
-};
+let props: any;
+let component: ReactElement;
 
 describe('[Intro] screen rendering test', () => {
+  beforeEach(() => {
+    props = createTestProps({});
+    component = createTestElement(<Intro {...props} />);
+  });
+
   it('should render outer component and snapshot matches', () => {
-    const json = renderer.create(component(props)).toJSON();
+    const json = renderer.create(component).toJSON();
+    expect(json).toMatchSnapshot();
+    expect(json).toBeTruthy();
+  });
+
+  it('should render [Dark] theme', () => {
+    props = createTestProps({});
+    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    const json = renderer.create(component).toJSON();
     expect(json).toMatchSnapshot();
     expect(json).toBeTruthy();
   });
@@ -46,8 +42,8 @@ describe('[Intro] Interaction', () => {
   let root: renderer.ReactTestInstance;
 
   it('should simulate [onLogin] click', () => {
-    testingLib = render(component(props));
-    rendered = renderer.create(component(props));
+    testingLib = render(component);
+    rendered = renderer.create(component);
     root = rendered.root;
 
     jest.useFakeTimers();
@@ -65,7 +61,7 @@ describe('[Intro] Interaction', () => {
   });
 
   it('should simulate [navigate] click', () => {
-    testingLib = render(component(props));
+    testingLib = render(component);
 
     act(() => {
       fireEvent.press(testingLib.getByTestId('btn2'), 'click');

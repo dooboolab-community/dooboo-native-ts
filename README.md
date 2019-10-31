@@ -154,10 +154,15 @@ Whenever you add your own Context provider you can add it to `providers/` and us
 
 ```tsx
 // Add providers here
-const RootProviders = ({ isTest, children }: Props): React.ReactElement => {
+const RootProviders = ({
+  initialThemeType,
+  children,
+}: Props): React.ReactElement => {
   return (
     <AppProvider>
-      <ThemeProvider initialThemeType={isTest ? ThemeType.LIGHT : undefined}>
+      <ThemeProvider
+        initialThemeType={initialThemeType ? ThemeType.LIGHT : ThemeType.DARK}
+      >
         {children}
       </ThemeProvider>
     </AppProvider>
@@ -182,7 +187,7 @@ function App(): React.ReactElement {
 // test files
 const component = (props): React.ReactElement => {
   return (
-    <RootProviders isTest>
+    <RootProviders initialThemeType>
       <Intro {...props} />
     </RootProviders>
   );

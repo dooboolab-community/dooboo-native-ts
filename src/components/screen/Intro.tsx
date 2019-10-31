@@ -1,13 +1,8 @@
-import {
-  NavigationParams,
-  NavigationScreenProp,
-  NavigationState,
-} from 'react-navigation';
+import { DefaultNavigationProps, User } from '../../types';
 
 import Button from '../shared/Button';
 import { IC_MASK } from '../../utils/Icons';
 import React from 'react';
-import { User } from '../../types';
 import { View } from 'react-native';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
@@ -49,7 +44,7 @@ const StyledText = styled.Text`
 `;
 
 interface Props {
-  navigation: NavigationScreenProp<NavigationState, NavigationParams>;
+  navigation: DefaultNavigationProps;
 }
 
 function Intro(props: Props): React.ReactElement {
