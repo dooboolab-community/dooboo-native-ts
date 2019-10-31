@@ -1,28 +1,21 @@
-import LocalizedStrings from 'react-native-localization';
+import * as Localization from 'react-native-localize';
 
-const strings: any = new LocalizedStrings({
-  en: {
-    HELLO: 'Hello',
-    LOGIN: 'Login',
-    EMAIL: 'Email',
-    PASSWORD: 'Password',
-    SIGNUP: 'SIGN UP',
-    FORGOT_PW: 'Forgot password?',
-    NAVIGATE: 'Navigate',
-    CHANGE_THEME: 'Change theme',
-  },
-  ko: {
-    HELLO: '안녕하세요',
-    LOGIN: '로그인',
-    EMAIL: '이메일',
-    PASSWORD: '패스워드',
-    SIGNUP: '회원가입',
-    FORGOT_PW: '비밀번호를 잊어버리셨나요?',
-    NAVIGATE: '이동하기',
-    CHANGE_THEME: '테마 변경',
-  },
-});
+import en from './assets/langs/en.json';
+import i18n from 'i18n-js';
+import ko from './assets/langs/ko.json';
 
-export const getString = (str: string) => {
-  return strings[str];
+const locales = Localization.getLocales();
+
+if (Array.isArray(locales)) {
+  i18n.locale = locales[0].languageTag;
+}
+
+i18n.fallbacks = true;
+i18n.translations = { en, ko };
+
+export const getString = (param: string, mapObj?: object): string => {
+  if (mapObj) {
+    i18n.t(param, mapObj);
+  }
+  return i18n.t(param);
 };

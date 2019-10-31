@@ -9,7 +9,7 @@ import {
   render,
 } from '@testing-library/react-native';
 
-import AllProviders from '../../../providers';
+import RootProviders from '../../../providers';
 import Temp from '../Temp';
 import renderer from 'react-test-renderer';
 
@@ -20,9 +20,9 @@ const props = {
 };
 
 const component = (
-  <AllProviders isTest>
+  <RootProviders isTest>
     <Temp {...(props as any)} />
-  </AllProviders>
+  </RootProviders>
 );
 
 describe('[Temp] render', () => {

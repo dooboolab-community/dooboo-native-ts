@@ -9,7 +9,7 @@ interface Props {
 }
 
 // Add providers here
-const AllProviders = ({ isTest, children }: Props): React.ReactElement => {
+const RootProviders = ({ isTest, children }: Props): React.ReactElement => {
   return (
     <AppProvider>
       <ThemeProvider initialThemeType={isTest ? ThemeType.LIGHT : undefined}>
@@ -19,4 +19,4 @@ const AllProviders = ({ isTest, children }: Props): React.ReactElement => {
   );
 };
 
-export default AllProviders;
+export default RootProviders;

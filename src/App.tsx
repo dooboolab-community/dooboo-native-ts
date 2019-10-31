@@ -1,12 +1,12 @@
-import AllProviders from './providers';
 import React from 'react';
+import RootProviders from './providers';
 import SwitchNavigator from './components/navigation/SwitchNavigator';
 
 function App(): React.ReactElement {
   return (
-    <AllProviders>
+    <RootProviders>
       <SwitchNavigator />
-    </AllProviders>
+    </RootProviders>
   );
 }
 
