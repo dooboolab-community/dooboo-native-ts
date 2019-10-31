@@ -35,7 +35,19 @@ describe('[Button]', () => {
     );
   });
 
-  it('renders without crashing', () => {
+  it('[ThemeType.Light] renders without crashing', () => {
+    const rendered = renderer.create(component).toJSON();
+    expect(rendered).toMatchSnapshot();
+    expect(rendered).toBeTruthy();
+  });
+
+  it('[ThemeType.Dark] renders without crashing', () => {
+    component = (
+      <ThemeProvider theme={createTheme(ThemeType.DARK)}>
+        <Button {...props} />
+      </ThemeProvider>
+    );
+
     const rendered = renderer.create(component).toJSON();
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
