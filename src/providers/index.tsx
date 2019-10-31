@@ -9,7 +9,7 @@ interface Props {
 }
 
 // Add providers here
-const RootProviders = ({
+const RootProvider = ({
   initialThemeType,
   children,
 }: Props): React.ReactElement => {
@@ -26,4 +26,4 @@ const RootProviders = ({
   );
 };
 
-export default RootProviders;
+export default RootProvider;
