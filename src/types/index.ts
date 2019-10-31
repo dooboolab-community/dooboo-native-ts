@@ -1,3 +1,8 @@
+import {
+  NavigationParams,
+  NavigationScreenProp,
+  NavigationState,
+} from 'react-navigation';
 import { StyleProp, TextStyle } from 'react-native';
 
 import { SFC } from 'react';
@@ -12,6 +17,10 @@ export enum ThemeType {
   LIGHT = 'LIGHT',
   DARK = 'DARK',
 }
+
+export type DefaultNavigationProps<
+  T extends NavigationState = NavigationState
+> = NavigationScreenProp<T, NavigationParams>;
 
 interface IconProps {
   style?: StyleProp<TextStyle>;

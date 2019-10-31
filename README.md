@@ -154,10 +154,15 @@ Whenever you add your own Context provider you can add it to `providers/` and us
 
 ```tsx
 // Add providers here
-const RootProviders = ({ isTest, children }: Props): React.ReactElement => {
+const RootProvider = ({
+  initialThemeType,
+  children,
+}: Props): React.ReactElement => {
   return (
     <AppProvider>
-      <ThemeProvider initialThemeType={isTest ? ThemeType.LIGHT : undefined}>
+      <ThemeProvider
+        initialThemeType={initialThemeType ? ThemeType.LIGHT : ThemeType.DARK}
+      >
         {children}
       </ThemeProvider>
     </AppProvider>
@@ -165,15 +170,15 @@ const RootProviders = ({ isTest, children }: Props): React.ReactElement => {
 };
 ```
 
-The `RootProviders` is being used at `App.tsx` and test files easily
+The `RootProvider` is being used at `App.tsx` and test files easily
 
 ```tsx
 // App.tsx
 function App(): React.ReactElement {
   return (
-    <RootProviders>
+    <RootProvider>
       <SwitchNavigator />
-    </RootProviders>
+    </RootProvider>
   );
 }
 ```
@@ -182,9 +187,9 @@ function App(): React.ReactElement {
 // test files
 const component = (props): React.ReactElement => {
   return (
-    <RootProviders isTest>
+    <RootProvider initialThemeType>
       <Intro {...props} />
-    </RootProviders>
+    </RootProvider>
   );
 };
 ```
