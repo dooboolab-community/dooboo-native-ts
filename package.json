@@ -33,6 +33,7 @@
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.6.2",
     "i18n-js": "^3.3.0",
     "react": "16.9.0",
     "react-native": "0.61.3",
