@@ -7,9 +7,9 @@ import {
   render,
 } from '@testing-library/react-native';
 
-import AllProviders from '../../../providers';
 import Button from '../../shared/Button';
 import Intro from '../Intro';
+import RootProviders from '../../../providers';
 import renderer from 'react-test-renderer';
 
 // Note: test renderer must be required after react-native.
@@ -26,9 +26,9 @@ const props: any = createTestProps({}); // eslint-disable-line @typescript-eslin
 
 const component = (props): React.ReactElement => {
   return (
-    <AllProviders isTest>
+    <RootProviders isTest>
       <Intro {...props} />
-    </AllProviders>
+    </RootProviders>
   );
 };
 
