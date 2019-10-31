@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 orbs:
   codecov: codecov/codecov@1.0.5
 jobs:
@@ -206,7 +206,7 @@ jobs:
           path: ios/test-results
 
 workflows:
-  version: 2
+  version: 2.1
   node-android-ios:
     jobs:
       - node
