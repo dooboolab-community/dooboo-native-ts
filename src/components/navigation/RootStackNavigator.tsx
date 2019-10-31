@@ -7,47 +7,36 @@ import { createStackNavigator } from 'react-navigation-stack';
 const routeConfig = {
   Intro: {
     screen: Intro,
-    navigationOptions: ({ navigation, screenProps }): object => {
-      const { theme, changeThemeType } = screenProps;
-      return {
-        title: navigation.state.routeName,
-        headerStyle: {
-          backgroundColor: theme.background,
-        },
-        headerTitleStyle: { color: theme.fontColor },
-        headerTintColor: theme.tintColor,
-      };
-    },
     path: 'intro',
   },
   Temp: {
     screen: Temp,
-    navigationOptions: ({ navigation, screenProps }): object => {
-      const { theme, changeThemeType } = screenProps;
-      return {
-        headerTitle: (
-          <Text
-            style={{
-              fontSize: 18,
-              color: theme.fontColor,
-            }}
-          >
-            {navigation.state.routeName}
-          </Text>
-        ),
-        headerStyle: {
-          backgroundColor: theme.background,
-        },
-        headerTitleStyle: { color: theme.fontColor },
-        headerTintColor: theme.tintColor,
-      };
-    },
     path: 'temp',
   },
 };
 
 const navigatorConfig = {
   initialRouteName: 'Intro',
+  defaultNavigationOptions: ({ navigation, screenProps }): object => {
+    const { theme } = screenProps;
+    return {
+      headerTitle: (
+        <Text
+          style={{
+            fontSize: 18,
+            color: theme.fontColor,
+          }}
+        >
+          {navigation.state.routeName}
+        </Text>
+      ),
+      headerStyle: {
+        backgroundColor: theme.background,
+      },
+      headerTitleStyle: { color: theme.fontColor },
+      headerTintColor: theme.tintColor,
+    };
+  },
   // mode: 'card',
   // headerMode: 'screen',
   // headerMode: 'none',
