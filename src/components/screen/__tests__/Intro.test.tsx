@@ -28,7 +28,26 @@ describe('[Intro] screen rendering test', () => {
   });
 
   it('should render [Dark] theme', () => {
-    props = createTestProps({});
+    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    const json = renderer.create(component).toJSON();
+    expect(json).toMatchSnapshot();
+    expect(json).toBeTruthy();
+  });
+
+  it('should render [isLoading] status', () => {
+    props = createTestProps({
+      isLoading: true,
+    });
+    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    const json = renderer.create(component).toJSON();
+    expect(json).toMatchSnapshot();
+    expect(json).toBeTruthy();
+  });
+
+  it('should render [isDisabled] status', () => {
+    props = createTestProps({
+      isDisabled: true,
+    });
     component = createTestElement(<Intro {...props} />, ThemeType.DARK);
     const json = renderer.create(component).toJSON();
     expect(json).toMatchSnapshot();
@@ -67,5 +86,13 @@ describe('[Intro] Interaction', () => {
       fireEvent.press(testingLib.getByTestId('btn2'), 'click');
     });
     expect(props.navigation.navigate).toBeCalledWith('Temp');
+  });
+
+  it('should simulate [changeTheme] click', () => {
+    testingLib = render(component);
+
+    act(() => {
+      fireEvent.press(testingLib.getByTestId('btn3'), 'click');
+    });
   });
 });

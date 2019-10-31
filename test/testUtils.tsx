@@ -21,7 +21,7 @@ export const createTestProps = (
     goBack: jest.fn(),
   },
   screenProps: {
-    changeThemeType: jest.fn,
+    changeThemeType: jest.fn(),
     ...moreScreenProps,
   },
   ...obj,
