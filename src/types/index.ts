@@ -1,7 +1,3 @@
-import {
-  CompositeNavigationProp,
-  NavigationHelpers,
-} from '@react-navigation/core';
 import { StyleProp, TextStyle } from 'react-native';
 
 import { DefaultTheme } from 'styled-components';
