@@ -44,7 +44,7 @@ const StyledText = styled.Text`
 `;
 
 interface Props {
-  navigation: DefaultNavigationProps;
+  navigation: DefaultNavigationProps<'Intro'>;
 }
 
 function Intro(props: Props): React.ReactElement {
@@ -91,7 +91,7 @@ function Intro(props: Props): React.ReactElement {
         <View style={{ marginTop: 8 }} />
         <Button
           testID="btn2"
-          onClick={(): boolean => props.navigation.navigate('Temp')}
+          onClick={(): void => props.navigation.navigate('Temp')}
           text={getString('NAVIGATE')}
         />
         <View style={{ marginTop: 8 }} />

@@ -1,13 +1,27 @@
+import {
+  CompositeNavigationProp,
+  NavigationHelpers,
+} from '@react-navigation/core';
 import { StyleProp, TextStyle } from 'react-native';
 
 import { DefaultTheme } from 'styled-components';
 import { SFC } from 'react';
+import { StackNavigationProp } from '@react-navigation/stack';
 
 export interface User {
   displayName: string;
   age: number;
   job: string;
 }
+
+type StackParamList = {
+  Intro: { userId: string };
+  Temp: undefined;
+};
+
+export type DefaultNavigationProps<
+  T extends keyof StackParamList
+> = StackNavigationProp<StackParamList, T>;
 
 export interface ScreenProps {
   theme: DefaultTheme;
