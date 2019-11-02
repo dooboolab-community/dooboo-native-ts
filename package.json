@@ -4,6 +4,7 @@
   "description": "boilerplate for react-native by dooboolab!",
   "author": "hyochan <dooboolab@gmail.com>",
   "private": true,
+  "postinstall": "npx jetify",
   "scripts": {
     "dev": "node node_modules/react-native/local-cli/cli.js start",
     "tsc": "tsc",
@@ -39,6 +40,7 @@
     "@react-navigation/native": "^5.0.0-alpha.14",
     "@react-navigation/stack": "^5.0.0-alpha.20",
     "i18n-js": "^3.3.0",
+    "jetifier": "^1.6.4",
     "react": "16.9.0",
     "react-native": "0.61.3",
     "react-native-gesture-handler": "^1.5.0",
