@@ -1493,10 +1493,9 @@
     shell-quote "1.6.1"
     ws "^1.1.0"
 
-"@react-native-community/masked-view@^0.1.1":
+"@react-native-community/masked-view@git+https://git@github.com/dulmandakh/react-native-masked-view.git#remove-android-support":
   version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.1.tgz#dbcfc5ec08efbb02d4142dd9426c8d7a396829d7"
-  integrity sha512-EyJVSbarZkOPYq+zCZLx9apMcpwkX9HvH6R+6CeVL29q88kEFemnLO/IhmE4YX/0MfalsduI8eTi7fuQh/5VeA==
+  resolved "git+https://git@github.com/dulmandakh/react-native-masked-view.git#955340b468ae95b7787983ed9b3f6928525007d9"
 
 "@react-navigation/core@^5.0.0-alpha.20":
   version "5.0.0-alpha.20"

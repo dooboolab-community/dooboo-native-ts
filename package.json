@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.2",
-    "@react-native-community/masked-view": "^0.1.1",
+    "@react-native-community/masked-view": "git+https://git@github.com/dulmandakh/react-native-masked-view.git#remove-android-support",
     "@react-navigation/core": "^5.0.0-alpha.20",
     "@react-navigation/native": "^5.0.0-alpha.14",
     "@react-navigation/stack": "^5.0.0-alpha.20",
