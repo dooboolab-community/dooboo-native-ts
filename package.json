@@ -4,6 +4,7 @@
   "description": "boilerplate for react-native by dooboolab!",
   "author": "hyochan <dooboolab@gmail.com>",
   "private": true,
+  "postinstall": "npx jetify",
   "scripts": {
     "dev": "node node_modules/react-native/local-cli/cli.js start",
     "tsc": "tsc",
@@ -34,14 +35,17 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.2",
+    "@react-native-community/masked-view": "git+https://git@github.com/dulmandakh/react-native-masked-view.git#remove-android-support",
+    "@react-navigation/core": "^5.0.0-alpha.20",
+    "@react-navigation/native": "^5.0.0-alpha.14",
+    "@react-navigation/stack": "^5.0.0-alpha.20",
     "i18n-js": "^3.3.0",
     "react": "16.9.0",
     "react-native": "0.61.3",
     "react-native-gesture-handler": "^1.5.0",
     "react-native-localize": "^1.3.1",
     "react-native-reanimated": "^1.3.2",
-    "react-navigation": "^4.0.10",
-    "react-navigation-stack": "^1.10.3",
+    "react-native-screens": "^2.0.0-alpha.7",
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
@@ -66,6 +70,7 @@
     "eslint": "^6.6.0",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.57.0",
+    "jetifier": "^1.6.4",
     "prettier": "^1.18.2",
     "react-dom": "^16.9.0",
     "react-test-renderer": "^16.9.0",

@@ -1,65 +1,30 @@
 import Intro from '../screen/Intro';
+import { NavigationNativeContainer } from '@react-navigation/native';
 import React from 'react';
 import Temp from '../screen/Temp';
-import { Text } from 'react-native';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
-const routeConfig = {
-  Intro: {
-    screen: Intro,
-    path: 'intro',
-  },
-  Temp: {
-    screen: Temp,
-    path: 'temp',
-  },
-};
+const Stack = createStackNavigator();
 
-const navigatorConfig = {
-  initialRouteName: 'Intro',
-  defaultNavigationOptions: ({ navigation, screenProps }): object => {
-    const { theme } = screenProps;
-    return {
-      headerTitle: (
-        <Text
-          style={{
-            fontSize: 18,
-            color: theme.fontColor,
-          }}
-        >
-          {navigation.state.routeName}
-        </Text>
-      ),
-      headerStyle: {
-        backgroundColor: theme.background,
-      },
-      headerTitleStyle: { color: theme.fontColor },
-      headerTintColor: theme.tintColor,
-    };
-  },
-  // mode: 'card',
-  // headerMode: 'screen',
-  // headerMode: 'none',
-};
+function RootNavigator({ screenProps }): React.ReactElement {
+  const { theme } = screenProps;
+  return (
+    <NavigationNativeContainer>
+      <Stack.Navigator
+        initialRouteName="Intro"
+        screenOptions={{
+          headerStyle: {
+            backgroundColor: theme.background,
+          },
+          headerTitleStyle: { color: theme.fontColor },
+          headerTintColor: theme.tintColor,
+        }}
+      >
+        <Stack.Screen name="Intro" component={Intro} />
+        <Stack.Screen name="Temp" component={Temp} />
+      </Stack.Navigator>
+    </NavigationNativeContainer>
+  );
+}
 
-const RootStackNavigator = createStackNavigator(routeConfig, navigatorConfig);
-
-// interface Props {
-//   navigation?: any;
-//   theme?: object;
-// }
-
-// class RootNavigator extends React.Component<Props> {
-//   private static router = RootStackNavigator.router;
-
-//   public render() {
-//     return (
-//       <RootStackNavigator
-//         navigation={this.props.navigation}
-//         screenProps={{ theme: this.props.theme }}
-//       />
-//     );
-//   }
-// }
-
-export default RootStackNavigator;
+export default RootNavigator;

@@ -12,7 +12,7 @@ const Container = styled.View`
 `;
 
 interface Props {
-  navigation: DefaultNavigationProps;
+  navigation: DefaultNavigationProps<'Temp'>;
 }
 
 function Page(props: Props): React.ReactElement {
@@ -20,7 +20,7 @@ function Page(props: Props): React.ReactElement {
     <Container>
       <Button
         testID="btn"
-        onClick={(): boolean => props.navigation.goBack()}
+        onClick={(): void => props.navigation.goBack()}
         text="Go Back"
         style={{
           backgroundColor: '#333333',
