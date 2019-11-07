@@ -1527,10 +1527,10 @@
     "@react-navigation/routers" "^5.0.0-alpha.8"
     react-native-safe-area-view "^0.14.6"
 
-"@testing-library/react-native@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-4.1.0.tgz#5f0f6e808bbdb13ad62611861ab2b1c83123c8f9"
-  integrity sha512-hXTLHdCu0b4o2+GyBAc0BJlMTyTJc/iVT5Vo9HZZ0G721mwP6bCHC1kahOQrnhYsyA21sR6E2p0hJMR2DAaP3w==
+"@testing-library/react-native@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/react-native/-/react-native-5.0.0.tgz#9ba1fa3387f012f3647787502762c52ed94cf3dd"
+  integrity sha512-boupJ1qA/434t7TPgtY+6v3+vK8RyLSQMKYnAY0dzYUC5AMjZitNjwbgrjvl8nxf4O1B04Gt/UQnL2VLWeygWg==
   dependencies:
     pretty-format "^24.9.0"
     wait-for-expect "^3.0.0"
