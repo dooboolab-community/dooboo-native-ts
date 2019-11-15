@@ -72,7 +72,7 @@
     "metro-react-native-babel-preset": "^0.57.0",
     "jetifier": "^1.6.4",
     "prettier": "^1.18.2",
-    "react-dom": "^16.9.0",
+    "react-dom": "^16.12.0",
     "react-test-renderer": "^16.9.0",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
