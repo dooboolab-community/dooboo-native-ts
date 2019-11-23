@@ -1,5 +1,4 @@
 {
-  //eslint extension options
   "eslint.enable": true,
   "eslint.validate": [
     "javascript",
@@ -7,7 +6,6 @@
     "typescript",
     "typescriptreact"
   ],
-
   // prettier extension setting
   "editor.formatOnSave": true,
   "[javascript]": {
@@ -22,17 +20,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
-  "prettier.arrowParens": "always",
-  "prettier.jsxSingleQuote": false,
-  // relative path is preferred
   "javascript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifier": "relative",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  }
+  "prettier.configPath": ".prettierrc.js"
 }
