@@ -41,7 +41,7 @@
     "@react-navigation/stack": "^5.0.0-alpha.20",
     "i18n-js": "^3.5.0",
     "react": "16.9.0",
-    "react-native": "0.61.4",
+    "react-native": "0.61.5",
     "react-native-gesture-handler": "^1.5.1",
     "react-native-localize": "^1.3.1",
     "react-native-reanimated": "^1.4.0",
