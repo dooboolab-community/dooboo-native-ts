@@ -17,7 +17,7 @@ let props;
 let component: ReactElement;
 
 describe('[Temp] render', () => {
-  props = createTestProps({});
+  props = createTestProps();
   component = createTestElement(<Temp {...props} />);
 
   it('renders without crashing', () => {
@@ -27,7 +27,7 @@ describe('[Temp] render', () => {
   });
 
   it('should render [Dark] theme', () => {
-    props = createTestProps({});
+    props = createTestProps();
     component = createTestElement(<Temp {...props} />, ThemeType.DARK);
     const json = renderer.create(component).toJSON();
     expect(json).toMatchSnapshot();

@@ -17,7 +17,7 @@ let component: ReactElement;
 
 describe('[Intro] screen rendering test', () => {
   beforeEach(() => {
-    props = createTestProps({});
+    props = createTestProps();
     component = createTestElement(<Intro {...props} />);
   });
 

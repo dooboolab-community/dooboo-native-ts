@@ -3,11 +3,12 @@ import { NavigationNativeContainer } from '@react-navigation/native';
 import React from 'react';
 import Temp from '../screen/Temp';
 import { createStackNavigator } from '@react-navigation/stack';
+import { useThemeContext } from '../../providers/ThemeProvider';
 
 const Stack = createStackNavigator();
 
-function RootNavigator({ screenProps }): React.ReactElement {
-  const { theme } = screenProps;
+function RootNavigator(): React.ReactElement {
+  const { theme } = useThemeContext();
   return (
     <NavigationNativeContainer>
       <Stack.Navigator

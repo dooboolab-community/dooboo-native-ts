@@ -19,11 +19,6 @@ export type DefaultNavigationProps<
   T extends keyof StackParamList
 > = StackNavigationProp<StackParamList, T>;
 
-export interface ScreenProps {
-  theme: DefaultTheme;
-  changeThemeType: Function;
-}
-
 export enum ThemeType {
   LIGHT = 'LIGHT',
   DARK = 'DARK',
