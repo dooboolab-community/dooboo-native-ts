@@ -1,6 +1,5 @@
 import { StyleProp, TextStyle } from 'react-native';
 
-import { DefaultTheme } from 'styled-components';
 import { SFC } from 'react';
 import { StackNavigationProp } from '@react-navigation/stack';
 
@@ -11,6 +10,7 @@ export interface User {
 }
 
 type StackParamList = {
+  default: undefined;
   Intro: { userId: string };
   Temp: undefined;
 };
