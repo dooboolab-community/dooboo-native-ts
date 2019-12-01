@@ -77,7 +77,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "white",
+        "backgroundColor": "#323739",
         "flexBasis": 0,
         "flexDirection": "row",
         "flexGrow": 1,

@@ -1,7 +1,4 @@
-import { DefaultTheme } from 'styled-components';
-import { ThemeType } from './types';
-
-const colors = {
+export const colors = {
   skyBlue: '#069ccd',
   whiteGray: '#f7f6f3',
   dusk: 'rgb(65,77,107)',
@@ -15,7 +12,7 @@ const colors = {
   darkBackgroundLight: '#393241',
 };
 
-const light = {
+export const light = {
   background: colors.lightBackground,
   btnPrimary: colors.skyBlue,
   btnPrimaryFont: 'white',
@@ -29,7 +26,7 @@ const light = {
 
 export type Theme = typeof light;
 
-const dark: Theme = {
+export const dark = {
   background: colors.darkBackground,
   btnPrimary: colors.skyBlue,
   btnPrimaryFont: 'white',
@@ -39,18 +36,4 @@ const dark: Theme = {
   btnDisabled: 'rgb(224,224,224)',
   fontColor: 'white',
   tintColor: '#a3a3a3',
-};
-
-const theme = {
-  light,
-  dark,
-};
-
-export const createTheme = (type = ThemeType.LIGHT): DefaultTheme => {
-  switch (type) {
-    case ThemeType.LIGHT:
-      return theme.light;
-    case ThemeType.DARK:
-      return theme.dark;
-  }
 };

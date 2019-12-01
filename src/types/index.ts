@@ -19,11 +19,6 @@ export type DefaultNavigationProps<
   T extends keyof StackParamList
 > = StackNavigationProp<StackParamList, T>;
 
-export enum ThemeType {
-  LIGHT = 'LIGHT',
-  DARK = 'DARK',
-}
-
 interface IconProps {
   style?: StyleProp<TextStyle>;
   width?: number | string;
