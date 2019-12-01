@@ -7,7 +7,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       Object {
         "alignItems": "center",
         "alignSelf": "stretch",
-        "backgroundColor": "white",
+        "backgroundColor": "#323739",
         "flexBasis": 0,
         "flexDirection": "column",
         "flexGrow": 1,
@@ -35,7 +35,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -51,7 +51,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -64,7 +64,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -276,7 +276,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       Object {
         "alignItems": "center",
         "alignSelf": "stretch",
-        "backgroundColor": "white",
+        "backgroundColor": "#323739",
         "flexBasis": 0,
         "flexDirection": "column",
         "flexGrow": 1,
@@ -304,7 +304,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -320,7 +320,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -333,7 +333,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -545,7 +545,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       Object {
         "alignItems": "center",
         "alignSelf": "stretch",
-        "backgroundColor": "white",
+        "backgroundColor": "#323739",
         "flexBasis": 0,
         "flexDirection": "column",
         "flexGrow": 1,
@@ -573,7 +573,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -589,7 +589,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },
@@ -602,7 +602,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       style={
         Array [
           Object {
-            "color": "black",
+            "color": "white",
             "fontSize": 18,
             "lineHeight": 27,
           },

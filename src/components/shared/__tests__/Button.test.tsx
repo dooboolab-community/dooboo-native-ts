@@ -10,9 +10,7 @@ import {
 } from '@testing-library/react-native';
 
 import Button from '../Button';
-import { ThemeProvider } from 'styled-components/native';
-import { ThemeType } from '../../../types';
-import { createTheme } from '../../../theme';
+import { createTestElement } from '../../../../test/testUtils';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
@@ -28,11 +26,7 @@ describe('[Button]', () => {
       onClick: (): number => cnt++,
       testID: 'btn',
     };
-    component = (
-      <ThemeProvider theme={createTheme(ThemeType.LIGHT)}>
-        <Button {...props} />
-      </ThemeProvider>
-    );
+    component = createTestElement(<Button {...props} />);
   });
 
   it('[ThemeType.Light] renders without crashing', () => {
@@ -42,11 +36,7 @@ describe('[Button]', () => {
   });
 
   it('[ThemeType.Dark] renders without crashing', () => {
-    component = (
-      <ThemeProvider theme={createTheme(ThemeType.DARK)}>
-        <Button {...props} />
-      </ThemeProvider>
-    );
+    component = createTestElement(<Button {...props} />);
 
     const rendered = renderer.create(component).toJSON();
     expect(rendered).toMatchSnapshot();

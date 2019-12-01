@@ -3,7 +3,7 @@ import { NavigationNativeContainer } from '@react-navigation/native';
 import React from 'react';
 import Temp from '../screen/Temp';
 import { createStackNavigator } from '@react-navigation/stack';
-import { useThemeContext } from '../../providers/ThemeProvider';
+import { useThemeContext } from '@dooboo-ui/native-theme';
 
 const Stack = createStackNavigator();
 
