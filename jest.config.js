@@ -4,6 +4,7 @@ const { defaults: tsJestConfig } = require('ts-jest/presets');
 
 module.exports = {
   ...tsJestConfig,
+  automock: false,
   preset: 'react-native',
   setupFiles: [
     './test/jestSetup.ts',
@@ -41,5 +42,10 @@ module.exports = {
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/test/assetsTransformer.js',
+  },
+  haste: {
+    defaultPlatform: 'ios',
+    platforms: ['android', 'ios', 'native'],
+    providesModuleNodeModules: ['react', 'react-native'],
   },
 };

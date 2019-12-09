@@ -1,3 +1,4 @@
+import { GlobalWithFetchMock } from 'jest-fetch-mock';
 import { NativeModules } from 'react-native';
 /**
  * monkey patching the locale to avoid the error:
@@ -10,3 +11,7 @@ jest.mock('@react-native-community/async-storage', () => mockAsyncStorage);
 jest.mock('react-native-reanimated', () =>
   require('react-native-reanimated/mock'),
 );
+
+const customGlobal: GlobalWithFetchMock = global as GlobalWithFetchMock;
+customGlobal.fetch = require('jest-fetch-mock');
+customGlobal.fetchMock = customGlobal.fetch;

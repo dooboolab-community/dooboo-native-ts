@@ -1,11 +1,18 @@
-const ROOT_URL = 'http://localhost:3000/api';
+import { AbortController } from 'abort-controller';
+import { RequestInitCustom } from '../types';
+
+export const ROOT_URL = 'http://localhost:3000/api';
 
 export const sample = async (
-  body: object,
-  // signal?: AbortController['signal'],
+  body: object | null,
+  signal?: AbortController['signal'] | null,
 ): Promise<Response> => {
-  const fetchOption: RequestInit = {
-    // signal,
+  if (!body) {
+    throw new Error('No request object');
+  }
+
+  const fetchOption: RequestInitCustom = {
+    signal,
     method: 'POST',
     headers: new Headers({
       Accept: 'application/json',
@@ -15,7 +22,7 @@ export const sample = async (
   };
 
   try {
-    const res: Response = await fetch(`${ROOT_URL}/sample`, fetchOption);
+    const res: Response = await fetch(`${ROOT_URL}`, fetchOption);
     return res;
   } catch (err) {
     throw new Error(err);
