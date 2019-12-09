@@ -48,4 +48,5 @@ module.exports = {
     platforms: ['android', 'ios', 'native'],
     providesModuleNodeModules: ['react', 'react-native'],
   },
+  coveragePathIgnorePatterns: ['/node_modules/', 'assetsTransformer.js'],
 };

@@ -92,7 +92,7 @@ function Intro(props: Props): React.ReactElement {
         <Button
           testID="btn2"
           onClick={(): void => props.navigation.navigate('Temp')}
-          text={getString('NAVIGATE')}
+          text={getString('NAVIGATE', {})}
         />
         <View style={{ marginTop: 8 }} />
         <Button

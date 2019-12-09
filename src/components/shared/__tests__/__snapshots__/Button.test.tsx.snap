@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[Button] [ThemeType.Dark] renders without crashing 1`] = `
+exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
 <View
   accessible={true}
   focusable={true}
@@ -50,7 +50,7 @@ exports[`[Button] [ThemeType.Dark] renders without crashing 1`] = `
 </View>
 `;
 
-exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
+exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
 <View
   accessible={true}
   focusable={true}
@@ -97,5 +97,63 @@ exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
       }
     />
   </View>
+</View>
+`;
+
+exports[`[Button] should render [isDisabled] status without crashing 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "rgb(224,224,224)",
+        "borderColor": "rgb(200, 200, 200)",
+        "borderRadius": 4,
+        "borderWidth": 2,
+        "height": 52,
+        "justifyContent": "center",
+        "width": 320,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#969696",
+          "fontSize": 14,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`[Button] should render [isLoading] status without crashing 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "center",
+        "backgroundColor": "#069ccd",
+        "borderColor": "#069ccd",
+        "borderRadius": 4,
+        "borderWidth": 2,
+        "height": 52,
+        "justifyContent": "center",
+        "width": 320,
+      },
+    ]
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="white"
+    hidesWhenStopped={true}
+    size="small"
+  />
 </View>
 `;
