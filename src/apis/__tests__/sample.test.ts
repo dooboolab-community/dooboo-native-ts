@@ -29,7 +29,7 @@ describe('testing sample api', () => {
     sample(null)
       .then(onResponse)
       .catch(onError)
-      .finally(() => {
+      .then(() => {
         expect(onResponse).not.toHaveBeenCalled();
         expect(onError).toHaveBeenCalled();
       });
@@ -46,7 +46,7 @@ describe('testing sample api', () => {
     sample({})
       .then(onResponse)
       .catch(onError)
-      .finally(() => {
+      .then(() => {
         expect(onResponse).not.toHaveBeenCalled();
         expect(onError).toHaveBeenCalled();
       });
