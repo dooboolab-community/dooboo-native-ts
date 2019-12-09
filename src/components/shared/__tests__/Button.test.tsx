@@ -10,11 +10,12 @@ import {
 } from '@testing-library/react-native';
 
 import Button from '../Button';
+import { ThemeType } from '@dooboo-ui/native-theme';
 import { createTestElement } from '../../../../test/testUtils';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-let props: object;
+let props: any;
 let component: React.ReactElement;
 let testingLib: RenderResult;
 
@@ -35,7 +36,25 @@ describe('[Button]', () => {
     expect(rendered).toBeTruthy();
   });
 
-  it('[ThemeType.Dark] renders without crashing', () => {
+  it('should render [ThemeType.Dark] without crashing', () => {
+    component = createTestElement(<Button {...props} />, ThemeType.DARK);
+
+    const rendered = renderer.create(component).toJSON();
+    expect(rendered).toMatchSnapshot();
+    expect(rendered).toBeTruthy();
+  });
+
+  it('should render [isDisabled] status without crashing', () => {
+    props.isDisabled = true;
+    component = createTestElement(<Button {...props} />);
+
+    const rendered = renderer.create(component).toJSON();
+    expect(rendered).toMatchSnapshot();
+    expect(rendered).toBeTruthy();
+  });
+
+  it('should render [isLoading] status without crashing', () => {
+    props.isLoading = true;
     component = createTestElement(<Button {...props} />);
 
     const rendered = renderer.create(component).toJSON();

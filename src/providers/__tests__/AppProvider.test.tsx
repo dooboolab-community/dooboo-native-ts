@@ -2,9 +2,17 @@ import * as React from 'react';
 
 import { AppProvider, useAppContext } from '../AppProvider';
 import { Button, Text, View } from 'react-native';
+import {
+  RenderResult,
+  act,
+  fireEvent,
+  render,
+} from '@testing-library/react-native';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
+
+let testingLib: RenderResult;
 
 const FakeChild = (): React.ReactElement => {
   const { state, resetUser } = useAppContext();
@@ -31,11 +39,17 @@ describe('[AppProvider] rendering test', () => {
     </AppProvider>
   );
 
-  it('component and snapshot matches', () => {
+  it('should match component and snapshot', () => {
     json = renderer.create(component).toJSON();
     expect(json).toMatchSnapshot();
     expect(json).toBeTruthy();
   });
-});
 
-// TODO: add more interaction test, refer to ThemeProvider test
+  it('should call [resetUser] when button pressed', () => {
+    testingLib = render(component);
+    const btn = testingLib.queryByTestId('BUTTON');
+    act(() => {
+      fireEvent.press(btn);
+    });
+  });
+});
