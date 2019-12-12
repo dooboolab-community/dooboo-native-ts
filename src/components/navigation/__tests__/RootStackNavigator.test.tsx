@@ -13,11 +13,7 @@ let component: ReactElement;
 describe('[Stack] navigator', () => {
   beforeEach(() => {
     props = createTestProps();
-    component = createTestElement(
-      <NavigationNativeContainer>
-        <StackNavigator {...props} />
-      </NavigationNativeContainer>,
-    );
+    component = createTestElement(<StackNavigator {...props} />);
   });
 
   it('should renders without crashing', () => {
