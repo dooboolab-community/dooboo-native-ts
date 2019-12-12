@@ -15,7 +15,7 @@ import renderer from 'react-test-renderer';
 let testingLib: RenderResult;
 
 const FakeChild = (): React.ReactElement => {
-  const { state, resetUser } = useAppContext();
+  const { state, resetUser, callDefault } = useAppContext();
 
   return (
     <View>
@@ -24,6 +24,13 @@ const FakeChild = (): React.ReactElement => {
         testID="BUTTON"
         onPress={(): void => {
           resetUser();
+        }}
+        title="Button"
+      />
+      <Button
+        testID="BUTTON_NOT_VALID"
+        onPress={(): void => {
+          callDefault();
         }}
         title="Button"
       />
@@ -51,5 +58,27 @@ describe('[AppProvider] rendering test', () => {
     act(() => {
       fireEvent.press(btn);
     });
+  });
+
+  it('should call [default] when button pressed', () => {
+    testingLib = render(component);
+    const btn = testingLib.queryByTestId('BUTTON_NOT_VALID');
+    act(() => {
+      fireEvent.press(btn);
+    });
+  });
+});
+
+describe('[AppProvider] error rendering test', () => {
+  let error: Error;
+  const component = <FakeChild />;
+
+  it('should throw error when [AppProvider] is not wrapped', () => {
+    try {
+      render(component);
+    } catch (e) {
+      error = e;
+    }
+    expect(error).toBeInstanceOf(Error);
   });
 });
