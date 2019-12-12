@@ -3,7 +3,6 @@ import 'react-native';
 import React, { ReactElement } from 'react';
 import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
-import { NavigationNativeContainer } from '@react-navigation/native';
 import StackNavigator from '../RootStackNavigator';
 import renderer from 'react-test-renderer';
 
