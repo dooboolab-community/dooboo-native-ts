@@ -5,7 +5,9 @@ jobs:
   node:
     working_directory: ~/dooboo
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:12
+        environment:
+          TZ: 'Asia/Seoul'
     steps:
       - checkout
 
