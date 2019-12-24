@@ -15,9 +15,7 @@ describe('[Stack] navigator', () => {
   beforeEach(() => {
     props = createTestProps();
     component = createTestElement(
-      <NavigationNativeContainer>
-        <StackNavigator {...props} />
-      </NavigationNativeContainer>,
+      <StackNavigator {...props} />,
     );
   });
 
