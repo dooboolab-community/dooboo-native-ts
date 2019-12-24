@@ -1,5 +1,4 @@
 import { GlobalWithFetchMock } from 'jest-fetch-mock';
-import { NativeModules } from 'react-native';
 /**
  * monkey patching the locale to avoid the error:
  * Something went wrong initializing the native ReactLocalization module
