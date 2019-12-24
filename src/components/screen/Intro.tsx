@@ -49,7 +49,7 @@ interface Props {
 
 function Intro(props: Props): React.ReactElement {
   let timer: number;
-  const { state, setUser } = useAppContext();
+  const { state: { user }, setUser } = useAppContext();
   const { changeThemeType } = useThemeContext();
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
@@ -75,10 +75,10 @@ function Intro(props: Props): React.ReactElement {
             marginTop: 100,
           }}
         >
-          {state.user ? state.user.displayName : ''}
+          {user ? user.displayName : ''}
         </StyledText>
-        <StyledText>{state.user ? state.user.age : ''}</StyledText>
-        <StyledText>{state.user ? state.user.job : ''}</StyledText>
+        <StyledText>{user ? user.age : ''}</StyledText>
+        <StyledText>{user ? user.job : ''}</StyledText>
       </ContentWrapper>
       <ButtonWrapper>
         <Button

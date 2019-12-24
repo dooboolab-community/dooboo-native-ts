@@ -1,22 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
-<View
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+<TouchableOpacity
+  activeOpacity={0.5}
+  onPress={[Function]}
   testID="btn"
 >
   <View
@@ -47,26 +34,13 @@ exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
       }
     />
   </View>
-</View>
+</TouchableOpacity>
 `;
 
 exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
-<View
-  accessible={true}
-  focusable={true}
-  isTVSelectable={true}
-  onClick={[Function]}
-  onResponderGrant={[Function]}
-  onResponderMove={[Function]}
-  onResponderRelease={[Function]}
-  onResponderTerminate={[Function]}
-  onResponderTerminationRequest={[Function]}
-  onStartShouldSetResponder={[Function]}
-  style={
-    Object {
-      "opacity": 1,
-    }
-  }
+<TouchableOpacity
+  activeOpacity={0.5}
+  onPress={[Function]}
   testID="btn"
 >
   <View
@@ -97,7 +71,7 @@ exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
       }
     />
   </View>
-</View>
+</TouchableOpacity>
 `;
 
 exports[`[Button] should render [isDisabled] status without crashing 1`] = `
