@@ -18,15 +18,11 @@ export enum ActionType {
 }
 
 export interface State {
-  user: User;
+  user: User | null;
 }
 
 const initialState: State = {
-  user: {
-    displayName: '',
-    age: 0,
-    job: '',
-  },
+  user: null,
 };
 
 interface SetUserAction {

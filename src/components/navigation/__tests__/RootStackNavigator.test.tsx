@@ -6,6 +6,7 @@ import { createTestElement, createTestProps } from '../../../../test/testUtils';
 import StackNavigator from '../RootStackNavigator';
 import renderer from 'react-test-renderer';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;
 let component: ReactElement;
 

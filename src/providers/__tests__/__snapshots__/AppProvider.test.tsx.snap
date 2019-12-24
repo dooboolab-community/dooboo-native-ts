@@ -6,11 +6,7 @@ exports[`[AppProvider] rendering test should match component and snapshot 1`] = 
     testID="TEXT"
   >
     {
-  "user": {
-    "displayName": "",
-    "age": 0,
-    "job": ""
-  }
+  "user": null
 }
   </Text>
   <View
