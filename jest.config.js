@@ -26,10 +26,13 @@ module.exports = {
     '<rootDir>/node_modules/',
     '<rootDir>/.history/',
   ],
+  // 'testRegex': '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
+  testPathIgnorePatterns: ['\\.snap$', '<rootDir>/node_modules/'],
+  cacheDirectory: '.jest/cache',
+  setupFilesAfterEnv: ['./test/setupTest.ts'],
   moduleNameMapper: {
     '\\.svg': '<rootDir>/__mocks__/svgMock.js',
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/test/assetsTransformer.js',
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'babel-jest',
   },
   setupFiles: [
     './node_modules/react-native-gesture-handler/jestSetup.js',
@@ -42,7 +45,6 @@ module.exports = {
     'node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules-*|sentry-expo|native-base|@dooboo-ui)',
   ],
   /* eslint-enable */
-  cacheDirectory: '.jest/cache',
   haste: {
     defaultPlatform: 'ios',
     platforms: ['android', 'ios', 'native'],
