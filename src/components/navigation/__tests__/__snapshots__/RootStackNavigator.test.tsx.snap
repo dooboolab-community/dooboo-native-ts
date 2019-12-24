@@ -247,22 +247,9 @@ Array [
                         ]
                       }
                     >
-                      <View
-                        accessible={true}
-                        focusable={true}
-                        isTVSelectable={true}
-                        onClick={[Function]}
-                        onResponderGrant={[Function]}
-                        onResponderMove={[Function]}
-                        onResponderRelease={[Function]}
-                        onResponderTerminate={[Function]}
-                        onResponderTerminationRequest={[Function]}
-                        onStartShouldSetResponder={[Function]}
-                        style={
-                          Object {
-                            "opacity": 1,
-                          }
-                        }
+                      <TouchableOpacity
+                        activeOpacity={0.5}
+                        onPress={[Function]}
                         testID="btn1"
                       >
                         <View
@@ -312,7 +299,7 @@ Array [
                             Login
                           </Text>
                         </View>
-                      </View>
+                      </TouchableOpacity>
                       <View
                         style={
                           Object {
@@ -320,22 +307,9 @@ Array [
                           }
                         }
                       />
-                      <View
-                        accessible={true}
-                        focusable={true}
-                        isTVSelectable={true}
-                        onClick={[Function]}
-                        onResponderGrant={[Function]}
-                        onResponderMove={[Function]}
-                        onResponderRelease={[Function]}
-                        onResponderTerminate={[Function]}
-                        onResponderTerminationRequest={[Function]}
-                        onStartShouldSetResponder={[Function]}
-                        style={
-                          Object {
-                            "opacity": 1,
-                          }
-                        }
+                      <TouchableOpacity
+                        activeOpacity={0.5}
+                        onPress={[Function]}
                         testID="btn2"
                       >
                         <View
@@ -368,7 +342,7 @@ Array [
                             Navigate
                           </Text>
                         </View>
-                      </View>
+                      </TouchableOpacity>
                       <View
                         style={
                           Object {
@@ -376,22 +350,9 @@ Array [
                           }
                         }
                       />
-                      <View
-                        accessible={true}
-                        focusable={true}
-                        isTVSelectable={true}
-                        onClick={[Function]}
-                        onResponderGrant={[Function]}
-                        onResponderMove={[Function]}
-                        onResponderRelease={[Function]}
-                        onResponderTerminate={[Function]}
-                        onResponderTerminationRequest={[Function]}
-                        onStartShouldSetResponder={[Function]}
-                        style={
-                          Object {
-                            "opacity": 1,
-                          }
-                        }
+                      <TouchableOpacity
+                        activeOpacity={0.5}
+                        onPress={[Function]}
                         testID="btn3"
                       >
                         <View
@@ -424,7 +385,7 @@ Array [
                             Change theme
                           </Text>
                         </View>
-                      </View>
+                      </TouchableOpacity>
                     </View>
                   </View>
                 </View>

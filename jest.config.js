@@ -1,18 +1,20 @@
-/* eslint-disable */
-const { defaults: tsJestConfig } = require('ts-jest/presets');
-/* eslint-enable */
+/* eslint-disable @typescript-eslint/no-var-requires */
+const jestPreset = require('@testing-library/react-native/jest-preset');
+/* eslint-enable @typescript-eslint/no-var-requires */
 
 module.exports = {
-  ...tsJestConfig,
   automock: false,
-  preset: 'react-native',
+  preset: '@testing-library/react-native',
   setupFiles: [
-    './test/jestSetup.ts',
     './node_modules/react-native-gesture-handler/jestSetup.js',
+    ...jestPreset.setupFiles,
+    '<rootDir>/test/jestSetup.ts',
   ],
+  /* eslint-disable */
   transformIgnorePatterns: [
-    'node_modules/(?!(.*-)?react-(.*-)?native(-.*)?|@react-native-community|@dooboo-ui/native)',
+    'node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules-*|sentry-expo|native-base|@dooboo-ui)',
   ],
+  /* eslint-enable */
   globals: {
     'ts-jest': {
       tsConfig: {
