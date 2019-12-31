@@ -2,7 +2,6 @@ import { StyleProp, TextStyle } from 'react-native';
 
 import { AbortController } from 'abort-controller';
 import { SFC } from 'react';
-import { StackNavigationProp } from '@react-navigation/stack';
 
 export interface RequestInitCustom extends RequestInit {
   signal?: AbortController['signal'] | null;
@@ -12,16 +11,6 @@ export interface User {
   age: number;
   job: string;
 }
-
-type StackParamList = {
-  default: undefined;
-  Intro: { userId: string };
-  Temp: undefined;
-};
-
-export type DefaultNavigationProps<
-  T extends keyof StackParamList
-> = StackNavigationProp<StackParamList, T>;
 
 interface IconProps {
   style?: StyleProp<TextStyle>;

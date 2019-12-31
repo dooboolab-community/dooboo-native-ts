@@ -15,7 +15,7 @@ i18n.translations = { en, ko };
 
 export const getString = (param: string, mapObj?: object): string => {
   if (mapObj) {
-    i18n.t(param, mapObj);
+    return i18n.t(param, mapObj);
   }
   return i18n.t(param);
 };

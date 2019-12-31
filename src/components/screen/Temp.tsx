@@ -1,6 +1,8 @@
+import { MainStackParamList, RouteProp } from '@react-navigation/core';
+
 import Button from '../shared/Button';
-import { DefaultNavigationProps } from '../../types';
 import React from 'react';
+import { RootStackNavigationProps } from '../../components/navigation/RootStackNavigator';
 import styled from 'styled-components/native';
 
 const Container = styled.View`
@@ -12,16 +14,18 @@ const Container = styled.View`
 `;
 
 interface Props {
-  navigation: DefaultNavigationProps<'Temp'>;
+  navigation: RootStackNavigationProps<'Temp'>;
+  route: RouteProp<MainStackParamList, 'Temp'>;
 }
 
 function Page(props: Props): React.ReactElement {
+  const { route: { params: { param } }, navigation } = props;
   return (
     <Container>
       <Button
-        testID="btn"
-        onClick={(): void => props.navigation.goBack()}
-        text="Go Back"
+        testID="btn-back"
+        onClick={(): void => navigation.goBack()}
+        text={param}
         style={{
           backgroundColor: '#333333',
         }}
