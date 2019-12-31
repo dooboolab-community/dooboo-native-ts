@@ -1349,10 +1349,10 @@
   dependencies:
     dooboolab-welcome "^1.1.1"
 
-"@dooboo/eslint-config@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@dooboo/eslint-config/-/eslint-config-0.3.1.tgz#7dcb1f802df6980789d4b6400cff0416c7b28df7"
-  integrity sha512-qk3fi5emNCwSyi11mKiIyE6QwCrHY7qAMDnJy0jsuEeGUx2KuSCXP1cLSBOs+liTfUW2VH/9FXVZq3swkwhhiA==
+"@dooboo/eslint-config@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@dooboo/eslint-config/-/eslint-config-0.3.3.tgz#d156c065db3ee4843c869daf70e53d052db3a673"
+  integrity sha512-2UPv1EYO4J0qZyLwvz5YudG8r9deaPrLeRp2Bjg7hm9k3RHZUlgNSaXfx0KCoIXRo0BL2JtBE4Qk9ok0yNamXQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.12.0"
     "@typescript-eslint/parser" "^2.12.0"
@@ -1794,10 +1794,10 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^24.0.24":
-  version "24.0.24"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.24.tgz#0f2f523dc77cc1bc6bef34eaf287ede887a73f05"
-  integrity sha512-vgaG968EDPSJPMunEDdZvZgvxYSmeH8wKqBlHSkBt1pV2XlLEVDzsj1ZhLuI4iG4Pv841tES61txSBF0obh4CQ==
+"@types/jest@^24.0.25":
+  version "24.0.25"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.25.tgz#2aba377824ce040114aa906ad2cac2c85351360f"
+  integrity sha512-hnP1WpjN4KbGEK4dLayul6lgtys6FPz0UfxMeMQCv0M+sTnzN3ConfiO72jHgLxl119guHgI8gLqDOrRLsyp2g==
   dependencies:
     jest-diff "^24.3.0"
 
@@ -1819,10 +1819,10 @@
     "@types/prop-types" "*"
     "@types/react" "*"
 
-"@types/react-native@^0.60.25":
-  version "0.60.25"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.25.tgz#65cb0bf5dd0631079215b63525458e4123c1c90e"
-  integrity sha512-827dIVvSTxSH5uTpsJJH7O4wpRuw0rm3yIzRL3a2yKawA0nyhgC1GPKTXHFIn2GfSdXn1Gty2dJ+k6uDZF3MWQ==
+"@types/react-native@^0.60.27":
+  version "0.60.27"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.27.tgz#d6313256f3cf9a685bd8885efddb86b85b9a4820"
+  integrity sha512-W8YrhnnHBwybruJp57enWc9dP9G7okcQkm88TMPZZKMVNiJIZj17q/rruMLuuuER+SaGrYjhO+BA3MpfkiTaSQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/react" "*"
@@ -4710,10 +4710,10 @@ jest-environment-node@^24.9.0:
     jest-mock "^24.9.0"
     jest-util "^24.9.0"
 
-jest-fetch-mock@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/jest-fetch-mock/-/jest-fetch-mock-3.0.0.tgz#7d03c24a9c38da8daa0272179f1b3e123b2d43e9"
-  integrity sha512-lPizzB0qLury+RNutT//G+XVPihMU4Eb/RJziXMdlBSr9jkrj1wKEvf3dGfzX9/1x3Npg5/LdG579q+1Bey/cg==
+jest-fetch-mock@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/jest-fetch-mock/-/jest-fetch-mock-3.0.1.tgz#4dde94c9e91fa76bceb6001f54e33039f1f02da6"
+  integrity sha512-R5GVbQLVjk+PCfzf4vFoYDXt+oCEWuYigyaAnucdeVCXkElAgAYXDFFikHxLyCVjSNDc7TCYQZ1ItLNOE6OCrQ==
   dependencies:
     cross-fetch "^3.0.4"
     promise-polyfill "^8.1.3"
