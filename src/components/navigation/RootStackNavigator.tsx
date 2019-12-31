@@ -1,11 +1,22 @@
+import { StackNavigationProp, createStackNavigator } from '@react-navigation/stack';
+
 import Intro from '../screen/Intro';
 import { NavigationNativeContainer } from '@react-navigation/native';
 import React from 'react';
 import Temp from '../screen/Temp';
-import { createStackNavigator } from '@react-navigation/stack';
 import { useThemeContext } from '@dooboo-ui/native-theme';
 
-const Stack = createStackNavigator();
+export type RootStackParamList = {
+  default: undefined;
+  Intro: undefined;
+  Temp: { param: string } | undefined;
+}
+
+export type RootStackNavigationProps<
+  T extends keyof RootStackParamList = 'default'
+> = StackNavigationProp<RootStackParamList, T>;
+
+const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator(): React.ReactElement {
   const { theme } = useThemeContext();

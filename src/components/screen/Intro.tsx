@@ -1,8 +1,8 @@
-import { DefaultNavigationProps, User } from '../../types';
-
 import Button from '../shared/Button';
 import { IC_MASK } from '../../utils/Icons';
 import React from 'react';
+import { RootStackNavigationProps } from '../navigation/RootStackNavigator';
+import { User } from '../../types';
 import { View } from 'react-native';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components/native';
@@ -44,7 +44,7 @@ const StyledText = styled.Text`
 `;
 
 interface Props {
-  navigation: DefaultNavigationProps<'Intro'>;
+  navigation: RootStackNavigationProps<'Intro'>;
 }
 
 function Intro(props: Props): React.ReactElement {
@@ -82,7 +82,7 @@ function Intro(props: Props): React.ReactElement {
       </ContentWrapper>
       <ButtonWrapper>
         <Button
-          testID="btn1"
+          testID="btn-login"
           imgLeftSrc={IC_MASK}
           isLoading={isLoggingIn}
           onClick={(): void => onLogin()}
@@ -90,13 +90,15 @@ function Intro(props: Props): React.ReactElement {
         />
         <View style={{ marginTop: 8 }} />
         <Button
-          testID="btn2"
-          onClick={(): void => props.navigation.navigate('Temp')}
-          text={getString('NAVIGATE', {})}
+          testID="btn-navigate"
+          onClick={(): void => props.navigation.navigate('Temp', {
+            param: 'GO BACK',
+          })}
+          text={getString('NAVIGATE', { name: 'Temp' })}
         />
         <View style={{ marginTop: 8 }} />
         <Button
-          testID="btn3"
+          testID="btn-theme"
           onClick={(): void => changeThemeType()}
           text={getString('CHANGE_THEME')}
         />

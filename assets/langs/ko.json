@@ -5,6 +5,6 @@
   "PASSWORD": "패스워드",
   "SIGNUP": "회원가입",
   "FORGOT_PW": "비밀번호를 잊어버리셨나요?",
-  "NAVIGATE": "이동하기",
+  "NAVIGATE": "%{name}으로 이동",
   "CHANGE_THEME": "테마 변경"
 }

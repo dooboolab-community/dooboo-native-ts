@@ -10,11 +10,13 @@ import renderer from 'react-test-renderer';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;
 let component: ReactElement;
+let testingLib: RenderResult;
 
 describe('[Intro] screen rendering test', () => {
   beforeEach(() => {
     props = createTestProps();
     component = createTestElement(<Intro {...props} />);
+    testingLib = render(component);
   });
 
   it('should render outer component and snapshot matches', () => {
@@ -25,9 +27,10 @@ describe('[Intro] screen rendering test', () => {
 
   it('should render [Dark] theme', () => {
     component = createTestElement(<Intro {...props} />, ThemeType.DARK);
-    const json = renderer.create(component).toJSON();
-    expect(json).toMatchSnapshot();
-    expect(json).toBeTruthy();
+    testingLib = render(component);
+    const { baseElement } = testingLib;
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 
   it('should render [isLoading] status', () => {
@@ -35,9 +38,10 @@ describe('[Intro] screen rendering test', () => {
       isLoading: true,
     });
     component = createTestElement(<Intro {...props} />, ThemeType.DARK);
-    const json = renderer.create(component).toJSON();
-    expect(json).toMatchSnapshot();
-    expect(json).toBeTruthy();
+    testingLib = render(component);
+    const { baseElement } = testingLib;
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 
   it('should render [isDisabled] status', () => {
@@ -45,9 +49,10 @@ describe('[Intro] screen rendering test', () => {
       isDisabled: true,
     });
     component = createTestElement(<Intro {...props} />, ThemeType.DARK);
-    const json = renderer.create(component).toJSON();
-    expect(json).toMatchSnapshot();
-    expect(json).toBeTruthy();
+    testingLib = render(component);
+    const { baseElement } = testingLib;
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 });
 
@@ -56,7 +61,7 @@ describe('[Intro] Interaction', () => {
   let rendered: renderer.ReactTestRenderer;
   let root: renderer.ReactTestInstance;
 
-  it('should simulate [onLogin] click', () => {
+  it('should simulate login when button has clicked', () => {
     testingLib = render(component);
     rendered = renderer.create(component);
     root = rendered.root;
@@ -64,7 +69,7 @@ describe('[Intro] Interaction', () => {
     jest.useFakeTimers();
     const buttons = root.findAllByType(Button);
 
-    const button = testingLib.getByTestId('btn1');
+    const button = testingLib.getByTestId('btn-login');
     act(() => {
       fireEvent.press(button);
       expect(setTimeout).toHaveBeenCalledTimes(1);
@@ -75,20 +80,22 @@ describe('[Intro] Interaction', () => {
     expect(buttons[0].props.isLoading).toEqual(false);
   });
 
-  it('should simulate [navigate] click', () => {
+  it('should navigate when button has clicked', () => {
     testingLib = render(component);
 
     act(() => {
-      fireEvent.press(testingLib.getByTestId('btn2'), 'click');
+      fireEvent.press(testingLib.getByTestId('btn-navigate'), 'click');
     });
-    expect(props.navigation.navigate).toBeCalledWith('Temp');
+    expect(props.navigation.navigate).toHaveBeenCalledWith('Temp', {
+      param: 'GO BACK',
+    });
   });
 
-  it('should simulate [changeTheme] click', () => {
+  it('should change theme when button has clicked', () => {
     testingLib = render(component);
 
     act(() => {
-      fireEvent.press(testingLib.getByTestId('btn3'), 'click');
+      fireEvent.press(testingLib.getByTestId('btn-theme'), 'click');
     });
   });
 });

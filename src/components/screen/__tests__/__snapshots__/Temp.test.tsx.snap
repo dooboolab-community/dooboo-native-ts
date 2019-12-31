@@ -2,116 +2,152 @@
 
 exports[`[Temp] render renders without crashing 1`] = `
 <View
+  pointerEvents="box-none"
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "white",
-        "flexBasis": 0,
-        "flexDirection": "row",
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "justifyContent": "center",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <TouchableOpacity
-    activeOpacity={0.5}
-    onPress={[Function]}
-    testID="btn"
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
             "alignItems": "center",
-            "alignSelf": "center",
-            "backgroundColor": "#069ccd",
-            "borderColor": "#069ccd",
-            "borderRadius": 4,
-            "borderWidth": 2,
-            "height": 52,
+            "backgroundColor": "white",
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
             "justifyContent": "center",
-            "width": 320,
-          },
-          Object {
-            "backgroundColor": "#333333",
           },
         ]
       }
     >
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "white",
-              "fontSize": 14,
-            },
-          ]
-        }
+      <TouchableOpacity
+        activeOpacity={0.5}
+        testID="btn-back"
       >
-        Go Back
-      </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "center",
+                "backgroundColor": "#069ccd",
+                "borderColor": "#069ccd",
+                "borderRadius": 4,
+                "borderWidth": 2,
+                "height": 52,
+                "justifyContent": "center",
+                "width": 320,
+              },
+              Object {
+                "backgroundColor": "#333333",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontSize": 14,
+                },
+              ]
+            }
+          >
+            GO BACK
+          </Text>
+        </View>
+      </TouchableOpacity>
     </View>
-  </TouchableOpacity>
+  </View>
 </View>
 `;
 
 exports[`[Temp] render should render [Dark] theme 1`] = `
 <View
+  pointerEvents="box-none"
   style={
-    Array [
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "#323739",
-        "flexBasis": 0,
-        "flexDirection": "row",
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "justifyContent": "center",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  <TouchableOpacity
-    activeOpacity={0.5}
-    onPress={[Function]}
-    testID="btn"
+  <View
+    collapsable={true}
+    pointerEvents="box-none"
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
   >
     <View
       style={
         Array [
           Object {
             "alignItems": "center",
-            "alignSelf": "center",
-            "backgroundColor": "#069ccd",
-            "borderColor": "#069ccd",
-            "borderRadius": 4,
-            "borderWidth": 2,
-            "height": 52,
+            "backgroundColor": "#323739",
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
             "justifyContent": "center",
-            "width": 320,
-          },
-          Object {
-            "backgroundColor": "#333333",
           },
         ]
       }
     >
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "white",
-              "fontSize": 14,
-            },
-          ]
-        }
+      <TouchableOpacity
+        activeOpacity={0.5}
+        testID="btn-back"
       >
-        Go Back
-      </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "center",
+                "backgroundColor": "#069ccd",
+                "borderColor": "#069ccd",
+                "borderRadius": 4,
+                "borderWidth": 2,
+                "height": 52,
+                "justifyContent": "center",
+                "width": 320,
+              },
+              Object {
+                "backgroundColor": "#333333",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontSize": 14,
+                },
+              ]
+            }
+          >
+            GO BACK
+          </Text>
+        </View>
+      </TouchableOpacity>
     </View>
-  </TouchableOpacity>
+  </View>
 </View>
 `;

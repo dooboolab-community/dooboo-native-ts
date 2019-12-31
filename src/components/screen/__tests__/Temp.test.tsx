@@ -11,27 +11,42 @@ import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
 import Temp from '../Temp';
 import { ThemeType } from '@dooboo-ui/native-theme';
-import renderer from 'react-test-renderer';
 
-let props;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let props: any;
 let component: ReactElement;
+let testingLib: RenderResult;
 
 describe('[Temp] render', () => {
-  props = createTestProps();
+  props = createTestProps({
+    route: {
+      params: {
+        param: 'GO BACK',
+      },
+    },
+  });
   component = createTestElement(<Temp {...props} />);
 
   it('renders without crashing', () => {
-    const rendered = renderer.create(component).toJSON();
-    expect(rendered).toMatchSnapshot();
-    expect(rendered).toBeTruthy();
+    testingLib = render(component);
+    const { baseElement } = testingLib;
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 
   it('should render [Dark] theme', () => {
-    props = createTestProps();
+    props = createTestProps({
+      route: {
+        params: {
+          param: 'GO BACK',
+        },
+      },
+    });
     component = createTestElement(<Temp {...props} />, ThemeType.DARK);
-    const json = renderer.create(component).toJSON();
-    expect(json).toMatchSnapshot();
-    expect(json).toBeTruthy();
+    testingLib = render(component);
+    const { baseElement } = testingLib;
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 });
 
@@ -42,8 +57,8 @@ describe('[Temp] Interaction', () => {
     renderResult = render(component);
   });
 
-  it('should simulate [onClick] when [btn] has been clicked', () => {
-    const btnInstance = renderResult.getByTestId('btn');
+  it('should simulate [onClick] when button has been clicked', () => {
+    const btnInstance = renderResult.getByTestId('btn-back');
     act(() => {
       fireEvent.press(btnInstance);
     });

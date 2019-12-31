@@ -5,6 +5,6 @@
   "PASSWORD": "Password",
   "SIGNUP": "SIGN UP",
   "FORGOT_PW": "Forgot password?",
-  "NAVIGATE": "Navigate",
+  "NAVIGATE": "Navigate to %{name}",
   "CHANGE_THEME": "Change theme"
 }
