@@ -76,7 +76,7 @@
     "jest-fetch-mock": "^3.0.1",
     "jest-styled-components": "^6.3.4",
     "jetifier": "^1.6.5",
-    "metro-react-native-babel-preset": "^0.57.0",
+    "metro-react-native-babel-preset": "^0.58.0",
     "prettier": "^1.19.1",
     "react-dom": "^16.9.0",
     "react-test-renderer": "^16.9.0",
