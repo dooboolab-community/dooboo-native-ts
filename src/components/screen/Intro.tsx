@@ -32,14 +32,14 @@ const ContentWrapper = styled.View`
 const ButtonWrapper = styled.View`
   position: absolute;
   flex-direction: column;
-  bottom: 40;
+  bottom: 40px;
   width: 85%;
   align-self: center;
 `;
 
 const StyledText = styled.Text`
-  font-size: 18;
-  line-height: 27;
+  font-size: 18px;
+  line-height: 27px;
   color: ${({ theme }): string => theme.fontColor};
 `;
 

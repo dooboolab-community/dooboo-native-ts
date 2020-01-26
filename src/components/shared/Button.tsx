@@ -13,10 +13,10 @@ import styled from 'styled-components/native';
 const StyledButton = styled.View`
   background-color: ${({ theme }): string => theme.btnPrimary};
   align-self: center;
-  border-radius: 4;
-  border-width: 2;
-  width: 320;
-  height: 52;
+  border-radius: 4px;
+  border-width: 2px;
+  width: 320px;
+  height: 52px;
   border-color: ${({ theme }): string => theme.btnPrimary};
 
   align-items: center;
@@ -29,7 +29,7 @@ const StyledButtonDisabled = styled(StyledButton)`
 `;
 
 const StyledText = styled.Text`
-  font-size: 14;
+  font-size: 14px;
   color: ${({ theme }): string => theme.btnPrimaryFont};
 `;
 
@@ -38,10 +38,10 @@ const StyledTextDisabled = styled(StyledText)`
 `;
 
 const StyledImage = styled.Image`
-  width: 24;
-  height: 24;
+  width: 24px;
+  height: 24px;
   position: absolute;
-  left: 16;
+  left: 16px;
 `;
 
 interface Props {
