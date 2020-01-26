@@ -22,11 +22,11 @@ describe('testing sample api', () => {
     });
   });
 
-  it('throws an error if object is null', () => {
+  it('throws an error if object is undefined', () => {
     const onResponse = jest.fn();
     const onError = jest.fn();
 
-    sample(null)
+    sample(undefined)
       .then(onResponse)
       .catch(onError)
       .then(() => {
