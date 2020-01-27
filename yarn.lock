@@ -1449,10 +1449,10 @@
   dependencies:
     dooboolab-welcome "^1.1.1"
 
-"@dooboo/eslint-config@^0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@dooboo/eslint-config/-/eslint-config-0.3.5.tgz#dfd11bd3d3f5c7570d540d9adb5d9b933333d90e"
-  integrity sha512-fLoofXuOMsCMyG+TcXjHP7OYI97p3TPrCPaN3sK4GzuFEcw2erVHR/4RBufBY2EQxNp4Vsy4kXVVTHjmARR8Rw==
+"@dooboo/eslint-config@^0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@dooboo/eslint-config/-/eslint-config-0.3.6.tgz#32aa29ebfbbf341d981743585032433ea0986b48"
+  integrity sha512-FYLaHio/yrnuzDPukV5fnuBLCh45QdGpSLimz8C33VRf++oZppa3ecVpshg8ZUhcKuiDaOMr5GBUqRY3pMUnAQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.15.0"
     "@typescript-eslint/parser" "^2.15.0"
