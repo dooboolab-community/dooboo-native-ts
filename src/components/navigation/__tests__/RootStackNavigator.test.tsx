@@ -1,10 +1,14 @@
 import 'react-native';
 
 import React, { ReactElement } from 'react';
+import {
+  act,
+  render,
+  wait,
+} from '@testing-library/react-native';
 import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
 import StackNavigator from '../RootStackNavigator';
-import renderer from 'react-test-renderer';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;
@@ -18,11 +22,10 @@ describe('[Stack] navigator', () => {
     );
   });
 
-  it('should renders without crashing', () => {
-    jest.useFakeTimers();
-    renderer.create(component).toJSON();
-    jest.runAllTimers();
-    // expect(rendered).toMatchSnapshot();
-    // expect(rendered).toBeTruthy();
+  it('should renders without crashing', async () => {
+    const { container } = render(component);
+    await act(() => wait());
+    expect(container).toBeTruthy();
+    expect(container).toMatchSnapshot();
   });
 });
