@@ -1,8 +1,8 @@
-import { MainStackParamList, RouteProp } from '@react-navigation/core';
+import { RootStackNavigationProps, RootStackParamList } from '../../components/navigation/RootStackNavigator';
 
 import Button from '../shared/Button';
 import React from 'react';
-import { RootStackNavigationProps } from '../../components/navigation/RootStackNavigator';
+import { RouteProp } from '@react-navigation/core';
 import styled from 'styled-components/native';
 
 const Container = styled.View`
@@ -15,7 +15,7 @@ const Container = styled.View`
 
 interface Props {
   navigation: RootStackNavigationProps<'Temp'>;
-  route: RouteProp<MainStackParamList, 'Temp'>;
+  route: RouteProp<RootStackParamList, 'Temp'>;
 }
 
 function Page(props: Props): React.ReactElement {

@@ -9,7 +9,7 @@ import { useThemeContext } from '@dooboo-ui/native-theme';
 export type RootStackParamList = {
   default: undefined;
   Intro: undefined;
-  Temp: { param: string } | undefined;
+  Temp: { param: string };
 }
 
 export type RootStackNavigationProps<
