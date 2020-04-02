@@ -12,6 +12,7 @@ export const createTestElement = (
   <RootProvider initialThemeType={themeType}>{child}</RootProvider>
 );
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const createTestProps = (obj?: object): object | unknown | any => ({
   navigation: {
     navigate: jest.fn(),

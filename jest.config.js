@@ -6,8 +6,8 @@ module.exports = {
   preset: '@testing-library/react-native',
   automock: false,
   transform: {
-    '^.+\\.(js|jsx)$': 'babel-jest',
-    '\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.js$': 'babel-jest',
+    '^.+\\.tsx?$': 'ts-jest',
   },
   modulePaths: ['<rootDir>'],
   moduleDirectories: ['node_modules'],
@@ -37,6 +37,7 @@ module.exports = {
   setupFiles: [
     './node_modules/react-native-gesture-handler/jestSetup.js',
     ...jestPreset.setupFiles,
+    '<rootDir>/test/jestSetup.js',
     '<rootDir>/test/jestSetup.ts',
   ],
   // 'testRegex': '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
