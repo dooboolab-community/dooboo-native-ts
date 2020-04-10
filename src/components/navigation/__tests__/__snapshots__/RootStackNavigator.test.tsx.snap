@@ -115,7 +115,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                 pointerEvents="none"
                 style={
                   Object {
-                    "backgroundColor": "#fff",
+                    "backgroundColor": "rgb(242, 242, 242)",
                     "bottom": 0,
                     "left": 0,
                     "position": "absolute",
@@ -617,7 +617,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                 pointerEvents="none"
                 style={
                   Object {
-                    "backgroundColor": "#fff",
+                    "backgroundColor": "rgb(242, 242, 242)",
                     "bottom": 0,
                     "left": 0,
                     "position": "absolute",
