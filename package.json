@@ -77,7 +77,7 @@
     "jest-styled-components": "^7.0.0",
     "jetifier": "^1.6.5",
     "metro-react-native-babel-preset": "^0.59.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.4",
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "ts-jest": "^25.2.1",
