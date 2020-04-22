@@ -296,15 +296,15 @@ PODS:
     - ReactCommon/callinvoker (= 0.62.2)
   - RNCAsyncStorage (1.9.0):
     - React
-  - RNCMaskedView (0.1.7):
+  - RNCMaskedView (0.1.9):
     - React
   - RNGestureHandler (1.6.1):
     - React
-  - RNLocalize (1.3.4):
+  - RNLocalize (1.4.0):
     - React
   - RNReanimated (1.8.0):
     - React
-  - RNScreens (2.4.0):
+  - RNScreens (2.5.0):
     - React
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -471,11 +471,11 @@ SPEC CHECKSUMS:
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
   RNCAsyncStorage: 453cd7c335ec9ba3b877e27d02238956b76f3268
-  RNCMaskedView: 76c40a1d41c3e2535df09246a2b5487f04de0814
+  RNCMaskedView: 71fc32d971f03b7f03d6ab6b86b730c4ee64f5b6
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
-  RNLocalize: 215c419a17d7585eb7a63c748ebfd042e0cb2c3d
+  RNLocalize: b6df30cc25ae736d37874f9bce13351db2f56796
   RNReanimated: 955cf4068714003d2f1a6e2bae3fb1118f359aff
-  RNScreens: b5c0e1b2b04512919e78bd3898e144a157ce2363
+  RNScreens: ac02d0e4529f08ced69f5580d416f968a6ec3a1d
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
