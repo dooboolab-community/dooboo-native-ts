@@ -34,12 +34,12 @@
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android"
   },
   "dependencies": {
-    "@dooboo-ui/native-theme": "^0.1.5",
+    "@dooboo-ui/native-theme": "^0.1.7",
     "@react-native-community/async-storage": "^1.9.0",
-    "@react-native-community/masked-view": "^0.1.9",
+    "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/core": "^5.3.4",
     "@react-navigation/native": "^5.1.6",
-    "@react-navigation/stack": "^5.2.11",
+    "@react-navigation/stack": "^5.2.13",
     "i18n-js": "^3.5.1",
     "react": "16.13.1",
     "react-native": "0.62.2",
@@ -47,7 +47,7 @@
     "react-native-localize": "^1.4.0",
     "react-native-reanimated": "^1.8.0",
     "react-native-safe-area-context": "^0.7.3",
-    "react-native-screens": "^2.5.0",
+    "react-native-screens": "^2.6.0",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
@@ -65,7 +65,7 @@
     "@types/i18n-js": "^3.0.2",
     "@types/jest": "^25.2.1",
     "@types/react": "^16.9.34",
-    "@types/react-native": "^0.62.2",
+    "@types/react-native": "^0.62.4",
     "@types/react-test-renderer": "^16.9",
     "@types/styled-components": "^5.1.0",
     "babel-jest": "25.4.0",
