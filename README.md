@@ -220,9 +220,9 @@ We used [react-native-localize](https://github.com/react-native-community/react-
   i18n.fallbacks = true;
   i18n.translations = { en, ko, ja };
 
-  export const getString = (param: string, mapObj?: object): string => {
+  export const getString = (param: string, mapObj?: Record<string, unknown>): string => {
     if (mapObj) {
-      i18n.t(param, mapObj);
+      return i18n.t(param, mapObj);
     }
     return i18n.t(param);
   };
@@ -269,7 +269,7 @@ We used [react-native-localize](https://github.com/react-native-community/react-
     isRTL: false,
   });
 
-  const getNumberFormatSettings = (): object => ({
+  const getNumberFormatSettings = (): Record<string, unknown> => ({
     decimalSeparator: '.',
     groupingSeparator: ',',
   });
