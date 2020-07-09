@@ -104,7 +104,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
           ]
         }
       >
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-login"
         >
@@ -158,7 +158,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
               Login
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
         <View
           style={
             Object {
@@ -166,7 +166,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             }
           }
         />
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-navigate"
         >
@@ -200,7 +200,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
               Navigate to Temp
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
         <View
           style={
             Object {
@@ -208,7 +208,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             }
           }
         />
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-theme"
         >
@@ -242,7 +242,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
               Change theme
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
       </View>
     </View>
   </View>
@@ -353,7 +353,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
           ]
         }
       >
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-login"
         >
@@ -407,7 +407,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
               Login
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
         <View
           style={
             Object {
@@ -415,7 +415,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
             }
           }
         />
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-navigate"
         >
@@ -449,7 +449,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
               Navigate to Temp
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
         <View
           style={
             Object {
@@ -457,7 +457,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
             }
           }
         />
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-theme"
         >
@@ -491,7 +491,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
               Change theme
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
       </View>
     </View>
   </View>
@@ -602,7 +602,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
           ]
         }
       >
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-login"
         >
@@ -656,7 +656,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
               Login
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
         <View
           style={
             Object {
@@ -664,7 +664,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
             }
           }
         />
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-navigate"
         >
@@ -698,7 +698,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
               Navigate to Temp
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
         <View
           style={
             Object {
@@ -706,7 +706,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
             }
           }
         />
-        <TouchableOpacity
+        <View
           activeOpacity={0.5}
           testID="btn-theme"
         >
@@ -740,7 +740,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
               Change theme
             </Text>
           </View>
-        </TouchableOpacity>
+        </View>
       </View>
     </View>
   </View>
@@ -834,7 +834,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       ]
     }
   >
-    <TouchableOpacity
+    <View
       activeOpacity={0.5}
       onPress={[Function]}
       testID="btn-login"
@@ -889,7 +889,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
           Login
         </Text>
       </View>
-    </TouchableOpacity>
+    </View>
     <View
       style={
         Object {
@@ -897,7 +897,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
         }
       }
     />
-    <TouchableOpacity
+    <View
       activeOpacity={0.5}
       onPress={[Function]}
       testID="btn-navigate"
@@ -932,7 +932,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
           Navigate to Temp
         </Text>
       </View>
-    </TouchableOpacity>
+    </View>
     <View
       style={
         Object {
@@ -940,7 +940,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
         }
       }
     />
-    <TouchableOpacity
+    <View
       activeOpacity={0.5}
       onPress={[Function]}
       testID="btn-theme"
@@ -975,7 +975,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
           Change theme
         </Text>
       </View>
-    </TouchableOpacity>
+    </View>
   </View>
 </View>
 `;

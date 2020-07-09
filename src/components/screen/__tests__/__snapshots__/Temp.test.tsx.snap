@@ -33,7 +33,7 @@ exports[`[Temp] render renders without crashing 1`] = `
         ]
       }
     >
-      <TouchableOpacity
+      <View
         activeOpacity={0.5}
         testID="btn-back"
       >
@@ -70,7 +70,7 @@ exports[`[Temp] render renders without crashing 1`] = `
             GO BACK
           </Text>
         </View>
-      </TouchableOpacity>
+      </View>
     </View>
   </View>
 </View>
@@ -109,7 +109,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
         ]
       }
     >
-      <TouchableOpacity
+      <View
         activeOpacity={0.5}
         testID="btn-back"
       >
@@ -146,7 +146,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
             GO BACK
           </Text>
         </View>
-      </TouchableOpacity>
+      </View>
     </View>
   </View>
 </View>

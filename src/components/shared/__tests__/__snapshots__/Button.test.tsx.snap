@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
-<TouchableOpacity
+<View
   activeOpacity={0.5}
   onPress={[Function]}
   testID="btn"
@@ -34,11 +34,11 @@ exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
       }
     />
   </View>
-</TouchableOpacity>
+</View>
 `;
 
 exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
-<TouchableOpacity
+<View
   activeOpacity={0.5}
   onPress={[Function]}
   testID="btn"
@@ -71,7 +71,7 @@ exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
       }
     />
   </View>
-</TouchableOpacity>
+</View>
 `;
 
 exports[`[Button] should render [isDisabled] status without crashing 1`] = `

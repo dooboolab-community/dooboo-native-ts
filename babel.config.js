@@ -5,19 +5,7 @@ module.exports = {
   ],
   sourceMaps: 'inline',
   plugins: [
-    [
-      '@babel/plugin-proposal-decorators',
-      {
-        legacy: true,
-      },
-    ],
-    [
-      '@babel/plugin-transform-runtime',
-      {
-        helpers: true,
-        regenerator: false,
-      },
-    ],
+    '@babel/proposal-class-properties',
     '@babel/proposal-object-rest-spread',
   ],
 };

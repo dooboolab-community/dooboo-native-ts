@@ -13,7 +13,7 @@ if (Array.isArray(locales)) {
 i18n.fallbacks = true;
 i18n.translations = { en, ko };
 
-export const getString = (param: string, mapObj?: object): string => {
+export const getString = (param: string, mapObj?: Record<string, unknown>): string => {
   if (mapObj) {
     return i18n.t(param, mapObj);
   }

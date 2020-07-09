@@ -14,7 +14,7 @@ const findBestAvailableLanguage = (): Partial<Locale> => ({
   isRTL: false,
 });
 
-const getNumberFormatSettings = (): object => ({
+const getNumberFormatSettings = (): Record<string, unknown> => ({
   decimalSeparator: '.',
   groupingSeparator: ',',
 });

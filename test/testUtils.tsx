@@ -12,7 +12,8 @@ export const createTestElement = (
   <RootProvider initialThemeType={themeType}>{child}</RootProvider>
 );
 
-export const createTestProps = (obj?: object): object | unknown | any => ({
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const createTestProps = (obj?: Record<string, unknown>): Record<string, unknown> | unknown | any => ({
   navigation: {
     navigate: jest.fn(),
     goBack: jest.fn(),

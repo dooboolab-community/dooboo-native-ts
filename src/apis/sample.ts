@@ -1,7 +1,7 @@
 export const ROOT_URL = 'http://localhost:3000/api';
 
 export const sample = async (
-  body: object | undefined,
+  body: Record<string, unknown> | undefined,
   signal?: AbortSignal | undefined,
 ): Promise<Response> => {
   if (!body) {
