@@ -1,24 +1,22 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const jestPreset = require('@testing-library/react-native/jest-preset');
+const { defaults: tsjPreset } = require('ts-jest/presets');
 /* eslint-enable @typescript-eslint/no-var-requires */
 
 module.exports = {
+  ...tsjPreset,
   preset: '@testing-library/react-native',
   automock: false,
   transform: {
-    '^.+\\.js$': 'babel-jest',
-    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.(js)$': '<rootDir>/node_modules/babel-jest',
+    '\\.ts$': 'ts-jest',
   },
   modulePaths: ['<rootDir>'],
   moduleDirectories: ['node_modules'],
-  testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
-  moduleFileExtensions: ['js', 'ts', 'tsx', 'svg', 'png', 'json'],
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'svg', 'png', 'json'],
   globals: {
     'ts-jest': {
-      tsConfig: {
-        jsx: 'react',
-      },
-      diagnostics: false,
+      babelConfig: true,
     },
   },
   modulePathIgnorePatterns: [
@@ -27,7 +25,6 @@ module.exports = {
     '<rootDir>/.history/',
   ],
   // 'testRegex': '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
-  testPathIgnorePatterns: ['\\.snap$', '<rootDir>/node_modules/'],
   cacheDirectory: '.jest/cache',
   setupFilesAfterEnv: ['./test/setupTest.ts'],
   moduleNameMapper: {
@@ -40,7 +37,11 @@ module.exports = {
     '<rootDir>/test/jestSetup.js',
     '<rootDir>/test/jestSetup.ts',
   ],
-  // 'testRegex': '(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$',
+  testRegex: '(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$',
+  testPathIgnorePatterns: [
+    '\\.snap$',
+    '<rootDir>/node_modules/',
+  ],
   /* eslint-disable */
   transformIgnorePatterns: [
     'node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|react-navigation|@react-navigation/.*|@dooboo-ui)',
@@ -49,7 +50,6 @@ module.exports = {
   haste: {
     defaultPlatform: 'ios',
     platforms: ['android', 'ios', 'native'],
-    providesModuleNodeModules: ['react', 'react-native'],
   },
   coveragePathIgnorePatterns: ['/node_modules/'],
 };
