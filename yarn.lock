@@ -2340,6 +2340,13 @@
     pretty-format "^24.9.0"
     wait-for-expect "^3.0.0"
 
+"@testing-library/react-native@daveols/native-testing-library#support-react-native-63-dist":
+  version "0.0.0-semantically-released"
+  resolved "https://codeload.github.com/daveols/native-testing-library/tar.gz/af2a4fbd16725532b579b456c7f0da234866be23"
+  dependencies:
+    pretty-format "^24.9.0"
+    wait-for-expect "^3.0.0"
+
 "@types/babel__core@^7.0.0":
   version "7.1.9"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.9.tgz#77e59d438522a6fb898fa43dc3455c6e72f3963d"
