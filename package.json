@@ -68,7 +68,7 @@
     "@types/styled-components": "^5.1.1",
     "babel-jest": "^26.1.0",
     "babel-preset-react-native": "^5.0.2",
-    "codecov": "^3.7.0",
+    "codecov": "^3.7.1",
     "eslint": "^7.4.0",
     "jest": "^26.1.0",
     "jest-fetch-mock": "^3.0.3",
