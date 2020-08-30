@@ -1,3 +1,5 @@
+import 'react-native-gesture-handler';
+
 import { StackNavigationProp, createStackNavigator } from '@react-navigation/stack';
 import { ThemeType, useThemeContext } from '@dooboo-ui/native-theme';
 
