@@ -20,6 +20,7 @@ interface Props {
 
 function Page(props: Props): React.ReactElement {
   const { route: { params: { param } }, navigation } = props;
+
   return (
     <Container>
       <Button

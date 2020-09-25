@@ -22,6 +22,7 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator(): React.ReactElement {
   const { theme, themeType } = useThemeContext();
+
   return (
     <NavigationContainer>
       <Stack.Navigator

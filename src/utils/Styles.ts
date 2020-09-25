@@ -2,6 +2,7 @@ import { Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 let calRatio = width <= height ? 16 * (width / height) : 16 * (height / width);
+
 if (width <= height) {
   if (calRatio < 9) {
     calRatio = width / 9;

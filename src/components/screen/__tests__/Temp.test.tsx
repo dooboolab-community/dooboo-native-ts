@@ -2,7 +2,7 @@ import 'react-native';
 
 import React, { ReactElement } from 'react';
 import {
-  RenderResult,
+  RenderAPI,
   act,
   fireEvent,
   render,
@@ -15,7 +15,7 @@ import { ThemeType } from '@dooboo-ui/native-theme';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;
 let component: ReactElement;
-let testingLib: RenderResult;
+let testingLib: RenderAPI;
 
 describe('[Temp] render', () => {
   props = createTestProps({
@@ -25,11 +25,14 @@ describe('[Temp] render', () => {
       },
     },
   });
+
   component = createTestElement(<Temp {...props} />);
 
   it('renders without crashing', () => {
     testingLib = render(component);
-    const { baseElement } = testingLib;
+
+    const baseElement = testingLib.toJSON();
+
     expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
@@ -42,16 +45,19 @@ describe('[Temp] render', () => {
         },
       },
     });
+
     component = createTestElement(<Temp {...props} />, ThemeType.DARK);
     testingLib = render(component);
-    const { baseElement } = testingLib;
+
+    const baseElement = testingLib.toJSON();
+
     expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 });
 
 describe('[Temp] Interaction', () => {
-  let renderResult: RenderResult;
+  let renderResult: RenderAPI;
 
   beforeEach(() => {
     renderResult = render(component);
@@ -59,9 +65,11 @@ describe('[Temp] Interaction', () => {
 
   it('should simulate [onClick] when button has been clicked', () => {
     const btnInstance = renderResult.getByTestId('btn-back');
+
     act(() => {
       fireEvent.press(btnInstance);
     });
+
     expect(props.navigation.goBack).toHaveBeenCalled();
   });
 });

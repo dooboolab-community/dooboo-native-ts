@@ -9,6 +9,7 @@ interface Context {
   resetUser: () => void;
   callDefault: () => void;
 }
+
 const [useCtx, Provider] = createCtx<Context>();
 
 export enum ActionType {

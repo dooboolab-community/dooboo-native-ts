@@ -23,11 +23,13 @@ describe('[Button]', () => {
       onClick: (): number => cnt++,
       testID: 'btn',
     };
+
     component = createTestElement(<Button {...props} />);
   });
 
   it('[ThemeType.Light] renders without crashing', () => {
     const rendered = renderer.create(component).toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -36,6 +38,7 @@ describe('[Button]', () => {
     component = createTestElement(<Button {...props} />, ThemeType.DARK);
 
     const rendered = renderer.create(component).toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -45,6 +48,7 @@ describe('[Button]', () => {
     component = createTestElement(<Button {...props} />);
 
     const rendered = renderer.create(component).toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -54,6 +58,7 @@ describe('[Button]', () => {
     component = createTestElement(<Button {...props} />);
 
     const rendered = renderer.create(component).toJSON();
+
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
   });
@@ -65,10 +70,12 @@ describe('[Button]', () => {
 
     it('should simulate onClick', () => {
       const btn = testingLib.queryByTestId('btn');
+
       act(() => {
         fireEvent.press(btn);
         fireEvent.press(btn);
       });
+
       expect(cnt).toBe(3);
     });
   });

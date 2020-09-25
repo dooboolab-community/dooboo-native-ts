@@ -14,6 +14,7 @@ let component: ReactElement;
 describe('[Stack] navigator', () => {
   beforeEach(() => {
     props = createTestProps();
+
     component = createTestElement(
       <StackNavigator {...props} />,
     );
@@ -21,7 +22,9 @@ describe('[Stack] navigator', () => {
 
   it('should renders without crashing', () => {
     jest.useFakeTimers();
+
     const rendered = renderer.create(component).toJSON();
+
     jest.runAllTimers();
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();
@@ -30,7 +33,9 @@ describe('[Stack] navigator', () => {
   it('should renders [Dark] mode', () => {
     jest.useFakeTimers();
     component = createTestElement(<StackNavigator {...props} />, ThemeType.DARK);
+
     const rendered = renderer.create(component).toJSON();
+
     jest.runAllTimers();
     expect(rendered).toMatchSnapshot();
     expect(rendered).toBeTruthy();

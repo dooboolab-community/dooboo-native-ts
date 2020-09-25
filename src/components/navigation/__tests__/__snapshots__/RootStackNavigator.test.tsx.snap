@@ -485,6 +485,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                           >
                             <Text
                               accessibilityRole="header"
+                              aria-level="1"
                               numberOfLines={1}
                               onLayout={[Function]}
                               style={
@@ -623,6 +624,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             >
               <Text
                 accessibilityRole="header"
+                aria-level="1"
                 numberOfLines={1}
                 onLayout={[Function]}
                 style={

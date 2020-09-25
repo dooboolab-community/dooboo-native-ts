@@ -48,19 +48,21 @@ interface Props {
 }
 
 function Intro(props: Props): React.ReactElement {
-  let timer: number;
+  let timer: NodeJS.Timeout;
   const { state: { user }, setUser } = useAppContext();
   const { changeThemeType } = useThemeContext();
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
   const onLogin = (): void => {
     setIsLoggingIn(true);
+
     timer = setTimeout(() => {
       const user: User = {
         displayName: 'dooboolab',
         age: 30,
         job: 'developer',
       };
+
       setUser(user);
       setIsLoggingIn(false);
       clearTimeout(timer);
