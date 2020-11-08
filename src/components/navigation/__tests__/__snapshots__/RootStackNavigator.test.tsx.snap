@@ -96,6 +96,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
           }
         >
           <View
+            needsOffscreenAlphaCompositing={false}
             pointerEvents="box-none"
             style={
               Object {
@@ -536,12 +537,9 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
-            "zIndex": 1,
-          },
-          false,
-        ]
+        Object {
+          "zIndex": 1,
+        }
       }
     >
       <View
@@ -719,6 +717,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
           }
         >
           <View
+            needsOffscreenAlphaCompositing={false}
             pointerEvents="box-none"
             style={
               Object {
