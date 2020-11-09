@@ -182,7 +182,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             ]
           }
         >
-          Navigate to Temp
+          Navigate
         </Text>
       </View>
     </View>
@@ -225,7 +225,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             ]
           }
         >
-          Change theme
+          Change Theme
         </Text>
       </View>
     </View>
@@ -415,7 +415,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
             ]
           }
         >
-          Navigate to Temp
+          Navigate
         </Text>
       </View>
     </View>
@@ -458,7 +458,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
             ]
           }
         >
-          Change theme
+          Change Theme
         </Text>
       </View>
     </View>
@@ -648,7 +648,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
             ]
           }
         >
-          Navigate to Temp
+          Navigate
         </Text>
       </View>
     </View>
@@ -691,7 +691,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
             ]
           }
         >
-          Change theme
+          Change Theme
         </Text>
       </View>
     </View>
@@ -881,7 +881,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             ]
           }
         >
-          Navigate to Temp
+          Navigate
         </Text>
       </View>
     </View>
@@ -924,7 +924,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             ]
           }
         >
-          Change theme
+          Change Theme
         </Text>
       </View>
     </View>

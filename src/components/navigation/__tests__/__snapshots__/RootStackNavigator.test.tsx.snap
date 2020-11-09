@@ -355,7 +355,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 ]
                               }
                             >
-                              Navigate to Temp
+                              Navigate
                             </Text>
                           </View>
                         </View>
@@ -398,7 +398,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 ]
                               }
                             >
-                              Change theme
+                              Change Theme
                             </Text>
                           </View>
                         </View>
@@ -976,7 +976,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 ]
                               }
                             >
-                              Navigate to Temp
+                              Navigate
                             </Text>
                           </View>
                         </View>
@@ -1019,7 +1019,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 ]
                               }
                             >
-                              Change theme
+                              Change Theme
                             </Text>
                           </View>
                         </View>
