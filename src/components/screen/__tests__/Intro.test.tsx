@@ -5,6 +5,7 @@ import { createTestElement, createTestProps } from '../../../../test/testUtils';
 import Button from '../../shared/Button';
 import Intro from '../Intro';
 import { ThemeType } from '@dooboo-ui/native-theme';
+import fbt from 'fbt';
 import renderer from 'react-test-renderer';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -99,7 +100,7 @@ describe('[Intro] Interaction', () => {
     });
 
     expect(props.navigation.navigate).toHaveBeenCalledWith('Temp', {
-      param: 'GO BACK',
+      param: fbt('Go Back', 'go back'),
     });
   });
 

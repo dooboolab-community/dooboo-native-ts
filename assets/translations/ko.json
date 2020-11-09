@@ -30,6 +30,16 @@
           "variations": {}
         }
       ]
+    },
+    "d045dda0e2a4f8df14e676e3adbcf94d": {
+      "tokens": [],
+      "types": [],
+      "translations": [
+        {
+          "translation": "뒤로가기",
+          "variations": {}
+        }
+      ]
     }
   }
 }
