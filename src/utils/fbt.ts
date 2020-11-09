@@ -12,9 +12,9 @@ export const viewerContext = {
 export const initFbt = (): void => {
   const deviceLanguage =
           Platform.OS === 'ios'
-            ? NativeModules.SettingsManager.settings.AppleLocale ||
-              NativeModules.SettingsManager.settings.AppleLanguages[0] // iOS 13
-            : NativeModules.I18nManager.localeIdentifier;
+            ? NativeModules?.SettingsManager?.settings?.AppleLocale ||
+              NativeModules?.SettingsManager?.settings?.AppleLanguages[0] // iOS 13
+            : NativeModules?.I18nManager?.localeIdentifier;
 
   if (deviceLanguage) {
     viewerContext.locale = deviceLanguage.substr(0, 2);
