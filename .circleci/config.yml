@@ -109,6 +109,13 @@ jobs:
       #       - android/vendor/bundle
 
       - run:
+          name: Generate fbt
+          working_directory: .
+          command: |
+            yarn fbt-all
+
+
+      - run:
           name: Check MD5 on files
           command: |
             md5sum android/build.gradle
