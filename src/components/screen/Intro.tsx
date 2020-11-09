@@ -4,7 +4,7 @@ import React from 'react';
 import { RootStackNavigationProps } from '../navigation/RootStackNavigator';
 import { User } from '../../types';
 import { View } from 'react-native';
-import { getString } from '../../../STRINGS';
+import { fbt } from 'fbt';
 import styled from 'styled-components/native';
 import { useAppContext } from '../../providers/AppProvider';
 import { useThemeContext } from '@dooboo-ui/native-theme';
@@ -88,7 +88,7 @@ function Intro(props: Props): React.ReactElement {
           imgLeftSrc={IC_MASK}
           isLoading={isLoggingIn}
           onClick={(): void => onLogin()}
-          text={getString('LOGIN')}
+          text={fbt('Login', 'login')}
         />
         <View style={{ marginTop: 8 }} />
         <Button
@@ -96,13 +96,13 @@ function Intro(props: Props): React.ReactElement {
           onClick={(): void => props.navigation.navigate('Temp', {
             param: 'GO BACK',
           })}
-          text={getString('NAVIGATE', { name: 'Temp' })}
+          text={fbt('Navigate', 'navigate')}
         />
         <View style={{ marginTop: 8 }} />
         <Button
           testID="btn-theme"
           onClick={(): void => changeThemeType()}
-          text={getString('CHANGE_THEME')}
+          text={fbt('Change Theme', 'change theme')}
         />
       </ButtonWrapper>
     </Container>
