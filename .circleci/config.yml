@@ -112,7 +112,7 @@ jobs:
           name: Generate fbt
           working_directory: .
           command: |
-            yarn fbt-all
+            yarn fbt:all && yarn fbt:android
 
 
       - run:
