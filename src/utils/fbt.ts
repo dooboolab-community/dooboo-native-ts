@@ -1,7 +1,7 @@
 import { NativeModules, Platform } from 'react-native';
 
 import { init } from 'fbt';
-import intl from '../../assets/translatedFbts.json';
+import intl from '../../i18n/fbt/translatedFbts.json';
 
 const DEFAULT_LOCALE = 'en';
 
@@ -17,7 +17,7 @@ export const initFbt = (): void => {
             : NativeModules?.I18nManager?.localeIdentifier;
 
   if (deviceLanguage) {
-    viewerContext.locale = deviceLanguage.substr(0, 2);
+    viewerContext.locale = deviceLanguage;
   }
 
   init({
