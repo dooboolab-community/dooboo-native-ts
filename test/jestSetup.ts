@@ -1,5 +1,5 @@
 import { GlobalWithFetchMock } from 'jest-fetch-mock';
-import initFbt from '../fbt/fbtInit';
+import { initFbt } from '../src/utils/fbt';
 /**
  * monkey patching the locale to avoid the error:
  * Something went wrong initializing the native ReactLocalization module
