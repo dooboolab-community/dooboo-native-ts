@@ -7,10 +7,10 @@ module.exports = {
   ],
   plugins: [
     'babel-plugin-fbt-runtime',
-    [ 'babel-plugin-fbt', {
-      fbtEnumPath: path.join(__dirname, 'fbt/.enum_manifest.json'),
+    ['babel-plugin-fbt', {
+      fbtEnumPath: path.join(__dirname, 'i18n/fbt/.enum_manifest.json'),
       extraOptions: { __self: true },
-      },
+    },
     ],
   ],
 };
