@@ -40,6 +40,7 @@ const FakeChild = (): React.ReactElement => {
 
 describe('[AppProvider] rendering test', () => {
   let json: renderer.ReactTestRendererJSON;
+
   const component = (
     <AppProvider>
       <FakeChild />
@@ -54,7 +55,9 @@ describe('[AppProvider] rendering test', () => {
 
   it('should call [resetUser] when button pressed', () => {
     testingLib = render(component);
+
     const btn = testingLib.queryByTestId('BUTTON');
+
     act(() => {
       fireEvent.press(btn);
     });
@@ -62,7 +65,9 @@ describe('[AppProvider] rendering test', () => {
 
   it('should call [default] when button pressed', () => {
     testingLib = render(component);
+
     const btn = testingLib.queryByTestId('BUTTON_NOT_VALID');
+
     act(() => {
       fireEvent.press(btn);
     });
@@ -79,6 +84,7 @@ describe('[AppProvider] error rendering test', () => {
     } catch (e) {
       error = e;
     }
+
     expect(error).toBeInstanceOf(Error);
   });
 });

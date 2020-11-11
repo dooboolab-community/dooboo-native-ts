@@ -1,3 +1,5 @@
+import 'react-native-gesture-handler';
+
 import { StackNavigationProp, createStackNavigator } from '@react-navigation/stack';
 import { ThemeType, useThemeContext } from '@dooboo-ui/native-theme';
 
@@ -20,6 +22,7 @@ const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator(): React.ReactElement {
   const { theme, themeType } = useThemeContext();
+
   return (
     <NavigationContainer>
       <Stack.Navigator

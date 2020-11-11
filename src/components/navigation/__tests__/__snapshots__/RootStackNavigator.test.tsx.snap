@@ -55,6 +55,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
           onClose={[Function]}
           onGestureBegin={[Function]}
           onGestureCanceled={[Function]}
+          onGestureEnd={[Function]}
           onOpen={[Function]}
           onTransitionStart={[Function]}
           pointerEvents="box-none"
@@ -95,6 +96,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
           }
         >
           <View
+            needsOffscreenAlphaCompositing={false}
             pointerEvents="box-none"
             style={
               Object {
@@ -430,9 +432,9 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                           style={
                             Object {
                               "backgroundColor": "#323739",
-                              "borderBottomColor": "rgb(224, 224, 224)",
+                              "borderBottomColor": "rgb(216, 216, 216)",
                               "flex": 1,
-                              "shadowColor": "rgb(224, 224, 224)",
+                              "shadowColor": "rgb(216, 216, 216)",
                               "shadowOffset": Object {
                                 "height": 0.5,
                                 "width": 0,
@@ -484,6 +486,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                           >
                             <Text
                               accessibilityRole="header"
+                              aria-level="1"
                               numberOfLines={1}
                               onLayout={[Function]}
                               style={
@@ -534,12 +537,9 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
     <View
       pointerEvents="box-none"
       style={
-        Array [
-          Object {
-            "zIndex": 1,
-          },
-          false,
-        ]
+        Object {
+          "zIndex": 1,
+        }
       }
     >
       <View
@@ -567,9 +567,9 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             style={
               Object {
                 "backgroundColor": "white",
-                "borderBottomColor": "rgb(224, 224, 224)",
+                "borderBottomColor": "rgb(216, 216, 216)",
                 "flex": 1,
-                "shadowColor": "rgb(224, 224, 224)",
+                "shadowColor": "rgb(216, 216, 216)",
                 "shadowOffset": Object {
                   "height": 0.5,
                   "width": 0,
@@ -622,6 +622,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             >
               <Text
                 accessibilityRole="header"
+                aria-level="1"
                 numberOfLines={1}
                 onLayout={[Function]}
                 style={
@@ -675,6 +676,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
           onClose={[Function]}
           onGestureBegin={[Function]}
           onGestureCanceled={[Function]}
+          onGestureEnd={[Function]}
           onOpen={[Function]}
           onTransitionStart={[Function]}
           pointerEvents="box-none"
@@ -715,6 +717,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
           }
         >
           <View
+            needsOffscreenAlphaCompositing={false}
             pointerEvents="box-none"
             style={
               Object {
