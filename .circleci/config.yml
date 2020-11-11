@@ -38,7 +38,7 @@ jobs:
           name: Generate fbt
           working_directory: .
           command: |
-            yarn fbt-all
+            yarn fbt:all
 
       - run:
           name: ESLint Test
