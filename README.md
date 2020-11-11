@@ -198,25 +198,10 @@ const component = (props): React.ReactElement => {
 
 ### Localization
 
-### Localization
+Previously, we used `i18n-j` to localize our app and we decided to switch to [fbt](https://github.com/facebook/fbt). If you want to understand why, you may see our blog for [Localizing react app with FBT instead of i18n](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373).
 
-We've defined localized strings in `assets/lang/en.json` for English and `assets/lang/ko.json` for Korean. Since the `en` is default locale setup in current project, you do not need to localize this file. However, you still should not delete this if you don't want to see missing localization warning messages when you are running jest.
+We've defined localized strings in `assets/translations/en.json` for English and `assets/translations/ko.json` for Korean. Since the `en` is default locale setup in current project, you do not need to localize this file. However, you still should not delete this if you don't want to see missing localization warning messages when you are running jest.
 
-We are using [fbt](https://github.com/facebook/fbt) to localize our app which is maintained by Facebook team. Simply running `yarn fbt-all` will generate `assets/translatedFbts.json` which has all the localized strings.
+We are using [fbt](https://github.com/facebook/fbt) to localize our app which is maintained by Facebook team. Simply running `yarn fbt-all` will generate `i18n/fbt/translatedFbts.json` which has all the localized strings.
 
-If you find trouble using it, we've wrote an article, [Localizing react app with FBT instead of i18n
- in the medium](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373). You may follow that.
-
-
-
-### React version
-
-16.9
-
-### React Native version
-
-0.61
-
-### React navigation
-
-4
+If you find trouble using it, you may follow [Integrate FBT into your React Native Application](https://medium.com/translate-your-react-native-application-with/integrate-fbt-into-your-react-native-application-2bac420e8e0c).
