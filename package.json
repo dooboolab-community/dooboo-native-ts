@@ -6,7 +6,7 @@
   "private": true,
   "postinstall": "npx jetify",
   "scripts": {
-    "postinstall": "yarn fbt-all",
+    "postinstall": "yarn fbt:all",
     "dev": "node node_modules/react-native/local-cli/cli.js start",
     "tsc": "tsc",
     "watch": "tsc -w",
