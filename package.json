@@ -41,7 +41,7 @@
     "fbt:android": "babel-node i18n/scripts/generate-android-localizables-executor.js"
   },
   "dependencies": {
-    "@dooboo-ui/native-theme": "^0.1.7",
+    "@dooboo-ui/theme": "^0.0.3",
     "@react-native-community/async-storage": "^1.12.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/core": "^5.14.4",

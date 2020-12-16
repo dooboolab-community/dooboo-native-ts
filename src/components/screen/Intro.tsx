@@ -7,7 +7,7 @@ import { View } from 'react-native';
 import { fbt } from 'fbt';
 import styled from 'styled-components/native';
 import { useAppContext } from '../../providers/AppProvider';
-import { useThemeContext } from '@dooboo-ui/native-theme';
+import { useThemeContext } from '@dooboo-ui/theme';
 
 const Container = styled.View`
   flex: 1;

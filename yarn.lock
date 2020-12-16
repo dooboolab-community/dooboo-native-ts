@@ -760,10 +760,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@dooboo-ui/native-theme@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@dooboo-ui/native-theme/-/native-theme-0.1.7.tgz#667718f3fd5150d1f4a33718b29f97c9aebbf99d"
-  integrity sha512-TzZTdYUp1uplWNufrp7C9iMBPv9KNTBlzemJ/jKCH1RC8Tu9BO4e8JCeZibzEblMT7DZj7MYOydr/clZcxg8jg==
+"@dooboo-ui/theme@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@dooboo-ui/theme/-/theme-0.0.3.tgz#d83e9937940806419eca4e610dae681a01b2c841"
+  integrity sha512-x18Fo/djSLqZMw0qojOLMZuDeJuv6Ez6CSXxT8s1CYdfwwkfeINhI1Vup/4mrX3rtsYufmB7n2YQmCy4R5X02A==
   dependencies:
     dooboolab-welcome "^1.2.0"
 
