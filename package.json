@@ -34,7 +34,7 @@
     "build:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ./ios",
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android",
     "manifest": "babel-node ./node_modules/babel-plugin-fbt/bin/manifest --src src/ --enum-manifest i18n/fbt/.enum_manifest.json --src-manifest i18n/fbt/.src_manifest.json",
-    "collect-fbts": "babel-node ./node_modules/babel-plugin-fbt/bin/collectFBT --hash-module 'fb-tiger-hash/src/hashPhrases' --react-native-mode --manifest < i18n/fbt/.src_manifest.json > i18n/fbt/.source_strings.json",
+    "collect-fbts": "babel-node ./node_modules/babel-plugin-fbt/bin/collectFBT --hash-module 'fb-tiger-hash/src/hashPhrases' --react-native-mode --manifest --options __self < i18n/fbt/.src_manifest.json > i18n/fbt/.source_strings.json",
     "translate-fbts": "babel-node ./node_modules/babel-plugin-fbt/bin/translate.js --jenkins --source-strings i18n/fbt/.source_strings.json --translations assets/translations/*.json > i18n/fbt/translatedFbts.json",
     "clean-fbts": "rm i18n/fbt/.enum_manifest.json i18n/fbt/.src_manifest.json i18n/fbt/.source_strings.json assets/translatedFbts.json 2&> /dev/null || exit 0",
     "fbt:all": "yarn manifest && yarn collect-fbts && yarn translate-fbts",
