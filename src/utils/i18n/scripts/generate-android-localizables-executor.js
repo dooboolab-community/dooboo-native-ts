@@ -42,7 +42,7 @@ const argv = yargs
       'locale:  raw-es_rES/localizable.json => {<hash>: translatedString}',
   )
   .string(args.TRANSLATION_OUTPUT)
-  .default(args.TRANSLATION_OUTPUT, './i18n/fbt/translatedFbts.json')
+  .default(args.TRANSLATION_OUTPUT, './src/utils/i18n/fbt/translatedFbts.json')
   .describe(args.TRANSLATION_OUTPUT, `path to the translatedFbts`)
   .string(args.ANDROID_RES_DIR)
   .default(args.ANDROID_RES_DIR, 'android/app/src/main/res')
