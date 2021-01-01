@@ -95,7 +95,7 @@
     "react-test-renderer": "16.13.1",
     "shelljs": "^0.8.4",
     "ts-jest": "^26.4.4",
-    "typescript": "3.9.6"
+    "typescript": "4.0.5"
   },
   "browserslist": {
     "production": [
