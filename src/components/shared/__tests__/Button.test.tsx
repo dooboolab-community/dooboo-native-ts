@@ -2,11 +2,11 @@ import 'react-native';
 
 import * as React from 'react';
 
-import { RenderAPI, act, fireEvent, render } from '@testing-library/react-native';
+import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
 
 import Button from '../Button';
-import { ThemeType } from '../../../providers/ThemeProvider';
-import { createTestElement } from '../../../../test/testUtils';
+import {ThemeType} from '../../../providers/ThemeProvider';
+import {createTestElement} from '../../../../test/testUtils';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 

@@ -1,10 +1,10 @@
-import React, { ReactElement } from 'react';
-import { RenderAPI, act, fireEvent, render } from '@testing-library/react-native';
-import { createTestElement, createTestProps } from '../../../../test/testUtils';
+import React, {ReactElement} from 'react';
+import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
+import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import Button from '../../shared/Button';
 import Intro from '../Intro';
-import { ThemeType } from '../../../providers/ThemeProvider';
+import {ThemeType} from '../../../providers/ThemeProvider';
 import fbt from 'fbt';
 import renderer from 'react-test-renderer';
 
@@ -67,7 +67,6 @@ describe('[Intro] screen rendering test', () => {
 });
 
 describe('[Intro] Interaction', () => {
-  let testingLib: RenderAPI;
   let rendered: renderer.ReactTestRenderer;
   let root: renderer.ReactTestInstance;
 

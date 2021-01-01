@@ -1,10 +1,10 @@
 import 'react-native';
 
-import React, { ReactElement } from 'react';
-import { createTestElement, createTestProps } from '../../../../test/testUtils';
+import React, {ReactElement} from 'react';
+import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import StackNavigator from '../RootStackNavigator';
-import { ThemeType } from '../../../providers/ThemeProvider';
+import {ThemeType} from '../../../providers/ThemeProvider';
 import renderer from 'react-test-renderer';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -15,9 +15,7 @@ describe('[Stack] navigator', () => {
   beforeEach(() => {
     props = createTestProps();
 
-    component = createTestElement(
-      <StackNavigator {...props} />,
-    );
+    component = createTestElement(<StackNavigator {...props} />);
   });
 
   it('should renders without crashing', () => {
@@ -32,7 +30,11 @@ describe('[Stack] navigator', () => {
 
   it('should renders [Dark] mode', () => {
     jest.useFakeTimers();
-    component = createTestElement(<StackNavigator {...props} />, ThemeType.DARK);
+
+    component = createTestElement(
+      <StackNavigator {...props} />,
+      ThemeType.DARK,
+    );
 
     const rendered = renderer.create(component).toJSON();
 

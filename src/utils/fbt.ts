@@ -1,6 +1,6 @@
-import { NativeModules, Platform } from 'react-native';
+import {NativeModules, Platform} from 'react-native';
 
-import { init } from 'fbt';
+import {init} from 'fbt';
 import intl from './i18n/fbt/translatedFbts.json';
 
 const DEFAULT_LOCALE = 'en';
@@ -10,10 +10,11 @@ export const viewerContext = {
 };
 
 export const initFbt = (): void => {
-  const deviceLanguage = Platform.OS === 'ios'
-    ? NativeModules?.SettingsManager?.settings?.AppleLocale ||
-      NativeModules?.SettingsManager?.settings?.AppleLanguages[0] // iOS 13
-    : NativeModules?.I18nManager?.localeIdentifier;
+  const deviceLanguage =
+    Platform.OS === 'ios'
+      ? NativeModules?.SettingsManager?.settings?.AppleLocale ||
+        NativeModules?.SettingsManager?.settings?.AppleLanguages[0] // iOS 13
+      : NativeModules?.I18nManager?.localeIdentifier;
 
   if (deviceLanguage) {
     viewerContext.locale = deviceLanguage;
@@ -26,7 +27,7 @@ export const initFbt = (): void => {
   init({
     translations: intl as FBT.Translations,
     hooks: {
-      getViewerContext: (): { locale: string } => viewerContext,
+      getViewerContext: (): {locale: string} => viewerContext,
     },
   });
 };

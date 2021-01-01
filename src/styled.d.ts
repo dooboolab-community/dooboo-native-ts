@@ -1,5 +1,5 @@
 import 'styled-components';
-import { Theme } from './theme';
+import type {Theme} from './utils/theme';
 
 type AllTheme = Theme;
 
