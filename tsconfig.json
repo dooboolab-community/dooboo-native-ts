@@ -5,7 +5,11 @@
     "emitDecoratorMetadata": true,
     "jsx": "react",
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
@@ -18,29 +22,40 @@
     "sourceMap": true,
     "strict": true,
     "baseUrl": "src",
-    "typeRoots": ["./@types", "./node_modules/@types"],
-    // "allowJs": true,
-    // "isolatedModules": true,
-    // "strictNullChecks": true,
-    // "strictFunctionTypes": true,
-    // "strictBindCallApply": true,
-    // "noImplicitThis": true,
-    // "strictPropertyInitialization": true,
-    // "alwaysStrict": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noImplicitReturns": true,
-    // "noFallthroughCasesInSwitch": true
+    "typeRoots": [
+      "./@types",
+      "./node_modules/@types"
+    ],
+    "allowJs": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "**/*.test.tsx", "**/*.spec.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.tsx",
+    "**/*.spec.ts"
+  ],
   "jest": {
     "globals": {
       "ts-jest": {
         "skipBabel": true
-        // "tsConfigFile": "my-tsconfig.json"
       }
     }
   },
-  "files": ["environment.d.ts"]
+  "files": [
+    "environment.d.ts"
+  ]
 }
