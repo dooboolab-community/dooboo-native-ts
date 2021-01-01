@@ -4,7 +4,7 @@ import React, { ReactElement } from 'react';
 import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
 import StackNavigator from '../RootStackNavigator';
-import { ThemeType } from '@dooboo-ui/theme';
+import { ThemeType } from '../../../providers/ThemeProvider';
 import renderer from 'react-test-renderer';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

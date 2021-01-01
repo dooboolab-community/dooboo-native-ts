@@ -1,4 +1,4 @@
-import { ThemeProvider, ThemeType } from '@dooboo-ui/theme';
+import { ThemeProvider, ThemeType } from './ThemeProvider';
 import { dark, light } from '../theme';
 
 import { AppProvider } from './AppProvider';

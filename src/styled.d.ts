@@ -1,8 +1,7 @@
 import 'styled-components';
-import { DoobooTheme } from '@dooboo-ui/theme';
 import { Theme } from './theme';
 
-type AllTheme = Theme & DoobooTheme;
+type AllTheme = Theme;
 
 interface CustomTheme extends AllTheme {
   background: string;

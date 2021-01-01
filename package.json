@@ -17,8 +17,8 @@
     "test": "jest",
     "start:packager": "node_modules/react-native/packager/packager.sh",
     "start:reset": "react-native start --reset-cache",
-    "web": "react-scripts start",
-    "build": "react-scripts build",
+    "web": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "reset": "watchman watch-del-all; rm -rf /tmp/metro-bundler-cache-*; rm -rf ./android/build; rm -rf ./android/.gradle; rm -rf ./android/app/build; rm -rf ~/Library/Developer/Xcode/DerivedData; rm -rf /tmp/haste-map-react-native-packager-*; rm -rf ./ios/build; jest --clearCache; cd ios; pod install --repo-update; cd ..; npx jetify; cd android; ./gradlew clean; cd ..; react-native start --reset-cache",
     "android": "react-native run-android",
     "android:shake": "adb shell input keyevent 82",
@@ -36,15 +36,14 @@
     "lint": "eslint src --ext .ts,.tsx,.js,.jsx",
     "build:ios": "react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ./ios",
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android",
-    "manifest": "babel-node ./node_modules/babel-plugin-fbt/bin/manifest --src src/ --enum-manifest i18n/fbt/.enum_manifest.json --src-manifest i18n/fbt/.src_manifest.json",
-    "collect-fbts": "babel-node ./node_modules/babel-plugin-fbt/bin/collectFBT --hash-module 'fb-tiger-hash/src/hashPhrases' --react-native-mode --manifest --options __self < i18n/fbt/.src_manifest.json > i18n/fbt/.source_strings.json",
-    "translate-fbts": "babel-node ./node_modules/babel-plugin-fbt/bin/translate.js --jenkins --source-strings i18n/fbt/.source_strings.json --translations assets/translations/*.json > i18n/fbt/translatedFbts.json",
-    "clean-fbts": "rm i18n/fbt/.enum_manifest.json i18n/fbt/.src_manifest.json i18n/fbt/.source_strings.json assets/translatedFbts.json 2&> /dev/null || exit 0",
+    "manifest": "babel-node ./node_modules/babel-plugin-fbt/bin/manifest --src src/ --enum-manifest  src/utils/i18n/fbt/.enum_manifest.json --src-manifest  src/utils/i18n/fbt/.src_manifest.json",
+    "collect-fbts": "babel-node ./node_modules/babel-plugin-fbt/bin/collectFBT --hash-module 'fb-tiger-hash/src/hashPhrases' --react-native-mode --manifest --options __self <  src/utils/i18n/fbt/.src_manifest.json >  src/utils/i18n/fbt/.source_strings.json",
+    "translate-fbts": "babel-node ./node_modules/babel-plugin-fbt/bin/translate.js --jenkins --source-strings  src/utils/i18n/fbt/.source_strings.json --translations src/assets/translations/*.json >  src/utils/i18n/fbt/translatedFbts.json",
+    "clean-fbts": "rm  src/utils/i18n/fbt/.enum_manifest.json  src/utils/i18n/fbt/.src_manifest.json  src/utils/i18n/fbt/.source_strings.json src/assets/translatedFbts.json 2&> /dev/null || exit 0",
     "fbt:all": "yarn manifest && yarn collect-fbts && yarn translate-fbts",
-    "fbt:android": "babel-node i18n/scripts/generate-android-localizables-executor.js"
+    "fbt:android": "babel-node  src/utils/i18n/scripts/generate-android-localizables-executor.js"
   },
   "dependencies": {
-    "@dooboo-ui/theme": "^0.0.3",
     "@react-native-community/async-storage": "^1.12.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/core": "^5.14.4",
@@ -65,6 +64,7 @@
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
     "@babel/preset-typescript": "^7.12.7",
     "@babel/runtime": "^7.12.5",
     "@dooboo/eslint-config": "^0.5.8",
@@ -80,6 +80,7 @@
     "babel-plugin-fbt-runtime": "^0.9.12",
     "babel-preset-react-native": "^4.0.1",
     "codecov": "^3.8.1",
+    "customize-cra": "^1.0.0",
     "eslint": "^7.16.0",
     "fb-tiger-hash": "^0.1.6",
     "fbt-generate-translations": "^0.0.4",
@@ -88,12 +89,13 @@
     "jetifier": "^1.6.6",
     "metro-react-native-babel-preset": "^0.64.0",
     "prettier": "^2.2.1",
+    "react-app-rewired": "^2.1.8",
     "react-dom": "^16.13.1",
     "react-native-fbt": "^0.0.1",
     "react-test-renderer": "16.13.1",
     "shelljs": "^0.8.4",
     "ts-jest": "^26.4.4",
-    "typescript": "4.1.3"
+    "typescript": "3.9.6"
   },
   "browserslist": {
     "production": [
