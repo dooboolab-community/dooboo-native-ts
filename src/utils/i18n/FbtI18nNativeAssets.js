@@ -29,6 +29,7 @@ const _translationsDictionary: {[hashKey: string]: ?string} = {};
 export default class FbtI18nNativeAssets {
   static getString = (hashKey: string): ?string => {
     let translatedPayload;
+
     if (hashKey in _translationsDictionary) {
       translatedPayload = _translationsDictionary[hashKey];
     } else {
@@ -40,6 +41,7 @@ export default class FbtI18nNativeAssets {
       } else if (NativeFbtModule != null) {
         translatedPayload = NativeFbtModule.getString(hashKey);
       }
+
       _translationsDictionary[hashKey] = translatedPayload;
     }
 

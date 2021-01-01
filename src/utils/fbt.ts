@@ -1,7 +1,7 @@
 import { NativeModules, Platform } from 'react-native';
 
 import { init } from 'fbt';
-import intl from '../../i18n/fbt/translatedFbts.json';
+import intl from './i18n/fbt/translatedFbts.json';
 
 const DEFAULT_LOCALE = 'en';
 
@@ -10,6 +10,21 @@ export const viewerContext = {
 };
 
 export const initFbt = (): void => {
+  if (Platform.OS === 'web') {
+    if (navigator) {
+      viewerContext.locale = navigator.language.substr(0, 2);
+    }
+
+    init({
+      translations: intl as FBT.Translations,
+      hooks: {
+        getViewerContext: (): { locale: string } => viewerContext,
+      },
+    });
+
+    return;
+  }
+
   const deviceLanguage =
           Platform.OS === 'ios'
             ? NativeModules?.SettingsManager?.settings?.AppleLocale ||
