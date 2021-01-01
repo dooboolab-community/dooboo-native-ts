@@ -1,0 +1,1 @@
+{"src/utils/i18n/fbt/.enum_manifest.json":["src/App.tsx","src/components/screen/__tests__/Intro.test.tsx","src/components/screen/Intro.tsx","src/utils/fbt.ts","src/utils/i18n/getTranslatedInput.js","src/utils/i18n/scripts/generate-android-localizables-executor.js"]}

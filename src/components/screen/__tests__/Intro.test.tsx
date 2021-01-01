@@ -4,7 +4,7 @@ import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
 import Button from '../../shared/Button';
 import Intro from '../Intro';
-import { ThemeType } from '@dooboo-ui/theme';
+import { ThemeType } from '../../../providers/ThemeProvider';
 import fbt from 'fbt';
 import renderer from 'react-test-renderer';
 

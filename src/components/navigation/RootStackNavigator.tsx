@@ -1,30 +1,41 @@
-import 'react-native-gesture-handler';
+import './GestureHandler';
 
 import { StackNavigationProp, createStackNavigator } from '@react-navigation/stack';
-import { ThemeType, useThemeContext } from '@dooboo-ui/theme';
 
 import Intro from '../screen/Intro';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import Temp from '../screen/Temp';
+import { useThemeContext } from '../../providers/ThemeProvider';
 
 export type RootStackParamList = {
-  default: undefined;
   Intro: undefined;
   Temp: { param: string };
 }
 
 export type RootStackNavigationProps<
-  T extends keyof RootStackParamList = 'default'
+  T extends keyof RootStackParamList
 > = StackNavigationProp<RootStackParamList, T>;
 
 const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator(): React.ReactElement {
-  const { theme, themeType } = useThemeContext();
+  const { theme } = useThemeContext();
 
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      theme={{
+        colors: {
+          background: theme.background,
+          border: theme.border,
+          card: theme.itemBackground,
+          primary: theme.primary,
+          notification: theme.tintColor,
+          text: theme.text,
+        },
+        dark: true,
+      }}
+    >
       <Stack.Navigator
         initialRouteName="Intro"
         screenOptions={{
@@ -34,12 +45,15 @@ function RootNavigator(): React.ReactElement {
           headerTitleStyle: { color: theme.fontColor },
           headerTintColor: theme.tintColor,
         }}
-        headerMode={
-          themeType === ThemeType.DARK ? 'screen' : 'float'
-        }
       >
-        <Stack.Screen name="Intro" component={Intro} />
-        <Stack.Screen name="Temp" component={Temp} />
+        <Stack.Screen
+          name="Intro"
+          component={Intro}
+        />
+        <Stack.Screen
+          name="Temp"
+          component={Temp}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

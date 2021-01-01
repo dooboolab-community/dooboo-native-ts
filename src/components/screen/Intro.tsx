@@ -1,4 +1,5 @@
 import Button from '../shared/Button';
+import Container from '../navigation/Container';
 import { IC_MASK } from '../../utils/Icons';
 import React from 'react';
 import { RootStackNavigationProps } from '../navigation/RootStackNavigator';
@@ -7,12 +8,11 @@ import { View } from 'react-native';
 import { fbt } from 'fbt';
 import styled from 'styled-components/native';
 import { useAppContext } from '../../providers/AppProvider';
-import { useThemeContext } from '@dooboo-ui/theme';
+import { useThemeContext } from '../../providers/ThemeProvider';
 
-const Container = styled.View`
+const Wrapper = styled.View`
   flex: 1;
   align-self: stretch;
-  overflow: scroll;
   background-color: ${({ theme }): string => theme.background};
 
   flex-direction: column;
@@ -71,40 +71,42 @@ function Intro(props: Props): React.ReactElement {
 
   return (
     <Container>
-      <ContentWrapper>
-        <StyledText
-          style={{
-            marginTop: 100,
-          }}
-        >
-          {user ? user.displayName : ''}
-        </StyledText>
-        <StyledText>{user ? user.age : ''}</StyledText>
-        <StyledText>{user ? user.job : ''}</StyledText>
-      </ContentWrapper>
-      <ButtonWrapper>
-        <Button
-          testID="btn-login"
-          imgLeftSrc={IC_MASK}
-          isLoading={isLoggingIn}
-          onClick={(): void => onLogin()}
-          text={fbt('Login', 'login')}
-        />
-        <View style={{ marginTop: 8 }} />
-        <Button
-          testID="btn-navigate"
-          onClick={(): void => props.navigation.navigate('Temp', {
-            param: fbt('Go Back', 'go back'),
-          })}
-          text={fbt('Navigate', 'navigate')}
-        />
-        <View style={{ marginTop: 8 }} />
-        <Button
-          testID="btn-theme"
-          onClick={(): void => changeThemeType()}
-          text={fbt('Change Theme', 'change theme')}
-        />
-      </ButtonWrapper>
+      <Wrapper>
+        <ContentWrapper>
+          <StyledText
+            style={{
+              marginTop: 100,
+            }}
+          >
+            {user?.displayName || ''}
+          </StyledText>
+          <StyledText>{user?.age || ''}</StyledText>
+          <StyledText>{user?.job || ''}</StyledText>
+        </ContentWrapper>
+        <ButtonWrapper>
+          <Button
+            testID="btn-login"
+            imgLeftSrc={IC_MASK}
+            isLoading={isLoggingIn}
+            onClick={(): void => onLogin()}
+            text={fbt('Login', 'login')}
+          />
+          <View style={{ marginTop: 8 }} />
+          <Button
+            testID="btn-navigate"
+            onClick={(): void => props.navigation.navigate('Temp', {
+              param: fbt('Go Back', 'go back'),
+            })}
+            text={fbt('Navigate', 'navigate')}
+          />
+          <View style={{ marginTop: 8 }} />
+          <Button
+            testID="btn-theme"
+            onClick={(): void => changeThemeType()}
+            text={fbt('Change Theme', 'change theme')}
+          />
+        </ButtonWrapper>
+      </Wrapper>
     </Container>
   );
 }
