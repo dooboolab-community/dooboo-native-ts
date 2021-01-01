@@ -78,10 +78,10 @@ function Intro(props: Props): React.ReactElement {
               marginTop: 100,
             }}
           >
-            {user?.displayName || ''}
+            {user?.displayName ?? ''}
           </StyledText>
-          <StyledText>{user?.age || ''}</StyledText>
-          <StyledText>{user?.job || ''}</StyledText>
+          <StyledText>{user?.age ?? ''}</StyledText>
+          <StyledText>{user?.job ?? ''}</StyledText>
         </ContentWrapper>
         <ButtonWrapper>
           <Button
