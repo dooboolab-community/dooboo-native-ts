@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { defaults: tsjPreset } = require('ts-jest/presets');
+const {defaults: tsjPreset} = require('ts-jest/presets');
 /* eslint-enable @typescript-eslint/no-var-requires */
 
 module.exports = {
@@ -36,10 +36,7 @@ module.exports = {
     '<rootDir>/test/jestSetup.ts',
   ],
   testRegex: '(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$',
-  testPathIgnorePatterns: [
-    '\\.snap$',
-    '<rootDir>/node_modules/',
-  ],
+  testPathIgnorePatterns: ['\\.snap$', '<rootDir>/node_modules/'],
   /* eslint-disable */
   transformIgnorePatterns: [
     'node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|react-navigation|@react-navigation/.*|@dooboo-ui)',

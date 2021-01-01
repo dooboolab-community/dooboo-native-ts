@@ -1,6 +1,6 @@
 import Container from '../index';
 import React from 'react';
-import { Text } from 'react-native';
+import {Text} from 'react-native';
 import renderer from 'react-test-renderer';
 
 it('should render correctly', () => {

@@ -1,8 +1,8 @@
-import { ThemeProvider, ThemeType } from './ThemeProvider';
-import { dark, light } from '../theme';
+import {ThemeType, dark, light} from '../utils/theme';
 
-import { AppProvider } from './AppProvider';
+import {AppProvider} from './AppProvider';
 import React from 'react';
+import {ThemeProvider} from './ThemeProvider';
 
 interface Props {
   initialThemeType?: ThemeType;
@@ -17,8 +17,7 @@ const RootProvider = ({
   return (
     <ThemeProvider
       initialThemeType={initialThemeType}
-      customTheme={{ light, dark }}
-    >
+      customTheme={{light, dark}}>
       <AppProvider>{children}</AppProvider>
     </ThemeProvider>
   );

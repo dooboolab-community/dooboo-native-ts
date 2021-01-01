@@ -2,7 +2,7 @@ import {
   DefaultTheme,
   ThemeProvider as OriginalThemeProvider,
 } from 'styled-components/native';
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {
   ThemeParam,
   ThemeType,
@@ -25,7 +25,7 @@ export const defaultThemeType: ThemeType = ThemeType.LIGHT;
 
 interface Props {
   children?: React.ReactElement;
-  // using initial ThemeType is essential while testing apps with consistent ThemeType
+  // Using initial ThemeType is essential while testing apps with consistent ThemeType
   initialThemeType?: ThemeType;
   customTheme?: ThemeParam;
 }
@@ -47,24 +47,18 @@ function ThemeProvider({
   let theme: DefaultTheme;
 
   if (customTheme) {
-    theme = createTheme(
-      {
-        light: {
-          ...lightTheme,
-          ...customTheme.light,
-        },
-        dark: {
-          ...darkTheme,
-          ...customTheme.dark,
-        },
+    theme = createTheme(themeType, {
+      light: {
+        ...lightTheme,
+        ...customTheme.light,
       },
-      themeType,
-    ) as DefaultTheme;
+      dark: {
+        ...darkTheme,
+        ...customTheme.dark,
+      },
+    }) as DefaultTheme;
   } else {
-    theme = createTheme(
-      { light: {}, dark: {} },
-      themeType,
-    ) as DefaultTheme;
+    theme = createTheme(themeType, {light: {}, dark: {}}) as DefaultTheme;
   }
 
   return (
@@ -79,4 +73,4 @@ function ThemeProvider({
   );
 }
 
-export { useCtx as useThemeContext, ThemeProvider, ThemeType };
+export {useCtx as useThemeContext, ThemeProvider, ThemeType};

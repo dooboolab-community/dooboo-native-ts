@@ -52,9 +52,9 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
             style={
               Object {
                 "backgroundColor": "#323739",
-                "borderBottomColor": "#EDEDED",
+                "borderBottomColor": undefined,
                 "flex": 1,
-                "shadowColor": "#EDEDED",
+                "shadowColor": undefined,
                 "shadowOffset": Object {
                   "height": 0.5,
                   "width": 0,
@@ -589,9 +589,9 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             style={
               Object {
                 "backgroundColor": "white",
-                "borderBottomColor": "#EDEDED",
+                "borderBottomColor": undefined,
                 "flex": 1,
-                "shadowColor": "#EDEDED",
+                "shadowColor": undefined,
                 "shadowOffset": Object {
                   "height": 0.5,
                   "width": 0,

@@ -1,6 +1,6 @@
-import React, { useReducer } from 'react';
+import React, {useReducer} from 'react';
 
-import { User } from '../types';
+import {User} from '../types';
 import createCtx from '../utils/createCtx';
 
 interface Context {
@@ -68,12 +68,13 @@ const resetUser = (dispatch: React.Dispatch<ResetUserAction>) => (): void => {
   });
 };
 
+// eslint-disable-next-line default-param-last
 const reducer: Reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'reset-user':
       return initialState;
     case 'set-user':
-      return { ...state, user: action.payload };
+      return {...state, user: action.payload};
     default:
       return state;
   }
@@ -88,7 +89,7 @@ function AppProvider(props: Props): React.ReactElement {
     callDefault: callDefault(dispatch),
   };
 
-  return <Provider value={{ state, ...actions }}>{props.children}</Provider>;
+  return <Provider value={{state, ...actions}}>{props.children}</Provider>;
 }
 
-export { useCtx as useAppContext, AppProvider };
+export {useCtx as useAppContext, AppProvider};
