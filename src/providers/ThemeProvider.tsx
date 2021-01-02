@@ -46,7 +46,7 @@ function ThemeProvider({
 
   let theme: DefaultTheme;
 
-  if (customTheme) {
+  if (customTheme)
     theme = createTheme(themeType, {
       light: {
         ...lightTheme,
@@ -57,9 +57,7 @@ function ThemeProvider({
         ...customTheme.dark,
       },
     }) as DefaultTheme;
-  } else {
-    theme = createTheme(themeType, {light: {}, dark: {}}) as DefaultTheme;
-  }
+  else theme = createTheme(themeType, {light: {}, dark: {}}) as DefaultTheme;
 
   return (
     <Provider

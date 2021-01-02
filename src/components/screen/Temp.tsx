@@ -9,9 +9,7 @@ import React from 'react';
 import {RouteProp} from '@react-navigation/core';
 import styled from 'styled-components/native';
 
-const Wrapper = styled.View`
-  flex: 1;
-  align-self: stretch;
+const Content = styled.View`
   background-color: ${({theme}): string => theme.background};
 
   flex-direction: column;
@@ -34,7 +32,7 @@ function Page(props: Props): React.ReactElement {
 
   return (
     <Container>
-      <Wrapper>
+      <Content>
         <Button
           testID="btn-back"
           onClick={(): void => navigation.goBack()}
@@ -43,7 +41,7 @@ function Page(props: Props): React.ReactElement {
             backgroundColor: '#333333',
           }}
         />
-      </Wrapper>
+      </Content>
     </Container>
   );
 }
