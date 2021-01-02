@@ -16,13 +16,10 @@ export const initFbt = (): void => {
         NativeModules?.SettingsManager?.settings?.AppleLanguages[0] // iOS 13
       : NativeModules?.I18nManager?.localeIdentifier;
 
-  if (deviceLanguage) {
-    viewerContext.locale = deviceLanguage;
-  }
+  if (deviceLanguage) viewerContext.locale = deviceLanguage;
 
-  if (Platform.OS === 'web') {
+  if (Platform.OS === 'web')
     viewerContext.locale = navigator.language.substr(0, 2) ?? DEFAULT_LOCALE;
-  }
 
   init({
     translations: intl as FBT.Translations,

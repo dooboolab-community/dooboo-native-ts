@@ -10,21 +10,10 @@ import styled from 'styled-components/native';
 import {useAppContext} from '../../providers/AppProvider';
 import {useThemeContext} from '../../providers/ThemeProvider';
 
-const Wrapper = styled.View`
+const Content = styled.View`
   flex: 1;
+  flex-direction: column;
   align-self: stretch;
-  background-color: ${({theme}): string => theme.background};
-
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: hidden;
-`;
-
-const ContentWrapper = styled.View`
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
   justify-content: flex-start;
   align-items: center;
 `;
@@ -76,43 +65,41 @@ function Intro(props: Props): React.ReactElement {
 
   return (
     <Container>
-      <Wrapper>
-        <ContentWrapper>
-          <StyledText
-            style={{
-              marginTop: 100,
-            }}>
-            {user?.displayName ?? ''}
-          </StyledText>
-          <StyledText>{user?.age ?? ''}</StyledText>
-          <StyledText>{user?.job ?? ''}</StyledText>
-        </ContentWrapper>
-        <ButtonWrapper>
-          <Button
-            testID="btn-login"
-            imgLeftSrc={IC_MASK}
-            isLoading={isLoggingIn}
-            onClick={(): void => onLogin()}
-            text={fbt('Login', 'login')}
-          />
-          <View style={{marginTop: 8}} />
-          <Button
-            testID="btn-navigate"
-            onClick={(): void =>
-              props.navigation.navigate('Temp', {
-                param: fbt('Go Back', 'go back'),
-              })
-            }
-            text={fbt('Navigate', 'navigate')}
-          />
-          <View style={{marginTop: 8}} />
-          <Button
-            testID="btn-theme"
-            onClick={(): void => changeThemeType()}
-            text={fbt('Change Theme', 'change theme')}
-          />
-        </ButtonWrapper>
-      </Wrapper>
+      <Content>
+        <StyledText
+          style={{
+            marginTop: 100,
+          }}>
+          {user?.displayName ?? ''}
+        </StyledText>
+        <StyledText>{user?.age ?? ''}</StyledText>
+        <StyledText>{user?.job ?? ''}</StyledText>
+      </Content>
+      <ButtonWrapper>
+        <Button
+          testID="btn-login"
+          imgLeftSrc={IC_MASK}
+          isLoading={isLoggingIn}
+          onClick={(): void => onLogin()}
+          text={fbt('Login', 'login')}
+        />
+        <View style={{marginTop: 8}} />
+        <Button
+          testID="btn-navigate"
+          onClick={(): void =>
+            props.navigation.navigate('Temp', {
+              param: fbt('Go Back', 'go back'),
+            })
+          }
+          text={fbt('Navigate', 'navigate')}
+        />
+        <View style={{marginTop: 8}} />
+        <Button
+          testID="btn-theme"
+          onClick={(): void => changeThemeType()}
+          text={fbt('Change Theme', 'change theme')}
+        />
+      </ButtonWrapper>
     </Container>
   );
 }

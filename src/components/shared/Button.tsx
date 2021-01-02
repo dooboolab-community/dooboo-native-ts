@@ -1,9 +1,8 @@
-import {
-  ActivityIndicator,
+import {ActivityIndicator, TouchableOpacity} from 'react-native';
+import type {
   ImageSourcePropType,
   ImageStyle,
   TextStyle,
-  TouchableOpacity,
   ViewStyle,
 } from 'react-native';
 
@@ -60,7 +59,7 @@ interface Props {
 }
 
 function Button(props: Props): React.ReactElement {
-  if (props.isDisabled) {
+  if (props.isDisabled)
     return (
       <StyledButtonDisabled style={props.disabledStyle}>
         <StyledTextDisabled style={props.textStyle}>
@@ -68,15 +67,13 @@ function Button(props: Props): React.ReactElement {
         </StyledTextDisabled>
       </StyledButtonDisabled>
     );
-  }
 
-  if (props.isLoading) {
+  if (props.isLoading)
     return (
       <StyledButton style={props.style}>
         <ActivityIndicator size="small" color={props.indicatorColor} />
       </StyledButton>
     );
-  }
 
   return (
     <TouchableOpacity
