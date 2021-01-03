@@ -1240,10 +1240,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@dooboo/eslint-config@^0.6.5":
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/@dooboo/eslint-config/-/eslint-config-0.6.5.tgz#49e32a7744c7b28f853fbf8268f24b5f61956411"
-  integrity sha512-u4QlQhtPllljNkpQxysN2n8h515IYAVvsuoMMaY+Iem8xdiJRY3A7KYXr/Er3SVy2297eGku75TSCUwzx6Dn7Q==
+"@dooboo/eslint-config@^0.6.8":
+  version "0.6.8"
+  resolved "https://registry.yarnpkg.com/@dooboo/eslint-config/-/eslint-config-0.6.8.tgz#a853d5f6a6e5fb9668b029879927225cd935b2df"
+  integrity sha512-kwvaeKgg1axof0GCGHPaqJ9lcCqEouNtNf6vypq7M3wk9av/7/rdmUudhgp1UXJX8Pc27J89ZlfYpcLp4wFAJQ==
   dependencies:
     "@react-native-community/eslint-config" "^2.0.0"
 
@@ -13897,8 +13897,10 @@ watchpack@^1.7.4:
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
+    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
+    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"

@@ -6,7 +6,7 @@ export const sample = async (
 ): Promise<Response> => {
   if (!body) throw new Error('No request object');
 
-  const fetchOption: RequestInit = {
+  const fetchOption = {
     signal,
     method: 'POST',
     headers: new Headers({
