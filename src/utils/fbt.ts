@@ -22,7 +22,7 @@ export const initFbt = (): void => {
     viewerContext.locale = navigator.language.substr(0, 2) ?? DEFAULT_LOCALE;
 
   init({
-    translations: intl as FBT.Translations,
+    translations: intl,
     hooks: {
       getViewerContext: (): {locale: string} => viewerContext,
     },
