@@ -1,5 +1,10 @@
 import React from 'react';
 
+jest.mock('@react-navigation/stack', () => ({
+  ...jest.requireActual('@react-navigation/stack'),
+  useHeaderHeight: () => 12,
+}));
+
 /**
  * Temporarily test files that resolves https://github.com/facebook/react-native/issues/27721
  */
