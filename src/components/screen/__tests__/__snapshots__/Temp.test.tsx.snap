@@ -15,12 +15,8 @@ exports[`[Temp] render renders without crashing 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "alignSelf": "stretch",
           "backgroundColor": "white",
-          "flexBasis": 0,
           "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
           "justifyContent": "center",
         },
       ]
@@ -84,12 +80,8 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "alignSelf": "stretch",
           "backgroundColor": "#323739",
-          "flexBasis": 0,
           "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
           "justifyContent": "center",
         },
       ]
