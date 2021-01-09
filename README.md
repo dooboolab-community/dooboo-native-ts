@@ -202,6 +202,6 @@ Previously, we used `i18n-j` to localize our app and we decided to switch to [fb
 
 We've defined localized strings in `assets/translations/en.json` for English and `assets/translations/ko.json` for Korean. Since the `en` is default locale setup in current project, you do not need to localize this file. However, you still should not delete this if you don't want to see missing localization warning messages when you are running jest.
 
-We are using [fbt](https://github.com/facebook/fbt) to localize our app which is maintained by Facebook team. Simply running `yarn fbt-all` will generate `i18n/fbt/translatedFbts.json` which has all the localized strings.
+We are using [fbt](https://github.com/facebook/fbt) to localize our app which is maintained by Facebook team. Simply running `yarn fbt:all` will generate `i18n/fbt/translatedFbts.json` which has all the localized strings.
 
 If you find trouble using it, you may follow [Integrate FBT into your React Native Application](https://medium.com/translate-your-react-native-application-with/integrate-fbt-into-your-react-native-application-2bac420e8e0c).
