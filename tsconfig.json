@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "jsx": "react-native",
-    "lib": ["es2017", "es2018"],
+    "lib": ["ES2015", "ES2016", "ES2017", "ES2018"],
     "module": "es2015",
     "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
     "resolveJsonModule": true,
     "noEmit": true,
     "noImplicitAny": false,
@@ -15,11 +17,11 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2017",
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "typeRoots": ["./@types", "./node_modules/@types"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "**/*.test.tsx", "**/*.spec.ts"],
-  "types": ["typePatches"],
   "jest": {
     "globals": {
       "ts-jest": {

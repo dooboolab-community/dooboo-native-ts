@@ -63,4 +63,7 @@ package-lock.json
 
 ios/Pods/
 
-.vscode
+# fbt
+i18n/fbt/.enum_manifest.json
+i18n/fbt/.source_strings.json
+i18n/fbt/.src_manifest.json

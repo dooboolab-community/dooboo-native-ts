@@ -10,7 +10,7 @@ import {
 import { createTestElement, createTestProps } from '../../../../test/testUtils';
 
 import Temp from '../Temp';
-import { ThemeType } from '@dooboo-ui/native-theme';
+import { ThemeType } from '@dooboo-ui/theme';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;

@@ -1,4 +1,5 @@
 import { GlobalWithFetchMock } from 'jest-fetch-mock';
+import { initFbt } from '../src/utils/fbt';
 /**
  * monkey patching the locale to avoid the error:
  * Something went wrong initializing the native ReactLocalization module
@@ -15,3 +16,5 @@ jest.mock('react-native-reanimated', () =>
 // const customGlobal: any = global;
 // customGlobal.fetch = require('jest-fetch-mock');
 // customGlobal.fetchMock = customGlobal.fetch;
+
+initFbt();
