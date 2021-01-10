@@ -3,6 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "isolatedModules": false,
     "jsx": "react",
     "target": "es5",
     "lib": [
@@ -28,7 +29,6 @@
     ],
     "allowJs": true,
     "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictBindCallApply": true,

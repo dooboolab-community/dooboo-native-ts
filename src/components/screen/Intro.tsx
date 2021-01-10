@@ -88,7 +88,7 @@ function Intro(props: Props): React.ReactElement {
           testID="btn-navigate"
           onClick={(): void =>
             props.navigation.navigate('Temp', {
-              param: fbt('Go Back', 'go back'),
+              param: 'Go Back',
             })
           }
           text={fbt('Navigate', 'navigate')}
