@@ -3,7 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "jsx": "react",
     "target": "es5",
     "lib": [
