@@ -4,12 +4,12 @@ import {
 } from '../../components/navigation/RootStackNavigator';
 
 import Button from '../shared/Button';
-import Container from '../navigation/Container';
 import React from 'react';
 import {RouteProp} from '@react-navigation/core';
 import styled from 'styled-components/native';
+import {withScreen} from '../../utils/wrapper';
 
-const Content = styled.View`
+const Container = styled.View`
   background-color: ${({theme}): string => theme.background};
 
   flex-direction: column;
@@ -32,18 +32,16 @@ function Page(props: Props): React.ReactElement {
 
   return (
     <Container>
-      <Content>
-        <Button
-          testID="btn-back"
-          onClick={(): void => navigation.goBack()}
-          text={param}
-          style={{
-            backgroundColor: '#333333',
-          }}
-        />
-      </Content>
+      <Button
+        testID="btn-back"
+        onClick={(): void => navigation.goBack()}
+        text={param}
+        style={{
+          backgroundColor: '#333333',
+        }}
+      />
     </Container>
   );
 }
 
-export default Page;
+export default withScreen(Page);

@@ -1,5 +1,4 @@
 import Button from '../shared/Button';
-import Container from '../navigation/Container';
 import {IC_MASK} from '../../utils/Icons';
 import React from 'react';
 import {RootStackNavigationProps} from '../navigation/RootStackNavigator';
@@ -9,6 +8,12 @@ import {fbt} from 'fbt';
 import styled from 'styled-components/native';
 import {useAppContext} from '../../providers/AppProvider';
 import {useThemeContext} from '../../providers/ThemeProvider';
+import {withScreen} from '../../utils/wrapper';
+
+const Container = styled.View`
+  flex: 1;
+  align-items: stretch;
+`;
 
 const Content = styled.View`
   flex: 1;
@@ -104,4 +109,4 @@ function Intro(props: Props): React.ReactElement {
   );
 }
 
-export default Intro;
+export default withScreen(Intro);
