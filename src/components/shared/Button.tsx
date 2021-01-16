@@ -10,30 +10,30 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 const StyledButton = styled.View`
-  background-color: ${({theme}): string => theme.btnPrimary};
+  background-color: ${({theme}): string => theme.link};
   align-self: center;
   border-radius: 4px;
   border-width: 2px;
   width: 320px;
   height: 52px;
-  border-color: ${({theme}): string => theme.btnPrimary};
+  border-color: ${({theme}): string => theme.link};
 
   align-items: center;
   justify-content: center;
 `;
 
 const StyledButtonDisabled = styled(StyledButton)`
-  background-color: ${({theme}): string => theme.btnDisabled};
+  background-color: ${({theme}): string => theme.disabled};
   border-color: rgb(200, 200, 200);
 `;
 
 const StyledText = styled.Text`
   font-size: 14px;
-  color: ${({theme}): string => theme.btnPrimaryFont};
+  color: ${({theme}): string => theme.link};
 `;
 
 const StyledTextDisabled = styled(StyledText)`
-  color: ${({theme}): string => theme.textDisabled};
+  color: ${({theme}): string => theme.disabled};
 `;
 
 const StyledImage = styled.Image`

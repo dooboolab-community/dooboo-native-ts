@@ -1,17 +1,13 @@
+import {Appearance, Platform} from 'react-native';
 import {
   DefaultTheme,
   ThemeProvider as OriginalThemeProvider,
 } from 'styled-components/native';
-import React, {useState} from 'react';
-import {
-  ThemeParam,
-  ThemeType,
-  createTheme,
-  dark as darkTheme,
-  light as lightTheme,
-} from '../utils/theme';
+import React, {ReactElement, useState} from 'react';
+import {ThemeType, dark, light} from '../utils/theme';
 
 import createCtx from '../utils/createCtx';
+import {useMediaQuery} from 'react-responsive';
 
 interface Context {
   themeType: ThemeType;
@@ -21,21 +17,28 @@ interface Context {
 
 const [useCtx, Provider] = createCtx<Context>();
 
-export const defaultThemeType: ThemeType = ThemeType.LIGHT;
-
 interface Props {
-  children?: React.ReactElement;
-  // Using initial ThemeType is essential while testing apps with consistent ThemeType
+  children?: ReactElement;
   initialThemeType?: ThemeType;
-  customTheme?: ThemeParam;
 }
 
-function ThemeProvider({
-  children,
-  initialThemeType = defaultThemeType,
-  customTheme,
-}: Props): React.ReactElement {
-  const [themeType, setThemeType] = useState(initialThemeType);
+function ThemeProvider({children, initialThemeType}: Props): ReactElement {
+  const isMobile = useMediaQuery({maxWidth: 767});
+  const isTablet = useMediaQuery({minWidth: 767, maxWidth: 992});
+  const isDesktop = useMediaQuery({minWidth: 992});
+
+  const colorScheme = Appearance.getColorScheme();
+
+  const isDarkMode = Platform.select({
+    // web: window.matchMedia('(prefers-color-scheme: dark)').matches,
+    default: colorScheme === 'dark',
+  });
+
+  const defaultThemeType = isDarkMode ? ThemeType.DARK : ThemeType.LIGHT;
+
+  const [themeType, setThemeType] = useState(
+    initialThemeType || defaultThemeType,
+  );
 
   const changeThemeType = (): void => {
     const newThemeType =
@@ -44,31 +47,26 @@ function ThemeProvider({
     setThemeType(newThemeType);
   };
 
-  let theme: DefaultTheme;
+  const defaultTheme = themeType === ThemeType.DARK ? dark : light;
 
-  if (customTheme)
-    theme = createTheme(themeType, {
-      light: {
-        ...lightTheme,
-        ...customTheme.light,
-      },
-      dark: {
-        ...darkTheme,
-        ...customTheme.dark,
-      },
-    }) as DefaultTheme;
-  else theme = createTheme(themeType, {light: {}, dark: {}}) as DefaultTheme;
+  const media = {
+    isMobile,
+    isTablet,
+    isDesktop,
+  };
+
+  const theme: DefaultTheme = {...defaultTheme, ...media};
 
   return (
     <Provider
       value={{
         themeType,
         changeThemeType,
-        theme: theme,
+        theme: defaultTheme,
       }}>
       <OriginalThemeProvider theme={theme}>{children}</OriginalThemeProvider>
     </Provider>
   );
 }
 
-export {useCtx as useThemeContext, ThemeProvider, ThemeType};
+export {useCtx as useTheme, ThemeProvider, ThemeType};

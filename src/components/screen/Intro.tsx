@@ -7,7 +7,7 @@ import {View} from 'react-native';
 import {fbt} from 'fbt';
 import styled from 'styled-components/native';
 import {useAppContext} from '../../providers/AppProvider';
-import {useThemeContext} from '../../providers/ThemeProvider';
+import {useTheme} from '../../providers/ThemeProvider';
 import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`
@@ -34,7 +34,7 @@ const ButtonWrapper = styled.View`
 const StyledText = styled.Text`
   font-size: 18px;
   line-height: 27px;
-  color: ${({theme}): string => theme.fontColor};
+  color: ${({theme}): string => theme.text};
 `;
 
 interface Props {
@@ -49,7 +49,7 @@ function Intro(props: Props): React.ReactElement {
     setUser,
   } = useAppContext();
 
-  const {changeThemeType} = useThemeContext();
+  const {changeThemeType} = useTheme();
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
 
   const onLogin = (): void => {

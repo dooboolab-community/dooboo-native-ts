@@ -9,7 +9,7 @@ import Intro from '../screen/Intro';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import Temp from '../screen/Temp';
-import {useThemeContext} from '../../providers/ThemeProvider';
+import {useTheme} from '../../providers/ThemeProvider';
 
 export type RootStackParamList = {
   Intro: undefined;
@@ -23,17 +23,17 @@ export type RootStackNavigationProps<
 const Stack = createStackNavigator<RootStackParamList>();
 
 function RootNavigator(): React.ReactElement {
-  const {theme} = useThemeContext();
+  const {theme} = useTheme();
 
   return (
     <NavigationContainer
       theme={{
         colors: {
           background: theme.background,
-          border: theme.border,
-          card: theme.itemBackground,
-          primary: theme.primary,
-          notification: theme.tintColor,
+          border: theme.disabled,
+          card: theme.paper,
+          primary: theme.link,
+          notification: theme.disabled,
           text: theme.text,
         },
         dark: true,
@@ -44,8 +44,8 @@ function RootNavigator(): React.ReactElement {
           headerStyle: {
             backgroundColor: theme.background,
           },
-          headerTitleStyle: {color: theme.fontColor},
-          headerTintColor: theme.tintColor,
+          headerTitleStyle: {color: theme.text},
+          headerTintColor: theme.heading,
         }}>
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Temp" component={Temp} />

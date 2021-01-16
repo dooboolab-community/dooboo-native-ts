@@ -15,7 +15,7 @@ exports[`[Temp] render renders without crashing 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "white",
+          "backgroundColor": "#FFFFFF",
           "flexDirection": "column",
           "justifyContent": "center",
         },
@@ -33,8 +33,8 @@ exports[`[Temp] render renders without crashing 1`] = `
             Object {
               "alignItems": "center",
               "alignSelf": "center",
-              "backgroundColor": "#069ccd",
-              "borderColor": "#069ccd",
+              "backgroundColor": "#393D7A",
+              "borderColor": "#393D7A",
               "borderRadius": 4,
               "borderWidth": 2,
               "height": 52,
@@ -51,7 +51,7 @@ exports[`[Temp] render renders without crashing 1`] = `
           style={
             Array [
               Object {
-                "color": "white",
+                "color": "#393D7A",
                 "fontSize": 14,
               },
             ]
@@ -80,7 +80,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "#323739",
+          "backgroundColor": "#2C2C2C",
           "flexDirection": "column",
           "justifyContent": "center",
         },
@@ -98,8 +98,8 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
             Object {
               "alignItems": "center",
               "alignSelf": "center",
-              "backgroundColor": "#069ccd",
-              "borderColor": "#069ccd",
+              "backgroundColor": "#E0E0E0",
+              "borderColor": "#E0E0E0",
               "borderRadius": 4,
               "borderWidth": 2,
               "height": 52,
@@ -116,7 +116,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
           style={
             Array [
               Object {
-                "color": "white",
+                "color": "#E0E0E0",
                 "fontSize": 14,
               },
             ]
