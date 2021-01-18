@@ -27,7 +27,7 @@ exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
       style={
         Array [
           Object {
-            "color": "#393D7A",
+            "color": "#D3D8E8",
             "fontSize": 14,
           },
         ]
@@ -64,7 +64,7 @@ exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
       style={
         Array [
           Object {
-            "color": "#E0E0E0",
+            "color": "#000000",
             "fontSize": 14,
           },
         ]

@@ -29,7 +29,7 @@ const StyledButtonDisabled = styled(StyledButton)`
 
 const StyledText = styled.Text`
   font-size: 14px;
-  color: ${({theme}): string => theme.link};
+  color: ${({theme}): string => theme.textContrast};
 `;
 
 const StyledTextDisabled = styled(StyledText)`
