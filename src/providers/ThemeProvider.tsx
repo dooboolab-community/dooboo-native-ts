@@ -1,18 +1,24 @@
 import {Appearance, Platform} from 'react-native';
+import {Colors, ThemeType, colors, dark, light} from '../utils/theme';
 import {
   DefaultTheme,
   ThemeProvider as OriginalThemeProvider,
 } from 'styled-components/native';
 import React, {ReactElement, useState} from 'react';
-import {ThemeType, dark, light} from '../utils/theme';
 
 import createCtx from '../utils/createCtx';
 import {useMediaQuery} from 'react-responsive';
 
 interface Context {
   themeType: ThemeType;
+  media: {
+    isDesktop: boolean;
+    isTablet: boolean;
+    isMobile: boolean;
+  };
   theme: DefaultTheme;
   changeThemeType: () => void;
+  colors: Colors;
 }
 
 const [useCtx, Provider] = createCtx<Context>();
@@ -60,9 +66,11 @@ function ThemeProvider({children, initialThemeType}: Props): ReactElement {
   return (
     <Provider
       value={{
+        media,
         themeType,
         changeThemeType,
         theme: defaultTheme,
+        colors,
       }}>
       <OriginalThemeProvider theme={theme}>{children}</OriginalThemeProvider>
     </Provider>

@@ -5,6 +5,6 @@ declare module 'styled-components' {
   export interface DefaultTheme extends Theme {
     isMobile?: boolean;
     isTablet?: boolean;
-    isDeskTop?: boolean;
+    isDesktop?: boolean;
   }
 }

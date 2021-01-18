@@ -1,3 +1,5 @@
+import styled, {css} from 'styled-components/native';
+
 import Button from '../shared/Button';
 import {IC_MASK} from '../../utils/Icons';
 import React from 'react';
@@ -5,7 +7,6 @@ import {RootStackNavigationProps} from '../navigation/RootStackNavigator';
 import {User} from '../../types';
 import {View} from 'react-native';
 import {fbt} from 'fbt';
-import styled from 'styled-components/native';
 import {useAppContext} from '../../providers/AppProvider';
 import {useTheme} from '../../providers/ThemeProvider';
 import {withScreen} from '../../utils/wrapper';
@@ -13,6 +14,12 @@ import {withScreen} from '../../utils/wrapper';
 const Container = styled.View`
   flex: 1;
   align-items: stretch;
+
+  ${({theme: {isDesktop}}) =>
+    isDesktop &&
+    css`
+      flex-direction: row;
+    `}
 `;
 
 const Content = styled.View`

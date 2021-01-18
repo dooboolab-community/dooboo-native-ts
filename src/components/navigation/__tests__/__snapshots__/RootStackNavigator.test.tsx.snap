@@ -51,7 +51,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
           <View
             style={
               Object {
-                "backgroundColor": "#2C2C2C",
+                "backgroundColor": "#232323",
                 "borderBottomColor": "#00000030",
                 "flex": 1,
                 "shadowColor": "#00000030",
@@ -238,7 +238,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                 pointerEvents="none"
                 style={
                   Object {
-                    "backgroundColor": "#2C2C2C",
+                    "backgroundColor": "#232323",
                     "bottom": 0,
                     "left": 0,
                     "position": "absolute",
@@ -263,7 +263,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                     },
                     Array [
                       Object {
-                        "backgroundColor": "#2C2C2C",
+                        "backgroundColor": "#232323",
                       },
                       undefined,
                     ],
@@ -429,7 +429,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                   ]
                                 }
                               >
-                                Login
+                                Sign In
                               </Text>
                             </View>
                           </View>
@@ -963,7 +963,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                   ]
                                 }
                               >
-                                Login
+                                Sign In
                               </Text>
                             </View>
                           </View>
