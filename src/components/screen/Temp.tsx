@@ -1,14 +1,18 @@
-import { RootStackNavigationProps, RootStackParamList } from '../../components/navigation/RootStackNavigator';
+import {
+  RootStackNavigationProps,
+  RootStackParamList,
+} from '../../components/navigation/RootStackNavigator';
 
 import Button from '../shared/Button';
 import React from 'react';
-import { RouteProp } from '@react-navigation/core';
+import {RouteProp} from '@react-navigation/core';
 import styled from 'styled-components/native';
+import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`
-  flex: 1;
-  background-color: ${(props): string => props.theme.background};
-  flex-direction: row;
+  background-color: ${({theme}): string => theme.background};
+
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
@@ -19,7 +23,12 @@ interface Props {
 }
 
 function Page(props: Props): React.ReactElement {
-  const { route: { params: { param } }, navigation } = props;
+  const {
+    route: {
+      params: {param},
+    },
+    navigation,
+  } = props;
 
   return (
     <Container>
@@ -35,4 +44,4 @@ function Page(props: Props): React.ReactElement {
   );
 }
 
-export default Page;
+export default withScreen(Page);

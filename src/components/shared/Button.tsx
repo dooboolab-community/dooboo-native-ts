@@ -1,9 +1,8 @@
-import {
-  ActivityIndicator,
+import {ActivityIndicator, TouchableOpacity} from 'react-native';
+import type {
   ImageSourcePropType,
   ImageStyle,
   TextStyle,
-  TouchableOpacity,
   ViewStyle,
 } from 'react-native';
 
@@ -11,30 +10,30 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 const StyledButton = styled.View`
-  background-color: ${({ theme }): string => theme.btnPrimary};
+  background-color: ${({theme}): string => theme.link};
   align-self: center;
   border-radius: 4px;
   border-width: 2px;
   width: 320px;
   height: 52px;
-  border-color: ${({ theme }): string => theme.btnPrimary};
+  border-color: ${({theme}): string => theme.link};
 
   align-items: center;
   justify-content: center;
 `;
 
 const StyledButtonDisabled = styled(StyledButton)`
-  background-color: ${({ theme }): string => theme.btnDisabled};
+  background-color: ${({theme}): string => theme.disabled};
   border-color: rgb(200, 200, 200);
 `;
 
 const StyledText = styled.Text`
   font-size: 14px;
-  color: ${({ theme }): string => theme.btnPrimaryFont};
+  color: ${({theme}): string => theme.textContrast};
 `;
 
 const StyledTextDisabled = styled(StyledText)`
-  color: ${({ theme }): string => theme.textDisabled};
+  color: ${({theme}): string => theme.disabled};
 `;
 
 const StyledImage = styled.Image`
@@ -60,7 +59,7 @@ interface Props {
 }
 
 function Button(props: Props): React.ReactElement {
-  if (props.isDisabled) {
+  if (props.isDisabled)
     return (
       <StyledButtonDisabled style={props.disabledStyle}>
         <StyledTextDisabled style={props.textStyle}>
@@ -68,28 +67,23 @@ function Button(props: Props): React.ReactElement {
         </StyledTextDisabled>
       </StyledButtonDisabled>
     );
-  }
 
-  if (props.isLoading) {
+  if (props.isLoading)
     return (
       <StyledButton style={props.style}>
         <ActivityIndicator size="small" color={props.indicatorColor} />
       </StyledButton>
     );
-  }
 
   return (
     <TouchableOpacity
       testID={props.testID}
       activeOpacity={props.activeOpacity}
-      onPress={props.onClick}
-    >
+      onPress={props.onClick}>
       <StyledButton style={props.style}>
-        {
-          props.imgLeftSrc
-            ? <StyledImage style={props.imgLeftStyle} source={props.imgLeftSrc} />
-            : null
-        }
+        {props.imgLeftSrc ? (
+          <StyledImage style={props.imgLeftStyle} source={props.imgLeftSrc} />
+        ) : null}
         <StyledText style={props.textStyle}>{props.text}</StyledText>
       </StyledButton>
     </TouchableOpacity>

@@ -12,8 +12,8 @@ exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
         Object {
           "alignItems": "center",
           "alignSelf": "center",
-          "backgroundColor": "#069ccd",
-          "borderColor": "#069ccd",
+          "backgroundColor": "#393D7A",
+          "borderColor": "#393D7A",
           "borderRadius": 4,
           "borderWidth": 2,
           "height": 52,
@@ -27,7 +27,7 @@ exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
       style={
         Array [
           Object {
-            "color": "white",
+            "color": "#D3D8E8",
             "fontSize": 14,
           },
         ]
@@ -49,8 +49,8 @@ exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
         Object {
           "alignItems": "center",
           "alignSelf": "center",
-          "backgroundColor": "#069ccd",
-          "borderColor": "#069ccd",
+          "backgroundColor": "#E0E0E0",
+          "borderColor": "#E0E0E0",
           "borderRadius": 4,
           "borderWidth": 2,
           "height": 52,
@@ -64,7 +64,7 @@ exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
       style={
         Array [
           Object {
-            "color": "white",
+            "color": "#000000",
             "fontSize": 14,
           },
         ]
@@ -81,7 +81,7 @@ exports[`[Button] should render [isDisabled] status without crashing 1`] = `
       Object {
         "alignItems": "center",
         "alignSelf": "center",
-        "backgroundColor": "rgb(224,224,224)",
+        "backgroundColor": "#00000030",
         "borderColor": "rgb(200, 200, 200)",
         "borderRadius": 4,
         "borderWidth": 2,
@@ -96,7 +96,7 @@ exports[`[Button] should render [isDisabled] status without crashing 1`] = `
     style={
       Array [
         Object {
-          "color": "#969696",
+          "color": "#00000030",
           "fontSize": 14,
         },
       ]
@@ -112,8 +112,8 @@ exports[`[Button] should render [isLoading] status without crashing 1`] = `
       Object {
         "alignItems": "center",
         "alignSelf": "center",
-        "backgroundColor": "#069ccd",
-        "borderColor": "#069ccd",
+        "backgroundColor": "#393D7A",
+        "borderColor": "#393D7A",
         "borderRadius": 4,
         "borderWidth": 2,
         "height": 52,

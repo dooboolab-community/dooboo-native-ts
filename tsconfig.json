@@ -3,9 +3,15 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "jsx": "react-native",
-    "lib": ["ES2015", "ES2016", "ES2017", "ES2018"],
-    "module": "es2015",
+    "isolatedModules": true,
+    "jsx": "react",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "esnext",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
@@ -16,19 +22,40 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2017",
     "baseUrl": "src",
-    "typeRoots": ["./@types", "./node_modules/@types"]
+    "typeRoots": [
+      "./@types",
+      "./node_modules/@types"
+    ],
+    "allowJs": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "**/*.test.tsx", "**/*.spec.ts"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.test.tsx",
+    "**/*.spec.ts"
+  ],
   "jest": {
     "globals": {
       "ts-jest": {
         "skipBabel": true
-        // "tsConfigFile": "my-tsconfig.json"
       }
     }
   },
-  "files": ["environment.d.ts"]
+  "files": [
+    "environment.d.ts"
+  ]
 }

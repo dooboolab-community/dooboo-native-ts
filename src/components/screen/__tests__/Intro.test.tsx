@@ -1,11 +1,10 @@
-import React, { ReactElement } from 'react';
-import { RenderAPI, act, fireEvent, render } from '@testing-library/react-native';
-import { createTestElement, createTestProps } from '../../../../test/testUtils';
+import React, {ReactElement} from 'react';
+import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
+import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import Button from '../../shared/Button';
 import Intro from '../Intro';
-import { ThemeType } from '@dooboo-ui/theme';
-import fbt from 'fbt';
+import {ThemeType} from '../../../providers/ThemeProvider';
 import renderer from 'react-test-renderer';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -67,7 +66,6 @@ describe('[Intro] screen rendering test', () => {
 });
 
 describe('[Intro] Interaction', () => {
-  let testingLib: RenderAPI;
   let rendered: renderer.ReactTestRenderer;
   let root: renderer.ReactTestInstance;
 
@@ -100,7 +98,7 @@ describe('[Intro] Interaction', () => {
     });
 
     expect(props.navigation.navigate).toHaveBeenCalledWith('Temp', {
-      param: fbt('Go Back', 'go back'),
+      param: 'Go Back',
     });
   });
 

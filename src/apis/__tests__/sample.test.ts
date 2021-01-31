@@ -1,4 +1,4 @@
-import { ROOT_URL, sample } from '../sample';
+import {ROOT_URL, sample} from '../sample';
 
 import fetchMock from 'jest-fetch-mock';
 
@@ -9,11 +9,11 @@ describe('testing sample api', () => {
   });
 
   it('calls google and returns data to me', () => {
-    const mockedResult = JSON.stringify({ data: '12345' });
+    const mockedResult = JSON.stringify({data: '12345'});
 
     fetchMock.mockResponseOnce(mockedResult);
 
-    return sample({ zoyi: 'zoyi' }).then(async (res) => {
+    return sample({zoyi: 'zoyi'}).then(async (res) => {
       const result = await res.text();
 
       expect(result).toEqual(mockedResult);

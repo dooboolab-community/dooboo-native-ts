@@ -198,7 +198,7 @@ const component = (props): React.ReactElement => {
 
 ### Localization
 
-Previously, we used `i18n-j` to localize our app and we decided to switch to [fbt](https://github.com/facebook/fbt). If you want to understand why, you may see our blog for [Localizing react app with FBT instead of i18n](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373).
+Previously, we used `i18n-j` to localize our app and we decided to switch to [fbt](https://github.com/facebook/fbt). If you want to understand why, you may see our blog for [Localizing react app with FBT instead of  src/utils/i18n](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373).
 
 We've defined localized strings in `assets/translations/en.json` for English and `assets/translations/ko.json` for Korean. Since the `en` is default locale setup in current project, you do not need to localize this file. However, you still should not delete this if you don't want to see missing localization warning messages when you are running jest.
 

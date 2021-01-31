@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { AppProvider, useAppContext } from '../AppProvider';
-import { Button, Text, View } from 'react-native';
+import {AppProvider, useAppContext} from '../AppProvider';
+import {Button, Text, View} from 'react-native';
 import {
   RenderResult,
   act,
@@ -15,7 +15,7 @@ import renderer from 'react-test-renderer';
 let testingLib: RenderResult;
 
 const FakeChild = (): React.ReactElement => {
-  const { state, resetUser, callDefault } = useAppContext();
+  const {state, resetUser, callDefault} = useAppContext();
 
   return (
     <View>
