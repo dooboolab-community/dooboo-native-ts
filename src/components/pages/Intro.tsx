@@ -1,9 +1,9 @@
 import styled, {css} from 'styled-components/native';
 
-import Button from '../shared/Button';
+import Button from '../templates/Button';
 import {IC_MASK} from '../../utils/Icons';
 import React from 'react';
-import {RootStackNavigationProps} from '../navigation/RootStackNavigator';
+import {RootStackNavigationProps} from '../navigations/RootStackNavigator';
 import {User} from '../../types';
 import {View} from 'react-native';
 import {fbt} from 'fbt';

@@ -5,10 +5,10 @@ import {
   createStackNavigator,
 } from '@react-navigation/stack';
 
-import Intro from '../screen/Intro';
+import Intro from '../pages/Intro';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import Temp from '../screen/Temp';
+import Temp from '../pages/Temp';
 import {useTheme} from '../../providers/ThemeProvider';
 
 export type RootStackParamList = {

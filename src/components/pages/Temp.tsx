@@ -1,9 +1,9 @@
 import {
   RootStackNavigationProps,
   RootStackParamList,
-} from '../../components/navigation/RootStackNavigator';
+} from '../navigations/RootStackNavigator';
 
-import Button from '../shared/Button';
+import Button from '../templates/Button';
 import React from 'react';
 import {RouteProp} from '@react-navigation/core';
 import styled from 'styled-components/native';
