@@ -2,12 +2,11 @@ import React, {ReactElement} from 'react';
 import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
-import Button from '../../templates/Button';
+import ActionButton from '../../UI/molecules/ActionButton';
 import Intro from '../Intro';
 import {ThemeType} from '../../../providers/ThemeProvider';
 import renderer from 'react-test-renderer';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let props: any;
 let component: ReactElement;
 let testingLib: RenderAPI;
@@ -76,7 +75,7 @@ describe('[Intro] Interaction', () => {
 
     jest.useFakeTimers();
 
-    const buttons = root.findAllByType(Button);
+    const buttons = root.findAllByType(ActionButton);
 
     const button = testingLib.getByTestId('btn-login');
 
@@ -98,7 +97,7 @@ describe('[Intro] Interaction', () => {
     });
 
     expect(props.navigation.navigate).toHaveBeenCalledWith('Temp', {
-      param: 'Go Back',
+      param: 'GO BACK',
     });
   });
 

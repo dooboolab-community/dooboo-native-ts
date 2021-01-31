@@ -1,18 +1,19 @@
 import {
   RootStackNavigationProps,
   RootStackParamList,
-} from '../navigations/RootStackNavigator';
+} from '../../components/navigations/RootStackNavigator';
 
-import Button from '../templates/Button';
+import ActionButton from '../UI/molecules/ActionButton';
 import React from 'react';
 import {RouteProp} from '@react-navigation/core';
 import styled from 'styled-components/native';
+import {useTheme} from '../../providers/ThemeProvider';
 import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`
-  background-color: ${({theme}): string => theme.background};
-
-  flex-direction: column;
+  flex: 1;
+  background-color: ${({theme}) => theme.background};
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 `;
@@ -23,6 +24,8 @@ interface Props {
 }
 
 function Page(props: Props): React.ReactElement {
+  const {theme} = useTheme();
+
   const {
     route: {
       params: {param},
@@ -32,12 +35,12 @@ function Page(props: Props): React.ReactElement {
 
   return (
     <Container>
-      <Button
+      <ActionButton
         testID="btn-back"
-        onClick={(): void => navigation.goBack()}
+        onPress={(): void => navigation.goBack()}
         text={param}
         style={{
-          backgroundColor: '#333333',
+          backgroundColor: theme.text,
         }}
       />
     </Container>

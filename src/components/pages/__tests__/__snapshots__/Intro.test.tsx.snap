@@ -14,10 +14,15 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
     style={
       Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#232323",
           "flexBasis": 0,
+          "flexDirection": "column",
           "flexGrow": 1,
           "flexShrink": 1,
+          "justifyContent": "flex-start",
+          "overflow": "hidden",
         },
       ]
     }
@@ -27,12 +32,10 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "alignSelf": "stretch",
-            "flexBasis": 0,
             "flexDirection": "column",
-            "flexGrow": 1,
-            "flexShrink": 1,
+            "height": "100%",
             "justifyContent": "flex-start",
+            "width": "100%",
           },
         ]
       }
@@ -94,7 +97,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       }
     >
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-login"
       >
@@ -104,8 +107,8 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -157,7 +160,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
         }
       />
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -167,8 +170,8 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -200,7 +203,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
         }
       />
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -210,8 +213,8 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -254,10 +257,15 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
     style={
       Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#232323",
           "flexBasis": 0,
+          "flexDirection": "column",
           "flexGrow": 1,
           "flexShrink": 1,
+          "justifyContent": "flex-start",
+          "overflow": "hidden",
         },
       ]
     }
@@ -267,12 +275,10 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "alignSelf": "stretch",
-            "flexBasis": 0,
             "flexDirection": "column",
-            "flexGrow": 1,
-            "flexShrink": 1,
+            "height": "100%",
             "justifyContent": "flex-start",
+            "width": "100%",
           },
         ]
       }
@@ -334,7 +340,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       }
     >
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-login"
       >
@@ -344,8 +350,8 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -397,7 +403,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
         }
       />
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -407,8 +413,8 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -440,7 +446,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
         }
       />
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -450,8 +456,8 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -494,10 +500,15 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
     style={
       Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#232323",
           "flexBasis": 0,
+          "flexDirection": "column",
           "flexGrow": 1,
           "flexShrink": 1,
+          "justifyContent": "flex-start",
+          "overflow": "hidden",
         },
       ]
     }
@@ -507,12 +518,10 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
         Array [
           Object {
             "alignItems": "center",
-            "alignSelf": "stretch",
-            "flexBasis": 0,
             "flexDirection": "column",
-            "flexGrow": 1,
-            "flexShrink": 1,
+            "height": "100%",
             "justifyContent": "flex-start",
+            "width": "100%",
           },
         ]
       }
@@ -574,7 +583,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       }
     >
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-login"
       >
@@ -584,8 +593,8 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -637,7 +646,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
         }
       />
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -647,8 +656,8 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -680,7 +689,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
         }
       />
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -690,8 +699,8 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
               Object {
                 "alignItems": "center",
                 "alignSelf": "center",
-                "backgroundColor": "#E0E0E0",
-                "borderColor": "#E0E0E0",
+                "backgroundColor": "#8A96DC",
+                "borderColor": "#8A96DC",
                 "borderRadius": 4,
                 "borderWidth": 2,
                 "height": 52,
@@ -734,10 +743,15 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
     style={
       Array [
         Object {
-          "alignItems": "stretch",
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#FFFFFF",
           "flexBasis": 0,
+          "flexDirection": "column",
           "flexGrow": 1,
           "flexShrink": 1,
+          "justifyContent": "flex-start",
+          "overflow": "hidden",
         },
       ]
     }
@@ -747,12 +761,10 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
         Array [
           Object {
             "alignItems": "center",
-            "alignSelf": "stretch",
-            "flexBasis": 0,
             "flexDirection": "column",
-            "flexGrow": 1,
-            "flexShrink": 1,
+            "height": "100%",
             "justifyContent": "flex-start",
+            "width": "100%",
           },
         ]
       }
@@ -814,7 +826,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       }
     >
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-login"
       >
@@ -877,7 +889,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
         }
       />
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -920,7 +932,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
         }
       />
       <View
-        activeOpacity={0.5}
+        activeOpacity={0.7}
         onPress={[Function]}
         testID="btn-theme"
       >

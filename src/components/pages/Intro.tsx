@@ -1,33 +1,26 @@
-import styled, {css} from 'styled-components/native';
-
-import Button from '../templates/Button';
+import ActionButton from '../UI/molecules/ActionButton';
 import {IC_MASK} from '../../utils/Icons';
+import IntroView from '../templates/IntroView';
 import React from 'react';
 import {RootStackNavigationProps} from '../navigations/RootStackNavigator';
 import {User} from '../../types';
 import {View} from 'react-native';
 import {fbt} from 'fbt';
+import styled from 'styled-components/native';
 import {useAppContext} from '../../providers/AppProvider';
 import {useTheme} from '../../providers/ThemeProvider';
 import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`
   flex: 1;
-  align-items: stretch;
-
-  ${({theme: {isDesktop}}) =>
-    isDesktop &&
-    css`
-      flex-direction: row;
-    `}
-`;
-
-const Content = styled.View`
-  flex: 1;
-  flex-direction: column;
   align-self: stretch;
+  overflow: scroll;
+  background-color: ${({theme}) => theme.background};
+
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  overflow: hidden;
 `;
 
 const ButtonWrapper = styled.View`
@@ -38,12 +31,6 @@ const ButtonWrapper = styled.View`
   align-self: center;
 `;
 
-const StyledText = styled.Text`
-  font-size: 18px;
-  line-height: 27px;
-  color: ${({theme}): string => theme.text};
-`;
-
 interface Props {
   navigation: RootStackNavigationProps<'Intro'>;
 }
@@ -51,10 +38,7 @@ interface Props {
 function Intro(props: Props): React.ReactElement {
   let timer: number;
 
-  const {
-    state: {user},
-    setUser,
-  } = useAppContext();
+  const {setUser} = useAppContext();
 
   const {changeThemeType} = useTheme();
   const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
@@ -63,13 +47,13 @@ function Intro(props: Props): React.ReactElement {
     setIsLoggingIn(true);
 
     timer = setTimeout(() => {
-      const myUser: User = {
+      const tempUser: User = {
         displayName: 'dooboolab',
         age: 30,
         job: 'developer',
       };
 
-      setUser(myUser);
+      setUser(tempUser);
       setIsLoggingIn(false);
       clearTimeout(timer);
     }, 1000);
@@ -77,38 +61,29 @@ function Intro(props: Props): React.ReactElement {
 
   return (
     <Container>
-      <Content>
-        <StyledText
-          style={{
-            marginTop: 100,
-          }}>
-          {user?.displayName ?? ''}
-        </StyledText>
-        <StyledText>{user?.age ?? ''}</StyledText>
-        <StyledText>{user?.job ?? ''}</StyledText>
-      </Content>
+      <IntroView />
       <ButtonWrapper>
-        <Button
+        <ActionButton
           testID="btn-login"
           imgLeftSrc={IC_MASK}
           isLoading={isLoggingIn}
-          onClick={(): void => onLogin()}
+          onPress={(): void => onLogin()}
           text={fbt('Login', 'login')}
         />
         <View style={{marginTop: 8}} />
-        <Button
+        <ActionButton
           testID="btn-navigate"
-          onClick={(): void =>
+          onPress={(): void =>
             props.navigation.navigate('Temp', {
-              param: 'Go Back',
+              param: 'GO BACK',
             })
           }
           text={fbt('Navigate', 'navigate')}
         />
         <View style={{marginTop: 8}} />
-        <Button
+        <ActionButton
           testID="btn-theme"
-          onClick={(): void => changeThemeType()}
+          onPress={(): void => changeThemeType()}
           text={fbt('Change Theme', 'change theme')}
         />
       </ButtonWrapper>

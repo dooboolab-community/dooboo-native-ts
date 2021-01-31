@@ -16,14 +16,17 @@ exports[`[Temp] render renders without crashing 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "flexDirection": "column",
+          "flexBasis": 0,
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "flexShrink": 1,
           "justifyContent": "center",
         },
       ]
     }
   >
     <View
-      activeOpacity={0.5}
+      activeOpacity={0.7}
       onPress={[Function]}
       testID="btn-back"
     >
@@ -42,7 +45,7 @@ exports[`[Temp] render renders without crashing 1`] = `
               "width": 320,
             },
             Object {
-              "backgroundColor": "#333333",
+              "backgroundColor": "#000000",
             },
           ]
         }
@@ -81,14 +84,17 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
         Object {
           "alignItems": "center",
           "backgroundColor": "#232323",
-          "flexDirection": "column",
+          "flexBasis": 0,
+          "flexDirection": "row",
+          "flexGrow": 1,
+          "flexShrink": 1,
           "justifyContent": "center",
         },
       ]
     }
   >
     <View
-      activeOpacity={0.5}
+      activeOpacity={0.7}
       onPress={[Function]}
       testID="btn-back"
     >
@@ -98,8 +104,8 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
             Object {
               "alignItems": "center",
               "alignSelf": "center",
-              "backgroundColor": "#E0E0E0",
-              "borderColor": "#E0E0E0",
+              "backgroundColor": "#8A96DC",
+              "borderColor": "#8A96DC",
               "borderRadius": 4,
               "borderWidth": 2,
               "height": 52,
@@ -107,7 +113,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
               "width": 320,
             },
             Object {
-              "backgroundColor": "#333333",
+              "backgroundColor": "#D3D8E8",
             },
           ]
         }
