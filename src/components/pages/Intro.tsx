@@ -1,6 +1,6 @@
-import ActionButton from '../UI/molecules/ActionButton';
+import Button from '../uis/Button';
 import {IC_MASK} from '../../utils/Icons';
-import IntroView from '../templates/IntroView';
+import IntroView from '../uis/IntroTemp';
 import React from 'react';
 import {RootStackNavigationProps} from '../navigations/RootStackNavigator';
 import {User} from '../../types';
@@ -63,7 +63,7 @@ function Intro(props: Props): React.ReactElement {
     <Container>
       <IntroView />
       <ButtonWrapper>
-        <ActionButton
+        <Button
           testID="btn-login"
           imgLeftSrc={IC_MASK}
           isLoading={isLoggingIn}
@@ -71,7 +71,7 @@ function Intro(props: Props): React.ReactElement {
           text={fbt('Login', 'login')}
         />
         <View style={{marginTop: 8}} />
-        <ActionButton
+        <Button
           testID="btn-navigate"
           onPress={(): void =>
             props.navigation.navigate('Temp', {
@@ -81,7 +81,7 @@ function Intro(props: Props): React.ReactElement {
           text={fbt('Navigate', 'navigate')}
         />
         <View style={{marginTop: 8}} />
-        <ActionButton
+        <Button
           testID="btn-theme"
           onPress={(): void => changeThemeType()}
           text={fbt('Change Theme', 'change theme')}

@@ -4,16 +4,16 @@ import React, {ReactElement} from 'react';
 import {RenderAPI, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
-import IntroView from '../IntroView';
+import IntroTemp from '../IntroTemp';
 
 let props: any;
 let component: ReactElement;
 let testingLib: RenderAPI;
 
-describe('[IntroView] render', () => {
+describe('[IntroTemp] render', () => {
   props = createTestProps();
 
-  component = createTestElement(<IntroView {...props} />);
+  component = createTestElement(<IntroTemp {...props} />);
 
   it('renders without crashing', () => {
     testingLib = render(component);

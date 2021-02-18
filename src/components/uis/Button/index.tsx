@@ -6,9 +6,9 @@ import type {
   ViewStyle,
 } from 'react-native';
 
-import Button from '../atoms/Button';
-import ButtonDisabled from '../atoms/ButtonDisabled';
-import ButtonLoading from '../atoms/ButtonLoading';
+import ButtonDisabled from './ButtonDisabled';
+import ButtonLoading from './ButtonLoading';
+import ButtonWrapper from './ButtonWrapper';
 import type {FC} from 'react';
 import React from 'react';
 
@@ -27,7 +27,7 @@ interface Props {
   text?: string;
 }
 
-const ActionButton: FC<Props> = ({
+const Button: FC<Props> = ({
   testID,
   isLoading,
   isDisabled,
@@ -47,7 +47,7 @@ const ActionButton: FC<Props> = ({
   if (isLoading) return <ButtonLoading indicatorColor={indicatorColor} />;
 
   return (
-    <Button
+    <ButtonWrapper
       testID={testID}
       onPress={onPress}
       imgLeftSrc={imgLeftSrc}
@@ -60,4 +60,4 @@ const ActionButton: FC<Props> = ({
   );
 };
 
-export default ActionButton;
+export default Button;
