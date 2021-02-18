@@ -12,6 +12,8 @@ import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`
   flex: 1;
+  align-self: stretch;
+
   background-color: ${({theme}) => theme.background};
   flex-direction: row;
   align-items: center;
