@@ -20,6 +20,112 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
     }
   >
     <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
+    >
+      <View
+        accessibilityElementsHidden={false}
+        importantForAccessibility="auto"
+        onLayout={[Function]}
+        pointerEvents="box-none"
+        style={null}
+      >
+        <View
+          pointerEvents="box-none"
+          style={
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "opacity": 1,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "zIndex": 0,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#232323",
+                "borderBottomColor": "#333333",
+                "flex": 1,
+                "shadowColor": "#333333",
+                "shadowOffset": Object {
+                  "height": 0.5,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.85,
+                "shadowRadius": 0,
+              }
+            }
+          />
+        </View>
+        <View
+          pointerEvents="box-none"
+          style={
+            Object {
+              "height": 64,
+              "maxHeight": undefined,
+              "minHeight": undefined,
+              "opacity": undefined,
+              "transform": undefined,
+            }
+          }
+        >
+          <View
+            pointerEvents="none"
+            style={
+              Object {
+                "height": 20,
+              }
+            }
+          />
+          <View
+            pointerEvents="box-none"
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              pointerEvents="box-none"
+              style={
+                Object {
+                  "marginHorizontal": 16,
+                  "opacity": 1,
+                }
+              }
+            >
+              <Text
+                accessibilityRole="header"
+                aria-level="1"
+                numberOfLines={1}
+                onLayout={[Function]}
+                style={
+                  Object {
+                    "color": "#D3D8E8",
+                    "fontSize": 17,
+                    "fontWeight": "600",
+                  }
+                }
+              >
+                Intro
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
       onLayout={[Function]}
       style={
         Object {
@@ -132,7 +238,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                 pointerEvents="none"
                 style={
                   Object {
-                    "backgroundColor": "rgb(242, 242, 242)",
+                    "backgroundColor": "#232323",
                     "bottom": 0,
                     "left": 0,
                     "position": "absolute",
@@ -157,7 +263,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                     },
                     Array [
                       Object {
-                        "backgroundColor": "rgb(242, 242, 242)",
+                        "backgroundColor": "#232323",
                       },
                       undefined,
                     ],
@@ -420,105 +526,6 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                       </View>
                     </View>
                   </View>
-                  <View
-                    pointerEvents="box-none"
-                  >
-                    <View
-                      accessibilityElementsHidden={false}
-                      importantForAccessibility="auto"
-                      onLayout={[Function]}
-                      pointerEvents="box-none"
-                      style={null}
-                    >
-                      <View
-                        pointerEvents="box-none"
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "left": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "zIndex": 0,
-                          }
-                        }
-                      >
-                        <View
-                          style={
-                            Object {
-                              "backgroundColor": "#232323",
-                              "borderBottomColor": "rgb(216, 216, 216)",
-                              "flex": 1,
-                              "shadowColor": "rgb(216, 216, 216)",
-                              "shadowOffset": Object {
-                                "height": 0.5,
-                                "width": 0,
-                              },
-                              "shadowOpacity": 0.85,
-                              "shadowRadius": 0,
-                            }
-                          }
-                        />
-                      </View>
-                      <View
-                        pointerEvents="box-none"
-                        style={
-                          Object {
-                            "height": 64,
-                            "maxHeight": undefined,
-                            "minHeight": undefined,
-                            "opacity": undefined,
-                            "transform": undefined,
-                          }
-                        }
-                      >
-                        <View
-                          pointerEvents="none"
-                          style={
-                            Object {
-                              "height": 20,
-                            }
-                          }
-                        />
-                        <View
-                          pointerEvents="box-none"
-                          style={
-                            Object {
-                              "alignItems": "center",
-                              "flex": 1,
-                              "flexDirection": "row",
-                              "justifyContent": "center",
-                            }
-                          }
-                        >
-                          <View
-                            pointerEvents="box-none"
-                            style={
-                              Object {
-                                "marginHorizontal": 16,
-                              }
-                            }
-                          >
-                            <Text
-                              accessibilityRole="header"
-                              aria-level="1"
-                              numberOfLines={1}
-                              onLayout={[Function]}
-                              style={
-                                Object {
-                                  "color": "#D3D8E8",
-                                  "fontSize": 17,
-                                  "fontWeight": "600",
-                                }
-                              }
-                            >
-                              Intro
-                            </Text>
-                          </View>
-                        </View>
-                      </View>
-                    </View>
-                  </View>
                 </View>
               </View>
             </View>
@@ -582,9 +589,9 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             style={
               Object {
                 "backgroundColor": "#FFFFFF",
-                "borderBottomColor": "rgb(216, 216, 216)",
+                "borderBottomColor": "#EDEDED",
                 "flex": 1,
-                "shadowColor": "rgb(216, 216, 216)",
+                "shadowColor": "#EDEDED",
                 "shadowOffset": Object {
                   "height": 0.5,
                   "width": 0,
@@ -768,7 +775,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                 pointerEvents="none"
                 style={
                   Object {
-                    "backgroundColor": "rgb(242, 242, 242)",
+                    "backgroundColor": "#FFFFFF",
                     "bottom": 0,
                     "left": 0,
                     "position": "absolute",
@@ -793,7 +800,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                     },
                     Array [
                       Object {
-                        "backgroundColor": "rgb(242, 242, 242)",
+                        "backgroundColor": "#FFFFFF",
                       },
                       undefined,
                     ],
