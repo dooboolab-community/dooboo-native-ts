@@ -4,7 +4,7 @@ import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import ActionButton from '../../uis/Button';
 import Intro from '../Intro';
-import {ThemeType} from '../../../providers/ThemeProvider';
+import {ThemeType} from 'dooboo-ui';
 import renderer from 'react-test-renderer';
 
 let props: any;

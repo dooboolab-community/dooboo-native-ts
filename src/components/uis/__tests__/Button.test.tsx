@@ -5,7 +5,7 @@ import * as React from 'react';
 import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
 
 import Button from '../Button';
-import {ThemeType} from '../../../providers/ThemeProvider';
+import {ThemeType} from 'dooboo-ui';
 import {createTestElement} from '../../../../test/testUtils';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';

@@ -7,7 +7,7 @@ import Button from '../uis/Button';
 import React from 'react';
 import {RouteProp} from '@react-navigation/core';
 import styled from 'styled-components/native';
-import {useTheme} from '../../providers/ThemeProvider';
+import {useTheme} from 'dooboo-ui';
 import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`

@@ -12,11 +12,11 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 - [react-native](https://github.com/facebook/react-native)
 - [react-navigation](https://github.com/react-navigation/react-navigation)
 - [typescript](https://github.com/Microsoft/TypeScript)
-- [localization](https://github.com/react-native-community/react-native-localize)
+- [fbt](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373)
 - [styled-components](https://github.com/styled-components/styled-components)
 - [ts-jest](https://github.com/kulshekhar/ts-jest)
 - [react-hook](https://reactjs.org/docs/hooks-intro.html)
-- [@testing-library/react-native](https://github.com/testing-library/native-testing-library)
+- [@testing-library/react-native](https://github.com/callstack/react-native-testing-library)
 - [@testing-library/react-hooks](https://github.com/testing-library/react-hooks-testing-library)
 - [prettier](https://prettier.io)
 
