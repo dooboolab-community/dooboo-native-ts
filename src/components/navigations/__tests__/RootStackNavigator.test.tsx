@@ -1,14 +1,15 @@
 import 'react-native';
 
 import React, {ReactElement} from 'react';
+import {RenderAPI, cleanup, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import StackNavigator from '../RootStackNavigator';
 import {ThemeType} from 'dooboo-ui';
-import renderer from 'react-test-renderer';
 
 let props: any;
 let component: ReactElement;
+let testingLib: RenderAPI;
 
 describe('[Stack] navigator', () => {
   beforeEach(() => {
@@ -17,14 +18,18 @@ describe('[Stack] navigator', () => {
     component = createTestElement(<StackNavigator {...props} />);
   });
 
+  afterEach(cleanup);
+
   it('should renders without crashing', () => {
     jest.useFakeTimers();
 
-    const rendered = renderer.create(component).toJSON();
+    testingLib = render(component);
+
+    const baseElement = testingLib.toJSON();
 
     jest.runAllTimers();
-    expect(rendered).toMatchSnapshot();
-    expect(rendered).toBeTruthy();
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 
   it('should renders [Dark] mode', () => {
@@ -35,10 +40,12 @@ describe('[Stack] navigator', () => {
       ThemeType.DARK,
     );
 
-    const rendered = renderer.create(component).toJSON();
+    testingLib = render(component);
+
+    const baseElement = testingLib.toJSON();
 
     jest.runAllTimers();
-    expect(rendered).toMatchSnapshot();
-    expect(rendered).toBeTruthy();
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 });

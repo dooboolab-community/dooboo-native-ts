@@ -1,11 +1,15 @@
 import React, {ReactElement} from 'react';
-import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
+import {
+  RenderAPI,
+  act,
+  cleanup,
+  fireEvent,
+  render,
+} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
-import ActionButton from '../../uis/Button';
 import Intro from '../Intro';
 import {ThemeType} from 'dooboo-ui';
-import renderer from 'react-test-renderer';
 
 let props: any;
 let component: ReactElement;
@@ -18,11 +22,15 @@ describe('[Intro] screen rendering test', () => {
     testingLib = render(component);
   });
 
-  it('should render outer component and snapshot matches', () => {
-    const json = renderer.create(component).toJSON();
+  afterEach(cleanup);
 
-    expect(json).toMatchSnapshot();
-    expect(json).toBeTruthy();
+  it('should render outer component and snapshot matches', () => {
+    testingLib = render(component);
+
+    const baseElement = testingLib.toJSON();
+
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 
   it('should render [Dark] theme', () => {
@@ -65,29 +73,7 @@ describe('[Intro] screen rendering test', () => {
 });
 
 describe('[Intro] Interaction', () => {
-  let rendered: renderer.ReactTestRenderer;
-  let root: renderer.ReactTestInstance;
-
-  it('should simulate login when button has clicked', () => {
-    testingLib = render(component);
-    rendered = renderer.create(component);
-    root = rendered.root;
-
-    jest.useFakeTimers();
-
-    const buttons = root.findAllByType(ActionButton);
-
-    const button = testingLib.getByTestId('btn-login');
-
-    act(() => {
-      fireEvent.press(button);
-      expect(setTimeout).toHaveBeenCalledTimes(1);
-      jest.runAllTimers();
-    });
-
-    expect(clearTimeout).toHaveBeenCalledTimes(1);
-    expect(buttons[0].props.isLoading).toEqual(false);
-  });
+  afterEach(cleanup);
 
   it('should navigate when button has clicked', () => {
     testingLib = render(component);
