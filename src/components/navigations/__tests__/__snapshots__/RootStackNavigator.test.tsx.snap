@@ -52,9 +52,9 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
             style={
               Object {
                 "backgroundColor": "#232323",
-                "borderBottomColor": "#00000030",
+                "borderBottomColor": "#333333",
                 "flex": 1,
-                "shadowColor": "#00000030",
+                "shadowColor": "#333333",
                 "shadowOffset": Object {
                   "height": 0.5,
                   "width": 0,
@@ -298,10 +298,15 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                         style={
                           Array [
                             Object {
-                              "alignItems": "stretch",
+                              "alignItems": "center",
+                              "alignSelf": "stretch",
+                              "backgroundColor": "#232323",
                               "flexBasis": 0,
+                              "flexDirection": "column",
                               "flexGrow": 1,
                               "flexShrink": 1,
+                              "justifyContent": "flex-start",
+                              "overflow": "hidden",
                             },
                           ]
                         }
@@ -311,12 +316,10 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             Array [
                               Object {
                                 "alignItems": "center",
-                                "alignSelf": "stretch",
-                                "flexBasis": 0,
                                 "flexDirection": "column",
-                                "flexGrow": 1,
-                                "flexShrink": 1,
+                                "height": "100%",
                                 "justifyContent": "flex-start",
+                                "width": "100%",
                               },
                             ]
                           }
@@ -378,7 +381,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                           }
                         >
                           <View
-                            activeOpacity={0.5}
+                            activeOpacity={0.7}
                             onPress={[Function]}
                             testID="btn-login"
                           >
@@ -388,8 +391,8 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                   Object {
                                     "alignItems": "center",
                                     "alignSelf": "center",
-                                    "backgroundColor": "#E0E0E0",
-                                    "borderColor": "#E0E0E0",
+                                    "backgroundColor": "#8A96DC",
+                                    "borderColor": "#8A96DC",
                                     "borderRadius": 4,
                                     "borderWidth": 2,
                                     "height": 52,
@@ -441,7 +444,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             }
                           />
                           <View
-                            activeOpacity={0.5}
+                            activeOpacity={0.7}
                             onPress={[Function]}
                             testID="btn-navigate"
                           >
@@ -451,8 +454,8 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                   Object {
                                     "alignItems": "center",
                                     "alignSelf": "center",
-                                    "backgroundColor": "#E0E0E0",
-                                    "borderColor": "#E0E0E0",
+                                    "backgroundColor": "#8A96DC",
+                                    "borderColor": "#8A96DC",
                                     "borderRadius": 4,
                                     "borderWidth": 2,
                                     "height": 52,
@@ -484,7 +487,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             }
                           />
                           <View
-                            activeOpacity={0.5}
+                            activeOpacity={0.7}
                             onPress={[Function]}
                             testID="btn-theme"
                           >
@@ -494,8 +497,8 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                   Object {
                                     "alignItems": "center",
                                     "alignSelf": "center",
-                                    "backgroundColor": "#E0E0E0",
-                                    "borderColor": "#E0E0E0",
+                                    "backgroundColor": "#8A96DC",
+                                    "borderColor": "#8A96DC",
                                     "borderRadius": 4,
                                     "borderWidth": 2,
                                     "height": 52,
@@ -586,9 +589,9 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
             style={
               Object {
                 "backgroundColor": "#FFFFFF",
-                "borderBottomColor": "#00000030",
+                "borderBottomColor": "#EDEDED",
                 "flex": 1,
-                "shadowColor": "#00000030",
+                "shadowColor": "#EDEDED",
                 "shadowOffset": Object {
                   "height": 0.5,
                   "width": 0,
@@ -832,10 +835,15 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                         style={
                           Array [
                             Object {
-                              "alignItems": "stretch",
+                              "alignItems": "center",
+                              "alignSelf": "stretch",
+                              "backgroundColor": "#FFFFFF",
                               "flexBasis": 0,
+                              "flexDirection": "column",
                               "flexGrow": 1,
                               "flexShrink": 1,
+                              "justifyContent": "flex-start",
+                              "overflow": "hidden",
                             },
                           ]
                         }
@@ -845,12 +853,10 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             Array [
                               Object {
                                 "alignItems": "center",
-                                "alignSelf": "stretch",
-                                "flexBasis": 0,
                                 "flexDirection": "column",
-                                "flexGrow": 1,
-                                "flexShrink": 1,
+                                "height": "100%",
                                 "justifyContent": "flex-start",
+                                "width": "100%",
                               },
                             ]
                           }
@@ -912,7 +918,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                           }
                         >
                           <View
-                            activeOpacity={0.5}
+                            activeOpacity={0.7}
                             onPress={[Function]}
                             testID="btn-login"
                           >
@@ -975,7 +981,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             }
                           />
                           <View
-                            activeOpacity={0.5}
+                            activeOpacity={0.7}
                             onPress={[Function]}
                             testID="btn-navigate"
                           >
@@ -1018,7 +1024,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             }
                           />
                           <View
-                            activeOpacity={0.5}
+                            activeOpacity={0.7}
                             onPress={[Function]}
                             testID="btn-theme"
                           >

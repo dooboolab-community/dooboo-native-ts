@@ -1,23 +1,22 @@
-import './GestureHandler';
-
 import {
   StackNavigationProp,
   createStackNavigator,
 } from '@react-navigation/stack';
 
-import Intro from '../screen/Intro';
+import Intro from '../pages/Intro';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import Temp from '../screen/Temp';
-import {useTheme} from '../../providers/ThemeProvider';
+import Temp from '../pages/Temp';
+import {useTheme} from 'dooboo-ui';
 
 export type RootStackParamList = {
+  default: undefined;
   Intro: undefined;
   Temp: {param: string};
 };
 
 export type RootStackNavigationProps<
-  T extends keyof RootStackParamList
+  T extends keyof RootStackParamList = 'default'
 > = StackNavigationProp<RootStackParamList, T>;
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -30,10 +29,10 @@ function RootNavigator(): React.ReactElement {
       theme={{
         colors: {
           background: theme.background,
-          border: theme.disabled,
+          border: theme.border,
           card: theme.paper,
-          primary: theme.link,
-          notification: theme.disabled,
+          primary: theme.primary,
+          notification: theme.primary,
           text: theme.text,
         },
         dark: true,
@@ -45,7 +44,7 @@ function RootNavigator(): React.ReactElement {
             backgroundColor: theme.background,
           },
           headerTitleStyle: {color: theme.text},
-          headerTintColor: theme.heading,
+          headerTintColor: theme.primary,
         }}>
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Temp" component={Temp} />
