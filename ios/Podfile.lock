@@ -353,7 +353,7 @@ PODS:
     - React-RCTVibration
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.0.0):
+  - RNScreens (3.1.1):
     - React-Core
   - RNSVG (12.1.0):
     - React
@@ -550,7 +550,7 @@ SPEC CHECKSUMS:
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
   RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
   RNReanimated: b8c8004b43446e3c2709fe64b2b41072f87428ad
-  RNScreens: e8e8dd0588b5da0ab57dcca76ab9b2d8987757e0
+  RNScreens: bd1523c3bde7069b8e958e5a16e1fc7722ad0bdd
   RNSVG: ce9d996113475209013317e48b05c21ee988d42e
   Yoga: 8c8436d4171c87504c648ae23b1d81242bdf3bbf
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
