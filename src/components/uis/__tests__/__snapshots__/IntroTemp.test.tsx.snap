@@ -11,6 +11,7 @@ exports[`[IntroTemp] render renders without crashing 1`] = `
         "justifyContent": "flex-start",
         "width": "100%",
       },
+      undefined,
     ]
   }
 >
@@ -38,6 +39,7 @@ exports[`[IntroTemp] render renders without crashing 1`] = `
           "fontSize": 18,
           "lineHeight": 27,
         },
+        undefined,
       ]
     }
   >
@@ -51,6 +53,7 @@ exports[`[IntroTemp] render renders without crashing 1`] = `
           "fontSize": 18,
           "lineHeight": 27,
         },
+        undefined,
       ]
     }
   >

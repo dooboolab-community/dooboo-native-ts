@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled from '@emotion/native';
 
 export const StyledButton = styled.View`
   background-color: ${({theme}) => theme.primary};

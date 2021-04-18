@@ -13,7 +13,7 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 - [react-navigation](https://github.com/react-navigation/react-navigation)
 - [typescript](https://github.com/Microsoft/TypeScript)
 - [fbt](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373)
-- [styled-components](https://github.com/styled-components/styled-components)
+- [emotion](https://emotion.sh)
 - [ts-jest](https://github.com/kulshekhar/ts-jest)
 - [react-hook](https://reactjs.org/docs/hooks-intro.html)
 - [@testing-library/react-native](https://github.com/callstack/react-native-testing-library)

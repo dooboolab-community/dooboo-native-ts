@@ -23,6 +23,7 @@ exports[`[Temp] render renders without crashing 1`] = `
           "flexShrink": 1,
           "justifyContent": "center",
         },
+        undefined,
       ]
     }
   >
@@ -38,9 +39,18 @@ exports[`[Temp] render renders without crashing 1`] = `
               "alignItems": "center",
               "alignSelf": "center",
               "backgroundColor": "#393D7A",
-              "borderColor": "#393D7A",
-              "borderRadius": 4,
-              "borderWidth": 2,
+              "borderBottomColor": "#393D7A",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderBottomWidth": 2,
+              "borderLeftColor": "#393D7A",
+              "borderLeftWidth": 2,
+              "borderRightColor": "#393D7A",
+              "borderRightWidth": 2,
+              "borderTopColor": "#393D7A",
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "borderTopWidth": 2,
               "height": 52,
               "justifyContent": "center",
               "width": 320,
@@ -55,9 +65,15 @@ exports[`[Temp] render renders without crashing 1`] = `
           style={
             Array [
               Object {
-                "color": "#D3D8E8",
+                "color": "#000000",
                 "fontSize": 14,
               },
+              Array [
+                Object {
+                  "color": "#D3D8E8",
+                },
+                undefined,
+              ],
             ]
           }
         >
@@ -92,6 +108,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
           "flexShrink": 1,
           "justifyContent": "center",
         },
+        undefined,
       ]
     }
   >
@@ -107,9 +124,18 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
               "alignItems": "center",
               "alignSelf": "center",
               "backgroundColor": "#8A96DC",
-              "borderColor": "#8A96DC",
-              "borderRadius": 4,
-              "borderWidth": 2,
+              "borderBottomColor": "#8A96DC",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderBottomWidth": 2,
+              "borderLeftColor": "#8A96DC",
+              "borderLeftWidth": 2,
+              "borderRightColor": "#8A96DC",
+              "borderRightWidth": 2,
+              "borderTopColor": "#8A96DC",
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "borderTopWidth": 2,
               "height": 52,
               "justifyContent": "center",
               "width": 320,
@@ -124,9 +150,15 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
           style={
             Array [
               Object {
-                "color": "#000000",
+                "color": "#D3D8E8",
                 "fontSize": 14,
               },
+              Array [
+                Object {
+                  "color": "#000000",
+                },
+                undefined,
+              ],
             ]
           }
         >
