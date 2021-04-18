@@ -3,16 +3,14 @@ import * as React from 'react';
 import {AppProvider, useAppContext} from '../AppProvider';
 import {Button, Text, View} from 'react-native';
 import {
-  RenderResult,
+  RenderAPI,
   act,
+  cleanup,
   fireEvent,
   render,
 } from '@testing-library/react-native';
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
-
-let testingLib: RenderResult;
+let testingLib: RenderAPI;
 
 const FakeChild = (): React.ReactElement => {
   const {state, resetUser, callDefault} = useAppContext();
@@ -39,18 +37,21 @@ const FakeChild = (): React.ReactElement => {
 };
 
 describe('[AppProvider] rendering test', () => {
-  let json: renderer.ReactTestRendererJSON;
-
   const component = (
     <AppProvider>
       <FakeChild />
     </AppProvider>
   );
 
+  afterEach(cleanup);
+
   it('should match component and snapshot', () => {
-    json = renderer.create(component).toJSON();
-    expect(json).toMatchSnapshot();
-    expect(json).toBeTruthy();
+    testingLib = render(component);
+
+    const baseElement = testingLib.toJSON();
+
+    expect(baseElement).toMatchSnapshot();
+    expect(baseElement).toBeTruthy();
   });
 
   it('should call [resetUser] when button pressed', () => {
@@ -77,6 +78,8 @@ describe('[AppProvider] rendering test', () => {
 describe('[AppProvider] error rendering test', () => {
   let error: Error;
   const component = <FakeChild />;
+
+  afterEach(cleanup);
 
   it('should throw error when [AppProvider] is not wrapped', () => {
     try {
