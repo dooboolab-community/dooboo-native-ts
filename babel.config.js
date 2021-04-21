@@ -17,6 +17,8 @@ module.exports = {
   ],
   plugins: [
     '@emotion/babel-plugin',
+    '@babel/plugin-syntax-class-properties',
+    ['module:react-native-dotenv'],
     'babel-plugin-fbt-runtime',
     [
       'babel-plugin-fbt',
