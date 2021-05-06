@@ -133,27 +133,6 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             ]
           }
         >
-          <Image
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 24,
-                  "left": 16,
-                  "position": "absolute",
-                  "width": 24,
-                },
-                undefined,
-              ]
-            }
-          />
           <Text
             style={
               Array [
@@ -430,27 +409,6 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
             ]
           }
         >
-          <Image
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 24,
-                  "left": 16,
-                  "position": "absolute",
-                  "width": 24,
-                },
-                undefined,
-              ]
-            }
-          />
           <Text
             style={
               Array [
@@ -727,27 +685,6 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
             ]
           }
         >
-          <Image
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 24,
-                  "left": 16,
-                  "position": "absolute",
-                  "width": 24,
-                },
-                undefined,
-              ]
-            }
-          />
           <Text
             style={
               Array [
@@ -1024,27 +961,6 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             ]
           }
         >
-          <Image
-            source={
-              Object {
-                "canInstrument": true,
-                "createTransformer": [Function],
-                "getCacheKey": [Function],
-                "process": [Function],
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "height": 24,
-                  "left": 16,
-                  "position": "absolute",
-                  "width": 24,
-                },
-                undefined,
-              ]
-            }
-          />
           <Text
             style={
               Array [

@@ -12,9 +12,7 @@ module.exports = {
   moduleDirectories: ['node_modules'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'svg', 'png', 'json'],
   globals: {
-    'ts-jest': {
-      babelConfig: true,
-    },
+    'ts-jest': {babelConfig: true},
   },
   modulePathIgnorePatterns: [
     '<rootDir>/build/',
@@ -26,7 +24,7 @@ module.exports = {
   setupFilesAfterEnv: ['./test/setupTest.ts'],
   moduleNameMapper: {
     '\\.svg': '<rootDir>/__mocks__/svgMock.js',
-    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'babel-jest',
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'ts-jest',
   },
   setupFiles: [
     './node_modules/react-native-gesture-handler/jestSetup.js',

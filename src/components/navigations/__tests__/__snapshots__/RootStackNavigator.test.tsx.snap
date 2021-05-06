@@ -419,27 +419,6 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 ]
                               }
                             >
-                              <Image
-                                source={
-                                  Object {
-                                    "canInstrument": true,
-                                    "createTransformer": [Function],
-                                    "getCacheKey": [Function],
-                                    "process": [Function],
-                                  }
-                                }
-                                style={
-                                  Array [
-                                    Object {
-                                      "height": 24,
-                                      "left": 16,
-                                      "position": "absolute",
-                                      "width": 24,
-                                    },
-                                    undefined,
-                                  ]
-                                }
-                              />
                               <Text
                                 style={
                                   Array [
@@ -1012,27 +991,6 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 ]
                               }
                             >
-                              <Image
-                                source={
-                                  Object {
-                                    "canInstrument": true,
-                                    "createTransformer": [Function],
-                                    "getCacheKey": [Function],
-                                    "process": [Function],
-                                  }
-                                }
-                                style={
-                                  Array [
-                                    Object {
-                                      "height": 24,
-                                      "left": 16,
-                                      "position": "absolute",
-                                      "width": 24,
-                                    },
-                                    undefined,
-                                  ]
-                                }
-                              />
                               <Text
                                 style={
                                   Array [
