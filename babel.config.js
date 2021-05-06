@@ -10,13 +10,9 @@ module.exports = {
   presets: [
     'module:metro-react-native-babel-preset',
     '@babel/preset-typescript',
-    [
-      '@babel/preset-react',
-      {runtime: 'automatic', importSource: '@emotion/react'},
-    ],
   ],
   plugins: [
-    '@emotion/babel-plugin',
+    '@emotion',
     '@babel/plugin-syntax-class-properties',
     ['module:react-native-dotenv'],
     'babel-plugin-fbt-runtime',

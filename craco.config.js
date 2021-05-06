@@ -1,28 +1,8 @@
 const path = require('path');
+const babelConfig = require('./babel.config');
 
 module.exports = {
-  babel: {
-    presets: [
-      'module:metro-react-native-babel-preset',
-      '@babel/preset-typescript',
-      [
-        '@babel/preset-react',
-        {runtime: 'automatic', importSource: '@emotion/react'},
-      ],
-    ],
-    plugins: [
-      [
-        'babel-plugin-fbt',
-        {
-          fbtEnumManifest: require('./src/utils/i18n/fbt/.enum_manifest.json'),
-          extraOptions: {__self: true},
-        },
-      ],
-      '@babel/plugin-syntax-class-properties',
-      'babel-plugin-fbt-runtime',
-      '@emotion/babel-plugin',
-    ],
-  },
+  babel: babelConfig,
   webpack: {
     configure: {
       module: {
