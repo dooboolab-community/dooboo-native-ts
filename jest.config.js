@@ -1,14 +1,12 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const {defaults: tsjPreset} = require('ts-jest/presets');
-/* eslint-enable @typescript-eslint/no-var-requires */
+const {defaults: tsJestConfig} = require('ts-jest/presets');
 
 module.exports = {
-  ...tsjPreset,
+  ...tsJestConfig,
   preset: 'react-native',
   automock: false,
   transform: {
-    '^.+\\.(js)$': '<rootDir>/node_modules/babel-jest',
-    '\\.ts$': 'ts-jest',
+    ...tsJestConfig.transform,
+    '\\.js$': '<rootDir>/node_modules/react-native/jest/preprocessor.js',
   },
   modulePaths: ['<rootDir>'],
   moduleDirectories: ['node_modules'],

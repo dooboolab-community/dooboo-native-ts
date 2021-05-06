@@ -1,9 +1,9 @@
 import 'react-native';
 
-import React, {ReactElement} from 'react';
 import {RenderAPI, cleanup, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
+import {ReactElement} from 'react';
 import StackNavigator from '../RootStackNavigator';
 import {ThemeType} from 'dooboo-ui';
 

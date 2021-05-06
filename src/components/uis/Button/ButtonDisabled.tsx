@@ -1,7 +1,7 @@
 import type {StyleProp, TextStyle, ViewStyle} from 'react-native';
 
 import {Body3} from '../Typography';
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {StyledButton} from '../Styles';
 import styled from '@emotion/native';
 
