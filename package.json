@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "@emotion/native": "^11.0.0",
-    "@emotion/react": "^11.1.5",
+    "@emotion/react": "^11.4.0",
     "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/core": "^5.15.3",
@@ -70,7 +70,7 @@
     "@babel/core": "^7.14.0",
     "@babel/node": "^7.13.13",
     "@babel/plugin-syntax-class-properties": "^7.12.13",
-    "@babel/plugin-syntax-jsx": "^7.12.13",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
     "@babel/preset-typescript": "^7.13.0",
     "@babel/runtime": "^7.14.0",
     "@craco/craco": "^6.1.2",
