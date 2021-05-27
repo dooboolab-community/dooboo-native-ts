@@ -1,6 +1,7 @@
 package com.dooboo;
 
 import android.content.res.Configuration;
+import android.os.Bundle;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -29,6 +30,13 @@ public class MainActivity extends ReactActivity {
                 return new RNGestureHandlerEnabledRootView(MainActivity.this);
             }
         };
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        MainActivity.currentLocale = getResources().getConfiguration().locale.toString();
     }
 
     @Override
