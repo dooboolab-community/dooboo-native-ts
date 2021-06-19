@@ -33,7 +33,7 @@ export const light = {
   placeholder: '#999999',
 };
 
-export type Theme = typeof light;
+export type DoobooTheme = typeof light;
 
 export const dark = {
   background: '#232323',

@@ -1,15 +1,22 @@
+const path = require('path');
+const babelConfig = require('./babel.config');
+
 module.exports = {
-  babel: {
-    presets: ['@babel/preset-typescript'],
-    plugins: [
-      [
-        'babel-plugin-fbt',
-        {
-          fbtEnumManifest: require('./src/utils/i18n/fbt/.enum_manifest.json'),
-          extraOptions: {__self: true},
-        },
-      ],
-      'babel-plugin-fbt-runtime',
-    ],
+  babel: babelConfig,
+  webpack: {
+    configure: {
+      module: {
+        rules: [
+          {
+            test: /\.ttf$/,
+            loader: 'url-loader', // or directly file-loader
+            include: path.resolve(
+              __dirname,
+              'node_modules/react-native-vector-icons',
+            ),
+          },
+        ],
+      },
+    },
   },
 };

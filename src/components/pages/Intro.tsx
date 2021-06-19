@@ -6,7 +6,7 @@ import {RootStackNavigationProps} from '../navigations/RootStackNavigator';
 import {User} from '../../types';
 import {View} from 'react-native';
 import {fbt} from 'fbt';
-import styled from 'styled-components/native';
+import styled from '@emotion/native';
 import {useAppContext} from '../../providers/AppProvider';
 import {useTheme} from 'dooboo-ui';
 import {withScreen} from '../../utils/wrapper';

@@ -8,11 +8,10 @@ import type {
 } from 'react-native';
 
 import {Body3} from '../Typography';
-import type {FC} from 'react';
-import React from 'react';
+import {FC} from 'react';
 import {StyledButton} from '../Styles';
 import {TouchableOpacity} from 'react-native';
-import styled from 'styled-components/native';
+import styled from '@emotion/native';
 
 const StyledImage = styled.Image`
   width: 24px;

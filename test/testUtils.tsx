@@ -1,4 +1,4 @@
-import React, {FC, ReactElement} from 'react';
+import {FC, ReactElement} from 'react';
 
 import RootProvider from '../src/providers';
 import {SafeAreaProvider} from 'react-native-safe-area-context';

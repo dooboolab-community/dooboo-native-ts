@@ -1,5 +1,5 @@
 {
   "reject": [
-    "metro-react-native-babel-preset"
+    // "metro-react-native-babel-preset"
   ]
 }

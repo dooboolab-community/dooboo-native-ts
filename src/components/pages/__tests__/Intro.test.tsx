@@ -1,4 +1,3 @@
-import React, {ReactElement} from 'react';
 import {
   RenderAPI,
   act,
@@ -9,6 +8,7 @@ import {
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import Intro from '../Intro';
+import {ReactElement} from 'react';
 import {ThemeType} from 'dooboo-ui';
 
 let props: any;

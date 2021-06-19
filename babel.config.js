@@ -8,10 +8,23 @@ const fbtEnumPath = path.join(
 
 module.exports = {
   presets: [
-    'module:metro-react-native-babel-preset',
+    [
+      'module:metro-react-native-babel-preset',
+      {useTransformReactJSXExperimental: true},
+    ],
     '@babel/preset-typescript',
   ],
+  sourceMaps: 'inline',
   plugins: [
+    '@emotion',
+    [
+      '@babel/plugin-transform-react-jsx',
+      {
+        runtime: 'automatic',
+      },
+    ],
+    '@babel/plugin-syntax-class-properties',
+    ['module:react-native-dotenv'],
     'babel-plugin-fbt-runtime',
     [
       'babel-plugin-fbt',
@@ -20,5 +33,6 @@ module.exports = {
         extraOptions: {__self: true},
       },
     ],
+    'react-native-reanimated/plugin',
   ],
 };

@@ -13,13 +13,23 @@ exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
           "alignItems": "center",
           "alignSelf": "center",
           "backgroundColor": "#393D7A",
-          "borderColor": "#393D7A",
-          "borderRadius": 4,
-          "borderWidth": 2,
+          "borderBottomColor": "#393D7A",
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderBottomWidth": 2,
+          "borderLeftColor": "#393D7A",
+          "borderLeftWidth": 2,
+          "borderRightColor": "#393D7A",
+          "borderRightWidth": 2,
+          "borderTopColor": "#393D7A",
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+          "borderTopWidth": 2,
           "height": 52,
           "justifyContent": "center",
           "width": 320,
         },
+        undefined,
       ]
     }
   >
@@ -27,9 +37,15 @@ exports[`[Button] [ThemeType.Light] renders without crashing 1`] = `
       style={
         Array [
           Object {
-            "color": "#D3D8E8",
+            "color": "#000000",
             "fontSize": 14,
           },
+          Array [
+            Object {
+              "color": "#D3D8E8",
+            },
+            undefined,
+          ],
         ]
       }
     >
@@ -52,13 +68,23 @@ exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
           "alignItems": "center",
           "alignSelf": "center",
           "backgroundColor": "#8A96DC",
-          "borderColor": "#8A96DC",
-          "borderRadius": 4,
-          "borderWidth": 2,
+          "borderBottomColor": "#8A96DC",
+          "borderBottomLeftRadius": 4,
+          "borderBottomRightRadius": 4,
+          "borderBottomWidth": 2,
+          "borderLeftColor": "#8A96DC",
+          "borderLeftWidth": 2,
+          "borderRightColor": "#8A96DC",
+          "borderRightWidth": 2,
+          "borderTopColor": "#8A96DC",
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+          "borderTopWidth": 2,
           "height": 52,
           "justifyContent": "center",
           "width": 320,
         },
+        undefined,
       ]
     }
   >
@@ -66,9 +92,15 @@ exports[`[Button] should render [ThemeType.Dark] without crashing 1`] = `
       style={
         Array [
           Object {
-            "color": "#000000",
+            "color": "#D3D8E8",
             "fontSize": 14,
           },
+          Array [
+            Object {
+              "color": "#000000",
+            },
+            undefined,
+          ],
         ]
       }
     >
@@ -85,14 +117,33 @@ exports[`[Button] should render [isDisabled] status without crashing 1`] = `
       Object {
         "alignItems": "center",
         "alignSelf": "center",
-        "backgroundColor": "#00000030",
-        "borderColor": "rgb(200, 200, 200)",
-        "borderRadius": 4,
-        "borderWidth": 2,
+        "backgroundColor": "#393D7A",
+        "borderBottomColor": "#393D7A",
+        "borderBottomLeftRadius": 4,
+        "borderBottomRightRadius": 4,
+        "borderBottomWidth": 2,
+        "borderLeftColor": "#393D7A",
+        "borderLeftWidth": 2,
+        "borderRightColor": "#393D7A",
+        "borderRightWidth": 2,
+        "borderTopColor": "#393D7A",
+        "borderTopLeftRadius": 4,
+        "borderTopRightRadius": 4,
+        "borderTopWidth": 2,
         "height": 52,
         "justifyContent": "center",
         "width": 320,
       },
+      Array [
+        Object {
+          "backgroundColor": "#00000030",
+          "borderBottomColor": "rgb(200, 200, 200)",
+          "borderLeftColor": "rgb(200, 200, 200)",
+          "borderRightColor": "rgb(200, 200, 200)",
+          "borderTopColor": "rgb(200, 200, 200)",
+        },
+        undefined,
+      ],
     ]
   }
 >
@@ -100,9 +151,15 @@ exports[`[Button] should render [isDisabled] status without crashing 1`] = `
     style={
       Array [
         Object {
-          "color": "#00000030",
+          "color": "#000000",
           "fontSize": 14,
         },
+        Array [
+          Object {
+            "color": "#00000030",
+          },
+          undefined,
+        ],
       ]
     }
   />
@@ -117,13 +174,23 @@ exports[`[Button] should render [isLoading] status without crashing 1`] = `
         "alignItems": "center",
         "alignSelf": "center",
         "backgroundColor": "#393D7A",
-        "borderColor": "#393D7A",
-        "borderRadius": 4,
-        "borderWidth": 2,
+        "borderBottomColor": "#393D7A",
+        "borderBottomLeftRadius": 4,
+        "borderBottomRightRadius": 4,
+        "borderBottomWidth": 2,
+        "borderLeftColor": "#393D7A",
+        "borderLeftWidth": 2,
+        "borderRightColor": "#393D7A",
+        "borderRightWidth": 2,
+        "borderTopColor": "#393D7A",
+        "borderTopLeftRadius": 4,
+        "borderTopRightRadius": 4,
+        "borderTopWidth": 2,
         "height": 52,
         "justifyContent": "center",
         "width": 320,
       },
+      undefined,
     ]
   }
 >

@@ -6,7 +6,7 @@ import {
 import Button from '../uis/Button';
 import React from 'react';
 import {RouteProp} from '@react-navigation/core';
-import styled from 'styled-components/native';
+import styled from '@emotion/native';
 import {useTheme} from 'dooboo-ui';
 import {withScreen} from '../../utils/wrapper';
 
