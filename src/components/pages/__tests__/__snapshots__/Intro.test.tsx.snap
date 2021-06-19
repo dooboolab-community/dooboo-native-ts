@@ -1,5 +1,330 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`[Intro] Interaction should login when button has clicked 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#232323",
+          "flexBasis": 0,
+          "flexDirection": "column",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "flex-start",
+          "overflow": "hidden",
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+            "height": "100%",
+            "justifyContent": "flex-start",
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#D3D8E8",
+              "fontSize": 18,
+              "lineHeight": 27,
+            },
+            Object {
+              "marginTop": 100,
+            },
+          ]
+        }
+      >
+        dooboolab
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#D3D8E8",
+              "fontSize": 18,
+              "lineHeight": 27,
+            },
+            undefined,
+          ]
+        }
+      >
+        30
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#D3D8E8",
+              "fontSize": 18,
+              "lineHeight": 27,
+            },
+            undefined,
+          ]
+        }
+      >
+        developer
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "bottom": 40,
+            "flexDirection": "column",
+            "position": "absolute",
+            "width": "75%",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        activeOpacity={0.6}
+        delayPressIn={50}
+        disabled={false}
+        onPress={[Function]}
+        testID="btn-login"
+      >
+        <View
+          onLayout={[Function]}
+          outlined={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#8A96DC",
+                "borderBottomColor": "#8A96DC",
+                "borderLeftColor": "#8A96DC",
+                "borderRightColor": "#8A96DC",
+                "borderTopColor": "#8A96DC",
+              },
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "stretch",
+                  "borderBottomLeftRadius": 20,
+                  "borderBottomRightRadius": 20,
+                  "borderTopLeftRadius": 20,
+                  "borderTopRightRadius": 20,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 10,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "paddingTop": 10,
+                },
+                Array [
+                  undefined,
+                  false,
+                  undefined,
+                ],
+              ],
+            ]
+          }
+          testID="button-container"
+          type="primary"
+        >
+          <Image
+            source={
+              Object {
+                "createTransformer": [Function],
+              }
+            }
+            style={
+              Object {
+                "height": 24,
+                "left": 12,
+                "position": "absolute",
+                "width": 24,
+              }
+            }
+          />
+          <Text
+            outlined={false}
+            style={
+              Array [
+                Object {
+                  "color": "#000000",
+                },
+                Array [
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+            type="primary"
+          >
+            Sign In
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginTop": 8,
+          }
+        }
+      />
+      <View
+        activeOpacity={0.6}
+        delayPressIn={50}
+        onPress={[Function]}
+        testID="btn-navigate"
+      >
+        <View
+          onLayout={[Function]}
+          outlined={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#8A96DC",
+                "borderBottomColor": "#8A96DC",
+                "borderLeftColor": "#8A96DC",
+                "borderRightColor": "#8A96DC",
+                "borderTopColor": "#8A96DC",
+              },
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "stretch",
+                  "borderBottomLeftRadius": 20,
+                  "borderBottomRightRadius": 20,
+                  "borderTopLeftRadius": 20,
+                  "borderTopRightRadius": 20,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 10,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "paddingTop": 10,
+                },
+                Array [
+                  undefined,
+                  false,
+                  undefined,
+                ],
+              ],
+            ]
+          }
+          testID="button-container"
+          type="primary"
+        >
+          <Text
+            outlined={false}
+            style={
+              Array [
+                Object {
+                  "color": "#000000",
+                },
+                Array [
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+            type="primary"
+          >
+            Navigate
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginTop": 8,
+          }
+        }
+      />
+      <View
+        activeOpacity={0.6}
+        delayPressIn={50}
+        onPress={[Function]}
+        testID="btn-theme"
+      >
+        <View
+          onLayout={[Function]}
+          outlined={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#8A96DC",
+                "borderBottomColor": "#8A96DC",
+                "borderLeftColor": "#8A96DC",
+                "borderRightColor": "#8A96DC",
+                "borderTopColor": "#8A96DC",
+              },
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "stretch",
+                  "borderBottomLeftRadius": 20,
+                  "borderBottomRightRadius": 20,
+                  "borderTopLeftRadius": 20,
+                  "borderTopRightRadius": 20,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "paddingBottom": 10,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "paddingTop": 10,
+                },
+                Array [
+                  undefined,
+                  false,
+                  undefined,
+                ],
+              ],
+            ]
+          }
+          testID="button-container"
+          type="primary"
+        >
+          <Text
+            outlined={false}
+            style={
+              Array [
+                Object {
+                  "color": "#000000",
+                },
+                Array [
+                  undefined,
+                  undefined,
+                ],
+              ]
+            }
+            type="primary"
+          >
+            Change Theme
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
 <View
   style={
