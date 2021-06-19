@@ -2,9 +2,8 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
+    "jsx": "react",
     "emitDecoratorMetadata": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
     "target": "es5",
     "lib": [
       "dom",
@@ -27,7 +26,6 @@
       "./@types",
       "./node_modules/@types"
     ],
-    "allowJs": true,
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -35,9 +33,9 @@
     "noImplicitThis": true,
     "strictPropertyInitialization": true,
     "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "isolatedModules": false,
+    "allowJs": true
   },
   "include": [
     "src/**/*.ts",

@@ -3,7 +3,7 @@ import {FC, ReactElement} from 'react';
 import RootProvider from '../src/providers';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {ThemeType} from '../src/utils/theme';
+import {ThemeType} from 'dooboo-ui';
 
 export const createTestElement = (
   child: ReactElement,

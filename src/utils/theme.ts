@@ -1,21 +1,13 @@
-export enum ThemeType {
-  LIGHT = 'LIGHT',
-  DARK = 'DARK',
-}
+import {DoobooTheme} from 'dooboo-ui';
 
-export type Colors = {
-  success: string;
-  darkGray: string;
-  mediumGray: string;
-  lightGray: string;
-};
-
-export const colors: Colors = {
+export const colors = {
   success: '#00BA90',
   darkGray: '#00000070',
   mediumGray: '#00000030',
   lightGray: '#CFCED0',
 };
+
+export type Colors = typeof colors;
 
 export const light = {
   background: '#FFFFFF',
@@ -33,7 +25,7 @@ export const light = {
   placeholder: '#999999',
 };
 
-export type DoobooTheme = typeof light;
+export type CustomAppTheme = typeof light & DoobooTheme;
 
 export const dark = {
   background: '#232323',

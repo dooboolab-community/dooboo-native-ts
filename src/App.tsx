@@ -1,12 +1,12 @@
 import React from 'react';
-import RootNavigator from './components/navigations/RootStackNavigator';
 import RootProvider from './providers';
+import RootStack from './components/navigations/RootStack';
 import {initFbt} from './utils/fbt';
 
 initFbt();
 
 function App(): React.ReactElement {
-  return <RootNavigator />;
+  return <RootStack />;
 }
 
 function ProviderWrapper(): React.ReactElement {

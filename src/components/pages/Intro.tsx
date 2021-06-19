@@ -1,14 +1,14 @@
-import Button from '../uis/Button';
+import {Button, useTheme} from 'dooboo-ui';
+import {Image, View} from 'react-native';
+
 import {IC_MASK} from '../../utils/Icons';
 import IntroView from '../uis/IntroTemp';
 import React from 'react';
-import {RootStackNavigationProps} from '../navigations/RootStackNavigator';
+import {RootStackNavigationProps} from '../navigations/RootStack';
 import {User} from '../../types';
-import {View} from 'react-native';
 import {fbt} from 'fbt';
 import styled from '@emotion/native';
 import {useAppContext} from '../../providers/AppProvider';
-import {useTheme} from 'dooboo-ui';
 import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`
@@ -27,7 +27,7 @@ const ButtonWrapper = styled.View`
   position: absolute;
   flex-direction: column;
   bottom: 40px;
-  width: 85%;
+  width: 75%;
   align-self: center;
 `;
 
@@ -65,15 +65,25 @@ function Intro(props: Props): React.ReactElement {
       <ButtonWrapper>
         <Button
           testID="btn-login"
-          imgLeftSrc={IC_MASK}
-          isLoading={isLoggingIn}
-          onPress={(): void => onLogin()}
+          leftElement={
+            <Image
+              source={IC_MASK}
+              style={{
+                position: 'absolute',
+                left: 12,
+                width: 24,
+                height: 24,
+              }}
+            />
+          }
+          loading={isLoggingIn}
+          onPress={() => onLogin()}
           text={fbt('Login', 'login')}
         />
         <View style={{marginTop: 8}} />
         <Button
           testID="btn-navigate"
-          onPress={(): void =>
+          onPress={() =>
             props.navigation.navigate('Temp', {
               param: 'GO BACK',
             })
@@ -83,7 +93,7 @@ function Intro(props: Props): React.ReactElement {
         <View style={{marginTop: 8}} />
         <Button
           testID="btn-theme"
-          onPress={(): void => changeThemeType()}
+          onPress={() => changeThemeType()}
           text={fbt('Change Theme', 'change theme')}
         />
       </ButtonWrapper>

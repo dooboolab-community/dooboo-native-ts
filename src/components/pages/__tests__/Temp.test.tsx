@@ -11,7 +11,6 @@ import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import {ReactElement} from 'react';
 import Temp from '../Temp';
-import {ThemeType} from 'dooboo-ui';
 
 let props: any;
 let component: ReactElement;
@@ -48,7 +47,7 @@ describe('[Temp] render', () => {
       },
     });
 
-    component = createTestElement(<Temp {...props} />, ThemeType.DARK);
+    component = createTestElement(<Temp {...props} />, 'dark');
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();

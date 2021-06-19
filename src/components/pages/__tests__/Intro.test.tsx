@@ -9,7 +9,6 @@ import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import Intro from '../Intro';
 import {ReactElement} from 'react';
-import {ThemeType} from 'dooboo-ui';
 
 let props: any;
 let component: ReactElement;
@@ -34,7 +33,7 @@ describe('[Intro] screen rendering test', () => {
   });
 
   it('should render [Dark] theme', () => {
-    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    component = createTestElement(<Intro {...props} />, 'dark');
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();
@@ -48,7 +47,7 @@ describe('[Intro] screen rendering test', () => {
       isLoading: true,
     });
 
-    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    component = createTestElement(<Intro {...props} />, 'dark');
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();
@@ -62,7 +61,7 @@ describe('[Intro] screen rendering test', () => {
       isDisabled: true,
     });
 
-    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    component = createTestElement(<Intro {...props} />, 'dark');
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();

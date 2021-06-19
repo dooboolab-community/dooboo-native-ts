@@ -1,8 +1,13 @@
 import '@emotion/react';
-import type {DoobooTheme} from './utils/theme';
+import {DoobooTheme} from 'dooboo-ui';
+import {CustomAppTheme} from './utils/theme';
+
+type AllTheme = CustomAppTheme & DoobooTheme;
+
+interface CustomTheme extends AllTheme {}
 
 declare module '@emotion/react' {
-  export interface Theme extends DoobooTheme {
+  export interface Theme extends CustomTheme {
     isMobile?: boolean;
     isTablet?: boolean;
     isDesktop?: boolean;
