@@ -16,7 +16,7 @@ export type RootStackParamList = {
 };
 
 export type RootStackNavigationProps<
-  T extends keyof RootStackParamList = 'default'
+  T extends keyof RootStackParamList = 'default',
 > = StackNavigationProp<RootStackParamList, T>;
 
 const Stack = createStackNavigator<RootStackParamList>();
