@@ -6,7 +6,7 @@
   "private": true,
   "postinstall": "npx jetify",
   "scripts": {
-    "postinstall": "yarn fbt:all",
+    "postinstall": "yarn fbt:all && patch-package",
     "dev": "react-native start",
     "tsc": "tsc",
     "watch": "tsc -w",
@@ -95,6 +95,8 @@
     "jest-fetch-mock": "^3.0.3",
     "jetifier": "^2.0.0",
     "metro-react-native-babel-preset": "^0.66.0",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.3.1",
     "react-dom": "^17.0.2",
     "react-native-fbt": "^0.0.3",
