@@ -85,6 +85,106 @@ npm run start
 This runs the `start` script specified in our `package.json`, and will spawn off a server which reloads the page as we save our files.
 Typically the server runs at `http://localhost:8080`, but should be automatically opened for you.
 
+## `Ios` setting guide
+### step 1
+
+If you get error about Flipper when your first build, Replace all `Podfile` code in `ios` to below.
+
+```
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+platform :ios, '11.0'
+target '<Your projectName>' do
+  config = use_native_modules!
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false
+  )
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target '<Your projectName>Tests' do
+    inherit! :complete
+    # Pods for testing
+  end
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  use_flipper!({'Flipper' => '0.87.0'})
+  post_install do |installer|
+    react_native_post_install(installer)
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+        config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
+        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+      end
+    end
+  end
+end
+```
+
+After replace a code, remove Podfile.lock & Pods. then run `npx pod-install` to applying.
+
+** Note that you should replace a `<Your projectName>` field to your real project name.
+
+### step 2
+
+To use [dooboo-ui](https://github.com/dooboolab/dooboo-ui) you have to follow the steps below
+
+
+1. Create `fonts` folder in `ios`, then add `doobooui.ttf` in `node_modules/dooboo-ui/Icons/` to it.
+2. Add folder reference with xcode.
+    <details>
+      <summary>Detail</summary>
+        <div markdown="1">
+        a Add files to ...
+        <img width="186" alt="Screen Shot 2021-06-30 at 13 50 58" src="https://user-images.githubusercontent.com/58724686/123933178-17750480-d9cd-11eb-9d72-28fe3751146a.png">
+        <div>Select fonts folder you're added, press Add</div>
+        <img width="796" alt="Screen Shot 2021-06-30 at 13 51 38" src="https://user-images.githubusercontent.com/58724686/123933381-4b502a00-d9cd-11eb-9240-64158c42e6f3.png">
+        </div>
+    </details>
+
+3. Add a following code to `info.plist` in `ios/project.xcassets`.
+   you can see `doobooui.ttf` on the bottom.
+    <details>
+      <summary>Code</summary>
+
+    ```
+    <key>UIAppFonts</key>
+    <array>
+      <string>AntDesign.ttf</string>
+      <string>Entypo.ttf</string>
+      <string>EvilIcons.ttf</string>
+      <string>Feather.ttf</string>
+      <string>FontAwesome.ttf</string>
+      <string>FontAwesome5_Brands.ttf</string>
+      <string>FontAwesome5_Regular.ttf</string>
+      <string>FontAwesome5_Solid.ttf</string>
+      <string>Fontisto.ttf</string>
+      <string>Foundation.ttf</string>
+      <string>Ionicons.ttf</string>
+      <string>MaterialCommunityIcons.ttf</string>
+      <string>MaterialIcons.ttf</string>
+      <string>Octicons.ttf</string>
+      <string>SimpleLineIcons.ttf</string>
+      <string>Zocial.ttf</string>
+      <string>doobooui.ttf</string>
+    </array>
+    ```
+    </details>
+
+
+4. Add `doobooui.ttf` to `build pharses - copy bundle Resource`
+    <details>
+      <summary>Image</summary>
+      <img width="869" alt="Screen Shot 2021-06-30 at 17 15 44" src="https://user-images.githubusercontent.com/58724686/123934299-1e504700-d9ce-11eb-8792-6502d2198bcc.png">
+    </details>
+
+5. Run `npx pod-install` and Happy code!
+
 ## Testing the project
 
 Testing is also just a command away:
