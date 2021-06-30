@@ -89,42 +89,43 @@ Typically the server runs at `http://localhost:8080`, but should be automaticall
 ### step 1
 
 If you get error about Flipper when your first build, Replace all `Podfile` code in `ios` to below.
+  <details>
+    <summary>Code</summary>
 
-```
-require_relative '../node_modules/react-native/scripts/react_native_pods'
-require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-platform :ios, '11.0'
-target '<Your projectName>' do
-  config = use_native_modules!
-  use_react_native!(
-    :path => config[:reactNativePath],
-    # to enable hermes on iOS, change `false` to `true` and then install pods
-    :hermes_enabled => false
-  )
-
-  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
-
-  target '<Your projectName>Tests' do
-    inherit! :complete
-    # Pods for testing
-  end
-  # Enables Flipper.
-  #
-  # Note that if you have use_frameworks! enabled, Flipper will not work and
-  # you should disable the next line.
-  use_flipper!({'Flipper' => '0.87.0'})
-  post_install do |installer|
-    react_native_post_install(installer)
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
-        config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
-        config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    ```
+      require_relative '../node_modules/react-native/scripts/react_native_pods'
+      require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+      platform :ios, '11.0'
+      target '<Your projectName>' do
+         config = use_native_modules!
+         use_react_native!(
+          :path => config[:reactNativePath],
+          # to enable hermes on iOS, change `false` to `true` and then install pods
+          :hermes_enabled => false
+        )
+        pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+        target '<Your projectName>Tests' do
+          inherit! :complete
+           # Pods for testing
+        end
+        # Enables Flipper.
+        #
+        # Note that if you have use_frameworks! enabled, Flipper will not work and
+        # you should disable the next line.
+        use_flipper!({'Flipper' => '0.87.0'})
+        post_install do |installer|
+          react_native_post_install(installer)
+          installer.pods_project.targets.each do |target|
+            target.build_configurations.each do |config|
+              config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+              config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
+              config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+            end
+          end
+        end
       end
-    end
-  end
-end
-```
+    ```
+  </details>
 
 After replace a code, remove Podfile.lock & Pods. then run `npx pod-install` to applying.
 
@@ -139,12 +140,12 @@ To use [dooboo-ui](https://github.com/dooboolab/dooboo-ui) you have to follow th
 2. Add folder reference with xcode.
     <details>
       <summary>Detail</summary>
-        <div markdown="1">
-        a Add files to ...
-        <img width="186" alt="Screen Shot 2021-06-30 at 13 50 58" src="https://user-images.githubusercontent.com/58724686/123933178-17750480-d9cd-11eb-9d72-28fe3751146a.png">
-        <div>Select fonts folder you're added, press Add</div>
-        <img width="796" alt="Screen Shot 2021-06-30 at 13 51 38" src="https://user-images.githubusercontent.com/58724686/123933381-4b502a00-d9cd-11eb-9240-64158c42e6f3.png">
-        </div>
+      <div markdown="1">
+      <div>Add files to ...</div>
+      <img width="186" alt="Screen Shot 2021-06-30 at 13 50 58" src="https://user-images.githubusercontent.com/58724686/123933178-17750480-d9cd-11eb-9d72-28fe3751146a.png">
+      <div>Select fonts folder you're added, then press Add</div>
+      <img width="796" alt="Screen Shot 2021-06-30 at 13 51 38" src="https://user-images.githubusercontent.com/58724686/123933381-4b502a00-d9cd-11eb-9240-64158c42e6f3.png">
+      </div>
     </details>
 
 3. Add a following code to `info.plist` in `ios/project.xcassets`.
