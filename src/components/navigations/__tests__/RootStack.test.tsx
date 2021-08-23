@@ -4,8 +4,7 @@ import {RenderAPI, cleanup, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import {ReactElement} from 'react';
-import StackNavigator from '../RootStackNavigator';
-import {ThemeType} from 'dooboo-ui';
+import StackNavigator from '../RootStack';
 
 let props: any;
 let component: ReactElement;
@@ -35,10 +34,7 @@ describe('[Stack] navigator', () => {
   it('should renders [Dark] mode', () => {
     jest.useFakeTimers();
 
-    component = createTestElement(
-      <StackNavigator {...props} />,
-      ThemeType.DARK,
-    );
+    component = createTestElement(<StackNavigator {...props} />, 'dark');
 
     testingLib = render(component);
 

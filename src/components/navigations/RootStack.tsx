@@ -16,12 +16,12 @@ export type RootStackParamList = {
 };
 
 export type RootStackNavigationProps<
-  T extends keyof RootStackParamList = 'default'
+  T extends keyof RootStackParamList = 'default',
 > = StackNavigationProp<RootStackParamList, T>;
 
 const Stack = createStackNavigator<RootStackParamList>();
 
-function RootNavigator(): React.ReactElement {
+function RootStack(): React.ReactElement {
   const {theme} = useTheme();
 
   return (
@@ -53,4 +53,4 @@ function RootNavigator(): React.ReactElement {
   );
 }
 
-export default RootNavigator;
+export default RootStack;

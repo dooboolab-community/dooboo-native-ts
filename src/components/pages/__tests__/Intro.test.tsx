@@ -9,7 +9,6 @@ import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import Intro from '../Intro';
 import {ReactElement} from 'react';
-import {ThemeType} from 'dooboo-ui';
 
 let props: any;
 let component: ReactElement;
@@ -34,7 +33,7 @@ describe('[Intro] screen rendering test', () => {
   });
 
   it('should render [Dark] theme', () => {
-    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    component = createTestElement(<Intro {...props} />, 'dark');
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();
@@ -48,7 +47,7 @@ describe('[Intro] screen rendering test', () => {
       isLoading: true,
     });
 
-    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    component = createTestElement(<Intro {...props} />, 'dark');
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();
@@ -62,7 +61,7 @@ describe('[Intro] screen rendering test', () => {
       isDisabled: true,
     });
 
-    component = createTestElement(<Intro {...props} />, ThemeType.DARK);
+    component = createTestElement(<Intro {...props} />, 'dark');
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();
@@ -75,12 +74,20 @@ describe('[Intro] screen rendering test', () => {
 describe('[Intro] Interaction', () => {
   afterEach(cleanup);
 
+  it('should login when button has clicked', () => {
+    testingLib = render(component);
+
+    fireEvent.press(testingLib.getByTestId('btn-login'));
+
+    jest.runAllTimers();
+
+    expect(testingLib.toJSON()).toMatchSnapshot();
+  });
+
   it('should navigate when button has clicked', () => {
     testingLib = render(component);
 
-    act(() => {
-      fireEvent.press(testingLib.getByTestId('btn-navigate'));
-    });
+    fireEvent.press(testingLib.getByTestId('btn-navigate'));
 
     expect(props.navigation.navigate).toHaveBeenCalledWith('Temp', {
       param: 'GO BACK',
@@ -90,8 +97,6 @@ describe('[Intro] Interaction', () => {
   it('should change theme when button has clicked', () => {
     testingLib = render(component);
 
-    act(() => {
-      fireEvent.press(testingLib.getByTestId('btn-theme'));
-    });
+    fireEvent.press(testingLib.getByTestId('btn-theme'));
   });
 });

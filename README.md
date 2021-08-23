@@ -14,6 +14,7 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 - [typescript](https://github.com/Microsoft/TypeScript)
 - [fbt](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373)
 - [emotion](https://emotion.sh)
+- [dooboo-ui](https://github.com/dooboolab/dooboo-ui)
 - [ts-jest](https://github.com/kulshekhar/ts-jest)
 - [react-hook](https://reactjs.org/docs/hooks-intro.html)
 - [@testing-library/react-native](https://github.com/callstack/react-native-testing-library)
@@ -262,7 +263,7 @@ const RootProvider = ({
   return (
     <AppProvider>
       <ThemeProvider
-        initialThemeType={initialThemeType ? ThemeType.LIGHT : ThemeType.DARK}
+        initialThemeType={initialThemeType}
       >
         {children}
       </ThemeProvider>
@@ -295,7 +296,7 @@ const component = (props): React.ReactElement => {
 };
 ```
 
-> using consistent theme(ThemeType.LIGHT as default) explicitly is encouraged in testing for avoiding unexpected snapshot test errors
+> using consistent theme('light') explicitly is encouraged in testing for avoiding unexpected snapshot test errors
 
 ### Localization
 

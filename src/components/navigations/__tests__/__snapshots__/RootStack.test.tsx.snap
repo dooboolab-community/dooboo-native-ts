@@ -381,59 +381,86 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 "bottom": 40,
                                 "flexDirection": "column",
                                 "position": "absolute",
-                                "width": "85%",
+                                "width": "75%",
                               },
                               undefined,
                             ]
                           }
                         >
                           <View
-                            activeOpacity={0.7}
+                            activeOpacity={0.6}
+                            delayPressIn={50}
+                            disabled={false}
                             onPress={[Function]}
                             testID="btn-login"
                           >
                             <View
+                              onLayout={[Function]}
+                              outlined={false}
                               style={
                                 Array [
                                   Object {
-                                    "alignItems": "center",
-                                    "alignSelf": "center",
                                     "backgroundColor": "#8A96DC",
                                     "borderBottomColor": "#8A96DC",
-                                    "borderBottomLeftRadius": 4,
-                                    "borderBottomRightRadius": 4,
-                                    "borderBottomWidth": 2,
                                     "borderLeftColor": "#8A96DC",
-                                    "borderLeftWidth": 2,
                                     "borderRightColor": "#8A96DC",
-                                    "borderRightWidth": 2,
                                     "borderTopColor": "#8A96DC",
-                                    "borderTopLeftRadius": 4,
-                                    "borderTopRightRadius": 4,
-                                    "borderTopWidth": 2,
-                                    "height": 52,
-                                    "justifyContent": "center",
-                                    "width": 320,
                                   },
-                                  undefined,
+                                  Array [
+                                    Object {
+                                      "alignItems": "center",
+                                      "alignSelf": "stretch",
+                                      "borderBottomLeftRadius": 20,
+                                      "borderBottomRightRadius": 20,
+                                      "borderTopLeftRadius": 20,
+                                      "borderTopRightRadius": 20,
+                                      "flexDirection": "row",
+                                      "justifyContent": "center",
+                                      "paddingBottom": 10,
+                                      "paddingLeft": 20,
+                                      "paddingRight": 20,
+                                      "paddingTop": 10,
+                                    },
+                                    Array [
+                                      undefined,
+                                      false,
+                                      undefined,
+                                    ],
+                                  ],
                                 ]
                               }
+                              testID="button-container"
+                              type="primary"
                             >
+                              <Image
+                                source={
+                                  Object {
+                                    "createTransformer": [Function],
+                                  }
+                                }
+                                style={
+                                  Object {
+                                    "height": 24,
+                                    "left": 12,
+                                    "position": "absolute",
+                                    "width": 24,
+                                  }
+                                }
+                              />
                               <Text
+                                outlined={false}
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#D3D8E8",
-                                      "fontSize": 14,
+                                      "color": "#000000",
                                     },
                                     Array [
-                                      Object {
-                                        "color": "#000000",
-                                      },
+                                      undefined,
                                       undefined,
                                     ],
                                   ]
                                 }
+                                type="primary"
                               >
                                 Sign In
                               </Text>
@@ -447,52 +474,63 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             }
                           />
                           <View
-                            activeOpacity={0.7}
+                            activeOpacity={0.6}
+                            delayPressIn={50}
                             onPress={[Function]}
                             testID="btn-navigate"
                           >
                             <View
+                              onLayout={[Function]}
+                              outlined={false}
                               style={
                                 Array [
                                   Object {
-                                    "alignItems": "center",
-                                    "alignSelf": "center",
                                     "backgroundColor": "#8A96DC",
                                     "borderBottomColor": "#8A96DC",
-                                    "borderBottomLeftRadius": 4,
-                                    "borderBottomRightRadius": 4,
-                                    "borderBottomWidth": 2,
                                     "borderLeftColor": "#8A96DC",
-                                    "borderLeftWidth": 2,
                                     "borderRightColor": "#8A96DC",
-                                    "borderRightWidth": 2,
                                     "borderTopColor": "#8A96DC",
-                                    "borderTopLeftRadius": 4,
-                                    "borderTopRightRadius": 4,
-                                    "borderTopWidth": 2,
-                                    "height": 52,
-                                    "justifyContent": "center",
-                                    "width": 320,
                                   },
-                                  undefined,
+                                  Array [
+                                    Object {
+                                      "alignItems": "center",
+                                      "alignSelf": "stretch",
+                                      "borderBottomLeftRadius": 20,
+                                      "borderBottomRightRadius": 20,
+                                      "borderTopLeftRadius": 20,
+                                      "borderTopRightRadius": 20,
+                                      "flexDirection": "row",
+                                      "justifyContent": "center",
+                                      "paddingBottom": 10,
+                                      "paddingLeft": 20,
+                                      "paddingRight": 20,
+                                      "paddingTop": 10,
+                                    },
+                                    Array [
+                                      undefined,
+                                      false,
+                                      undefined,
+                                    ],
+                                  ],
                                 ]
                               }
+                              testID="button-container"
+                              type="primary"
                             >
                               <Text
+                                outlined={false}
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#D3D8E8",
-                                      "fontSize": 14,
+                                      "color": "#000000",
                                     },
                                     Array [
-                                      Object {
-                                        "color": "#000000",
-                                      },
+                                      undefined,
                                       undefined,
                                     ],
                                   ]
                                 }
+                                type="primary"
                               >
                                 Navigate
                               </Text>
@@ -506,52 +544,63 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             }
                           />
                           <View
-                            activeOpacity={0.7}
+                            activeOpacity={0.6}
+                            delayPressIn={50}
                             onPress={[Function]}
                             testID="btn-theme"
                           >
                             <View
+                              onLayout={[Function]}
+                              outlined={false}
                               style={
                                 Array [
                                   Object {
-                                    "alignItems": "center",
-                                    "alignSelf": "center",
                                     "backgroundColor": "#8A96DC",
                                     "borderBottomColor": "#8A96DC",
-                                    "borderBottomLeftRadius": 4,
-                                    "borderBottomRightRadius": 4,
-                                    "borderBottomWidth": 2,
                                     "borderLeftColor": "#8A96DC",
-                                    "borderLeftWidth": 2,
                                     "borderRightColor": "#8A96DC",
-                                    "borderRightWidth": 2,
                                     "borderTopColor": "#8A96DC",
-                                    "borderTopLeftRadius": 4,
-                                    "borderTopRightRadius": 4,
-                                    "borderTopWidth": 2,
-                                    "height": 52,
-                                    "justifyContent": "center",
-                                    "width": 320,
                                   },
-                                  undefined,
+                                  Array [
+                                    Object {
+                                      "alignItems": "center",
+                                      "alignSelf": "stretch",
+                                      "borderBottomLeftRadius": 20,
+                                      "borderBottomRightRadius": 20,
+                                      "borderTopLeftRadius": 20,
+                                      "borderTopRightRadius": 20,
+                                      "flexDirection": "row",
+                                      "justifyContent": "center",
+                                      "paddingBottom": 10,
+                                      "paddingLeft": 20,
+                                      "paddingRight": 20,
+                                      "paddingTop": 10,
+                                    },
+                                    Array [
+                                      undefined,
+                                      false,
+                                      undefined,
+                                    ],
+                                  ],
                                 ]
                               }
+                              testID="button-container"
+                              type="primary"
                             >
                               <Text
+                                outlined={false}
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#D3D8E8",
-                                      "fontSize": 14,
+                                      "color": "#000000",
                                     },
                                     Array [
-                                      Object {
-                                        "color": "#000000",
-                                      },
+                                      undefined,
                                       undefined,
                                     ],
                                   ]
                                 }
+                                type="primary"
                               >
                                 Change Theme
                               </Text>
@@ -953,59 +1002,86 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 "bottom": 40,
                                 "flexDirection": "column",
                                 "position": "absolute",
-                                "width": "85%",
+                                "width": "75%",
                               },
                               undefined,
                             ]
                           }
                         >
                           <View
-                            activeOpacity={0.7}
+                            activeOpacity={0.6}
+                            delayPressIn={50}
+                            disabled={false}
                             onPress={[Function]}
                             testID="btn-login"
                           >
                             <View
+                              onLayout={[Function]}
+                              outlined={false}
                               style={
                                 Array [
                                   Object {
-                                    "alignItems": "center",
-                                    "alignSelf": "center",
                                     "backgroundColor": "#393D7A",
                                     "borderBottomColor": "#393D7A",
-                                    "borderBottomLeftRadius": 4,
-                                    "borderBottomRightRadius": 4,
-                                    "borderBottomWidth": 2,
                                     "borderLeftColor": "#393D7A",
-                                    "borderLeftWidth": 2,
                                     "borderRightColor": "#393D7A",
-                                    "borderRightWidth": 2,
                                     "borderTopColor": "#393D7A",
-                                    "borderTopLeftRadius": 4,
-                                    "borderTopRightRadius": 4,
-                                    "borderTopWidth": 2,
-                                    "height": 52,
-                                    "justifyContent": "center",
-                                    "width": 320,
                                   },
-                                  undefined,
+                                  Array [
+                                    Object {
+                                      "alignItems": "center",
+                                      "alignSelf": "stretch",
+                                      "borderBottomLeftRadius": 20,
+                                      "borderBottomRightRadius": 20,
+                                      "borderTopLeftRadius": 20,
+                                      "borderTopRightRadius": 20,
+                                      "flexDirection": "row",
+                                      "justifyContent": "center",
+                                      "paddingBottom": 10,
+                                      "paddingLeft": 20,
+                                      "paddingRight": 20,
+                                      "paddingTop": 10,
+                                    },
+                                    Array [
+                                      undefined,
+                                      false,
+                                      undefined,
+                                    ],
+                                  ],
                                 ]
                               }
+                              testID="button-container"
+                              type="primary"
                             >
+                              <Image
+                                source={
+                                  Object {
+                                    "createTransformer": [Function],
+                                  }
+                                }
+                                style={
+                                  Object {
+                                    "height": 24,
+                                    "left": 12,
+                                    "position": "absolute",
+                                    "width": 24,
+                                  }
+                                }
+                              />
                               <Text
+                                outlined={false}
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#000000",
-                                      "fontSize": 14,
+                                      "color": "#D3D8E8",
                                     },
                                     Array [
-                                      Object {
-                                        "color": "#D3D8E8",
-                                      },
+                                      undefined,
                                       undefined,
                                     ],
                                   ]
                                 }
+                                type="primary"
                               >
                                 Sign In
                               </Text>
@@ -1019,52 +1095,63 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             }
                           />
                           <View
-                            activeOpacity={0.7}
+                            activeOpacity={0.6}
+                            delayPressIn={50}
                             onPress={[Function]}
                             testID="btn-navigate"
                           >
                             <View
+                              onLayout={[Function]}
+                              outlined={false}
                               style={
                                 Array [
                                   Object {
-                                    "alignItems": "center",
-                                    "alignSelf": "center",
                                     "backgroundColor": "#393D7A",
                                     "borderBottomColor": "#393D7A",
-                                    "borderBottomLeftRadius": 4,
-                                    "borderBottomRightRadius": 4,
-                                    "borderBottomWidth": 2,
                                     "borderLeftColor": "#393D7A",
-                                    "borderLeftWidth": 2,
                                     "borderRightColor": "#393D7A",
-                                    "borderRightWidth": 2,
                                     "borderTopColor": "#393D7A",
-                                    "borderTopLeftRadius": 4,
-                                    "borderTopRightRadius": 4,
-                                    "borderTopWidth": 2,
-                                    "height": 52,
-                                    "justifyContent": "center",
-                                    "width": 320,
                                   },
-                                  undefined,
+                                  Array [
+                                    Object {
+                                      "alignItems": "center",
+                                      "alignSelf": "stretch",
+                                      "borderBottomLeftRadius": 20,
+                                      "borderBottomRightRadius": 20,
+                                      "borderTopLeftRadius": 20,
+                                      "borderTopRightRadius": 20,
+                                      "flexDirection": "row",
+                                      "justifyContent": "center",
+                                      "paddingBottom": 10,
+                                      "paddingLeft": 20,
+                                      "paddingRight": 20,
+                                      "paddingTop": 10,
+                                    },
+                                    Array [
+                                      undefined,
+                                      false,
+                                      undefined,
+                                    ],
+                                  ],
                                 ]
                               }
+                              testID="button-container"
+                              type="primary"
                             >
                               <Text
+                                outlined={false}
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#000000",
-                                      "fontSize": 14,
+                                      "color": "#D3D8E8",
                                     },
                                     Array [
-                                      Object {
-                                        "color": "#D3D8E8",
-                                      },
+                                      undefined,
                                       undefined,
                                     ],
                                   ]
                                 }
+                                type="primary"
                               >
                                 Navigate
                               </Text>
@@ -1078,52 +1165,63 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             }
                           />
                           <View
-                            activeOpacity={0.7}
+                            activeOpacity={0.6}
+                            delayPressIn={50}
                             onPress={[Function]}
                             testID="btn-theme"
                           >
                             <View
+                              onLayout={[Function]}
+                              outlined={false}
                               style={
                                 Array [
                                   Object {
-                                    "alignItems": "center",
-                                    "alignSelf": "center",
                                     "backgroundColor": "#393D7A",
                                     "borderBottomColor": "#393D7A",
-                                    "borderBottomLeftRadius": 4,
-                                    "borderBottomRightRadius": 4,
-                                    "borderBottomWidth": 2,
                                     "borderLeftColor": "#393D7A",
-                                    "borderLeftWidth": 2,
                                     "borderRightColor": "#393D7A",
-                                    "borderRightWidth": 2,
                                     "borderTopColor": "#393D7A",
-                                    "borderTopLeftRadius": 4,
-                                    "borderTopRightRadius": 4,
-                                    "borderTopWidth": 2,
-                                    "height": 52,
-                                    "justifyContent": "center",
-                                    "width": 320,
                                   },
-                                  undefined,
+                                  Array [
+                                    Object {
+                                      "alignItems": "center",
+                                      "alignSelf": "stretch",
+                                      "borderBottomLeftRadius": 20,
+                                      "borderBottomRightRadius": 20,
+                                      "borderTopLeftRadius": 20,
+                                      "borderTopRightRadius": 20,
+                                      "flexDirection": "row",
+                                      "justifyContent": "center",
+                                      "paddingBottom": 10,
+                                      "paddingLeft": 20,
+                                      "paddingRight": 20,
+                                      "paddingTop": 10,
+                                    },
+                                    Array [
+                                      undefined,
+                                      false,
+                                      undefined,
+                                    ],
+                                  ],
                                 ]
                               }
+                              testID="button-container"
+                              type="primary"
                             >
                               <Text
+                                outlined={false}
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#000000",
-                                      "fontSize": 14,
+                                      "color": "#D3D8E8",
                                     },
                                     Array [
-                                      Object {
-                                        "color": "#D3D8E8",
-                                      },
+                                      undefined,
                                       undefined,
                                     ],
                                   ]
                                 }
+                                type="primary"
                               >
                                 Change Theme
                               </Text>

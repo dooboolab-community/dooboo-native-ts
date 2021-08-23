@@ -1,8 +1,8 @@
 import {ThemeProvider, ThemeType} from 'dooboo-ui';
-import {dark, light} from '../utils/theme';
 
 import {AppProvider} from './AppProvider';
 import React from 'react';
+import {theme} from '../utils/theme';
 
 interface Props {
   initialThemeType?: ThemeType;
@@ -11,16 +11,11 @@ interface Props {
 
 // Add providers here
 const RootProvider = ({
-  initialThemeType = ThemeType.LIGHT,
+  initialThemeType,
   children,
 }: Props): React.ReactElement => {
   return (
-    <ThemeProvider
-      initialThemeType={initialThemeType}
-      customTheme={{
-        light,
-        dark,
-      }}>
+    <ThemeProvider initialThemeType={initialThemeType} customTheme={theme}>
       <AppProvider>{children}</AppProvider>
     </ThemeProvider>
   );

@@ -1,6 +1,3 @@
-import {NativeModules as RNNativeModules} from 'react-native';
-import React from 'react';
-
 jest.mock('@react-navigation/stack', () => ({
   ...jest.requireActual('@react-navigation/stack'),
   useHeaderHeight: () => 12,
@@ -39,20 +36,3 @@ jest.mock(
     return MockTouchable;
   },
 );
-
-/** react-native-gesture-handler */
-
-RNNativeModules.UIManager = RNNativeModules.UIManager || {};
-RNNativeModules.UIManager.RCTView = RNNativeModules.UIManager.RCTView || {};
-
-RNNativeModules.RNGestureHandlerModule = RNNativeModules.RNGestureHandlerModule || {
-  State: {BEGAN: 'BEGAN', FAILED: 'FAILED', ACTIVE: 'ACTIVE', END: 'END'},
-  attachGestureHandler: jest.fn(),
-  createGestureHandler: jest.fn(),
-  dropGestureHandler: jest.fn(),
-  updateGestureHandler: jest.fn(),
-};
-
-RNNativeModules.PlatformConstants = RNNativeModules.PlatformConstants || {
-  forceTouchAvailable: false,
-};
