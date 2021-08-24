@@ -30,6 +30,9 @@ build/
 local.properties
 *.iml
 *.hprof
+.classpath
+.project
+.settings
 
 # node.js
 
