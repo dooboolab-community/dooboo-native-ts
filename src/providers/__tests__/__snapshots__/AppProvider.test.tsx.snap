@@ -11,7 +11,6 @@ exports[`[AppProvider] rendering test should match component and snapshot 1`] = 
   </Text>
   <View
     accessibilityRole="button"
-    accessibilityState={Object {}}
     onPress={[Function]}
     testID="BUTTON"
   >
@@ -40,7 +39,6 @@ exports[`[AppProvider] rendering test should match component and snapshot 1`] = 
   </View>
   <View
     accessibilityRole="button"
-    accessibilityState={Object {}}
     onPress={[Function]}
     testID="BUTTON_NOT_VALID"
   >
