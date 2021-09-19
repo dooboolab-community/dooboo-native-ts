@@ -36,7 +36,8 @@ function RootStack(): React.ReactElement {
           text: theme.text,
         },
         dark: true,
-      }}>
+      }}
+    >
       <Stack.Navigator
         initialRouteName="Intro"
         screenOptions={{
@@ -45,7 +46,8 @@ function RootStack(): React.ReactElement {
           },
           headerTitleStyle: {color: theme.text},
           headerTintColor: theme.primary,
-        }}>
+        }}
+      >
         <Stack.Screen name="Intro" component={Intro} />
         <Stack.Screen name="Temp" component={Temp} />
       </Stack.Navigator>

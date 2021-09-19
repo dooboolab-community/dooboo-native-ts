@@ -26,7 +26,8 @@ function IntroView(): React.ReactElement {
       <StyledText
         style={{
           marginTop: 100,
-        }}>
+        }}
+      >
         {user ? user.displayName : ''}
       </StyledText>
       <StyledText>{user ? user.age : ''}</StyledText>
