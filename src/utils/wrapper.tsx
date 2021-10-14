@@ -19,7 +19,8 @@ export const withScreen = (WrappedComponent: React.ComponentType<any>) => {
                 alignItems: 'center',
                 justifyContent: 'center',
               }
-        }>
+        }
+      >
         <WrappedComponent {...props} />
       </View>
     );

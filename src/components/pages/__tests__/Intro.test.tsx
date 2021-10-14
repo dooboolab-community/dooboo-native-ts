@@ -1,6 +1,5 @@
 import {
   RenderAPI,
-  act,
   cleanup,
   fireEvent,
   render,

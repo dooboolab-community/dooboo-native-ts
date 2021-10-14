@@ -88,7 +88,7 @@ exports[`[Temp] render renders without crashing 1`] = `
                 },
               ],
               Object {
-                "fontFamily": "IcoMoon",
+                "fontFamily": "doobooui",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
@@ -209,7 +209,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
                 },
               ],
               Object {
-                "fontFamily": "IcoMoon",
+                "fontFamily": "doobooui",
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
