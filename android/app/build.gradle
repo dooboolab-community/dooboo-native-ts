@@ -130,6 +130,11 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "com.dooboo"
         minSdkVersion rootProject.ext.minSdkVersion
