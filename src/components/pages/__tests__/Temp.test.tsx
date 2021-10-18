@@ -1,12 +1,6 @@
 import 'react-native';
 
-import {
-  RenderAPI,
-  act,
-  cleanup,
-  fireEvent,
-  render,
-} from '@testing-library/react-native';
+import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import {ReactElement} from 'react';
@@ -26,8 +20,6 @@ describe('[Temp] render', () => {
   });
 
   component = createTestElement(<Temp {...props} />);
-
-  afterEach(cleanup);
 
   it('renders without crashing', () => {
     testingLib = render(component);
@@ -63,8 +55,6 @@ describe('[Temp] Interaction', () => {
   beforeEach(() => {
     renderResult = render(component);
   });
-
-  afterEach(cleanup);
 
   it('should simulate [onClick] when button has been clicked', () => {
     const btnInstance = renderResult.getByTestId('btn-back');

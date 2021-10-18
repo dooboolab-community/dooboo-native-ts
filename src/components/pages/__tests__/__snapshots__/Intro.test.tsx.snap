@@ -16,7 +16,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
         Object {
           "alignItems": "center",
           "alignSelf": "stretch",
-          "backgroundColor": "#232323",
+          "backgroundColor": "#FFFFFF",
           "flexBasis": 0,
           "flexDirection": "column",
           "flexGrow": 1,
@@ -46,7 +46,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
+              "color": "#000000",
               "fontSize": 18,
               "lineHeight": 27,
             },
@@ -62,7 +62,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
+              "color": "#000000",
               "fontSize": 18,
               "lineHeight": 27,
             },
@@ -76,7 +76,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
+              "color": "#000000",
               "fontSize": 18,
               "lineHeight": 27,
             },
@@ -114,11 +114,11 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "backgroundColor": "#393D7A",
+                "borderBottomColor": "#393D7A",
+                "borderLeftColor": "#393D7A",
+                "borderRightColor": "#393D7A",
+                "borderTopColor": "#393D7A",
               },
               Array [
                 Object {
@@ -166,7 +166,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "#D3D8E8",
                 },
                 Array [
                   undefined,
@@ -190,6 +190,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -199,11 +200,11 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "backgroundColor": "#393D7A",
+                "borderBottomColor": "#393D7A",
+                "borderLeftColor": "#393D7A",
+                "borderRightColor": "#393D7A",
+                "borderTopColor": "#393D7A",
               },
               Array [
                 Object {
@@ -236,7 +237,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "#D3D8E8",
                 },
                 Array [
                   undefined,
@@ -260,6 +261,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -269,11 +271,11 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "backgroundColor": "#393D7A",
+                "borderBottomColor": "#393D7A",
+                "borderLeftColor": "#393D7A",
+                "borderRightColor": "#393D7A",
+                "borderTopColor": "#393D7A",
               },
               Array [
                 Object {
@@ -306,7 +308,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "#D3D8E8",
                 },
                 Array [
                   undefined,
@@ -341,7 +343,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
         Object {
           "alignItems": "center",
           "alignSelf": "stretch",
-          "backgroundColor": "#232323",
+          "backgroundColor": "#FFFFFF",
           "flexBasis": 0,
           "flexDirection": "column",
           "flexGrow": 1,
@@ -371,7 +373,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
+              "color": "#000000",
               "fontSize": 18,
               "lineHeight": 27,
             },
@@ -387,7 +389,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
+              "color": "#000000",
               "fontSize": 18,
               "lineHeight": 27,
             },
@@ -401,7 +403,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
+              "color": "#000000",
               "fontSize": 18,
               "lineHeight": 27,
             },
@@ -439,11 +441,11 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "backgroundColor": "#393D7A",
+                "borderBottomColor": "#393D7A",
+                "borderLeftColor": "#393D7A",
+                "borderRightColor": "#393D7A",
+                "borderTopColor": "#393D7A",
               },
               Array [
                 Object {
@@ -491,7 +493,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "#D3D8E8",
                 },
                 Array [
                   undefined,
@@ -515,6 +517,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -524,11 +527,11 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "backgroundColor": "#393D7A",
+                "borderBottomColor": "#393D7A",
+                "borderLeftColor": "#393D7A",
+                "borderRightColor": "#393D7A",
+                "borderTopColor": "#393D7A",
               },
               Array [
                 Object {
@@ -561,7 +564,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "#D3D8E8",
                 },
                 Array [
                   undefined,
@@ -585,6 +588,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -594,11 +598,11 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "backgroundColor": "#393D7A",
+                "borderBottomColor": "#393D7A",
+                "borderLeftColor": "#393D7A",
+                "borderRightColor": "#393D7A",
+                "borderTopColor": "#393D7A",
               },
               Array [
                 Object {
@@ -631,7 +635,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#000000",
+                  "color": "#D3D8E8",
                 },
                 Array [
                   undefined,
@@ -840,6 +844,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -910,6 +915,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -1165,6 +1171,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -1235,6 +1242,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -1490,6 +1498,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -1560,6 +1569,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >

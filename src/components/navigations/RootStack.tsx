@@ -29,7 +29,7 @@ function RootStack(): React.ReactElement {
       theme={{
         colors: {
           background: theme.background,
-          border: theme.border,
+          border: theme.text,
           card: theme.paper,
           primary: theme.primary,
           notification: theme.primary,

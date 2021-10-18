@@ -12,7 +12,7 @@ jest.mock(
   () => {
     const {View} = require('react-native');
 
-    const MockTouchable = (props): ReactElement => {
+    const MockTouchable = (props) => {
       return <View {...props} />;
     };
 
@@ -27,7 +27,7 @@ jest.mock(
   () => {
     const {View} = require('react-native');
 
-    const MockTouchable = (props): ReactElement => {
+    const MockTouchable = (props) => {
       return <View {...props} />;
     };
 

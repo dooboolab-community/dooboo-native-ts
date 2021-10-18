@@ -2,13 +2,7 @@ import * as React from 'react';
 
 import {AppProvider, useAppContext} from '../AppProvider';
 import {Button, Text, View} from 'react-native';
-import {
-  RenderAPI,
-  act,
-  cleanup,
-  fireEvent,
-  render,
-} from '@testing-library/react-native';
+import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
 
 let testingLib: RenderAPI;
 
@@ -43,8 +37,6 @@ describe('[AppProvider] rendering test', () => {
     </AppProvider>
   );
 
-  afterEach(cleanup);
-
   it('should match component and snapshot', () => {
     testingLib = render(component);
 
@@ -78,8 +70,6 @@ describe('[AppProvider] rendering test', () => {
 describe('[AppProvider] error rendering test', () => {
   let error: Error;
   const component = <FakeChild />;
-
-  afterEach(cleanup);
 
   it('should throw error when [AppProvider] is not wrapped', () => {
     try {

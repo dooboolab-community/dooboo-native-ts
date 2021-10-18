@@ -1,6 +1,6 @@
 import 'react-native';
 
-import {RenderAPI, cleanup, render} from '@testing-library/react-native';
+import {RenderAPI, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import {ReactElement} from 'react';
@@ -16,8 +16,6 @@ describe('[Stack] navigator', () => {
 
     component = createTestElement(<StackNavigator {...props} />);
   });
-
-  afterEach(cleanup);
 
   it('should renders without crashing', () => {
     jest.useFakeTimers();

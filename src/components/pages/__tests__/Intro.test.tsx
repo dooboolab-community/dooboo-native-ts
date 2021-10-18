@@ -1,9 +1,4 @@
-import {
-  RenderAPI,
-  cleanup,
-  fireEvent,
-  render,
-} from '@testing-library/react-native';
+import {RenderAPI, act, fireEvent, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import Intro from '../Intro';
@@ -14,15 +9,9 @@ let component: ReactElement;
 let testingLib: RenderAPI;
 
 describe('[Intro] screen rendering test', () => {
-  beforeEach(() => {
+  it('should render outer component and snapshot matches', () => {
     props = createTestProps();
     component = createTestElement(<Intro {...props} />);
-    testingLib = render(component);
-  });
-
-  afterEach(cleanup);
-
-  it('should render outer component and snapshot matches', () => {
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();
@@ -32,7 +21,8 @@ describe('[Intro] screen rendering test', () => {
   });
 
   it('should render [Dark] theme', () => {
-    component = createTestElement(<Intro {...props} />, 'dark');
+    props = createTestProps();
+    component = createTestElement(<Intro {...props} />);
     testingLib = render(component);
 
     const baseElement = testingLib.toJSON();
@@ -71,12 +61,16 @@ describe('[Intro] screen rendering test', () => {
 });
 
 describe('[Intro] Interaction', () => {
-  afterEach(cleanup);
+  beforeEach(() => {
+    props = createTestProps();
+    component = createTestElement(<Intro {...props} />);
+    testingLib = render(component);
+  });
 
   it('should login when button has clicked', () => {
-    testingLib = render(component);
-
-    fireEvent.press(testingLib.getByTestId('btn-login'));
+    act(() => {
+      fireEvent.press(testingLib.getByTestId('btn-login'));
+    });
 
     jest.runAllTimers();
 
@@ -84,9 +78,9 @@ describe('[Intro] Interaction', () => {
   });
 
   it('should navigate when button has clicked', () => {
-    testingLib = render(component);
-
-    fireEvent.press(testingLib.getByTestId('btn-navigate'));
+    act(() => {
+      fireEvent.press(testingLib.getByTestId('btn-navigate'));
+    });
 
     expect(props.navigation.navigate).toHaveBeenCalledWith('Temp', {
       param: 'GO BACK',
@@ -94,8 +88,8 @@ describe('[Intro] Interaction', () => {
   });
 
   it('should change theme when button has clicked', () => {
-    testingLib = render(component);
-
-    fireEvent.press(testingLib.getByTestId('btn-theme'));
+    act(() => {
+      fireEvent.press(testingLib.getByTestId('btn-theme'));
+    });
   });
 });
