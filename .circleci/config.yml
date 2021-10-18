@@ -5,7 +5,7 @@ jobs:
   node:
     working_directory: ~/dooboo
     docker:
-      - image: circleci/node:15
+      - image: circleci/node:14.17
         environment:
           TZ: 'Asia/Seoul'
     steps:
@@ -113,7 +113,6 @@ jobs:
           working_directory: .
           command: |
             yarn fbt:all && yarn fbt:android
-
 
       - run:
           name: Check MD5 on files
