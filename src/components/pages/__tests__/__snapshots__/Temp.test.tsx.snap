@@ -30,7 +30,6 @@ exports[`[Temp] render renders without crashing 1`] = `
     <View
       activeOpacity={0.6}
       delayPressIn={50}
-      disabled={false}
       onPress={[Function]}
       testID="btn-back"
     >
@@ -152,7 +151,6 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
     <View
       activeOpacity={0.6}
       delayPressIn={50}
-      disabled={false}
       onPress={[Function]}
       testID="btn-back"
     >

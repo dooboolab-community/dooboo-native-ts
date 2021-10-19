@@ -12,4 +12,33 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "dooboo";
   }
+
+  @Override
+  protected ReactActivityDelegate createReactActivityDelegate() {
+      return new ReactActivityDelegate(this, getMainComponentName()) {
+          @Override
+          protected ReactRootView createRootView() {
+              return new RNGestureHandlerEnabledRootView(MainActivity.this);
+          }
+      };
+  }
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+
+      MainActivity.currentLocale = getResources().getConfiguration().locale.toString();
+  }
+
+  @Override
+  public void onConfigurationChanged(Configuration newConfig) {
+      super.onConfigurationChanged(newConfig);
+
+      String locale = newConfig.locale.toString();
+      if (!locale.equals(MainActivity.currentLocale)) {
+          MainActivity.currentLocale = locale;
+          final ReactInstanceManager instanceManager = getReactInstanceManager();
+          instanceManager.recreateReactContextInBackground();
+      }
+  }
 }
