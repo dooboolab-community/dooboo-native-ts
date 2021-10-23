@@ -33,19 +33,10 @@ public class MainActivity extends ReactActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
-
-      MainActivity.currentLocale = getResources().getConfiguration().locale.toString();
   }
 
   @Override
   public void onConfigurationChanged(Configuration newConfig) {
       super.onConfigurationChanged(newConfig);
-
-      String locale = newConfig.locale.toString();
-      if (!locale.equals(MainActivity.currentLocale)) {
-          MainActivity.currentLocale = locale;
-          final ReactInstanceManager instanceManager = getReactInstanceManager();
-          instanceManager.recreateReactContextInBackground();
-      }
   }
 }
