@@ -17,6 +17,8 @@ jobs:
       - restore_cache:
           key: node-v1-{{ checksum "package.json" }}-{{ arch }}
 
+      - run: yarn global add expo-cli
+
       - run: yarn install
 
       - save_cache:
