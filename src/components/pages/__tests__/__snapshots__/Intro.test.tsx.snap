@@ -110,10 +110,12 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       >
         <View
           disabled={true}
+          loading={true}
           outlined={false}
           style={
             Array [
               Object {
+                "backgroundColor": "#393D7A",
                 "borderBottomColor": "#00000030",
                 "borderLeftColor": "#00000030",
                 "borderRightColor": "#00000030",
@@ -142,7 +144,6 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
                   },
                   false,
                   Object {
-                    "backgroundColor": "#00000030",
                     "borderBottomColor": "#00000030",
                     "borderLeftColor": "#00000030",
                     "borderRightColor": "#00000030",
@@ -156,7 +157,6 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
           type="primary"
         >
           <ActivityIndicator
-            color="#000000"
             size="small"
           />
         </View>
@@ -171,6 +171,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -241,6 +242,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -496,6 +498,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -566,6 +569,7 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -821,6 +825,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -891,6 +896,7 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -1146,6 +1152,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -1216,6 +1223,7 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
@@ -1471,6 +1479,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-navigate"
       >
@@ -1541,6 +1550,7 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       <View
         activeOpacity={0.6}
         delayPressIn={50}
+        disabled={false}
         onPress={[Function]}
         testID="btn-theme"
       >
