@@ -56,7 +56,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
           ]
         }
       >
-        dooboolab
+        
       </Text>
       <Text
         style={
@@ -70,7 +70,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
           ]
         }
       >
-        30
+        
       </Text>
       <Text
         style={
@@ -84,7 +84,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
           ]
         }
       >
-        developer
+        
       </Text>
     </View>
     <View
@@ -104,21 +104,20 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       <View
         activeOpacity={0.6}
         delayPressIn={50}
-        disabled={false}
+        disabled={true}
         onPress={[Function]}
         testID="btn-login"
       >
         <View
-          onLayout={[Function]}
+          disabled={true}
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
+                "borderBottomColor": "#00000030",
+                "borderLeftColor": "#00000030",
+                "borderRightColor": "#00000030",
+                "borderTopColor": "#00000030",
               },
               Array [
                 Object {
@@ -137,47 +136,29 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
                 },
                 Array [
                   undefined,
+                  Object {
+                    "height": undefined,
+                    "width": undefined,
+                  },
                   false,
-                  undefined,
+                  Object {
+                    "backgroundColor": "#00000030",
+                    "borderBottomColor": "#00000030",
+                    "borderLeftColor": "#00000030",
+                    "borderRightColor": "#00000030",
+                    "borderTopColor": "#00000030",
+                  },
                 ],
               ],
             ]
           }
-          testID="button-container"
+          testID="loading-view"
           type="primary"
         >
-          <Image
-            source={
-              Object {
-                "createTransformer": [Function],
-              }
-            }
-            style={
-              Object {
-                "height": 24,
-                "left": 12,
-                "position": "absolute",
-                "width": 24,
-              }
-            }
+          <ActivityIndicator
+            color="#000000"
+            size="small"
           />
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Sign In
-          </Text>
         </View>
       </View>
       <View

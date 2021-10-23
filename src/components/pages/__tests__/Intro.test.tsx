@@ -72,8 +72,6 @@ describe('[Intro] Interaction', () => {
       fireEvent.press(testingLib.getByTestId('btn-login'));
     });
 
-    jest.runAllTimers();
-
     expect(testingLib.toJSON()).toMatchSnapshot();
   });
 
