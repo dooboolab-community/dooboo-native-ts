@@ -1,6 +1,6 @@
 import 'react-native';
 
-import {RenderAPI, cleanup, render} from '@testing-library/react-native';
+import {RenderAPI, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../../../test/testUtils';
 
 import {ReactElement} from 'react';
@@ -17,8 +17,6 @@ describe('[Stack] navigator', () => {
     component = createTestElement(<StackNavigator {...props} />);
   });
 
-  afterEach(cleanup);
-
   it('should renders without crashing', () => {
     jest.useFakeTimers();
 
@@ -26,7 +24,6 @@ describe('[Stack] navigator', () => {
 
     const baseElement = testingLib.toJSON();
 
-    jest.runAllTimers();
     expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
@@ -40,7 +37,7 @@ describe('[Stack] navigator', () => {
 
     const baseElement = testingLib.toJSON();
 
-    jest.runAllTimers();
+    // jest.runAllTimers();
     expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });

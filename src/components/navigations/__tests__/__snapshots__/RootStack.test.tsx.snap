@@ -65,9 +65,9 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
               style={
                 Object {
                   "backgroundColor": "#232323",
-                  "borderBottomColor": "#333333",
+                  "borderBottomColor": "#D3D8E8",
                   "flex": 1,
-                  "shadowColor": "#333333",
+                  "shadowColor": "#D3D8E8",
                   "shadowOffset": Object {
                     "height": 0.5,
                     "width": 0,
@@ -503,6 +503,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             <View
                               activeOpacity={0.6}
                               delayPressIn={50}
+                              disabled={false}
                               onPress={[Function]}
                               testID="btn-navigate"
                             >
@@ -573,6 +574,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             <View
                               activeOpacity={0.6}
                               delayPressIn={50}
+                              disabled={false}
                               onPress={[Function]}
                               testID="btn-theme"
                             >
@@ -714,9 +716,9 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
               style={
                 Object {
                   "backgroundColor": "#FFFFFF",
-                  "borderBottomColor": "#EDEDED",
+                  "borderBottomColor": "#000000",
                   "flex": 1,
-                  "shadowColor": "#EDEDED",
+                  "shadowColor": "#000000",
                   "shadowOffset": Object {
                     "height": 0.5,
                     "width": 0,
@@ -1152,6 +1154,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             <View
                               activeOpacity={0.6}
                               delayPressIn={50}
+                              disabled={false}
                               onPress={[Function]}
                               testID="btn-navigate"
                             >
@@ -1222,6 +1225,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             <View
                               activeOpacity={0.6}
                               delayPressIn={50}
+                              disabled={false}
                               onPress={[Function]}
                               testID="btn-theme"
                             >

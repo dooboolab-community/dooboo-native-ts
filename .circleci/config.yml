@@ -5,7 +5,7 @@ jobs:
   node:
     working_directory: ~/dooboo
     docker:
-      - image: circleci/node:15
+      - image: circleci/node:14.17
         environment:
           TZ: 'Asia/Seoul'
     steps:
@@ -17,7 +17,9 @@ jobs:
       - restore_cache:
           key: node-v1-{{ checksum "package.json" }}-{{ arch }}
 
-      - run: yarn install
+      - run: yarn global add expo-cli
+
+      - run: yarn install --frozen-lockfile --network-concurrency 1
 
       - save_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
@@ -113,7 +115,6 @@ jobs:
           working_directory: .
           command: |
             yarn fbt:all && yarn fbt:android
-
 
       - run:
           name: Check MD5 on files

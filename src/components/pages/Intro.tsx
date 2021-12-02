@@ -36,7 +36,7 @@ interface Props {
 }
 
 function Intro(props: Props): React.ReactElement {
-  let timer: number;
+  let timer: any;
 
   const {setUser} = useAppContext();
 
