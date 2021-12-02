@@ -1,0 +1,79 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install modules
+      run: yarn --immutable
+
+    - name: Generate FBT
+      run: yarn fbt:all
+
+    - name: Check linting
+      run: yarn lint
+
+    - name: Build typescript
+      run: yarn tsc
+
+    - name: Remove dist
+      run: rm -rf ./dist
+
+    - name: Test
+      run: yarn test --coverage
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        # token: ${{ secrets.CODECOV_TOKEN }}
+        directory: ./coverage/
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+        path_to_write_report: ./coverage/codecov_report.gz
+
+  build_android:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java-version: [ 11.0.3, 11 ]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK ${{ matrix.java-version }}
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'zulu'
+        java-version: ${{ matrix.java-version }}
+
+    - name: Generate android FBT
+      run: yarn fbt:android
+
+    - name: Check MD5 on files
+      run: |
+        md5sum android/build.gradle
+        md5sum android/app/build.gradle
+        cat android/app/build.gradle | sed -n -e '/dependencies/,$p' > android.app.build.gradle.deps
+
+    - name: Download Dependencies
+      working-directory: ./android
+      run: ./gradlew androidDependencies
+
+    - name: Build Android JS Bundle
+      working-directory: ./android
+      run: yarn build:android
+
+    - name: Build Android APK
+      working-directory: ./android
+      run: ./gradlew assembleRelease -x bundleReleaseJsAndAssets
+
+
