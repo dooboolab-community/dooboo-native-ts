@@ -163,6 +163,7 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
         type="primary"
       >
         <ActivityIndicator
+          color="#EDEDED"
           size="small"
         />
       </View>

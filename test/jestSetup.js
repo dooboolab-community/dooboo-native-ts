@@ -10,3 +10,4 @@ jest.mock('../src/utils/wrapper', () => ({
   },
 }));
 
+global.__reanimatedWorkletInit = jest.fn();
