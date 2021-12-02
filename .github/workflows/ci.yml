@@ -55,6 +55,12 @@ jobs:
         distribution: 'zulu'
         java-version: ${{ matrix.java-version }}
 
+    - name: Install modules
+      run: yarn --immutable
+
+    - name: Generate FBT
+      run: yarn fbt:all
+
     - name: Generate android FBT
       run: yarn fbt:android
 
