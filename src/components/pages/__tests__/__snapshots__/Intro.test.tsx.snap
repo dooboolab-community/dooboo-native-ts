@@ -3,11 +3,20 @@
 exports[`[Intro] Interaction should login when button has clicked 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "justifyContent": "center",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "#FFFFFF",
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -15,338 +24,319 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "alignSelf": "stretch",
-          "backgroundColor": "#FFFFFF",
-          "flexBasis": 0,
           "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "height": "100%",
           "justifyContent": "flex-start",
-          "overflow": "hidden",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          Object {
+            "marginTop": 100,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "bottom": 40,
+          "flexDirection": "column",
+          "position": "absolute",
+          "width": "75%",
         },
         undefined,
       ]
     }
   >
     <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "height": "100%",
-            "justifyContent": "flex-start",
-            "width": "100%",
-          },
-          undefined,
-        ]
+      accessibilityState={
+        Object {
+          "disabled": true,
+        }
       }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-login"
     >
-      <Text
+      <View
+        disabled={true}
+        loading={true}
+        outlined={false}
         style={
           Array [
             Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#00000030",
+              "borderLeftColor": "#00000030",
+              "borderRightColor": "#00000030",
+              "borderTopColor": "#00000030",
             },
-            Object {
-              "marginTop": 100,
-            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                Object {
+                  "height": undefined,
+                  "width": undefined,
+                },
+                false,
+                Object {
+                  "borderBottomColor": "#00000030",
+                  "borderLeftColor": "#00000030",
+                  "borderRightColor": "#00000030",
+                  "borderTopColor": "#00000030",
+                },
+              ],
+            ],
           ]
         }
+        testID="loading-view"
+        type="primary"
       >
-        
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
+        <ActivityIndicator
+          size="small"
+        />
+      </View>
     </View>
     <View
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "bottom": 40,
-            "flexDirection": "column",
-            "position": "absolute",
-            "width": "75%",
-          },
-          undefined,
-        ]
+        Object {
+          "marginTop": 8,
+        }
       }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-navigate"
     >
       <View
-        accessibilityState={
-          Object {
-            "disabled": true,
-          }
-        }
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#393D7A",
+              "borderLeftColor": "#393D7A",
+              "borderRightColor": "#393D7A",
+              "borderTopColor": "#393D7A",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-        testID="btn-login"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          disabled={true}
-          loading={true}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#00000030",
-                "borderLeftColor": "#00000030",
-                "borderRightColor": "#00000030",
-                "borderTopColor": "#00000030",
+                "color": "#D3D8E8",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  Object {
-                    "height": undefined,
-                    "width": undefined,
-                  },
-                  false,
-                  Object {
-                    "borderBottomColor": "#00000030",
-                    "borderLeftColor": "#00000030",
-                    "borderRightColor": "#00000030",
-                    "borderTopColor": "#00000030",
-                  },
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="loading-view"
           type="primary"
         >
-          <ActivityIndicator
-            size="small"
-          />
-        </View>
+          Navigate
+        </Text>
       </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-theme"
+    >
       <View
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "marginTop": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#393D7A",
+              "borderLeftColor": "#393D7A",
+              "borderRightColor": "#393D7A",
+              "borderTopColor": "#393D7A",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-navigate"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
+                "color": "#D3D8E8",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Navigate
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginTop": 8,
-          }
-        }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        focusable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-theme"
-      >
-        <View
-          onLayout={[Function]}
-          outlined={false}
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
-              },
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
-              ],
-            ]
-          }
-          testID="button-container"
-          type="primary"
-        >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Change Theme
-          </Text>
-        </View>
+          Change Theme
+        </Text>
       </View>
     </View>
   </View>
@@ -356,11 +346,20 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
 exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "justifyContent": "center",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "#FFFFFF",
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -368,363 +367,344 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "alignSelf": "stretch",
-          "backgroundColor": "#FFFFFF",
-          "flexBasis": 0,
           "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "height": "100%",
           "justifyContent": "flex-start",
-          "overflow": "hidden",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          Object {
+            "marginTop": 100,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "bottom": 40,
+          "flexDirection": "column",
+          "position": "absolute",
+          "width": "75%",
         },
         undefined,
       ]
     }
   >
     <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "height": "100%",
-            "justifyContent": "flex-start",
-            "width": "100%",
-          },
-          undefined,
-        ]
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
       }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-login"
     >
-      <Text
+      <View
+        onLayout={[Function]}
+        outlined={false}
         style={
           Array [
             Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#393D7A",
+              "borderLeftColor": "#393D7A",
+              "borderRightColor": "#393D7A",
+              "borderTopColor": "#393D7A",
             },
-            Object {
-              "marginTop": 100,
-            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
           ]
         }
+        testID="button-container"
+        type="primary"
       >
-        
-      </Text>
-      <Text
-        style={
-          Array [
+        <Image
+          source={
             Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
-      <Text
-        style={
-          Array [
+              "createTransformer": [Function],
+            }
+          }
+          style={
             Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
+              "height": 24,
+              "left": 12,
+              "position": "absolute",
+              "width": 24,
+            }
+          }
+        />
+        <Text
+          outlined={false}
+          style={
+            Array [
+              Object {
+                "color": "#D3D8E8",
+              },
+              Array [
+                undefined,
+                undefined,
+              ],
+            ]
+          }
+          type="primary"
+        >
+          Sign In
+        </Text>
+      </View>
     </View>
     <View
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "bottom": 40,
-            "flexDirection": "column",
-            "position": "absolute",
-            "width": "75%",
-          },
-          undefined,
-        ]
+        Object {
+          "marginTop": 8,
+        }
       }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-navigate"
     >
       <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#393D7A",
+              "borderLeftColor": "#393D7A",
+              "borderRightColor": "#393D7A",
+              "borderTopColor": "#393D7A",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-        testID="btn-login"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
+                "color": "#D3D8E8",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Image
-            source={
-              Object {
-                "createTransformer": [Function],
-              }
-            }
-            style={
-              Object {
-                "height": 24,
-                "left": 12,
-                "position": "absolute",
-                "width": 24,
-              }
-            }
-          />
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Sign In
-          </Text>
-        </View>
+          Navigate
+        </Text>
       </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-theme"
+    >
       <View
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "marginTop": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#393D7A",
+              "borderLeftColor": "#393D7A",
+              "borderRightColor": "#393D7A",
+              "borderTopColor": "#393D7A",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-navigate"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
+                "color": "#D3D8E8",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Navigate
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginTop": 8,
-          }
-        }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-theme"
-      >
-        <View
-          onLayout={[Function]}
-          outlined={false}
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
-              },
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
-              ],
-            ]
-          }
-          testID="button-container"
-          type="primary"
-        >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Change Theme
-          </Text>
-        </View>
+          Change Theme
+        </Text>
       </View>
     </View>
   </View>
@@ -734,11 +714,20 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
 exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "justifyContent": "center",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "#232323",
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -746,363 +735,344 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "alignSelf": "stretch",
-          "backgroundColor": "#232323",
-          "flexBasis": 0,
           "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "height": "100%",
           "justifyContent": "flex-start",
-          "overflow": "hidden",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#D3D8E8",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          Object {
+            "marginTop": 100,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#D3D8E8",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#D3D8E8",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "bottom": 40,
+          "flexDirection": "column",
+          "position": "absolute",
+          "width": "75%",
         },
         undefined,
       ]
     }
   >
     <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "height": "100%",
-            "justifyContent": "flex-start",
-            "width": "100%",
-          },
-          undefined,
-        ]
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
       }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-login"
     >
-      <Text
+      <View
+        onLayout={[Function]}
+        outlined={false}
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
-              "fontSize": 18,
-              "lineHeight": 27,
+              "backgroundColor": "#8A96DC",
+              "borderBottomColor": "#8A96DC",
+              "borderLeftColor": "#8A96DC",
+              "borderRightColor": "#8A96DC",
+              "borderTopColor": "#8A96DC",
             },
-            Object {
-              "marginTop": 100,
-            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
           ]
         }
+        testID="button-container"
+        type="primary"
       >
-        
-      </Text>
-      <Text
-        style={
-          Array [
+        <Image
+          source={
             Object {
-              "color": "#D3D8E8",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
-      <Text
-        style={
-          Array [
+              "createTransformer": [Function],
+            }
+          }
+          style={
             Object {
-              "color": "#D3D8E8",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
+              "height": 24,
+              "left": 12,
+              "position": "absolute",
+              "width": 24,
+            }
+          }
+        />
+        <Text
+          outlined={false}
+          style={
+            Array [
+              Object {
+                "color": "#000000",
+              },
+              Array [
+                undefined,
+                undefined,
+              ],
+            ]
+          }
+          type="primary"
+        >
+          Sign In
+        </Text>
+      </View>
     </View>
     <View
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "bottom": 40,
-            "flexDirection": "column",
-            "position": "absolute",
-            "width": "75%",
-          },
-          undefined,
-        ]
+        Object {
+          "marginTop": 8,
+        }
       }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-navigate"
     >
       <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#8A96DC",
+              "borderBottomColor": "#8A96DC",
+              "borderLeftColor": "#8A96DC",
+              "borderRightColor": "#8A96DC",
+              "borderTopColor": "#8A96DC",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-        testID="btn-login"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "color": "#000000",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Image
-            source={
-              Object {
-                "createTransformer": [Function],
-              }
-            }
-            style={
-              Object {
-                "height": 24,
-                "left": 12,
-                "position": "absolute",
-                "width": 24,
-              }
-            }
-          />
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#000000",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Sign In
-          </Text>
-        </View>
+          Navigate
+        </Text>
       </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-theme"
+    >
       <View
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "marginTop": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#8A96DC",
+              "borderBottomColor": "#8A96DC",
+              "borderLeftColor": "#8A96DC",
+              "borderRightColor": "#8A96DC",
+              "borderTopColor": "#8A96DC",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-navigate"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "color": "#000000",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#000000",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Navigate
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginTop": 8,
-          }
-        }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-theme"
-      >
-        <View
-          onLayout={[Function]}
-          outlined={false}
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
-              },
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
-              ],
-            ]
-          }
-          testID="button-container"
-          type="primary"
-        >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#000000",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Change Theme
-          </Text>
-        </View>
+          Change Theme
+        </Text>
       </View>
     </View>
   </View>
@@ -1112,11 +1082,20 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
 exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "justifyContent": "center",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "#232323",
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -1124,363 +1103,344 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "alignSelf": "stretch",
-          "backgroundColor": "#232323",
-          "flexBasis": 0,
           "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "height": "100%",
           "justifyContent": "flex-start",
-          "overflow": "hidden",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#D3D8E8",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          Object {
+            "marginTop": 100,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#D3D8E8",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#D3D8E8",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "bottom": 40,
+          "flexDirection": "column",
+          "position": "absolute",
+          "width": "75%",
         },
         undefined,
       ]
     }
   >
     <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "height": "100%",
-            "justifyContent": "flex-start",
-            "width": "100%",
-          },
-          undefined,
-        ]
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
       }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-login"
     >
-      <Text
+      <View
+        onLayout={[Function]}
+        outlined={false}
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
-              "fontSize": 18,
-              "lineHeight": 27,
+              "backgroundColor": "#8A96DC",
+              "borderBottomColor": "#8A96DC",
+              "borderLeftColor": "#8A96DC",
+              "borderRightColor": "#8A96DC",
+              "borderTopColor": "#8A96DC",
             },
-            Object {
-              "marginTop": 100,
-            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
           ]
         }
+        testID="button-container"
+        type="primary"
       >
-        
-      </Text>
-      <Text
-        style={
-          Array [
+        <Image
+          source={
             Object {
-              "color": "#D3D8E8",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
-      <Text
-        style={
-          Array [
+              "createTransformer": [Function],
+            }
+          }
+          style={
             Object {
-              "color": "#D3D8E8",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
+              "height": 24,
+              "left": 12,
+              "position": "absolute",
+              "width": 24,
+            }
+          }
+        />
+        <Text
+          outlined={false}
+          style={
+            Array [
+              Object {
+                "color": "#000000",
+              },
+              Array [
+                undefined,
+                undefined,
+              ],
+            ]
+          }
+          type="primary"
+        >
+          Sign In
+        </Text>
+      </View>
     </View>
     <View
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "bottom": 40,
-            "flexDirection": "column",
-            "position": "absolute",
-            "width": "75%",
-          },
-          undefined,
-        ]
+        Object {
+          "marginTop": 8,
+        }
       }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-navigate"
     >
       <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#8A96DC",
+              "borderBottomColor": "#8A96DC",
+              "borderLeftColor": "#8A96DC",
+              "borderRightColor": "#8A96DC",
+              "borderTopColor": "#8A96DC",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-        testID="btn-login"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "color": "#000000",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Image
-            source={
-              Object {
-                "createTransformer": [Function],
-              }
-            }
-            style={
-              Object {
-                "height": 24,
-                "left": 12,
-                "position": "absolute",
-                "width": 24,
-              }
-            }
-          />
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#000000",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Sign In
-          </Text>
-        </View>
+          Navigate
+        </Text>
       </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-theme"
+    >
       <View
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "marginTop": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#8A96DC",
+              "borderBottomColor": "#8A96DC",
+              "borderLeftColor": "#8A96DC",
+              "borderRightColor": "#8A96DC",
+              "borderTopColor": "#8A96DC",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-navigate"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
+                "color": "#000000",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#000000",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Navigate
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginTop": 8,
-          }
-        }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-theme"
-      >
-        <View
-          onLayout={[Function]}
-          outlined={false}
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#8A96DC",
-                "borderBottomColor": "#8A96DC",
-                "borderLeftColor": "#8A96DC",
-                "borderRightColor": "#8A96DC",
-                "borderTopColor": "#8A96DC",
-              },
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
-              ],
-            ]
-          }
-          testID="button-container"
-          type="primary"
-        >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#000000",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Change Theme
-          </Text>
-        </View>
+          Change Theme
+        </Text>
       </View>
     </View>
   </View>
@@ -1490,11 +1450,20 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
 exports[`[Intro] screen rendering test should render outer component and snapshot matches 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "center",
-      "flex": 1,
-      "justifyContent": "center",
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "#FFFFFF",
+        "flexBasis": 0,
+        "flexDirection": "column",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "flex-start",
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
   }
 >
   <View
@@ -1502,363 +1471,344 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       Array [
         Object {
           "alignItems": "center",
-          "alignSelf": "stretch",
-          "backgroundColor": "#FFFFFF",
-          "flexBasis": 0,
           "flexDirection": "column",
-          "flexGrow": 1,
-          "flexShrink": 1,
+          "height": "100%",
           "justifyContent": "flex-start",
-          "overflow": "hidden",
+          "width": "100%",
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          Object {
+            "marginTop": 100,
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000000",
+            "fontSize": 18,
+            "lineHeight": 27,
+          },
+          undefined,
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "bottom": 40,
+          "flexDirection": "column",
+          "position": "absolute",
+          "width": "75%",
         },
         undefined,
       ]
     }
   >
     <View
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "flexDirection": "column",
-            "height": "100%",
-            "justifyContent": "flex-start",
-            "width": "100%",
-          },
-          undefined,
-        ]
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
       }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-login"
     >
-      <Text
+      <View
+        onLayout={[Function]}
+        outlined={false}
         style={
           Array [
             Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#393D7A",
+              "borderLeftColor": "#393D7A",
+              "borderRightColor": "#393D7A",
+              "borderTopColor": "#393D7A",
             },
-            Object {
-              "marginTop": 100,
-            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
           ]
         }
+        testID="button-container"
+        type="primary"
       >
-        
-      </Text>
-      <Text
-        style={
-          Array [
+        <Image
+          source={
             Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
-      <Text
-        style={
-          Array [
+              "createTransformer": [Function],
+            }
+          }
+          style={
             Object {
-              "color": "#000000",
-              "fontSize": 18,
-              "lineHeight": 27,
-            },
-            undefined,
-          ]
-        }
-      >
-        
-      </Text>
+              "height": 24,
+              "left": 12,
+              "position": "absolute",
+              "width": 24,
+            }
+          }
+        />
+        <Text
+          outlined={false}
+          style={
+            Array [
+              Object {
+                "color": "#D3D8E8",
+              },
+              Array [
+                undefined,
+                undefined,
+              ],
+            ]
+          }
+          type="primary"
+        >
+          Sign In
+        </Text>
+      </View>
     </View>
     <View
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "bottom": 40,
-            "flexDirection": "column",
-            "position": "absolute",
-            "width": "75%",
-          },
-          undefined,
-        ]
+        Object {
+          "marginTop": 8,
+        }
       }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-navigate"
     >
       <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "opacity": 1,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#393D7A",
+              "borderLeftColor": "#393D7A",
+              "borderRightColor": "#393D7A",
+              "borderTopColor": "#393D7A",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-        testID="btn-login"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
+                "color": "#D3D8E8",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Image
-            source={
-              Object {
-                "createTransformer": [Function],
-              }
-            }
-            style={
-              Object {
-                "height": 24,
-                "left": 12,
-                "position": "absolute",
-                "width": 24,
-              }
-            }
-          />
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Sign In
-          </Text>
-        </View>
+          Navigate
+        </Text>
       </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 8,
+        }
+      }
+    />
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID="btn-theme"
+    >
       <View
+        onLayout={[Function]}
+        outlined={false}
         style={
-          Object {
-            "marginTop": 8,
-          }
+          Array [
+            Object {
+              "backgroundColor": "#393D7A",
+              "borderBottomColor": "#393D7A",
+              "borderLeftColor": "#393D7A",
+              "borderRightColor": "#393D7A",
+              "borderTopColor": "#393D7A",
+            },
+            Array [
+              Object {
+                "alignItems": "center",
+                "alignSelf": "stretch",
+                "borderBottomLeftRadius": 20,
+                "borderBottomRightRadius": 20,
+                "borderTopLeftRadius": 20,
+                "borderTopRightRadius": 20,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "paddingBottom": 10,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 10,
+              },
+              Array [
+                undefined,
+                false,
+                undefined,
+              ],
+            ],
+          ]
         }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-navigate"
+        testID="button-container"
+        type="primary"
       >
-        <View
-          onLayout={[Function]}
+        <Text
           outlined={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
+                "color": "#D3D8E8",
               },
               Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
+                undefined,
+                undefined,
               ],
             ]
           }
-          testID="button-container"
           type="primary"
         >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Navigate
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "marginTop": 8,
-          }
-        }
-      />
-      <View
-        accessibilityState={
-          Object {
-            "disabled": false,
-          }
-        }
-        accessible={true}
-        collapsable={false}
-        focusable={true}
-        nativeID="animatedComponent"
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "opacity": 1,
-          }
-        }
-        testID="btn-theme"
-      >
-        <View
-          onLayout={[Function]}
-          outlined={false}
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#393D7A",
-                "borderBottomColor": "#393D7A",
-                "borderLeftColor": "#393D7A",
-                "borderRightColor": "#393D7A",
-                "borderTopColor": "#393D7A",
-              },
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "borderBottomLeftRadius": 20,
-                  "borderBottomRightRadius": 20,
-                  "borderTopLeftRadius": 20,
-                  "borderTopRightRadius": 20,
-                  "flexDirection": "row",
-                  "justifyContent": "center",
-                  "paddingBottom": 10,
-                  "paddingLeft": 20,
-                  "paddingRight": 20,
-                  "paddingTop": 10,
-                },
-                Array [
-                  undefined,
-                  false,
-                  undefined,
-                ],
-              ],
-            ]
-          }
-          testID="button-container"
-          type="primary"
-        >
-          <Text
-            outlined={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D3D8E8",
-                },
-                Array [
-                  undefined,
-                  undefined,
-                ],
-              ]
-            }
-            type="primary"
-          >
-            Change Theme
-          </Text>
-        </View>
+          Change Theme
+        </Text>
       </View>
     </View>
   </View>
