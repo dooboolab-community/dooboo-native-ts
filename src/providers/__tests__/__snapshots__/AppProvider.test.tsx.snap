@@ -11,7 +11,22 @@ exports[`[AppProvider] rendering test should match component and snapshot 1`] = 
   </Text>
   <View
     accessibilityRole="button"
-    onPress={[Function]}
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
     testID="BUTTON"
   >
     <View
@@ -39,7 +54,22 @@ exports[`[AppProvider] rendering test should match component and snapshot 1`] = 
   </View>
   <View
     accessibilityRole="button"
-    onPress={[Function]}
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    nativeID="animatedComponent"
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
     testID="BUTTON_NOT_VALID"
   >
     <View

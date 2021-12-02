@@ -415,10 +415,27 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             }
                           >
                             <View
-                              activeOpacity={0.6}
-                              delayPressIn={50}
-                              disabled={false}
-                              onPress={[Function]}
+                              accessibilityState={
+                                Object {
+                                  "disabled": false,
+                                }
+                              }
+                              accessible={true}
+                              collapsable={false}
+                              focusable={true}
+                              nativeID="animatedComponent"
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "opacity": 1,
+                                }
+                              }
                               testID="btn-login"
                             >
                               <View
@@ -501,10 +518,27 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                               }
                             />
                             <View
-                              activeOpacity={0.6}
-                              delayPressIn={50}
-                              disabled={false}
-                              onPress={[Function]}
+                              accessibilityState={
+                                Object {
+                                  "disabled": false,
+                                }
+                              }
+                              accessible={true}
+                              collapsable={false}
+                              focusable={true}
+                              nativeID="animatedComponent"
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "opacity": 1,
+                                }
+                              }
                               testID="btn-navigate"
                             >
                               <View
@@ -572,10 +606,27 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                               }
                             />
                             <View
-                              activeOpacity={0.6}
-                              delayPressIn={50}
-                              disabled={false}
-                              onPress={[Function]}
+                              accessibilityState={
+                                Object {
+                                  "disabled": false,
+                                }
+                              }
+                              accessible={true}
+                              collapsable={false}
+                              focusable={true}
+                              nativeID="animatedComponent"
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "opacity": 1,
+                                }
+                              }
                               testID="btn-theme"
                             >
                               <View
@@ -1066,10 +1117,27 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             }
                           >
                             <View
-                              activeOpacity={0.6}
-                              delayPressIn={50}
-                              disabled={false}
-                              onPress={[Function]}
+                              accessibilityState={
+                                Object {
+                                  "disabled": false,
+                                }
+                              }
+                              accessible={true}
+                              collapsable={false}
+                              focusable={true}
+                              nativeID="animatedComponent"
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "opacity": 1,
+                                }
+                              }
                               testID="btn-login"
                             >
                               <View
@@ -1152,10 +1220,27 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                               }
                             />
                             <View
-                              activeOpacity={0.6}
-                              delayPressIn={50}
-                              disabled={false}
-                              onPress={[Function]}
+                              accessibilityState={
+                                Object {
+                                  "disabled": false,
+                                }
+                              }
+                              accessible={true}
+                              collapsable={false}
+                              focusable={true}
+                              nativeID="animatedComponent"
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "opacity": 1,
+                                }
+                              }
                               testID="btn-navigate"
                             >
                               <View
@@ -1223,10 +1308,27 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                               }
                             />
                             <View
-                              activeOpacity={0.6}
-                              delayPressIn={50}
-                              disabled={false}
-                              onPress={[Function]}
+                              accessibilityState={
+                                Object {
+                                  "disabled": false,
+                                }
+                              }
+                              accessible={true}
+                              collapsable={false}
+                              focusable={true}
+                              nativeID="animatedComponent"
+                              onClick={[Function]}
+                              onResponderGrant={[Function]}
+                              onResponderMove={[Function]}
+                              onResponderRelease={[Function]}
+                              onResponderTerminate={[Function]}
+                              onResponderTerminationRequest={[Function]}
+                              onStartShouldSetResponder={[Function]}
+                              style={
+                                Object {
+                                  "opacity": 1,
+                                }
+                              }
                               testID="btn-theme"
                             >
                               <View

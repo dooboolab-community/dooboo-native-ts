@@ -28,10 +28,27 @@ exports[`[Temp] render renders without crashing 1`] = `
     }
   >
     <View
-      activeOpacity={0.6}
-      delayPressIn={50}
-      disabled={false}
-      onPress={[Function]}
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
       testID="btn-back"
     >
       <View
@@ -150,10 +167,27 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
     }
   >
     <View
-      activeOpacity={0.6}
-      delayPressIn={50}
-      disabled={false}
-      onPress={[Function]}
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
       testID="btn-back"
     >
       <View

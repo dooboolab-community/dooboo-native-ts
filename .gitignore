@@ -39,7 +39,7 @@ local.properties
 dist/
 node_modules/
 npm-debug.log
-yarn-error.log
+yarn-error*
 
 # eslint
 .eslintcache
@@ -74,3 +74,13 @@ ios/Pods/
 src/utils/i18n/fbt/.enum_manifest.json
 src/utils/i18n/fbt/.source_strings.json
 src/utils/i18n/fbt/.src_manifest.json
+
+# yarn2
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
