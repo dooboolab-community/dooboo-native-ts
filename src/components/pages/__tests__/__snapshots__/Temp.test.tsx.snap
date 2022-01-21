@@ -80,33 +80,7 @@ exports[`[Temp] render renders without crashing 1`] = `
       testID="button-container"
       type="primary"
     >
-      <Text
-        allowFontScaling={false}
-        style={
-          Array [
-            Object {
-              "color": "#D3D8E8",
-              "fontSize": 12,
-            },
-            Array [
-              Object {
-                "color": "#D3D8E8",
-              },
-              Object {
-                "marginRight": 4,
-              },
-            ],
-            Object {
-              "fontFamily": "IcoMoon",
-              "fontStyle": "normal",
-              "fontWeight": "normal",
-            },
-            Object {},
-          ]
-        }
-      >
-        
-      </Text>
+      <Text />
       <Text
         outlined={false}
         style={
