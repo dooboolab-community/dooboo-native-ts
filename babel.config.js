@@ -7,13 +7,7 @@ const fbtEnumPath = path.join(
 );
 
 module.exports = {
-  presets: [
-    [
-      'module:metro-react-native-babel-preset',
-      {useTransformReactJSXExperimental: true},
-    ],
-    '@babel/preset-typescript',
-  ],
+  presets: ['babel-preset-expo', '@babel/preset-typescript'],
   sourceMaps: 'inline',
   plugins: [
     '@emotion',
