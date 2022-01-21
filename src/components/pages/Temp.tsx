@@ -7,7 +7,6 @@ import {
 import React from 'react';
 import {RouteProp} from '@react-navigation/core';
 import styled from '@emotion/native';
-import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`
   flex: 1;
@@ -54,4 +53,4 @@ function Page(props: Props): React.ReactElement {
   );
 }
 
-export default withScreen(Page);
+export default Page;
