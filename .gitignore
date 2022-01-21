@@ -84,3 +84,6 @@ src/utils/i18n/fbt/.src_manifest.json
 !.yarn/sdks
 !.yarn/versions
 
+
+# expo web
+.expo/web

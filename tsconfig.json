@@ -55,5 +55,6 @@
   },
   "files": [
     "environment.d.ts"
-  ]
+  ],
+  "extends": "expo/tsconfig.base"
 }
