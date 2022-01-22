@@ -9,7 +9,6 @@ import {User} from '../../types';
 import {fbt} from 'fbt';
 import styled from '@emotion/native';
 import {useAppContext} from '../../providers/AppProvider';
-import {withScreen} from '../../utils/wrapper';
 
 const Container = styled.View`
   flex: 1;
@@ -101,4 +100,4 @@ function Intro(props: Props): React.ReactElement {
   );
 }
 
-export default withScreen(Intro);
+export default Intro;
