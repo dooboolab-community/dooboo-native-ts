@@ -7299,14 +7299,14 @@ __metadata:
   linkType: hard
 
 "expo-file-system@npm:~13.1.0":
-  version: 13.1.1
-  resolution: "expo-file-system@npm:13.1.1"
+  version: 13.1.2
+  resolution: "expo-file-system@npm:13.1.2"
   dependencies:
     "@expo/config-plugins": ^4.0.2
     uuid: ^3.4.0
   peerDependencies:
     expo: "*"
-  checksum: 343da7efb67ab95057d36b079ad82f896952b3154215ca1e1dc52a0ab9e82ea7ae784b18df196f7d8eabeec5db8829d71b19172eaa6d84fcb80aed84cfdafcf3
+  checksum: 7bf1bc2e5c9511dd7be7f879f614ac37f728e5dd3f0501e4c7183c042bf526376231d335779d6906438597d34f58544aed1ad48929364475e2b392477fd6bf2c
   languageName: node
   linkType: hard
 

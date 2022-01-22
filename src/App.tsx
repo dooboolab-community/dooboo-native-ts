@@ -1,3 +1,4 @@
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import React from 'react';
 import RootProvider from './providers';
 import RootStack from './components/navigations/RootStack';
@@ -11,9 +12,11 @@ function App(): React.ReactElement {
 
 function ProviderWrapper(): React.ReactElement {
   return (
-    <RootProvider>
-      <App />
-    </RootProvider>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <RootProvider>
+        <App />
+      </RootProvider>
+    </GestureHandlerRootView>
   );
 }
 
