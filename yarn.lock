@@ -3031,16 +3031,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react-native@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@testing-library/react-native@npm:8.0.0"
+"@testing-library/react-native@npm:^7.0.0":
+  version: 7.2.0
+  resolution: "@testing-library/react-native@npm:7.2.0"
   dependencies:
-    pretty-format: ^27.0.0
+    pretty-format: ^26.0.1
   peerDependencies:
     react: ">=16.0.0"
     react-native: ">=0.59"
     react-test-renderer: ">=16.0.0"
-  checksum: 15cb8deea536bcd29d091a23c51dfa36e74a5cf4176fd897e33e318a46bed6306dd9334c90589943c41ae0fc39107d8c36d927f08400fb817303b585a81b2c09
+  checksum: 9cc50fbce6003131e62e96291445a19b6bb68889ed5a0167d988cd02cffe373febc52830cfdf033dc914b63bf850cbb1c1884dfd196cbc8c22536a5889fb47ee
   languageName: node
   linkType: hard
 
@@ -6648,7 +6648,7 @@ __metadata:
     "@react-navigation/native": ^6.0.6
     "@react-navigation/stack": ^6.0.11
     "@testing-library/jest-native": ^4.0.4
-    "@testing-library/react-native": ^8.0.0
+    "@testing-library/react-native": ^7.0.0
     "@types/jest": ^27.0.3
     "@types/react": ^17.0.37
     "@types/react-native": ^0.66.6
@@ -13756,7 +13756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^26.5.2, pretty-format@npm:^26.6.2":
+"pretty-format@npm:^26.0.1, pretty-format@npm:^26.5.2, pretty-format@npm:^26.6.2":
   version: 26.6.2
   resolution: "pretty-format@npm:26.6.2"
   dependencies:
