@@ -67,11 +67,16 @@ describe('[Intro] Interaction', () => {
     testingLib = render(component);
   });
 
-  it('should login when button has clicked', () => {
+  it('should login when button has clicked', async () => {
+    const btnLogin = await testingLib.findByTestId('btn-login');
+    jest.useFakeTimers();
+    jest.spyOn(global, 'setTimeout');
+
     act(() => {
-      fireEvent.press(testingLib.getByTestId('btn-login'));
+      fireEvent.press(btnLogin);
     });
 
+    expect(setTimeout).toHaveBeenCalled();
     expect(testingLib.toJSON()).toMatchSnapshot();
   });
 

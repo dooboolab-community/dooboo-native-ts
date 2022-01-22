@@ -7,6 +7,14 @@ import {initFbt} from '../src/utils/fbt';
  */
 import mockAsyncStorage from '@react-native-async-storage/async-storage/jest/async-storage-mock';
 
+jest.mock('@react-navigation/stack', () => ({
+  // @ts-ignore
+  ...jest.requireActual('@react-navigation/stack'),
+  useHeaderHeight: () => 12,
+}));
+
+global.__reanimatedWorkletInit = jest.fn();
+
 jest.mock('@react-native-async-storage/async-storage', () => mockAsyncStorage);
 
 jest.mock('react-native-reanimated', () =>
