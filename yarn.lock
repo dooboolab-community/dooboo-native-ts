@@ -2820,16 +2820,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react-native@npm:^7.0.0":
-  version: 7.2.0
-  resolution: "@testing-library/react-native@npm:7.2.0"
+"@testing-library/react-native@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "@testing-library/react-native@npm:9.0.0"
   dependencies:
-    pretty-format: ^26.0.1
+    pretty-format: ^27.0.0
   peerDependencies:
     react: ">=16.0.0"
     react-native: ">=0.59"
     react-test-renderer: ">=16.0.0"
-  checksum: 9cc50fbce6003131e62e96291445a19b6bb68889ed5a0167d988cd02cffe373febc52830cfdf033dc914b63bf850cbb1c1884dfd196cbc8c22536a5889fb47ee
+  checksum: f30ba0ada3901185063397585d4c76a4822b9f03a5a40dad46468104c9a62f3fdc62eb66179cdec5f9a08f5bbc6f940e9d7d0424d3faff17f5fee5702f7fda4c
   languageName: node
   linkType: hard
 
@@ -6466,13 +6466,13 @@ __metadata:
     "@react-navigation/native": ^6.0.6
     "@react-navigation/stack": ^6.0.11
     "@testing-library/jest-native": ^4.0.4
-    "@testing-library/react-native": ^7.0.0
-    "@types/jest": ^27.0.3
-    "@types/react": ^17.0.37
-    "@types/react-native": ^0.66.6
-    "@types/react-responsive": ^8.0.4
-    "@typescript-eslint/eslint-plugin": ^5.5.0
-    babel-jest: ^27.4.2
+    "@testing-library/react-native": ^9.0.0
+    "@types/jest": ^27.4.0
+    "@types/react": ^17.0.38
+    "@types/react-native": ^0.66.15
+    "@types/react-responsive": ^8.0.5
+    "@typescript-eslint/eslint-plugin": ^5.10.0
+    babel-jest: ^27.4.6
     babel-plugin-fbt: ^0.20.3
     babel-plugin-fbt-runtime: ^0.9.18
     codecov: ^3.8.3
@@ -13142,7 +13142,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^26.0.1, pretty-format@npm:^26.5.2, pretty-format@npm:^26.6.2":
+"pretty-format@npm:^26.5.2, pretty-format@npm:^26.6.2":
   version: 26.6.2
   resolution: "pretty-format@npm:26.6.2"
   dependencies:
