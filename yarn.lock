@@ -6494,7 +6494,7 @@ __metadata:
     prettier: ^2.5.1
     react: 17.0.2
     react-dom: ^17.0.2
-    react-native: 0.66.3
+    react-native: 0.66.4
     react-native-codegen: ^0.0.13
     react-native-dotenv: ^3.3.1
     react-native-fbt: ^0.0.7
@@ -13678,9 +13678,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native@npm:0.66.3":
-  version: 0.66.3
-  resolution: "react-native@npm:0.66.3"
+"react-native@npm:0.66.4":
+  version: 0.66.4
+  resolution: "react-native@npm:0.66.4"
   dependencies:
     "@jest/create-cache-key-function": ^27.0.1
     "@react-native-community/cli": ^6.0.0
@@ -13717,7 +13717,7 @@ __metadata:
     react: 17.0.2
   bin:
     react-native: cli.js
-  checksum: 61b4a78caee7299edc04a3fdba59354495d8deb2eb4e924df1b7b29fb9a42196d01d462cadc4e9a94fd761e06ac8e38ff66c0cb6627b8dafec0f5f8287315602
+  checksum: fccfe21339fe88f3cfb38a9495fb42687c6dcc9837b0e4f161083d89936492dcc31a1b5cf1b0194615f5b0d04c5620e3647a02d3264f8bf086289a9c38580874
   languageName: node
   linkType: hard
 
