@@ -43,7 +43,7 @@
   bridge.surfacePresenter = _bridgeAdapter.surfacePresenter;
 #endif
 
-  UIView *rootView = [self.reactDelegate createRootViewWithBridge:bridge moduleName:@"main" initialProperties:nil];
+  UIView *rootView = [self.reactDelegate createRootViewWithBridge:bridge moduleName:@"dooboo" initialProperties:nil];
 
   rootView.backgroundColor = [UIColor whiteColor];
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

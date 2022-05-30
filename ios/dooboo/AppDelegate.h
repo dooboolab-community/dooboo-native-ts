@@ -4,6 +4,7 @@
 
 #import <Expo/Expo.h>
 
-@interface AppDelegate : EXAppDelegateWrapper <RCTBridgeDelegate>
+@interface AppDelegate : EXAppDelegateWrapper <UIApplicationDelegate, RCTBridgeDelegate, UIPageViewControllerDelegate>
 
+@property (nonatomic, strong) UIWindow *window;
 @end
