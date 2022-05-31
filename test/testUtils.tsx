@@ -45,6 +45,7 @@ type NavigationStub<T extends {}> = {
  */
 export function createMockNavigation<T = {}>(): NavigationStub<T> {
   return {
+    getId: jest.fn(),
     addListener: jest.fn(),
     canGoBack: jest.fn(),
     getParent: jest.fn(),
