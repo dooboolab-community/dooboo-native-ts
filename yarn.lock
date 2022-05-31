@@ -3385,7 +3385,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
+"@types/react@npm:*, @types/react@npm:~18.0.2":
   version: 18.0.9
   resolution: "@types/react@npm:18.0.9"
   dependencies:
@@ -3393,17 +3393,6 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 162364dad716d9017ee34aabf2ea37499709ebbdef70392ae1b39225985971e1a46f121efb9c5c7da92144ee1d96d4525df806a7c1c03a5db7fd31dd034ddc7a
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:~17.0.21":
-  version: 17.0.45
-  resolution: "@types/react@npm:17.0.45"
-  dependencies:
-    "@types/prop-types": "*"
-    "@types/scheduler": "*"
-    csstype: ^3.0.2
-  checksum: 3cc13a02824c13f6fa4807a83abd065ac1d9943359e76bd995cc7cd2b4148c1176ebd54a30a9f4eb8a0f141ff359d712876f256c4fee707e4290607ef8410b3e
   languageName: node
   linkType: hard
 
@@ -7659,7 +7648,7 @@ __metadata:
     "@testing-library/jest-native": ^4.0.4
     "@testing-library/react-native": ^9.1.0
     "@types/jest": ^27.5.0
-    "@types/react": ~17.0.21
+    "@types/react": ~18.0.2
     "@types/react-native": ^0.67.6
     "@types/react-responsive": ^8.0.5
     "@typescript-eslint/eslint-plugin": ^5.23.0
@@ -7689,7 +7678,7 @@ __metadata:
     react-native: 0.68.2
     react-native-codegen: ^0.70.0
     react-native-dotenv: ^3.3.1
-    react-native-fbt: ^0.0.7
+    react-native-fbt: "https://github.com/hyochan/react-native-fbt"
     react-native-gesture-handler: ~2.2.0
     react-native-reanimated: ~2.8.0
     react-native-safe-area-context: 4.2.4
@@ -15393,13 +15382,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-fbt@npm:^0.0.7":
+"react-native-fbt@https://github.com/hyochan/react-native-fbt":
   version: 0.0.7
-  resolution: "react-native-fbt@npm:0.0.7"
+  resolution: "react-native-fbt@https://github.com/hyochan/react-native-fbt.git#commit=4484d89782f7ba7ecac7f359762209fbb90b3270"
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: fba6a90978ce9835ab04bf610d08230c4bd60213c5dd1416db5f925e0fcea4a736fc621a73054e56a102615364cdcd24e7ca88903c65b23ba104ac8bd8443cba
+  checksum: 212391cd607c427aaa345e8d9b63add0433cefc2925eae45afe85a0fb80742b21d1499f9e24e3a4d71606e645de2e3210e6fb037b2d623b2dbb1e195d6802d9d
   languageName: node
   linkType: hard
 
