@@ -12,8 +12,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: yarn setup
-        run: yarn set version from sources
 
       - name: Install modules
         run: yarn --immutable

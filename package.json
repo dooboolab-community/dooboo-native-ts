@@ -1,6 +1,6 @@
 {
   "name": "dooboo",
-  "packageManager": "yarn@3.1.1",
+  "packageManager": "yarn@3.2.1",
   "version": "0.0.1",
   "description": "boilerplate for react-native by dooboolab!",
   "author": "dooboolab-bot <support@dooboolab.com>",
@@ -108,7 +108,7 @@
     "prettier": "^2.6.2",
     "react-dom": "^18.1.0",
     "react-native-codegen": "^0.70.0",
-    "react-native-fbt": "https://github.com/hyochan/react-native-fbt",
+    "react-native-fbt": "https://github.com/hyochan/react-native-fbt#main",
     "react-test-renderer": "18.1.0",
     "shelljs": "^0.8.5",
     "ts-jest": "^28.0.2",
