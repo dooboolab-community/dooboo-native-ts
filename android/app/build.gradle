@@ -37,6 +37,10 @@ android {
         ndkVersion rootProject.ext.ndkVersion
         compileSdkVersion rootProject.ext.compileSdkVersion
 
+        lintOptions {
+            checkReleaseBuilds false
+        }
+        
         defaultConfig {
             applicationId "dev.dooboo"
             targetSdkVersion rootProject.ext.targetSdkVersion
