@@ -72,7 +72,7 @@ jobs:
 
       - name: Download Dependencies
         working-directory: ./android
-        run: ./gradlew clean
+        run: ./gradlew androidDependencies
 
       - name: Build Android JS Bundle
         working-directory: ./android
