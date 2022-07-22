@@ -1,6 +1,5 @@
 {
   "name": "dooboo",
-  "packageManager": "yarn@3.2.2",
   "version": "0.0.1",
   "description": "boilerplate for react-native by dooboolab!",
   "author": "dooboolab-bot <support@dooboolab.com>",
