@@ -5,11 +5,7 @@
     "jsx": "react",
     "emitDecoratorMetadata": true,
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
@@ -22,10 +18,7 @@
     "sourceMap": true,
     "strict": true,
     "baseUrl": "src",
-    "typeRoots": [
-      "./@types",
-      "./node_modules/@types"
-    ],
+    "typeRoots": ["./@types", "./node_modules/@types"],
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -37,15 +30,8 @@
     "isolatedModules": false,
     "allowJs": true
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.test.tsx",
-    "**/*.spec.ts"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "**/*.test.tsx", "**/*.spec.ts"],
   "jest": {
     "globals": {
       "ts-jest": {
@@ -53,8 +39,6 @@
       }
     }
   },
-  "files": [
-    "environment.d.ts"
-  ],
+  "files": ["environment.d.ts"],
   "extends": "expo/tsconfig.base"
 }

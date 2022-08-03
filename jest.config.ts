@@ -28,7 +28,7 @@ export default async (): Promise<Config.InitialOptions> => {
     ],
     moduleNameMapper: {
       '\\.svg': '<rootDir>/__mocks__/svgMock.js',
-      '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'babel-jest',
+      '.+\\.(css|style|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'babel-jest',
     },
     setupFiles: [
       ...expoPreset.setupFiles,
@@ -36,7 +36,10 @@ export default async (): Promise<Config.InitialOptions> => {
       './node_modules/react-native-gesture-handler/jestSetup.js',
     ],
     cacheDirectory: '.jest/cache',
-    setupFilesAfterEnv: ['./test/setupTest.ts'],
+    setupFilesAfterEnv: [
+      '@testing-library/jest-native/extend-expect',
+      './test/setupTest.ts',
+    ],
     haste: {
       defaultPlatform: 'ios',
       platforms: ['android', 'ios', 'native'],

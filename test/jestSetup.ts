@@ -16,6 +16,7 @@ jest.mock('@react-navigation/stack', () => ({
 global.__reanimatedWorkletInit = jest.fn();
 
 jest.mock('@react-native-async-storage/async-storage', () => mockAsyncStorage);
+jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');
 
 jest.mock('react-native-reanimated', () =>
   require('react-native-reanimated/mock'),
@@ -27,3 +28,12 @@ jest.mock('react-native-reanimated', () =>
 // customGlobal.fetchMock = customGlobal.fetch;
 
 initFbt();
+
+if (!global.Window) {
+  Object.defineProperty(global, 'Window', {
+    value: window.constructor,
+    writable: true,
+    enumerable: true,
+    configurable: true,
+  });
+}

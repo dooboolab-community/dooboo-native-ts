@@ -18,7 +18,6 @@ module.exports = {
       },
     ],
     '@babel/plugin-syntax-class-properties',
-    ['module:react-native-dotenv'],
     'babel-plugin-fbt-runtime',
     [
       'babel-plugin-fbt',
@@ -28,5 +27,6 @@ module.exports = {
       },
     ],
     'react-native-reanimated/plugin',
+    'inline-dotenv',
   ],
 };
