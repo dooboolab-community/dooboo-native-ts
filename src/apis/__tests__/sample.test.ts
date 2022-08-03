@@ -27,6 +27,7 @@ describe('testing sample api', () => {
     const onResponse = jest.fn();
     const onError = jest.fn();
 
+    // eslint-disable-next-line jest/valid-expect-in-promise
     sample(undefined)
       .then(onResponse)
       .catch(onError)
@@ -45,6 +46,7 @@ describe('testing sample api', () => {
     const onResponse = jest.fn();
     const onError = jest.fn();
 
+    // eslint-disable-next-line jest/valid-expect-in-promise
     sample({})
       .then(onResponse)
       .catch(onError)
