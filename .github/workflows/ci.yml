@@ -78,6 +78,6 @@ jobs:
         working-directory: ./android
         run: yarn build:android
 
-      - name: Build Android
-        working-directory: ./android
-        run: ./gradlew assembleDebug
+      # - name: Build Android
+      #   working-directory: ./android
+      #   run: ./gradlew assembleDebug
