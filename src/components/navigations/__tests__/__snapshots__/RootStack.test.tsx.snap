@@ -183,6 +183,14 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
           activityState={2}
           collapsable={false}
           forwardedRef={[Function]}
+          gestureResponseDistance={
+            Object {
+              "bottom": -1,
+              "end": -1,
+              "start": -1,
+              "top": -1,
+            }
+          }
           pointerEvents="box-none"
           style={
             Object {
@@ -268,6 +276,8 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
               <View
                 collapsable={false}
                 forwardedRef={[Function]}
+                handlerTag={2}
+                handlerType="PanGestureHandler"
                 needsOffscreenAlphaCompositing={false}
                 onGestureHandlerEvent={[Function]}
                 onGestureHandlerStateChange={[Function]}
@@ -361,9 +371,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 },
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                           <Text
                             style={
                               Array [
@@ -375,9 +383,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 undefined,
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                           <Text
                             style={
                               Array [
@@ -389,9 +395,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                                 undefined,
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                         </View>
                         <View
                           style={
@@ -874,6 +878,14 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
           activityState={2}
           collapsable={false}
           forwardedRef={[Function]}
+          gestureResponseDistance={
+            Object {
+              "bottom": -1,
+              "end": -1,
+              "start": -1,
+              "top": -1,
+            }
+          }
           pointerEvents="box-none"
           style={
             Object {
@@ -959,6 +971,8 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
               <View
                 collapsable={false}
                 forwardedRef={[Function]}
+                handlerTag={1}
+                handlerType="PanGestureHandler"
                 needsOffscreenAlphaCompositing={false}
                 onGestureHandlerEvent={[Function]}
                 onGestureHandlerStateChange={[Function]}
@@ -1052,9 +1066,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 },
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                           <Text
                             style={
                               Array [
@@ -1066,9 +1078,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 undefined,
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                           <Text
                             style={
                               Array [
@@ -1080,9 +1090,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 undefined,
                               ]
                             }
-                          >
-                            
-                          </Text>
+                          />
                         </View>
                         <View
                           style={

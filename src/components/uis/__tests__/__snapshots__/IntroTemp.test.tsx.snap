@@ -28,9 +28,7 @@ exports[`[IntroTemp] render renders without crashing 1`] = `
         },
       ]
     }
-  >
-    
-  </Text>
+  />
   <Text
     style={
       Array [
@@ -42,9 +40,7 @@ exports[`[IntroTemp] render renders without crashing 1`] = `
         undefined,
       ]
     }
-  >
-    
-  </Text>
+  />
   <Text
     style={
       Array [
@@ -56,8 +52,6 @@ exports[`[IntroTemp] render renders without crashing 1`] = `
         undefined,
       ]
     }
-  >
-    
-  </Text>
+  />
 </View>
 `;
