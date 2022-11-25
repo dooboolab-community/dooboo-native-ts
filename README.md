@@ -77,6 +77,13 @@ app/
 
 ### Running the project
 
+
+Install [expo-modules](https://docs.expo.dev/bare/installing-expo-modules).
+
+```sh
+npx install-expo-modules@latest
+```
+
 Running the project is as simple as running
 
 ```sh
