@@ -1,11 +1,11 @@
 import {Button, Icon, useTheme} from 'dooboo-ui';
-import {
+import type {
   RootStackNavigationProps,
   RootStackParamList,
 } from '../navigations/RootStack';
 
 import React from 'react';
-import {RouteProp} from '@react-navigation/core';
+import type {RouteProp} from '@react-navigation/core';
 import styled from '@emotion/native';
 
 const Container = styled.View`

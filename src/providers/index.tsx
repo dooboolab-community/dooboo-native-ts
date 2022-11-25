@@ -1,4 +1,5 @@
-import {ThemeProvider, ThemeType} from 'dooboo-ui';
+import type {ThemeType} from 'dooboo-ui';
+import {ThemeProvider} from 'dooboo-ui';
 
 import {AppProvider} from './AppProvider';
 import React from 'react';

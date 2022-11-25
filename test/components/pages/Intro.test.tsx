@@ -88,6 +88,7 @@ describe('[Intro] Interaction', () => {
     });
   });
 
+  // eslint-disable-next-line jest/expect-expect
   it('should change theme when button has clicked', () => {
     fireEvent.press(testingLib.getByTestId('btn-theme'));
   });
