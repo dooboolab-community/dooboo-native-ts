@@ -1,9 +1,10 @@
-import {FC, ReactElement} from 'react';
+import type {FC, ReactElement, ReactNode} from 'react';
 
-import RootProvider from '../src/providers';
+import React from 'react';
+import RootProvider from '../../src/providers';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {StackNavigationProp} from '@react-navigation/stack';
-import {ThemeType} from 'dooboo-ui';
+import type {StackNavigationProp} from '@react-navigation/stack';
+import type {ThemeType} from 'dooboo-ui';
 
 export const createTestElement = (
   child: ReactElement,
@@ -43,7 +44,7 @@ type NavigationStub<T extends {}> = {
  * }));
  * @returns the generated navigation stub.
  */
-export function createMockNavigation<T = {}>(): NavigationStub<T> {
+export function createMockNavigation<T extends {} = {}>(): NavigationStub<T> {
   return {
     getId: jest.fn(),
     addListener: jest.fn(),
@@ -65,7 +66,7 @@ export function createMockNavigation<T = {}>(): NavigationStub<T> {
   };
 }
 
-export const TestSafeAreaProvider: FC = ({children}) => {
+export const TestSafeAreaProvider: FC<{children: ReactNode}> = ({children}) => {
   return (
     <SafeAreaProvider
       initialMetrics={{

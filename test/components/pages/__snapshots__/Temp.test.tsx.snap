@@ -47,11 +47,11 @@ exports[`[Temp] render renders without crashing 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#393D7A",
-            "borderBottomColor": "#393D7A",
-            "borderLeftColor": "#393D7A",
-            "borderRightColor": "#393D7A",
-            "borderTopColor": "#393D7A",
+            "backgroundColor": "#000000",
+            "borderBottomColor": "#000000",
+            "borderLeftColor": "#000000",
+            "borderRightColor": "#000000",
+            "borderTopColor": "#000000",
           },
           Array [
             Object {
@@ -85,7 +85,7 @@ exports[`[Temp] render renders without crashing 1`] = `
         style={
           Array [
             Object {
-              "color": "#D3D8E8",
+              "color": "#FFFFFF",
             },
             Array [
               undefined,
@@ -149,11 +149,11 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
       style={
         Array [
           Object {
-            "backgroundColor": "#8A96DC",
-            "borderBottomColor": "#8A96DC",
-            "borderLeftColor": "#8A96DC",
-            "borderRightColor": "#8A96DC",
-            "borderTopColor": "#8A96DC",
+            "backgroundColor": "#FFFFFF",
+            "borderBottomColor": "#FFFFFF",
+            "borderLeftColor": "#FFFFFF",
+            "borderRightColor": "#FFFFFF",
+            "borderTopColor": "#FFFFFF",
           },
           Array [
             Object {
@@ -207,7 +207,7 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
           ]
         }
       >
-        
+        
       </Text>
       <Text
         outlined={false}

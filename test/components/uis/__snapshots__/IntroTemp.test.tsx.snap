@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[IntroTemp] render renders without crashing 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "column",
+        "height": "100%",
+        "justifyContent": "flex-start",
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "0": "#",
+          "1": "0",
+          "2": "0",
+          "3": "0",
+          "4": "0",
+          "5": "0",
+          "6": "0",
+          "accent": "#B446BF",
+          "contrast": "#FFFFFF",
+          "default": "#000000",
+          "disabled": "#C4C4C4",
+          "fontSize": 18,
+          "lineHeight": 27,
+          "link": "#393D7A",
+          "placeholder": "#6D6D6D",
+          "primary": "#000000",
+          "secondary": "#404040",
+          "validation": "#FF002E",
+        },
+        Object {
+          "marginTop": 100,
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "0": "#",
+          "1": "0",
+          "2": "0",
+          "3": "0",
+          "4": "0",
+          "5": "0",
+          "6": "0",
+          "accent": "#B446BF",
+          "contrast": "#FFFFFF",
+          "default": "#000000",
+          "disabled": "#C4C4C4",
+          "fontSize": 18,
+          "lineHeight": 27,
+          "link": "#393D7A",
+          "placeholder": "#6D6D6D",
+          "primary": "#000000",
+          "secondary": "#404040",
+          "validation": "#FF002E",
+        },
+        undefined,
+      ]
+    }
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "0": "#",
+          "1": "0",
+          "2": "0",
+          "3": "0",
+          "4": "0",
+          "5": "0",
+          "6": "0",
+          "accent": "#B446BF",
+          "contrast": "#FFFFFF",
+          "default": "#000000",
+          "disabled": "#C4C4C4",
+          "fontSize": 18,
+          "lineHeight": 27,
+          "link": "#393D7A",
+          "placeholder": "#6D6D6D",
+          "primary": "#000000",
+          "secondary": "#404040",
+          "validation": "#FF002E",
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;

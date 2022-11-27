@@ -66,9 +66,43 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
               style={
                 Object {
                   "backgroundColor": "#232323",
-                  "borderBottomColor": "#D3D8E8",
+                  "borderBottomColor": Object {
+                    "0": "#",
+                    "1": "D",
+                    "2": "3",
+                    "3": "D",
+                    "4": "8",
+                    "5": "E",
+                    "6": "8",
+                    "accent": "#8A96DC",
+                    "contrast": "#000000",
+                    "default": "#FFFFFF",
+                    "disabled": "#C4C4C4",
+                    "link": "#E0E0E0",
+                    "placeholder": "#6D6D6D",
+                    "primary": "#000000",
+                    "secondary": "#D3D8E8",
+                    "validation": "#FF002E",
+                  },
                   "flex": 1,
-                  "shadowColor": "#D3D8E8",
+                  "shadowColor": Object {
+                    "0": "#",
+                    "1": "D",
+                    "2": "3",
+                    "3": "D",
+                    "4": "8",
+                    "5": "E",
+                    "6": "8",
+                    "accent": "#8A96DC",
+                    "contrast": "#000000",
+                    "default": "#FFFFFF",
+                    "disabled": "#C4C4C4",
+                    "link": "#E0E0E0",
+                    "placeholder": "#6D6D6D",
+                    "primary": "#000000",
+                    "secondary": "#D3D8E8",
+                    "validation": "#FF002E",
+                  },
                   "shadowOffset": Object {
                     "height": 0.5,
                     "width": 0,
@@ -144,7 +178,24 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                   onLayout={[Function]}
                   style={
                     Object {
-                      "color": "#D3D8E8",
+                      "color": Object {
+                        "0": "#",
+                        "1": "D",
+                        "2": "3",
+                        "3": "D",
+                        "4": "8",
+                        "5": "E",
+                        "6": "8",
+                        "accent": "#8A96DC",
+                        "contrast": "#000000",
+                        "default": "#FFFFFF",
+                        "disabled": "#C4C4C4",
+                        "link": "#E0E0E0",
+                        "placeholder": "#6D6D6D",
+                        "primary": "#000000",
+                        "secondary": "#D3D8E8",
+                        "validation": "#FF002E",
+                      },
                       "fontSize": 17,
                       "fontWeight": "600",
                     }
@@ -296,6 +347,7 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                 }
               >
                 <View
+                  pointerEvents="box-none"
                   style={
                     Array [
                       Object {
@@ -362,9 +414,24 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             style={
                               Array [
                                 Object {
-                                  "color": "#D3D8E8",
+                                  "0": "#",
+                                  "1": "D",
+                                  "2": "3",
+                                  "3": "D",
+                                  "4": "8",
+                                  "5": "E",
+                                  "6": "8",
+                                  "accent": "#8A96DC",
+                                  "contrast": "#000000",
+                                  "default": "#FFFFFF",
+                                  "disabled": "#C4C4C4",
                                   "fontSize": 18,
                                   "lineHeight": 27,
+                                  "link": "#E0E0E0",
+                                  "placeholder": "#6D6D6D",
+                                  "primary": "#000000",
+                                  "secondary": "#D3D8E8",
+                                  "validation": "#FF002E",
                                 },
                                 Object {
                                   "marginTop": 100,
@@ -376,9 +443,24 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             style={
                               Array [
                                 Object {
-                                  "color": "#D3D8E8",
+                                  "0": "#",
+                                  "1": "D",
+                                  "2": "3",
+                                  "3": "D",
+                                  "4": "8",
+                                  "5": "E",
+                                  "6": "8",
+                                  "accent": "#8A96DC",
+                                  "contrast": "#000000",
+                                  "default": "#FFFFFF",
+                                  "disabled": "#C4C4C4",
                                   "fontSize": 18,
                                   "lineHeight": 27,
+                                  "link": "#E0E0E0",
+                                  "placeholder": "#6D6D6D",
+                                  "primary": "#000000",
+                                  "secondary": "#D3D8E8",
+                                  "validation": "#FF002E",
                                 },
                                 undefined,
                               ]
@@ -388,9 +470,24 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                             style={
                               Array [
                                 Object {
-                                  "color": "#D3D8E8",
+                                  "0": "#",
+                                  "1": "D",
+                                  "2": "3",
+                                  "3": "D",
+                                  "4": "8",
+                                  "5": "E",
+                                  "6": "8",
+                                  "accent": "#8A96DC",
+                                  "contrast": "#000000",
+                                  "default": "#FFFFFF",
+                                  "disabled": "#C4C4C4",
                                   "fontSize": 18,
                                   "lineHeight": 27,
+                                  "link": "#E0E0E0",
+                                  "placeholder": "#6D6D6D",
+                                  "primary": "#000000",
+                                  "secondary": "#D3D8E8",
+                                  "validation": "#FF002E",
                                 },
                                 undefined,
                               ]
@@ -440,11 +537,11 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                               style={
                                 Array [
                                   Object {
-                                    "backgroundColor": "#8A96DC",
-                                    "borderBottomColor": "#8A96DC",
-                                    "borderLeftColor": "#8A96DC",
-                                    "borderRightColor": "#8A96DC",
-                                    "borderTopColor": "#8A96DC",
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderBottomColor": "#FFFFFF",
+                                    "borderLeftColor": "#FFFFFF",
+                                    "borderRightColor": "#FFFFFF",
+                                    "borderTopColor": "#FFFFFF",
                                   },
                                   Array [
                                     Object {
@@ -542,11 +639,11 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                               style={
                                 Array [
                                   Object {
-                                    "backgroundColor": "#8A96DC",
-                                    "borderBottomColor": "#8A96DC",
-                                    "borderLeftColor": "#8A96DC",
-                                    "borderRightColor": "#8A96DC",
-                                    "borderTopColor": "#8A96DC",
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderBottomColor": "#FFFFFF",
+                                    "borderLeftColor": "#FFFFFF",
+                                    "borderRightColor": "#FFFFFF",
+                                    "borderTopColor": "#FFFFFF",
                                   },
                                   Array [
                                     Object {
@@ -629,11 +726,11 @@ exports[`[Stack] navigator should renders [Dark] mode 1`] = `
                               style={
                                 Array [
                                   Object {
-                                    "backgroundColor": "#8A96DC",
-                                    "borderBottomColor": "#8A96DC",
-                                    "borderLeftColor": "#8A96DC",
-                                    "borderRightColor": "#8A96DC",
-                                    "borderTopColor": "#8A96DC",
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderBottomColor": "#FFFFFF",
+                                    "borderLeftColor": "#FFFFFF",
+                                    "borderRightColor": "#FFFFFF",
+                                    "borderTopColor": "#FFFFFF",
                                   },
                                   Array [
                                     Object {
@@ -761,9 +858,43 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
               style={
                 Object {
                   "backgroundColor": "#FFFFFF",
-                  "borderBottomColor": "#000000",
+                  "borderBottomColor": Object {
+                    "0": "#",
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": "0",
+                    "5": "0",
+                    "6": "0",
+                    "accent": "#B446BF",
+                    "contrast": "#FFFFFF",
+                    "default": "#000000",
+                    "disabled": "#C4C4C4",
+                    "link": "#393D7A",
+                    "placeholder": "#6D6D6D",
+                    "primary": "#000000",
+                    "secondary": "#404040",
+                    "validation": "#FF002E",
+                  },
                   "flex": 1,
-                  "shadowColor": "#000000",
+                  "shadowColor": Object {
+                    "0": "#",
+                    "1": "0",
+                    "2": "0",
+                    "3": "0",
+                    "4": "0",
+                    "5": "0",
+                    "6": "0",
+                    "accent": "#B446BF",
+                    "contrast": "#FFFFFF",
+                    "default": "#000000",
+                    "disabled": "#C4C4C4",
+                    "link": "#393D7A",
+                    "placeholder": "#6D6D6D",
+                    "primary": "#000000",
+                    "secondary": "#404040",
+                    "validation": "#FF002E",
+                  },
                   "shadowOffset": Object {
                     "height": 0.5,
                     "width": 0,
@@ -839,7 +970,24 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                   onLayout={[Function]}
                   style={
                     Object {
-                      "color": "#000000",
+                      "color": Object {
+                        "0": "#",
+                        "1": "0",
+                        "2": "0",
+                        "3": "0",
+                        "4": "0",
+                        "5": "0",
+                        "6": "0",
+                        "accent": "#B446BF",
+                        "contrast": "#FFFFFF",
+                        "default": "#000000",
+                        "disabled": "#C4C4C4",
+                        "link": "#393D7A",
+                        "placeholder": "#6D6D6D",
+                        "primary": "#000000",
+                        "secondary": "#404040",
+                        "validation": "#FF002E",
+                      },
                       "fontSize": 17,
                       "fontWeight": "600",
                     }
@@ -991,6 +1139,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                 }
               >
                 <View
+                  pointerEvents="box-none"
                   style={
                     Array [
                       Object {
@@ -1057,9 +1206,24 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             style={
                               Array [
                                 Object {
-                                  "color": "#000000",
+                                  "0": "#",
+                                  "1": "0",
+                                  "2": "0",
+                                  "3": "0",
+                                  "4": "0",
+                                  "5": "0",
+                                  "6": "0",
+                                  "accent": "#B446BF",
+                                  "contrast": "#FFFFFF",
+                                  "default": "#000000",
+                                  "disabled": "#C4C4C4",
                                   "fontSize": 18,
                                   "lineHeight": 27,
+                                  "link": "#393D7A",
+                                  "placeholder": "#6D6D6D",
+                                  "primary": "#000000",
+                                  "secondary": "#404040",
+                                  "validation": "#FF002E",
                                 },
                                 Object {
                                   "marginTop": 100,
@@ -1071,9 +1235,24 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             style={
                               Array [
                                 Object {
-                                  "color": "#000000",
+                                  "0": "#",
+                                  "1": "0",
+                                  "2": "0",
+                                  "3": "0",
+                                  "4": "0",
+                                  "5": "0",
+                                  "6": "0",
+                                  "accent": "#B446BF",
+                                  "contrast": "#FFFFFF",
+                                  "default": "#000000",
+                                  "disabled": "#C4C4C4",
                                   "fontSize": 18,
                                   "lineHeight": 27,
+                                  "link": "#393D7A",
+                                  "placeholder": "#6D6D6D",
+                                  "primary": "#000000",
+                                  "secondary": "#404040",
+                                  "validation": "#FF002E",
                                 },
                                 undefined,
                               ]
@@ -1083,9 +1262,24 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                             style={
                               Array [
                                 Object {
-                                  "color": "#000000",
+                                  "0": "#",
+                                  "1": "0",
+                                  "2": "0",
+                                  "3": "0",
+                                  "4": "0",
+                                  "5": "0",
+                                  "6": "0",
+                                  "accent": "#B446BF",
+                                  "contrast": "#FFFFFF",
+                                  "default": "#000000",
+                                  "disabled": "#C4C4C4",
                                   "fontSize": 18,
                                   "lineHeight": 27,
+                                  "link": "#393D7A",
+                                  "placeholder": "#6D6D6D",
+                                  "primary": "#000000",
+                                  "secondary": "#404040",
+                                  "validation": "#FF002E",
                                 },
                                 undefined,
                               ]
@@ -1135,11 +1329,11 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                               style={
                                 Array [
                                   Object {
-                                    "backgroundColor": "#393D7A",
-                                    "borderBottomColor": "#393D7A",
-                                    "borderLeftColor": "#393D7A",
-                                    "borderRightColor": "#393D7A",
-                                    "borderTopColor": "#393D7A",
+                                    "backgroundColor": "#000000",
+                                    "borderBottomColor": "#000000",
+                                    "borderLeftColor": "#000000",
+                                    "borderRightColor": "#000000",
+                                    "borderTopColor": "#000000",
                                   },
                                   Array [
                                     Object {
@@ -1187,7 +1381,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#D3D8E8",
+                                      "color": "#FFFFFF",
                                     },
                                     Array [
                                       undefined,
@@ -1237,11 +1431,11 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                               style={
                                 Array [
                                   Object {
-                                    "backgroundColor": "#393D7A",
-                                    "borderBottomColor": "#393D7A",
-                                    "borderLeftColor": "#393D7A",
-                                    "borderRightColor": "#393D7A",
-                                    "borderTopColor": "#393D7A",
+                                    "backgroundColor": "#000000",
+                                    "borderBottomColor": "#000000",
+                                    "borderLeftColor": "#000000",
+                                    "borderRightColor": "#000000",
+                                    "borderTopColor": "#000000",
                                   },
                                   Array [
                                     Object {
@@ -1274,7 +1468,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#D3D8E8",
+                                      "color": "#FFFFFF",
                                     },
                                     Array [
                                       undefined,
@@ -1324,11 +1518,11 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                               style={
                                 Array [
                                   Object {
-                                    "backgroundColor": "#393D7A",
-                                    "borderBottomColor": "#393D7A",
-                                    "borderLeftColor": "#393D7A",
-                                    "borderRightColor": "#393D7A",
-                                    "borderTopColor": "#393D7A",
+                                    "backgroundColor": "#000000",
+                                    "borderBottomColor": "#000000",
+                                    "borderLeftColor": "#000000",
+                                    "borderRightColor": "#000000",
+                                    "borderTopColor": "#000000",
                                   },
                                   Array [
                                     Object {
@@ -1361,7 +1555,7 @@ exports[`[Stack] navigator should renders without crashing 1`] = `
                                 style={
                                   Array [
                                     Object {
-                                      "color": "#D3D8E8",
+                                      "color": "#FFFFFF",
                                     },
                                     Array [
                                       undefined,

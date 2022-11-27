@@ -1,10 +1,15 @@
 import 'react-native';
 
-import {RenderAPI, render} from '@testing-library/react-native';
-import {createTestElement, createTestProps} from '../../../../test/testUtils';
+import {
+  createTestElement,
+  createTestProps,
+} from '../../../test/utils/testUtils';
 
-import {ReactElement} from 'react';
-import StackNavigator from '../RootStack';
+import React from 'react';
+import type {ReactElement} from 'react';
+import type {RenderAPI} from '@testing-library/react-native';
+import StackNavigator from '../../../src/components/navigations/RootStack';
+import {render} from '@testing-library/react-native';
 
 let props: any;
 let component: ReactElement;
