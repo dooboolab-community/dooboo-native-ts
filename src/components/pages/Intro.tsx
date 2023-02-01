@@ -6,7 +6,6 @@ import IntroView from '../uis/IntroTemp';
 import React from 'react';
 import {RootStackNavigationProps} from '../navigations/RootStack';
 import {User} from '../../types';
-import {fbt} from 'fbt';
 import styled from '@emotion/native';
 import {useAppContext} from '../../providers/AppProvider';
 
@@ -40,7 +39,7 @@ function Intro(props: Props): React.ReactElement {
   const {setUser} = useAppContext();
 
   const {changeThemeType} = useTheme();
-  const [isLoggingIn, setIsLoggingIn] = React.useState<boolean>(false);
+  const [isLoggingIn, setIsLoggingIn] = React.useState(false);
 
   const onLogin = (): void => {
     setIsLoggingIn(true);
@@ -64,7 +63,7 @@ function Intro(props: Props): React.ReactElement {
       <ButtonWrapper>
         <Button
           testID="btn-login"
-          leftElement={
+          startElement={
             <Image
               source={IC_MASK}
               style={{
@@ -77,7 +76,7 @@ function Intro(props: Props): React.ReactElement {
           }
           loading={isLoggingIn}
           onPress={() => onLogin()}
-          text={fbt('Login', 'login')}
+          text="login"
         />
         <View style={{marginTop: 8}} />
         <Button
@@ -87,13 +86,13 @@ function Intro(props: Props): React.ReactElement {
               param: 'GO BACK',
             })
           }
-          text={fbt('Navigate', 'navigate')}
+          text="navigate"
         />
         <View style={{marginTop: 8}} />
         <Button
           testID="btn-theme"
           onPress={() => changeThemeType()}
-          text={fbt('Change Theme', 'change theme')}
+          text="change theme"
         />
       </ButtonWrapper>
     </Container>

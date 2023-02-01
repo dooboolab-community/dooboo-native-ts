@@ -4,9 +4,10 @@ interface Locale {
   languageCode: string;
   isRTL: boolean;
 }
+
 const getLocales = (): Locale[] => [
-  { countryCode: 'US', languageTag: 'en-US', languageCode: 'en', isRTL: false },
-  { countryCode: 'EC', languageTag: 'es-EC', languageCode: 'es', isRTL: false },
+  {countryCode: 'US', languageTag: 'en-US', languageCode: 'en', isRTL: false},
+  {countryCode: 'EC', languageTag: 'es-EC', languageCode: 'es', isRTL: false},
 ];
 
 const findBestAvailableLanguage = (): Partial<Locale> => ({

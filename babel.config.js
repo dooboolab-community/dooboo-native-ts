@@ -1,11 +1,6 @@
 // eslint-disable-next-line
 const path = require('path');
 
-const fbtEnumPath = path.join(
-  __dirname,
-  'src/utils/i18n/fbt/.enum_manifest.json',
-);
-
 module.exports = {
   presets: ['babel-preset-expo', '@babel/preset-typescript'],
   sourceMaps: 'inline',
@@ -18,14 +13,6 @@ module.exports = {
       },
     ],
     '@babel/plugin-syntax-class-properties',
-    'babel-plugin-fbt-runtime',
-    [
-      'babel-plugin-fbt',
-      {
-        fbtEnumPath,
-        extraOptions: {__self: true},
-      },
-    ],
     'react-native-reanimated/plugin',
     'inline-dotenv',
   ],
