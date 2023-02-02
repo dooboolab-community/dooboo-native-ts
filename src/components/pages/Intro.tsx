@@ -8,6 +8,7 @@ import {RootStackNavigationProps} from '../navigations/RootStack';
 import {User} from '../../types';
 import styled from '@emotion/native';
 import {useAppContext} from '../../providers/AppProvider';
+import {useTranslation} from 'react-i18next';
 
 const Container = styled.View`
   flex: 1;
@@ -37,6 +38,7 @@ function Intro(props: Props): React.ReactElement {
   let timer: any;
 
   const {setUser} = useAppContext();
+  const {t} = useTranslation();
 
   const {changeThemeType} = useTheme();
   const [isLoggingIn, setIsLoggingIn] = React.useState(false);
@@ -76,7 +78,7 @@ function Intro(props: Props): React.ReactElement {
           }
           loading={isLoggingIn}
           onPress={() => onLogin()}
-          text="login"
+          text={t('login')}
         />
         <View style={{marginTop: 8}} />
         <Button
@@ -86,13 +88,13 @@ function Intro(props: Props): React.ReactElement {
               param: 'GO BACK',
             })
           }
-          text="navigate"
+          text={t('navigate')}
         />
         <View style={{marginTop: 8}} />
         <Button
           testID="btn-theme"
           onPress={() => changeThemeType()}
-          text="change theme"
+          text={t('change_theme')}
         />
       </ButtonWrapper>
     </Container>

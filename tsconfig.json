@@ -18,7 +18,7 @@
     "sourceMap": true,
     "strict": true,
     "baseUrl": "src",
-    "typeRoots": ["./@types", "./node_modules/@types"],
+    "typeRoots": ["./node_modules/@types", "./@types/"],
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,

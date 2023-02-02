@@ -1,3 +1,5 @@
+import './translates/i18n';
+
 import {AppRegistry, Platform} from 'react-native';
 
 import App from './App';
