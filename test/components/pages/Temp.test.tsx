@@ -1,7 +1,7 @@
 import 'react-native';
 
-import {act, fireEvent, render} from '@testing-library/react-native';
 import {createTestElement, createTestProps} from '../../utils/testUtils';
+import {fireEvent, render} from '@testing-library/react-native';
 
 import React from 'react';
 import type {ReactElement} from 'react';
@@ -61,9 +61,7 @@ describe('[Temp] Interaction', () => {
   it('should simulate [onClick] when button has been clicked', () => {
     const btnInstance = renderResult.getByTestId('btn-back');
 
-    act(() => {
-      fireEvent.press(btnInstance);
-    });
+    fireEvent.press(btnInstance);
 
     expect(props.navigation.goBack).toHaveBeenCalled();
   });

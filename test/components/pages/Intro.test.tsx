@@ -74,18 +74,14 @@ describe('[Intro] Interaction', () => {
     jest.useFakeTimers();
     jest.spyOn(global, 'setTimeout');
 
-    act(() => {
-      fireEvent.press(btnLogin);
-    });
+    fireEvent.press(btnLogin);
 
     expect(setTimeout).toHaveBeenCalled();
     expect(testingLib.toJSON()).toMatchSnapshot();
   });
 
   it('should navigate when button has clicked', () => {
-    act(() => {
-      fireEvent.press(testingLib.getByTestId('btn-navigate'));
-    });
+    fireEvent.press(testingLib.getByTestId('btn-navigate'));
 
     expect(props.navigation.navigate).toHaveBeenCalledWith('Temp', {
       param: 'GO BACK',
@@ -93,8 +89,6 @@ describe('[Intro] Interaction', () => {
   });
 
   it('should change theme when button has clicked', () => {
-    act(() => {
-      fireEvent.press(testingLib.getByTestId('btn-theme'));
-    });
+    fireEvent.press(testingLib.getByTestId('btn-theme'));
   });
 });
