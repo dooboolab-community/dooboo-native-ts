@@ -1,7 +1,5 @@
-import {
-  StackNavigationProp,
-  createStackNavigator,
-} from '@react-navigation/stack';
+import type {StackNavigationProp} from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 
 import Intro from '../pages/Intro';
 import {NavigationContainer} from '@react-navigation/native';

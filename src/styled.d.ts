@@ -1,6 +1,6 @@
 import '@emotion/react';
-import {DoobooTheme} from 'dooboo-ui';
-import {CustomAppTheme} from './utils/theme';
+import type {DoobooTheme} from 'dooboo-ui';
+import type {CustomAppTheme} from './utils/theme';
 
 type AllTheme = CustomAppTheme & DoobooTheme;
 

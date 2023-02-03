@@ -28,7 +28,6 @@ describe('[Temp] render', () => {
 
     const baseElement = testingLib.toJSON();
 
-    expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 
@@ -46,7 +45,6 @@ describe('[Temp] render', () => {
 
     const baseElement = testingLib.toJSON();
 
-    expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 });

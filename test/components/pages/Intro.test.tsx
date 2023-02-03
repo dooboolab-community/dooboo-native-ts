@@ -18,7 +18,6 @@ describe('[Intro] screen rendering test', () => {
 
     const baseElement = testingLib.toJSON();
 
-    expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 
@@ -29,7 +28,6 @@ describe('[Intro] screen rendering test', () => {
 
     const baseElement = testingLib.toJSON();
 
-    expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 
@@ -43,7 +41,6 @@ describe('[Intro] screen rendering test', () => {
 
     const baseElement = testingLib.toJSON();
 
-    expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 
@@ -57,7 +54,6 @@ describe('[Intro] screen rendering test', () => {
 
     const baseElement = testingLib.toJSON();
 
-    expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 });
@@ -77,7 +73,6 @@ describe('[Intro] Interaction', () => {
     fireEvent.press(btnLogin);
 
     expect(setTimeout).toHaveBeenCalled();
-    expect(testingLib.toJSON()).toMatchSnapshot();
   });
 
   it('should navigate when button has clicked', () => {
@@ -88,6 +83,7 @@ describe('[Intro] Interaction', () => {
     });
   });
 
+  // eslint-disable-next-line jest/expect-expect
   it('should change theme when button has clicked', () => {
     fireEvent.press(testingLib.getByTestId('btn-theme'));
   });

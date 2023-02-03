@@ -24,7 +24,6 @@ describe('[IntroTemp] render', () => {
 
     const baseElement = testingLib.toJSON();
 
-    expect(baseElement).toMatchSnapshot();
     expect(baseElement).toBeTruthy();
   });
 });

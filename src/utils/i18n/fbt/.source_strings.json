@@ -1,0 +1,68 @@
+{
+ "phrases": [
+  {
+   "hashToLeaf": {
+    "8187f7a32af24a016622027a1aaf7c49": {
+     "text": "Login",
+     "desc": "login"
+    }
+   },
+   "filepath": "src/components/pages/Intro.tsx",
+   "line_beg": 80,
+   "col_beg": 16,
+   "line_end": 80,
+   "col_end": 37,
+   "project": "",
+   "jsfbt": {
+    "t": {
+     "desc": "login",
+     "text": "Login"
+    },
+    "m": []
+   }
+  },
+  {
+   "hashToLeaf": {
+    "579290b3f62f0fd93162fd1c69667b80": {
+     "text": "Navigate",
+     "desc": "navigate"
+    }
+   },
+   "filepath": "src/components/pages/Intro.tsx",
+   "line_beg": 90,
+   "col_beg": 16,
+   "line_end": 90,
+   "col_end": 43,
+   "project": "",
+   "jsfbt": {
+    "t": {
+     "desc": "navigate",
+     "text": "Navigate"
+    },
+    "m": []
+   }
+  },
+  {
+   "hashToLeaf": {
+    "266e827836b82d38073d828285fd7b08": {
+     "text": "Change Theme",
+     "desc": "change theme"
+    }
+   },
+   "filepath": "src/components/pages/Intro.tsx",
+   "line_beg": 96,
+   "col_beg": 16,
+   "line_end": 96,
+   "col_end": 51,
+   "project": "",
+   "jsfbt": {
+    "t": {
+     "desc": "change theme",
+     "text": "Change Theme"
+    },
+    "m": []
+   }
+  }
+ ],
+ "childParentMappings": {}
+}
