@@ -39,7 +39,7 @@ function Page(props: Props): React.ReactElement {
         testID="btn-back"
         onPress={(): void => navigation.goBack()}
         text={param}
-        leftElement={
+        startElement={
           <Icon
             name="chevron-left-light"
             color={theme.textContrast}

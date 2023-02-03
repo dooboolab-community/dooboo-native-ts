@@ -42,58 +42,49 @@ exports[`[Temp] render renders without crashing 1`] = `
     testID="btn-back"
   >
     <View
-      onLayout={[Function]}
-      outlined={false}
+      size="medium"
       style={
         Array [
           Object {
-            "backgroundColor": "#000000",
-            "borderBottomColor": "#000000",
-            "borderLeftColor": "#000000",
-            "borderRightColor": "#000000",
-            "borderTopColor": "#000000",
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderBottomLeftRadius": 4,
+            "borderBottomRightRadius": 4,
+            "borderTopLeftRadius": 4,
+            "borderTopRightRadius": 4,
+            "flexDirection": "row",
+            "justifyContent": "center",
           },
           Array [
             Object {
-              "alignItems": "center",
-              "alignSelf": "stretch",
-              "borderBottomLeftRadius": 20,
-              "borderBottomRightRadius": 20,
-              "borderTopLeftRadius": 20,
-              "borderTopRightRadius": 20,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingBottom": 10,
-              "paddingLeft": 20,
-              "paddingRight": 20,
-              "paddingTop": 10,
+              "backgroundColor": "#47498A",
+              "borderBottomColor": "#47498A",
+              "borderLeftColor": "#47498A",
+              "borderRightColor": "#47498A",
+              "borderTopColor": "#47498A",
+              "paddingBottom": 12,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 12,
             },
-            Array [
-              undefined,
-              false,
-              undefined,
-            ],
+            false,
+            undefined,
           ],
         ]
       }
       testID="button-container"
-      type="primary"
+      type="solid"
     >
       <Text />
       <Text
-        outlined={false}
         style={
           Array [
             Object {
               "color": "#FFFFFF",
             },
-            Array [
-              undefined,
-              undefined,
-            ],
+            undefined,
           ]
         }
-        type="primary"
       >
         GO BACK
       </Text>
@@ -144,85 +135,49 @@ exports[`[Temp] render should render [Dark] theme 1`] = `
     testID="btn-back"
   >
     <View
-      onLayout={[Function]}
-      outlined={false}
+      size="medium"
       style={
         Array [
           Object {
-            "backgroundColor": "#FFFFFF",
-            "borderBottomColor": "#FFFFFF",
-            "borderLeftColor": "#FFFFFF",
-            "borderRightColor": "#FFFFFF",
-            "borderTopColor": "#FFFFFF",
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "borderBottomLeftRadius": 4,
+            "borderBottomRightRadius": 4,
+            "borderTopLeftRadius": 4,
+            "borderTopRightRadius": 4,
+            "flexDirection": "row",
+            "justifyContent": "center",
           },
           Array [
             Object {
-              "alignItems": "center",
-              "alignSelf": "stretch",
-              "borderBottomLeftRadius": 20,
-              "borderBottomRightRadius": 20,
-              "borderTopLeftRadius": 20,
-              "borderTopRightRadius": 20,
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "paddingBottom": 10,
-              "paddingLeft": 20,
-              "paddingRight": 20,
-              "paddingTop": 10,
+              "backgroundColor": "#585DFA",
+              "borderBottomColor": "#585DFA",
+              "borderLeftColor": "#585DFA",
+              "borderRightColor": "#585DFA",
+              "borderTopColor": "#585DFA",
+              "paddingBottom": 12,
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "paddingTop": 12,
             },
-            Array [
-              undefined,
-              false,
-              undefined,
-            ],
+            false,
+            undefined,
           ],
         ]
       }
       testID="button-container"
-      type="primary"
+      type="solid"
     >
+      <Text />
       <Text
-        allowFontScaling={false}
-        selectable={false}
-        style={
-          Array [
-            Object {
-              "color": "#000000",
-              "fontSize": 12,
-            },
-            Array [
-              Object {
-                "color": "#000000",
-              },
-              Object {
-                "marginRight": 4,
-              },
-            ],
-            Object {
-              "fontFamily": "IcoMoon",
-              "fontStyle": "normal",
-              "fontWeight": "normal",
-            },
-            Object {},
-          ]
-        }
-      >
-        
-      </Text>
-      <Text
-        outlined={false}
         style={
           Array [
             Object {
               "color": "#000000",
             },
-            Array [
-              undefined,
-              undefined,
-            ],
+            undefined,
           ]
         }
-        type="primary"
       >
         GO BACK
       </Text>

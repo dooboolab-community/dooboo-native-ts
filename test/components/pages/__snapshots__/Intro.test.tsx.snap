@@ -44,17 +44,14 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           Object {
             "marginTop": 100,
@@ -73,17 +70,14 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           undefined,
         ]
@@ -100,17 +94,14 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           undefined,
         ]
@@ -155,57 +146,58 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       testID="btn-login"
     >
       <View
-        disabled={true}
-        loading={true}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#FFFFFF",
-              "borderLeftColor": "#FFFFFF",
-              "borderRightColor": "#FFFFFF",
-              "borderTopColor": "#FFFFFF",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                Object {
-                  "height": undefined,
-                  "width": undefined,
-                },
-                false,
-                Object {
-                  "borderBottomColor": "#C4C4C4",
-                  "borderLeftColor": "#C4C4C4",
-                  "borderRightColor": "#C4C4C4",
-                  "borderTopColor": "#C4C4C4",
-                },
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="loading-view"
-        type="primary"
+        type="solid"
       >
-        <ActivityIndicator
-          color="#EDEDED"
-          size="small"
-        />
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "center",
+              "backgroundColor": "transparent",
+              "flex": 1,
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <ActivityIndicator
+            color="#000000"
+            size="small"
+          />
+        </View>
       </View>
     </View>
     <View
@@ -239,59 +231,50 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       testID="btn-navigate"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#000000",
-              "borderLeftColor": "#000000",
-              "borderRightColor": "#000000",
-              "borderTopColor": "#000000",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Navigate
+          navigate
         </Text>
       </View>
     </View>
@@ -326,59 +309,50 @@ exports[`[Intro] Interaction should login when button has clicked 1`] = `
       testID="btn-theme"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#000000",
-              "borderLeftColor": "#000000",
-              "borderRightColor": "#000000",
-              "borderTopColor": "#000000",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Change Theme
+          change theme
         </Text>
       </View>
     </View>
@@ -430,17 +404,14 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           Object {
             "marginTop": 100,
@@ -459,17 +430,14 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           undefined,
         ]
@@ -486,17 +454,14 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           undefined,
         ]
@@ -541,42 +506,38 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       testID="btn-login"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#000000",
-              "borderLeftColor": "#000000",
-              "borderRightColor": "#000000",
-              "borderTopColor": "#000000",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Image
           source={
@@ -594,21 +555,16 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
           }
         />
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Sign In
+          login
         </Text>
       </View>
     </View>
@@ -643,59 +599,50 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       testID="btn-navigate"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#000000",
-              "borderLeftColor": "#000000",
-              "borderRightColor": "#000000",
-              "borderTopColor": "#000000",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Navigate
+          navigate
         </Text>
       </View>
     </View>
@@ -730,59 +677,50 @@ exports[`[Intro] screen rendering test should render [Dark] theme 1`] = `
       testID="btn-theme"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#000000",
-              "borderLeftColor": "#000000",
-              "borderRightColor": "#000000",
-              "borderTopColor": "#000000",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Change Theme
+          change theme
         </Text>
       </View>
     </View>
@@ -834,17 +772,14 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
             "4": "8",
             "5": "E",
             "6": "8",
-            "accent": "#8A96DC",
+            "basic": "#FFFFFF",
             "contrast": "#000000",
-            "default": "#FFFFFF",
-            "disabled": "#C4C4C4",
+            "disabled": "#4D4D4D",
             "fontSize": 18,
+            "label": "#BEBEBE",
             "lineHeight": 27,
-            "link": "#E0E0E0",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#D3D8E8",
-            "validation": "#FF002E",
+            "placeholder": "#909090",
+            "validation": "#FF2C2C",
           },
           Object {
             "marginTop": 100,
@@ -863,17 +798,14 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
             "4": "8",
             "5": "E",
             "6": "8",
-            "accent": "#8A96DC",
+            "basic": "#FFFFFF",
             "contrast": "#000000",
-            "default": "#FFFFFF",
-            "disabled": "#C4C4C4",
+            "disabled": "#4D4D4D",
             "fontSize": 18,
+            "label": "#BEBEBE",
             "lineHeight": 27,
-            "link": "#E0E0E0",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#D3D8E8",
-            "validation": "#FF002E",
+            "placeholder": "#909090",
+            "validation": "#FF2C2C",
           },
           undefined,
         ]
@@ -890,17 +822,14 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
             "4": "8",
             "5": "E",
             "6": "8",
-            "accent": "#8A96DC",
+            "basic": "#FFFFFF",
             "contrast": "#000000",
-            "default": "#FFFFFF",
-            "disabled": "#C4C4C4",
+            "disabled": "#4D4D4D",
             "fontSize": 18,
+            "label": "#BEBEBE",
             "lineHeight": 27,
-            "link": "#E0E0E0",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#D3D8E8",
-            "validation": "#FF002E",
+            "placeholder": "#909090",
+            "validation": "#FF2C2C",
           },
           undefined,
         ]
@@ -945,42 +874,38 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       testID="btn-login"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#FFFFFF",
-              "borderBottomColor": "#FFFFFF",
-              "borderLeftColor": "#FFFFFF",
-              "borderRightColor": "#FFFFFF",
-              "borderTopColor": "#FFFFFF",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#585DFA",
+                "borderBottomColor": "#585DFA",
+                "borderLeftColor": "#585DFA",
+                "borderRightColor": "#585DFA",
+                "borderTopColor": "#585DFA",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Image
           source={
@@ -998,21 +923,16 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
           }
         />
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#000000",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Sign In
+          login
         </Text>
       </View>
     </View>
@@ -1047,59 +967,50 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       testID="btn-navigate"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#FFFFFF",
-              "borderBottomColor": "#FFFFFF",
-              "borderLeftColor": "#FFFFFF",
-              "borderRightColor": "#FFFFFF",
-              "borderTopColor": "#FFFFFF",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#585DFA",
+                "borderBottomColor": "#585DFA",
+                "borderLeftColor": "#585DFA",
+                "borderRightColor": "#585DFA",
+                "borderTopColor": "#585DFA",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#000000",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Navigate
+          navigate
         </Text>
       </View>
     </View>
@@ -1134,59 +1045,50 @@ exports[`[Intro] screen rendering test should render [isDisabled] status 1`] = `
       testID="btn-theme"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#FFFFFF",
-              "borderBottomColor": "#FFFFFF",
-              "borderLeftColor": "#FFFFFF",
-              "borderRightColor": "#FFFFFF",
-              "borderTopColor": "#FFFFFF",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#585DFA",
+                "borderBottomColor": "#585DFA",
+                "borderLeftColor": "#585DFA",
+                "borderRightColor": "#585DFA",
+                "borderTopColor": "#585DFA",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#000000",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Change Theme
+          change theme
         </Text>
       </View>
     </View>
@@ -1238,17 +1140,14 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
             "4": "8",
             "5": "E",
             "6": "8",
-            "accent": "#8A96DC",
+            "basic": "#FFFFFF",
             "contrast": "#000000",
-            "default": "#FFFFFF",
-            "disabled": "#C4C4C4",
+            "disabled": "#4D4D4D",
             "fontSize": 18,
+            "label": "#BEBEBE",
             "lineHeight": 27,
-            "link": "#E0E0E0",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#D3D8E8",
-            "validation": "#FF002E",
+            "placeholder": "#909090",
+            "validation": "#FF2C2C",
           },
           Object {
             "marginTop": 100,
@@ -1267,17 +1166,14 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
             "4": "8",
             "5": "E",
             "6": "8",
-            "accent": "#8A96DC",
+            "basic": "#FFFFFF",
             "contrast": "#000000",
-            "default": "#FFFFFF",
-            "disabled": "#C4C4C4",
+            "disabled": "#4D4D4D",
             "fontSize": 18,
+            "label": "#BEBEBE",
             "lineHeight": 27,
-            "link": "#E0E0E0",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#D3D8E8",
-            "validation": "#FF002E",
+            "placeholder": "#909090",
+            "validation": "#FF2C2C",
           },
           undefined,
         ]
@@ -1294,17 +1190,14 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
             "4": "8",
             "5": "E",
             "6": "8",
-            "accent": "#8A96DC",
+            "basic": "#FFFFFF",
             "contrast": "#000000",
-            "default": "#FFFFFF",
-            "disabled": "#C4C4C4",
+            "disabled": "#4D4D4D",
             "fontSize": 18,
+            "label": "#BEBEBE",
             "lineHeight": 27,
-            "link": "#E0E0E0",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#D3D8E8",
-            "validation": "#FF002E",
+            "placeholder": "#909090",
+            "validation": "#FF2C2C",
           },
           undefined,
         ]
@@ -1349,42 +1242,38 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       testID="btn-login"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#FFFFFF",
-              "borderBottomColor": "#FFFFFF",
-              "borderLeftColor": "#FFFFFF",
-              "borderRightColor": "#FFFFFF",
-              "borderTopColor": "#FFFFFF",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#585DFA",
+                "borderBottomColor": "#585DFA",
+                "borderLeftColor": "#585DFA",
+                "borderRightColor": "#585DFA",
+                "borderTopColor": "#585DFA",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Image
           source={
@@ -1402,21 +1291,16 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
           }
         />
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#000000",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Sign In
+          login
         </Text>
       </View>
     </View>
@@ -1451,59 +1335,50 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       testID="btn-navigate"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#FFFFFF",
-              "borderBottomColor": "#FFFFFF",
-              "borderLeftColor": "#FFFFFF",
-              "borderRightColor": "#FFFFFF",
-              "borderTopColor": "#FFFFFF",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#585DFA",
+                "borderBottomColor": "#585DFA",
+                "borderLeftColor": "#585DFA",
+                "borderRightColor": "#585DFA",
+                "borderTopColor": "#585DFA",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#000000",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Navigate
+          navigate
         </Text>
       </View>
     </View>
@@ -1538,59 +1413,50 @@ exports[`[Intro] screen rendering test should render [isLoading] status 1`] = `
       testID="btn-theme"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#FFFFFF",
-              "borderBottomColor": "#FFFFFF",
-              "borderLeftColor": "#FFFFFF",
-              "borderRightColor": "#FFFFFF",
-              "borderTopColor": "#FFFFFF",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#585DFA",
+                "borderBottomColor": "#585DFA",
+                "borderLeftColor": "#585DFA",
+                "borderRightColor": "#585DFA",
+                "borderTopColor": "#585DFA",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#000000",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Change Theme
+          change theme
         </Text>
       </View>
     </View>
@@ -1642,17 +1508,14 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           Object {
             "marginTop": 100,
@@ -1671,17 +1534,14 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           undefined,
         ]
@@ -1698,17 +1558,14 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
             "4": "0",
             "5": "0",
             "6": "0",
-            "accent": "#B446BF",
+            "basic": "#000000",
             "contrast": "#FFFFFF",
-            "default": "#000000",
-            "disabled": "#C4C4C4",
+            "disabled": "#BEBEBE",
             "fontSize": 18,
+            "label": "#4D4D4D",
             "lineHeight": 27,
-            "link": "#393D7A",
-            "placeholder": "#6D6D6D",
-            "primary": "#000000",
-            "secondary": "#404040",
-            "validation": "#FF002E",
+            "placeholder": "#787878",
+            "validation": "#DA0000",
           },
           undefined,
         ]
@@ -1753,42 +1610,38 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       testID="btn-login"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#000000",
-              "borderLeftColor": "#000000",
-              "borderRightColor": "#000000",
-              "borderTopColor": "#000000",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Image
           source={
@@ -1806,21 +1659,16 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
           }
         />
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Sign In
+          login
         </Text>
       </View>
     </View>
@@ -1855,59 +1703,50 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       testID="btn-navigate"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#000000",
-              "borderLeftColor": "#000000",
-              "borderRightColor": "#000000",
-              "borderTopColor": "#000000",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Navigate
+          navigate
         </Text>
       </View>
     </View>
@@ -1942,59 +1781,50 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
       testID="btn-theme"
     >
       <View
-        onLayout={[Function]}
-        outlined={false}
+        size="medium"
         style={
           Array [
             Object {
-              "backgroundColor": "#000000",
-              "borderBottomColor": "#000000",
-              "borderLeftColor": "#000000",
-              "borderRightColor": "#000000",
-              "borderTopColor": "#000000",
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "borderBottomLeftRadius": 4,
+              "borderBottomRightRadius": 4,
+              "borderTopLeftRadius": 4,
+              "borderTopRightRadius": 4,
+              "flexDirection": "row",
+              "justifyContent": "center",
             },
             Array [
               Object {
-                "alignItems": "center",
-                "alignSelf": "stretch",
-                "borderBottomLeftRadius": 20,
-                "borderBottomRightRadius": 20,
-                "borderTopLeftRadius": 20,
-                "borderTopRightRadius": 20,
-                "flexDirection": "row",
-                "justifyContent": "center",
-                "paddingBottom": 10,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 10,
+                "backgroundColor": "#47498A",
+                "borderBottomColor": "#47498A",
+                "borderLeftColor": "#47498A",
+                "borderRightColor": "#47498A",
+                "borderTopColor": "#47498A",
+                "paddingBottom": 12,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 12,
               },
-              Array [
-                undefined,
-                false,
-                undefined,
-              ],
+              false,
+              undefined,
             ],
           ]
         }
         testID="button-container"
-        type="primary"
+        type="solid"
       >
         <Text
-          outlined={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
               },
-              Array [
-                undefined,
-                undefined,
-              ],
+              undefined,
             ]
           }
-          type="primary"
         >
-          Change Theme
+          change theme
         </Text>
       </View>
     </View>
