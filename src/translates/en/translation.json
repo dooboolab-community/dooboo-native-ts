@@ -1,5 +1,5 @@
 {
   "login": "login",
   "navigate": "navigate",
-  "change_theme": "change theme"
+  "changeTheme": "change theme"
 }

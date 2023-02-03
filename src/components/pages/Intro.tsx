@@ -94,7 +94,7 @@ function Intro(props: Props): React.ReactElement {
         <Button
           testID="btn-theme"
           onPress={() => changeThemeType()}
-          text={t('change_theme')}
+          text={t('changeTheme')}
         />
       </ButtonWrapper>
     </Container>
