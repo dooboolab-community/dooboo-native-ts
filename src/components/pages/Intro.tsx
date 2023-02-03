@@ -6,7 +6,6 @@ import IntroView from '../uis/IntroTemp';
 import React from 'react';
 import type {RootStackNavigationProps} from '../navigations/RootStack';
 import type {User} from '../../types';
-import {fbt} from 'fbt';
 import styled from '@emotion/native';
 import {useAppContext} from '../../providers/AppProvider';
 import {useTranslation} from 'react-i18next';
