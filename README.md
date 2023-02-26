@@ -12,7 +12,7 @@ DO NOT MODIFY OR CHANGE THE CODE BEFORE CONFIRMED BY `DOOBOOLAB`. THIS REPOSITOR
 - [react-native](https://github.com/facebook/react-native)
 - [react-navigation](https://github.com/react-navigation/react-navigation)
 - [typescript](https://github.com/Microsoft/TypeScript)
-- [fbt](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373)
+- [react-i18n](https://react.i18next.com/)
 - [emotion](https://emotion.sh)
 - [dooboo-ui](https://github.com/dooboolab/dooboo-ui)
 - [ts-jest](https://github.com/kulshekhar/ts-jest)
@@ -300,10 +300,6 @@ const component = (props): React.ReactElement => {
 
 ### Localization
 
-Previously, we used `i18n-j` to localize our app and we decided to switch to [fbt](https://github.com/facebook/fbt). If you want to understand why, you may see our blog for [Localizing react app with FBT instead of src/utils/i18n](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373).
+We migrate localize lib from [fbt](https://github.com/facebook/fbt) to [react-i18n](https://react.i18next.com/). If you interested in fbt usages refer this [blog](https://medium.com/dooboolab/localizing-react-app-with-fbt-instead-of-i18n-90822e0cb373).
 
-We've defined localized strings in `assets/translations/en.json` for English and `assets/translations/ko.json` for Korean. Since the `en` is default locale setup in current project, you do not need to localize this file. However, you still should not delete this if you don't want to see missing localization warning messages when you are running jest.
-
-We are using [fbt](https://github.com/facebook/fbt) to localize our app which is maintained by Facebook team. Simply running `yarn fbt:all` will generate `i18n/fbt/translatedFbts.json` which has all the localized strings.
-
-If you find trouble using it, you may follow [Integrate FBT into your React Native Application](https://medium.com/translate-your-react-native-application-with/integrate-fbt-into-your-react-native-application-2bac420e8e0c).
+We've defined localized strings in `src/translates/en/translate.json` for English and `src/translates/ko/translate.json` for Korean. You can add more language code just by creating [language code]/translation.json file in `src/translates/` folder. Then pass that language code to init functions in `i18n.ts`. For further information about usages, Refer [this](https://react.i18next.com/latest/usetranslation-hook).
